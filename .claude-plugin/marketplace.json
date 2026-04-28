@@ -1,0 +1,16 @@
+{
+  "name": "glare-marketplace",
+  "owner": {
+    "name": "ZURB"
+  },
+  "plugins": [
+    {
+      "name": "glare",
+      "source": "./glare",
+      "description": "ZURB / Helio's Glare framework — 21 skills across Get Started + Define / Measure / Focus / Lead.",
+      "version": "1.1.0",
+      "category": "design",
+      "keywords": ["ux", "design", "research", "metrics", "signals", "glare", "zurb", "helio"]
+    }
+  ]
+}

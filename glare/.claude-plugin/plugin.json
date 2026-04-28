@@ -1,0 +1,10 @@
+{
+  "name": "glare",
+  "version": "1.1.0",
+  "description": "ZURB / Helio's Glare framework — 21 skills covering the 5 blocks (Get Started + Define / Measure / Focus / Lead) that turn user input into design signals leaders can act on.",
+  "author": {
+    "name": "ZURB"
+  },
+  "homepage": "https://zurb.com",
+  "keywords": ["ux", "design", "research", "metrics", "signals", "glare", "zurb", "helio"]
+}
