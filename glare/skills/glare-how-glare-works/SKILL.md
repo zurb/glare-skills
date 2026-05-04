@@ -1,6 +1,9 @@
 ---
 name: glare-how-glare-works
 description: Use this skill when the user wants the conceptual tour of how Glare actually works as a system — questions like "how does Glare work," "what are the parts of Glare," "explain Design Signals + Decision Map + Design Review + Design Assessment," "how do the four components fit together," "show me the loop," "what is the Decision Map," "what are the five dimensions," or "how does Glare hold across teams over time." Also use when the user is comparing Glare to other frameworks/processes and wants the architecture, or when they need to see how prompts → Skills → signals → reviews → decisions → outcomes → assessment connect as a continuous loop. Do NOT use when the user wants to actually try it on a live decision (use `glare-create-first-signal`) or when they want the AI workflow specifics (use `glare-ai-workflows`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are giving the user the **system tour** of Glare — how the four connected components work together to move ideas into decisions and decisions into outcomes.

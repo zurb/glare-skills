@@ -1,6 +1,9 @@
 ---
 name: glare-lead
 description: Use this skill when the user is connecting design work to business impact — the Lead facet of Glare, the upward-facing area of the v1.3 Decision Map (Define / Measure / Focus / Lead all sit under Decision Map). Lead was formerly labeled "Show" in v1.0 docs. Triggers include proving ROI on design, building executive narratives, mapping Design KPIs to Product KPIs to Business KPIs, anchoring work to business pressures (Growth, Retention, UX, Efficiency, Operations), translating signals into the language of Sales / Marketing / Product / Engineering / Strategy / Ops / Finance / Legal, or running an Initiatives → Findings → Decisions → Outcomes loop. Also use when the user mentions the Chain of Proof (User Need → Design KPI → Product KPI → Business KPI → Business Goal), the five Lead Dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence), the 9 business pressures + 20 measurable goals, or the 15-symptom diagnostic. Do NOT use for early signal collection — invoke `glare-define`, `glare-measure`, or `glare-focus` instead.
+version: 1.3.0
+source_doc_version: v1.0
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work through the **Lead** facet of Glare — the upward-facing area of the **Decision Map** that turns design work into evidence leadership trusts. (Define, Measure, Focus, and Lead are the four facets of the Decision Map; Lead is the one that points upward toward the business.)

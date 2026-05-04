@@ -1,6 +1,9 @@
 ---
 name: glare-focus-comparing
 description: Use this skill when the user is **Comparing** in the Glare Focus facet — placing signals side by side to see what performs better. (Note: the v1.3 source doc is titled "Compare" but the skill folder keeps "comparing" to preserve install paths.) Triggers include "compare versions," "v1 vs v2," "we have results but no context," "is this score good or bad," "compare against a benchmark," "compare audiences/segments/cohorts," "competitor comparison," "side by side," "which option is stronger," "what's the tradeoff," "did this actually improve or just change," "compare across platforms/devices," "compare across regions," "before and after," "compare across the journey," "compare across seasons or cycles." Also use when the user mentions any of the 12 comparison points — Iteration, User Goals/Tasks, Competitors, Feature Usage, Timeline, Geographies, Segments, User Lifecycle, Journeys, Behavioral Triggers, Platforms/Devices, Season — or the 5-step comparing process (name the decision → choose the comparison point → use the same metric → look for the strongest signal and the tradeoff → turn the comparison into a finding). Do NOT use when the initiative isn't framed (use `glare-focus-initiatives`), the right frame for the data hasn't been chosen (use `glare-focus-methods`), or the team is ready to commit (use `glare-focus-decisions`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user **Compare** signals — the third move in the Glare Focus facet.

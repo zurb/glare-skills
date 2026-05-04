@@ -1,6 +1,9 @@
 ---
 name: glare-get-started
 description: Use this skill whenever the user is new to the Glare framework or asks introductory questions about it — "what is Glare," "how do we start using Glare," "what's a design signal," "explain the Decision Map," "what does Glare actually do," or wants the canonical onboarding (Introduction → How Glare Works → Create Your First Signal → AI Workflows → Coaching & Advising → Proving Design Impact → Glossary). Also use when the user wants the high-level map of the framework — the four connected components (Design Signals + Decision Map + Design Review + Design Assessment), how Glare differs from a research method or delivery process, who Glare is for (design leaders, product leaders, engineers, research leaders, founders, designers), and where Glare works best vs. where it needs support. Do NOT use when the user is already deep in a specific section (Design Signals, Design Review, Decision Map's Define/Measure/Focus/Lead, or Design Assessment) — invoke that section's skill instead.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user understand and start using **Glare**, ZURB's decision framework for product and design teams.

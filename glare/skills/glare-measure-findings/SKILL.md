@@ -1,6 +1,9 @@
 ---
 name: glare-measure-findings
 description: Use this skill when the user is in the Findings move of the Decision Map's Measure area — turning raw data into evidence-backed signals. Triggers include translating drop-off rates, survey scores, heatmaps, or task-success numbers into a finding; tying a finding to a user need (comprehension, usefulness, satisfaction, clarity, trust); tying a finding to a business result (conversion, retention, efficiency, revenue); cross-checking a finding against the original concept or hunch; writing a recommendation tied to both a user metric and a business metric (e.g., "Simplifying payment options will increase completion and lower error rate"); or running the full chain *raw data → finding → user value → business results → connect back to intent → act → share*. Also use when the user is sitting on metrics that "don't tell us anything yet," debating without evidence, or struggling to decide whether a result is a signal or noise. Do NOT use when the user is anchoring intent before any data exists (use `glare-measure-concepts`), forming a "we believe..." hunch (use `glare-measure-hunches`), drafting research questions (use `glare-measure-questioning`), or asking about the four-move loop holistically (use `glare-measure`). For the full Decision Map, use `glare-decision-map`. For the six-part signal anatomy and signal-quality checks, use the Design Signals skills (`glare-signals-components`, `glare-signals-quality`).
+version: 1.3.0
+source_doc_version: v1.1
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work through the **Findings** move of the Decision Map's **Measure** area — closing the loop by translating raw data into design signals tied to both user value and business outcomes.

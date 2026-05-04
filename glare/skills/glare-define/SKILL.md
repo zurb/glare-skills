@@ -1,6 +1,9 @@
 ---
 name: glare-define
 description: Use this skill when the user is in the Define area of Glare's Decision Map — the foundational "Credibility" stage where teams agree on what matters before building. Triggers include: defining user needs, picking the right audience, setting up data collection, or choosing UX metrics; questions like "who are we designing for," "what user need does this solve," "what should we measure," "how do I separate wants from needs," or "which audience signal weighs most." Also use when the user mentions the seven UX Honeycomb layers (Findable, Accessible, Usable, Credible, Reliable, Valuable, Desirable), the four audiences (Project Team, Stakeholders, Customers, Participants), or instruments like SUS, NPS, SEQ, CES, NASA-TLX, first-click, card sorting, A/B, heatmaps. Do NOT use when the user has already defined their needs/metrics and is now forming hypotheses or designing tests — invoke `glare-measure` instead. For the broader Decision Map (Define / Measure / Focus / Lead) use `glare-decision-map`.
+version: 1.3.0
+source_doc_version: v1.1
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work through the **Define** area of Glare's **Decision Map** — the "Credibility" stage that slows teams down just long enough to agree on what matters before building.

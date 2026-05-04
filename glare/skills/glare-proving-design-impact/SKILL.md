@@ -1,6 +1,9 @@
 ---
 name: glare-proving-design-impact
 description: Use this skill when the user is trying to show, defend, or measure the impact of design — phrases like "prove design impact," "show design's contribution," "connect design to revenue," "design ROI," "we can't isolate design's impact," "leadership doesn't see what design does," "translate design into business outcomes," "what's a leading vs. lagging indicator," or "how do I tell the impact story." Also use when the user references the chain decision → signal → user behavior → product outcome → business impact, or mentions UX metrics as leading indicators (comprehension, confidence, usability, desirability, trust, completion). Do NOT use when the user is trying to make a single design decision (use `glare-create-first-signal`) or doing the broader Decision Map's Lead activity (use `glare-lead`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user **make design impact visible** by connecting decisions to outcomes through design signals.

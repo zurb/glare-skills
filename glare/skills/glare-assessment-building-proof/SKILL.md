@@ -1,6 +1,9 @@
 ---
 name: glare-assessment-building-proof
 description: Use this skill when the user is focused on the Building Proof dimension of the Design Assessment — "we can't show what changed," "leadership doesn't see our value," "design wins get described without numbers," "our research doesn't connect to business goals," "we measure activity instead of outcomes," "design feels like opinion," or asks about Building Proof's four layers (Research, Intent, Outcome, Impact). Also use when the user wants to evaluate whether design work connects to user outcomes and business results, define what proof should look like before work starts, or strengthen the proof chain from research to impact. Do NOT use when the user wants the broader assessment (`glare-design-assessment`), is in a different dimension (`glare-assessment-organizing-work`, `glare-assessment-managing-complexity`, `glare-assessment-guiding-decisions`, `glare-assessment-scaling-influence`), or is interpreting the score (`glare-assessment-scoring`, `glare-assessment-reading`, `glare-assessment-using-results`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user evaluate and strengthen **Building Proof** — the Design Assessment dimension that measures whether design work connects to results or stays trapped inside the team.

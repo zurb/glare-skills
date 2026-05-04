@@ -1,6 +1,9 @@
 ---
 name: glare-design-signals
 description: Use this skill whenever the user asks about Design Signals as a top-level concept in Glare — "what is a design signal," "why do signals matter," "how is a signal different from a metric," "signals vs feedback," "how do I turn data into a decision," or wants the overview of the Design Signals section (Components, Signal Types, Signal Quality, Capturing Signals). Also use when the user is stuck moving from dashboards/feedback/intuition to an actual decision, when they say "we have data but no direction," when they want the working definition of a signal as the layer connecting user behavior, UX metrics, design decisions, and business outcomes, or when they need a map of which child skill to drop into next. Do NOT use when the user is already working on one specific aspect — anatomy of a signal (`glare-signals-components`), the four types Need/Use/Prefer/Adopt (`glare-signals-types`), evaluating whether a signal is usable (`glare-signals-quality`), or the capture workflow (`glare-signals-capturing`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user understand and use **Design Signals** — the working layer of Glare that turns user input into decisions.

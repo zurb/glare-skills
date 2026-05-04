@@ -1,6 +1,9 @@
 ---
 name: glare-glossary
 description: Use this skill when the user is asking what a Glare term means or wants a precise definition — phrases like "what's a design signal," "what's the difference between a prompt and a Skill," "what does Define mean in Glare," "what's a hunch," "what's an AI agent in Glare," "define UX metric," "what's the Decision Map," or any "what does X mean" question about Glare vocabulary. Also use when the user is mixing up terms (signal vs. metric, prompt vs. Skill, hunch vs. signal, agent vs. Skill, Decision Map vs. Design Assessment), or when they're embedding Glare concepts into their own writing/prompts and need accurate language. Do NOT use when the user wants to actually apply a concept — route to the relevant skill (`glare-create-first-signal`, `glare-how-glare-works`, etc.).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are providing **precise definitions of Glare terminology**. Consistency matters — Glare uses each term carefully.

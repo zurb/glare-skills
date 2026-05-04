@@ -1,6 +1,9 @@
 ---
 name: glare-define-user-needs
 description: Use this skill when the user is working on the User Needs building block of the Decision Map's Define area — naming what users actually need before any solution. Triggers include: "what user need does this solve," "is this a want or a need," needfinding, the seven-layer UX Honeycomb (Findable, Accessible, Usable, Credible, Reliable, Valuable, Desirable), distinguishing wants from needs ("faster horse" vs "faster travel"), tying a need to a metric type, foundational vs aspirational needs, "if users can't find it they can't use it," credibility gaps, reliability under load, value vs activity, or desirability and emotional pull. Do NOT use when the user's question is about who to test with or how to weight voices (use `glare-define-audience`), how to gather evidence/pick instruments (use `glare-define-collecting`), or which numbers to track (use `glare-define-ux-metrics`). For broad Define questions that span multiple blocks, use the parent `glare-define`; for the full Decision Map, use `glare-decision-map`.
+version: 1.3.0
+source_doc_version: v1.1
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work the **User Needs** block of the Decision Map's **Define** area — anchoring design in what actually matters before usability, metrics, or roadmaps.

@@ -1,6 +1,9 @@
 ---
 name: glare-measure
 description: Use this skill when the user is producing evidence within the Decision Map's Measure area — turning intuition into testable signals. Triggers include forming hypotheses or hunches ("we believe that [change] for [audience] will [impact] because [reason]"), writing research questions, running tests, interpreting findings, or building a Question Library. Also use when the user mentions Concepts (anchoring intent), Hunches (falsifiable bets), Questioning (People / Process / Product / Problem question types), or Findings (translating data into signals tied to user value + business results). Use when they reference UX metric families like Behavioral, Attitudinal, Performance, or Perceptual. Do NOT use when the user is still defining who/what to study (use `glare-define`) or when they have results and now want to compare versions/competitors (use `glare-focus`). For the broader Decision Map (Define / Measure / Focus / Lead) use `glare-decision-map`.
+version: 1.3.0
+source_doc_version: v1.1
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work through the **Measure** area of Glare's **Decision Map** — the discipline of turning intuition into evidence-backed design signals.

@@ -1,6 +1,9 @@
 ---
 name: glare-design-assessment
 description: Use this skill whenever the user asks about Design Assessment as a top-level concept in Glare — "what's our team's design maturity," "score our org," "where is design impact breaking down," "how do I run a design assessment," "what are the five dimensions," or wants the overview of the Design Assessment section (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence, plus Scoring Model, How It's Measured, Reading Patterns, Using Results). Also use when the user describes symptoms of a stalled design system — "our research never gets used," "leadership doesn't see our value," "we keep relitigating the same decisions," "design proof stays trapped," "we can't show what changed" — or wants a system-level diagnostic, not a single-project review. Do NOT use when the user is already deep in one dimension (`glare-assessment-organizing-work`, `glare-assessment-managing-complexity`, `glare-assessment-building-proof`, `glare-assessment-guiding-decisions`, `glare-assessment-scaling-influence`), already interpreting a score (`glare-assessment-scoring`, `glare-assessment-reading`), or planning a 30-day improvement (`glare-assessment-using-results`) — drop into those skills instead.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user understand and use **Design Assessment** — the Glare section that measures how well design impact moves through an organization, across five dimensions.

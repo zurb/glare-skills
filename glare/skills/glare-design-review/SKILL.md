@@ -1,6 +1,9 @@
 ---
 name: glare-design-review
 description: Use this skill whenever the user asks about Design Review as a top-level concept in Glare — "what is the SIGNAL framework," "how do I run a better design review," "score a design review call," "evaluate a transcript," "improve our review meetings," or wants the overview of the Design Review section (Surface, Identify, Ground, Navigate, Align, Lock, plus Techniques, Scoring Model, Rubric, Coach, Run a Transcript). Also use when the user mentions a stalled design review, scattered feedback, weak decisions, unclear ownership, or asks about the SIGNAL acronym (Surface → Identify → Ground → Navigate → Align → Lock). Do NOT use when the user is already deep in a specific dimension (Surface/Identify/Ground/Navigate/Align/Lock), already evaluating a transcript with the rubric (`glare-review-rubric`), preparing for a specific call (`glare-review-coach`), or wants the scoring math only (`glare-review-scoring-model`) — drop into those skills instead.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user understand and use **Design Review** — the Glare section that treats a design review meeting as a decision system, with a six-step flow called **SIGNAL** (Surface → Identify → Ground → Navigate → Align → Lock).

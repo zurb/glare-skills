@@ -1,6 +1,9 @@
 ---
 name: glare-measure-hunches
 description: Use this skill when the user is forming a Hunch in the Decision Map's Measure area — turning instinct into a falsifiable, testable hypothesis. Triggers include writing or critiquing a "we believe..." statement, applying the verbatim hunch template *"We believe that [change] for [audience] will [impact] because [reason]"*, the belief-statement primer *"We believe users need ___ so they can ___"*, checking falsifiability ("could this be wrong, and is that the point?"), strengthening weak hunches (e.g., rewriting "users like shorter forms" into "removing two steps from the signup form for first-time users will increase completion rates because users drop off at step 3"), or running spark techniques like Empathy Mapping, Customer Journey Framework, Stakeholder Interviews, Competitive Analysis, or Expert Audit. Also use when the user wants to tie an instinct to a UX metric (completion rate, task time, drop-off) before drafting questions. Do NOT use when the user hasn't yet defined intent (use `glare-measure-concepts`), is moving from hunch into open-ended/testable research questions (use `glare-measure-questioning`), is interpreting data into signals (use `glare-measure-findings`), or wants the four-move overview (use `glare-measure`). For the full Decision Map, use `glare-decision-map`.
+version: 1.3.0
+source_doc_version: v1.1
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work through the **Hunches** move of the Decision Map's **Measure** area — turning a shaped instinct into a falsifiable hypothesis that downstream questions and findings can confirm or kill.

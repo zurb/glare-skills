@@ -1,6 +1,9 @@
 ---
 name: glare-create-first-signal
 description: Use this skill when the user wants to actually try Glare on a real decision they're sitting in front of — phrases like "create my first signal," "I have a decision and don't know what to do," "two directions for this flow," "we keep circling this," "help me turn this hunch into something we can act on," "we have feedback but no decision," or "walk me through making a signal." Also use when the user is stuck between competing directions (design vs. product vs. engineering), when a concept is being Frankensteined in review, or when they need the six-move arc — Hunch → Make It Clear → Shape the Signal → Use the Signal → Decide What Moves Forward → Make Decisions Hold. Do NOT use when the user wants the conceptual tour of how Glare works (use `glare-how-glare-works`) or when they're starting from a blank-page strategy question rather than a live decision.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user **create their first design signal on a real decision** they're sitting in front of right now.

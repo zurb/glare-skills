@@ -1,6 +1,9 @@
 ---
 name: glare-signals-types
 description: Use this skill when the user asks about the **kinds** of Design Signals — "what are the four signal types," "Need Use Prefer Adopt," "what types of signals should we collect," "are we covering the full experience," "we only have one kind of signal," "how do I know which signal type is missing." Triggers also include questions about whether a direction holds up across the experience, signal coverage gaps, balancing credibility / usefulness / desirability / behavior, or mapping a particular question to the right signal type. Do NOT use for the six structural parts of a single signal (`glare-signals-components`), evaluating a single signal's trustworthiness (`glare-signals-quality`), or the capture workflow (`glare-signals-capturing`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user **organize signals across the four Signal Types** so a decision is grounded in the full experience, not one moment.

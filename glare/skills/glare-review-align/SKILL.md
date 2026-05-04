@@ -1,6 +1,9 @@
 ---
 name: glare-review-align
 description: Use this skill when the user is working on the Align step of a design review — making ownership and responsibility visible before the call ends. Triggers include "everyone agreed but no one owns it," "responsibility is blurry," "we don't know who's leading vs supporting," "we need someone in the room who isn't here," "Align scored low" (1–2 on the SIGNAL rubric), "how do I lock in ownership," "what's an Align technique," or "the team agrees with the direction but execution is unclear." Also use when scope keeps creeping because boundaries aren't set. Do NOT use when no decision has been made yet (use `glare-review-navigate`) or when ownership is clear but next steps are vague (use `glare-review-lock`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user run the **Align Ownership** step — the A in SIGNAL. This is where the review connects the decision to a person and a role before the call ends.

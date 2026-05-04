@@ -1,6 +1,9 @@
 ---
 name: glare-review-scoring-model
 description: Use this skill when the user wants the SIGNAL scoring rubric itself — the 1–5 scale per dimension, the score bands /30, the calibration rules, and how to interpret the result. Triggers include "how do I score a design review," "what does a 3 mean for Surface," "what's a Leading score," "score bands," "SIGNAL rubric calibration," "how do I know where to improve from a score," or "explain the 1–5 scale." Also use when the user has scores and wants to interpret them ("we scored 17/30 — what does that mean?"). Do NOT use when the user wants to actually evaluate a transcript end-to-end with observations and behavioral metrics — use `glare-review-rubric` for that. Do NOT use for in-the-moment techniques — use `glare-review-techniques` and the dimension skills.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user use the **SIGNAL Scoring Model** — the 1–5 scale for evaluating each part of a design review.

@@ -1,6 +1,9 @@
 ---
 name: glare-ai-workflows
 description: Use this skill when the user is asking about how Glare works alongside AI tools — phrases like "use Glare with ChatGPT," "how do I use AI with Glare," "what's the difference between a prompt and a Skill," "what is Ray," "how do AI agents fit into Glare," "we're moving fast with AI but losing alignment," or "how do I keep AI output trustworthy." Also use when the user wants the five-role AI workflow (prompts generate → Skills shape → agents coordinate → participant input creates signals → teams decide), or when they're confused about where humans stay in the loop. Do NOT use when the user wants the conceptual tour of Glare itself (use `glare-how-glare-works`) or when they're trying to make a specific decision right now (use `glare-create-first-signal`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user understand and apply **Glare's AI workflows** — the structure that turns AI-generated output into trustworthy decisions.

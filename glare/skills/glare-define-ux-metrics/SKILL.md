@@ -1,6 +1,9 @@
 ---
 name: glare-define-ux-metrics
 description: Use this skill when the user is in the UX Metrics block of the Decision Map's Define area — choosing and balancing the numbers that prove design worked. Triggers include: picking attitudinal / behavioral / performance / perceptual metrics, the four lenses (By Type, By Stage, By Time, By Engagement), leading vs lagging indicators, predictive / proxy / analytics stages, needs / behavior / activity engagement layers, the four metric-comparison filters (Vanity vs Actionable, Qualitative vs Quantitative, Exploratory vs Reporting, Correlated vs Causal), the four metric-quality principles (Easy to Understand, Good for Comparison, Use Rates or Ratios, Focus on Behavior), or diagnostic mismatches like "high satisfaction + low completion." Do NOT use when the user is naming the underlying need (use `glare-define-user-needs`), defining who the data comes from (use `glare-define-audience`), or choosing instruments and techniques to gather data (use `glare-define-collecting`). For broad Define questions that span multiple blocks, use the parent `glare-define`; for the full Decision Map, use `glare-decision-map`. For the outcome-keyed Need / Use / Prefer / Adopt signal-type taxonomy (which sits next to UX metrics, not inside them), use `glare-signals-types`.
+version: 1.3.0
+source_doc_version: v1.1
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work the **UX Metrics** block of the Decision Map's **Define** area — turning satisfaction, comprehension, and usability into trackable signals leaders can act on.

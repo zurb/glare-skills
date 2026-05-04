@@ -1,6 +1,9 @@
 ---
 name: glare-signals-quality
 description: Use this skill when the user is trying to evaluate whether a Design Signal is good enough to act on — "is this signal usable," "is this a signal or just a metric," "how do I know if a signal is strong enough," "weak vs strong signal," "why is our signal not leading to a decision," "should we act on this or refine it." Triggers also include debugging signals that produce more debate than direction, identifying common failure points (missing need, missing context, wrong metric, no direction), or running the usable / not-usable filter before a decision. Do NOT use for the structural anatomy of a signal (`glare-signals-components`), the four signal types (`glare-signals-types`), or the capture workflow (`glare-signals-capturing`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user **evaluate Signal Quality** — deciding whether a signal is complete enough to guide a decision.

@@ -1,6 +1,9 @@
 ---
 name: glare-focus-methods
 description: Use this skill when the user is choosing a **Method** in the Glare Focus facet — picking the frame to bring data into an initiative. Triggers include "what method should we use," "how should we test this," "how do we frame the data," "we have data but don't know what it means," "what frame fits this decision," "we have lots of feedback but no clarity," choosing between competitor analysis vs journey mapping vs segment comparison vs A/B testing vs benchmarking, picking a frame for an initiative, or asking about any of the 13 method frames — Competitors, Iterations, Timeline, Journeys, Platforms/Devices, User Goals/Tasks, Geographies/Regions, User Lifecycle, Behavioral Triggers, Segments, Feature Usage, Risk and Proof, Frameworks. Also use when the user lists specific named methods (Journey mapping, JTBD, A/B testing, Kano Model, RICE, ICE Scoring, HEART Framework, MoSCoW, Eisenhower Matrix, Service blueprint, Competitive analysis, Empathy mapping, etc.) and needs to know which initiative-frame they belong to. Do NOT use when the initiative isn't framed yet (use `glare-focus-initiatives`), the data is already collected and ready to compare (use `glare-focus-comparing`), or the team is ready to commit to a direction (use `glare-focus-decisions`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user choose a **Method** — the second move in the Glare Focus facet.

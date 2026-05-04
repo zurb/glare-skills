@@ -1,6 +1,9 @@
 ---
 name: glare-review-coach
 description: Use this skill when the user wants to prepare for an upcoming design review or client call, OR coach someone on behavioral improvements after one. Triggers include "prep me for a kickoff," "prep for a design review," "build a call brief," "what should I focus on for this call," "we have past SIGNAL scores — what do we improve," "coach this team member," "how do I get better at [Surface/Identify/Ground/Navigate/Align/Lock]," "give me a practice script for stating recommendations," or "we keep losing on Lock — what do we do." Also use when the user wants to look at patterns across multiple calls and turn them into focused coaching. Do NOT use when the user wants to evaluate or score a specific transcript — use `glare-review-rubric`. Do NOT use for in-the-moment techniques mid-review — use `glare-review-techniques` or the dimension skills.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 Prepare for design reviews and coach on specific behavioral improvements. This is the companion to `glare-review-rubric` — the rubric tells you what happened, the coach helps you change what happens next.

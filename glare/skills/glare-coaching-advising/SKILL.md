@@ -1,6 +1,9 @@
 ---
 name: glare-coaching-advising
 description: Use this skill when the user is a leader weighing whether to bring Glare into their organization, or asking how teams adopt the framework — phrases like "how do I roll out Glare," "we want coaching on Glare," "what's the 90-day pilot," "how do design leaders use this," "we have a heads of design problem," "how do we build the muscle to use signals," "how do we prove design impact at the org level," or "how do we introduce AI without creating more noise." Also use when the user mentions roles like Heads of Design, Product Design Director, UX Research Lead, DesignOps, ResearchOps, or transformation teams. Do NOT use when the user is at the individual-contributor level trying to use Glare on their own work (use `glare-create-first-signal`) or when they want the conceptual tour (use `glare-how-glare-works`).
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping a **leader** think about applying Glare across their team or organization through ZURB's coaching and advising offering.

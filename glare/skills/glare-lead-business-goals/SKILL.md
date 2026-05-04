@@ -1,6 +1,9 @@
 ---
 name: glare-lead-business-goals
 description: Use this skill when the user is anchoring design work to the pressures executives already track — the Business Goals bucket of the Glare Lead facet, part of the Decision Map's Lead area. Triggers include picking which business pressure a project serves (Growth, Retention, User Experience, Efficiency, Operations), choosing among the 20 measurable goals (e.g., "Reduce churn → Achieve product–market fit", "Lower support costs → Reduce support costs", "Prove launch success → Support strategic product launches"), distinguishing the three layers of KPIs (Design KPIs like task completion / error rate / time on task; Product KPIs like adoption / retention / engagement; Business KPIs like revenue growth / churn / LTV), running the three-question Quick Test to decide whether a metric is a true signal vs. a vanity number, or calling out anti-patterns (vanity metrics, correlation-as-causation, reporting without connecting). Do NOT use for cross-functional translation of those goals into Sales / Marketing / Product / Eng / Strategy / Ops / Finance / Legal language — invoke `glare-lead-workflows`. Do NOT use for drawing the full User Need → Design KPI → Product KPI → Business KPI → Business Goal ladder — invoke `glare-lead-mapping`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop or the maturity diagnostic — invoke `glare-lead-results`. For the broader Lead facet overview, invoke parent `glare-lead`.
+version: 1.3.0
+source_doc_version: v1.0
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work through the **Business Goals** bucket of the Glare Lead facet — the upward-facing area of the **Decision Map** that anchors design to the pressures leadership already tracks so design becomes a lever, not decoration.

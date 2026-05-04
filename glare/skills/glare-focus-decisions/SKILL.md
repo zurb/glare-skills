@@ -1,6 +1,9 @@
 ---
 name: glare-focus-decisions
 description: Use this skill when the user is making a **Decision** in the Glare Focus facet — turning signals into action. Triggers include "make the call," "we need to decide," "should we ship this," "should we test another iteration," "should we kill this," "should we revisit later," "we keep circling the same debate," "findings sit in decks," "we don't know when to commit," "explain the tradeoff," "lock the next move," writing a decision record, naming what was chosen and why, distinguishing strategic decisions (investment / roadmap / product direction) from tactical decisions (the meeting next-move). Also use when the user picks any of the 5 tactical decision types — **Implement, Refine Design, Test Iteration, Revisit Later, Do Not Pursue** — or asks about the decision triangle (broad strategic at top, tactical at bottom). Do NOT use when the initiative isn't framed (use `glare-focus-initiatives`), the right frame for the data isn't chosen (use `glare-focus-methods`), or signals haven't been placed side by side yet (use `glare-focus-comparing`). For escalating to executive ROI / business KPI conversations, hand off to `glare-lead`.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user make a **Decision** — the fourth and final move in the Glare Focus facet.

@@ -1,6 +1,9 @@
 ---
 name: glare-review-techniques
 description: Use this skill when the user wants the cross-cutting view of Design Review techniques — the small in-the-moment moves that work across all six SIGNAL letters. Triggers include "what techniques can I use in a design review," "how do I shape feedback in real time," "the conversation is going off the rails — what do I do," "what's a Surface technique vs an Identify technique," "give me the technique map," or "I don't know which technique to use." Also use when the user wants to choose by stuck-moment ("the room is reacting too quickly," "people agree but no one owns the work"). Do NOT use when the user is already inside one specific dimension's techniques — drop into `glare-review-surface`, `glare-review-identify`, `glare-review-ground`, `glare-review-navigate`, `glare-review-align`, or `glare-review-lock` instead.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user choose **Design Review techniques** — small in-the-moment moves that guide the conversation through SIGNAL.

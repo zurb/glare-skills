@@ -1,6 +1,9 @@
 ---
 name: glare-review-lock
 description: Use this skill when the user is working on the Lock step of a design review — converting agreement into forward motion. Triggers include "the call ended without next steps," "we always end with 'we'll follow up'," "no timing was set," "the same conversation keeps coming back," "Lock scored low" (1–2 on the SIGNAL rubric), "how do I close a review," "what's a Lock technique," or "feedback isn't getting acted on." Also use when prepping the closing minutes of a design review or decision meeting. Do NOT use when ownership is still unclear (use `glare-review-align`) or when no direction has formed (use `glare-review-navigate`). For tracking momentum across multiple calls or coaching on consistent weak closes, see `glare-review-coach`.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user run the **Lock Momentum** step — the L in SIGNAL. This is where the review turns the conversation into action that continues after the call.

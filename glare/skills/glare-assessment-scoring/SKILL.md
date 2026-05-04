@@ -1,6 +1,9 @@
 ---
 name: glare-assessment-scoring
 description: Use this skill when the user is asking about how the Design Assessment is scored or measured — "how does the assessment work," "what do the score bands mean," "what's a good design assessment score," "what's Reactive vs Developing vs Functional vs Strong vs Leading," "how are dimension scores calculated," "how do survey responses become scores," "what does our 75 mean," or wants to understand the structure (dimensions, layers, score ranges) before taking or reviewing the assessment. Also use when the user asks why each dimension has its own score, what behavior creates a score, what the assessment does NOT measure (individual designer skill), or how layered scoring helps explain *why* a dimension is strong or weak. Do NOT use when the user is interpreting the shape across dimensions (`glare-assessment-reading`), choosing what to do next (`glare-assessment-using-results`), or already deep in one dimension's content — drop into those instead.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user understand the **scoring model** behind the Design Assessment — how scores are built, what each band means, and how to read a single dimension score.

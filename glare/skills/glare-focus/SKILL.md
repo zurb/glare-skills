@@ -1,6 +1,9 @@
 ---
 name: glare-focus
 description: Use this skill when the user is in the **Focus** facet of the Glare Decision Map — turning signals and findings into a clear direction. Triggers include "what should we focus on," "we have findings but don't know what to do," "decide between concepts," "compare versions," "Initiatives Methods Comparing Decisions," "narrow the work," "we keep circling the same debate," "make the call," "pick a direction," naming an initiative, choosing a method/frame for the data, doing competitor or segment or journey or platform comparisons, or being stuck on which option to commit to. Also use when the user mentions Focus's four moves (Initiatives → Methods → Comparing → Decisions), the four Focus inputs (initiative, concept/flow/page, UX metric, signal, comparison point), or the five tactical decision types (Implement / Refine Design / Test Iteration / Revisit Later / Do Not Pursue). Do NOT use when the user is still gathering raw findings (use `glare-measure`), still defining the problem and audience (use `glare-define`), or escalating proven outcomes to leadership and business KPIs (use `glare-lead`). For depth in one move, hand off to `glare-focus-initiatives`, `glare-focus-methods`, `glare-focus-comparing`, or `glare-focus-decisions`.
+version: 1.3.0
+source_doc_version: v1.3
+last_rebuilt: 2026-05-04
 ---
 
 You are helping the user work through the **Focus** facet of Glare — where design work gets sharper.
