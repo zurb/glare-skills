@@ -1,110 +1,175 @@
-# Glare | Focus, Methods — Drafted (no source doc available)
+# Focus — Methods — Compressed (v1.3)
 
-> This block is **drafted from framework knowledge**, not from a dedicated Drive source doc. It extrapolates from `focus-compressed.md` (Comparing v1.1), the `glare-focus` parent skill, and the data-collection vocabulary established in Measure → Questioning v1.1 (`measure-compressed.md`). Treat as best-effort scaffolding until an authoritative "Glare | Focus, Methods" source lands.
+## What a Method is
 
-## What this block is about
+Methods help teams frame the data inside an initiative. Once an initiative is clear, design needs a way to bring signals into the work. This is not only about testing a prototype or running another study — those are useful techniques, but methods are broader.
 
-In Glare v1.0, **Methods** is the second step of the Focus facet (sequence: Initiatives → Methods → Comparing → Decisions). Methods is where teams design *how* signals get collected so that comparisons later are repeatable and trustworthy. Per the Comparing doc: "Methods — outline how signals are collected; comparing reveals trends from those signals." The Comparing doc explicitly loops back here ("→ Methods — refine how/when you collect future benchmarks for consistency"), which is the strongest hint that Methods owns the discipline of collection-design, not collection itself.
+A method gives the team a **frame** for looking at the work:
+- An onboarding initiative may need a journey frame to see where users lose momentum.
+- A pricing initiative may need a comparison frame to see which message creates more trust.
+- A navigation initiative may need an information structure frame to see how people expect content to be grouped.
+- A product adoption initiative may need a workflow frame to see how signals affect product, marketing, sales, and support.
 
-## Glare | Focus, Methods v0.1 (drafted)
+Each initiative creates different framing needs.
 
-**What Methods does.** Methods turns an Initiative's named outcome and metric(s) into a *collection plan* — cadence, instruments, sample size, audience definitions, and normalization rules — so that every future round produces data Comparing can normalize and trend without rebuilding the test. Without Methods, every benchmark is a snowflake; with it, deltas reflect the *design*, not collection drift.
+Designers often reach for iterative testing and prototyping because they are close to the craft. But Focus methods also include comparing competitors, benchmarking progress, mapping journeys, segmenting audiences, reviewing workflows, evaluating tradeoffs, and connecting findings back to business decisions.
 
-**Four outcomes Methods creates:**
-- **Repeatability** — version N+1 collects the same data the same way as version N.
-- **Stackability** — attitudinal + behavioral + performance metrics captured together, not in separate one-off tests.
-- **Normalizability** — data lands on the 100-point scale by design, so Comparing's Step 3 is a check, not a rebuild.
-- **Auditability** — every collection records version, date, audience, and instrument, so a baseline can always be re-traced.
+The method should match the initiative. The goal is not to use every method — it is to choose the frame that helps the team understand the data, compare the right options, and decide what should move forward.
 
-### Inputs from Initiatives
+## Why methods matter
 
-Methods doesn't pick goals. It operationalizes the Initiative record. Confirm before designing:
+Most teams have more data than clarity. They may have user comments, analytics, survey results, stakeholder feedback, support tickets, research findings, and prototype reactions. Without a method, that evidence stays scattered — people see different things in the same data.
 
-- **Metric(s)** — which slots of the 100-point stack (Comprehension / Satisfaction / Desirability / Completion / Error Rate / First-Click / Time-on-Task) the Initiative named.
-- **Audience** — the cohort/segment/device/journey-stage definition the Initiative locked.
-- **Outcome target** — the delta the Initiative committed to (e.g., Completion +13 pts).
-- **Kill criterion** — the upfront falsifier so Methods can size the test for the smallest delta that would matter.
+Methods help teams look at the work through a shared frame. They help design and product:
+- bring the right data into the initiative
+- organize signals around the decision
+- compare ideas, moments, audiences, or competitors
+- understand which tradeoffs matter
+- connect design evidence to business workflows
+- decide what deserves more investment
 
-### Plan Signal-Collection — 5 Levers
+A strong method does not just collect data — it helps the team **use** data.
 
-For each Initiative, Methods picks an explicit setting for each of these. Future iterations must keep all five frozen unless the team explicitly versions the Method.
+## What goes into a method
 
-1. **Cadence.** Per release / quarterly / per major iteration / per campaign. The cadence has to outlast personnel changes; pick the slowest cadence that still meets the decision tempo.
-2. **Instruments.** The technique used per metric layer (see method catalog below). Each metric should have one and only one default instrument per Initiative.
-3. **Sample sizes.** Sized to the smallest delta the kill criterion needs to detect. Floor of n=30 per cohort for attitudinal; n=80–120 for behavioral; document the rule used.
-4. **Audience definitions.** Recruitment criteria written as a recipe (cohort filter, device, region, recency, prior exposure). The same recipe is reused every round.
-5. **Conditions.** Device mix, time-of-day window, campaign overlap, seasonality flags. Frozen at v1 and re-applied at every subsequent collection.
+A method starts with the **objective**. Before choosing a frame, the team needs to know what they are trying to understand. The same data can lead to different conclusions depending on the method used to organize it.
 
-### Method Catalog — Mapped to the 100-Point Comparison Stack
+- A journey frame might show where momentum breaks across steps.
+- A competitor frame might show where the experience feels weaker in the market.
+- A concept frame might show which ideas create the strongest signal.
+- A benchmark frame might show whether the work is improving over time.
 
-These are the default instruments Methods recommends per metric. Pick one per Initiative metric and stick with it.
+The objective shapes the method. It affects what data gets pulled in, which signals matter most, what gets compared, which audience or context matters, what tradeoff needs to be understood, what decision the method should support.
 
-| Metric (100-pt stack) | Layer | Default Instrument(s) | Notes for Comparing |
-|---|---|---|---|
-| Comprehension | Perceptual | Survey + 5-second test; Heatmap-supported recall | Score on 100-pt comprehension rubric. |
-| Satisfaction | Attitudinal | Post-task Likert + open-text sentiment coding | Net-positive transformed to 100-pt. |
-| Desirability | Attitudinal | Microsoft Reaction Cards / desirability scoring | Aggregate to 100-pt scale. |
-| Completion | Performance | Task-success test (moderated or unmoderated) | Direct % → 100-pt. |
-| Error Rate | Performance | Task test with error tagging | Inverted to 100-pt (fewer errors = higher). |
-| First-Click Success | Behavioral | First-click test | Direct % → 100-pt. |
-| Time-on-Task | Performance | Task test with timer | Normalized vs benchmark median. |
-| Engagement | Behavioral | Clickstream / session analytics | Cohort-normalized. |
-| NPS | Attitudinal | Standard NPS prompt | Mapped to 100-pt scale (per Klean Kanteen example in Comparing). |
+A strong method usually starts with:
+- the initiative being shaped
+- the objective for the work
+- the signals already collected
+- the UX metrics that matter
+- the concepts, moments, or competitors being compared
+- the decision the team needs to make next
 
-Stronger baselines stack at least one metric from each layer (per Comparing doc Step 1). Default recommendation: pick 1 attitudinal + 1 behavioral + 1 performance per Initiative.
+Without a clear objective, methods become a loose activity. With one, the team can frame the data, compare ideas fairly, and explain why one direction deserves more energy.
 
-### Repeatability Rules
+## The 13 method frames
 
-- **Version the Method, not the metric.** If you change cadence/instrument/sample/audience/conditions, increment Method version (M1 → M2). Comparing must know whether a delta crossed a Method-version boundary, because that breaks like-for-like.
-- **Freeze conditions at v1.** If v1 ran on iOS-only desktop browsers in November, v2 runs the same way. If conditions must change, run a parallel "bridge" round that collects under both conditions to quantify the shift.
-- **Normalize at collection time.** Apply the 100-point transformation when data is captured, not later. For external/third-party sources, define the scale-matching rule in the Method record.
-- **Record every collection.** Version, date, audience recipe, instrument, sample size, conditions. This is what makes a baseline a baseline.
-- **Bias check the instrument.** Same hygiene as Measure → Questioning: is the question leading? echoing assumptions? emotionally loaded? too technical? Re-check at every cadence.
+### Competitors
+Use when the initiative needs market context. Helps teams understand where competitors feel stronger, where your experience creates more value, and what expectations users may already bring from other products.
+**Example methods:** Competitive analysis · Competitor UX benchmark · Reverse impact mapping · Feature comparison matrix · Positioning comparison · Competitor journey review · Competitive desirability scoring.
+*Use when the team needs to see how the work performs beyond its own product.*
 
-### Method Record — Worksheet
+### Iterations
+Use when the team needs to improve an idea through repeated cycles. Helps teams compare versions, track lift, and see which changes create stronger signals over time.
+**Example methods:** A/B testing · Design test loop · Rapid concept testing · MVP prototype · Assumption mapping · Variant comparison · Before-and-after testing · Iterative usability review · Concept refinement loop.
+*Use when the team has a direction but needs to sharpen it before investing more.*
 
-| Field | Action | Output |
-|---|---|---|
-| Initiative ref | Link the Initiative the Method serves. | Traceability. |
-| Cadence | Pick the slowest cadence that meets decision tempo. | Predictable refresh schedule. |
-| Instruments | One default per metric (from catalog). | Same instrument every round. |
-| Sample size | Floor + rule (e.g., powered to detect kill-threshold delta). | Statistically defensible deltas. |
-| Audience recipe | Cohort + device + region + recency + recruitment filter. | Repeatable cohort. |
-| Conditions | Device mix, time window, campaign/seasonality flags. | Drift-controlled environment. |
-| Normalization rule | 100-pt transformation applied at capture. | Comparing Step 3 becomes a check, not a rebuild. |
-| Version | M1, M2, … incremented when any lever changes. | Honest like-for-like. |
+### Timeline
+Use when the team needs to decide sequence, urgency, or timing. Helps teams understand what should happen now, what can wait, and what needs to be solved before other work can move.
+**Example methods:** Eisenhower Matrix · MoSCoW Method · Opportunity Solution Tree · Now/Next/Later · Roadmap sequencing · Impact vs. effort mapping · Release readiness review · Decision deadline mapping.
+*Use when the team needs to manage priority without losing the larger direction.*
 
-**Quick Checklist:** metric/audience pulled from Initiative; instrument chosen per metric; cadence locked; sample size sized to kill threshold; conditions frozen; normalization applied at capture; Method version recorded.
+### Journeys
+Use when the initiative spans multiple steps or touchpoints. Helps teams see where users lose momentum, where friction builds, and which moments deserve more attention.
+**Example methods:** Journey mapping · Shopping cart flow · Onboarding flow · Service blueprint · Funnel review · Drop-off mapping · Moment mapping · Touchpoint analysis · End-to-end experience review.
+*Use when the problem is bigger than one screen, page, or feature.*
 
-### See It in Action — Methods for the Mobile Checkout Initiative
+### Platforms / Devices
+Use when the experience changes across devices, channels, or contexts. Helps teams understand whether the design holds up across the places users actually interact with it.
+**Example methods:** Device comparison · Mobile vs. desktop review · Cross-platform experience mapping · Responsive behavior review · Channel comparison · Accessibility device review · Context-of-use review · Platform constraint mapping.
+*Use when the same experience needs to work across different environments.*
 
-Continuing the Initiative from `focus-initiatives-compressed.md`: Completion +13 pts on first-time mobile US, with Error Rate −8 pts as the second metric.
+### User Goals / Tasks
+Use when the initiative depends on what users are trying to accomplish. Helps teams compare how well the experience supports real tasks, goals, and moments of progress.
+**Example methods:** Task analysis · Importance and satisfaction framework · Interaction matrix · Gravity score · Jobs-to-be-Done mapping · Goal friction mapping · Task success review · Outcome prioritization · User intent mapping.
+*Use when the team needs to understand whether the work helps users get something done.*
 
-Method M1 record:
-- **Cadence:** Per release (target: v1 baseline now, v2 after redesign ships in Q3).
-- **Instruments:** Unmoderated task-success test (Completion + Error Rate); post-task Likert (Satisfaction, third metric for stacking).
-- **Sample size:** n=120 per round (powered to detect a 6-pt completion delta at 80% power; smaller than the 13-pt target so the kill criterion of ±2 pts is also resolvable).
-- **Audience recipe:** First-time visitors, mobile (iOS + Android, 50/50 split), US, no prior exposure to checkout in last 30 days.
-- **Conditions:** Tuesday–Thursday 10am–4pm ET; no overlap with seasonal sale campaigns; checkout sandbox with $24.99 standard cart.
-- **Normalization:** Completion and Error Rate captured as % and inverted/transformed to 100-pt at capture; Satisfaction Likert mapped to 100-pt via standard rubric.
-- **Method version:** M1 (frozen for v1 baseline and v2 comparison).
+### Geographies / Regions
+Use when the experience needs to work across locations, markets, or cultures. Helps teams understand where expectations, language, behavior, or constraints change by region.
+**Example methods:** Regional experience comparison · Localization review · Market readiness review · Cultural context mapping · Regional benchmark · Language clarity review · Compliance and regional constraint review · Geo-segmented signal comparison.
+*Use when the same product or message may not land the same way everywhere.*
 
-When v3 ships and the team wants to widen to Canada/UK, that's an M2 — the audience recipe changed, so a bridge round is required to keep deltas honest.
+### User Lifecycle
+Use when the initiative affects different stages of the customer relationship. Helps teams understand how needs change from awareness to onboarding, adoption, retention, and expansion.
+**Example methods:** User metrics · Simple, Lovable, and Complete framework · MVO (Minimum Viable Offer) · MMP (Minimum Marketable Product) · MLP (Minimum Lovable Product) · Lifecycle stage mapping · Adoption path review · Retention moment analysis · Activation signal review.
+*Use when the work needs to support users at a specific stage, not just improve a single interaction.*
 
-### Next Steps from Methods
+### Behavioral Triggers
+Use when the team needs to understand what causes users to act. Helps teams see what prompts action, what creates hesitation, and what conditions need to be in place for behavior to change.
+**Example methods:** Behavioral Triggers (EAST Framework) · UX impact mapping · Trigger mapping · Motivation/ability review · Friction and prompt analysis · Habit loop mapping · Moment-of-action review · Nudge analysis.
+*Use when the initiative depends on getting users to start, continue, or complete an action.*
 
-- → **Comparing** — once M1 collects v1 baseline, Comparing runs the 5-step process; same Method runs again at v2 for like-for-like deltas.
-- → **Decisions** — Method record travels with the benchmark so Decisions can audit how the data was produced.
-- ← **Initiatives** — if a kill criterion isn't detectable at the planned sample size, send the Initiative back for tighter scoping.
+### Segments
+Use when different audiences may respond differently to the same experience. Helps teams compare user groups, roles, cohorts, or need states so the signal is not averaged into something too vague to use.
+**Example methods:** Empathy mapping · Jobs-to-be-Done · Competence matrix · Segment comparison · Role-based journey review · Audience priority matrix · Needs-based segmentation · Cohort signal review.
+*Use when one experience needs to serve different types of users.*
 
-## Key terms
+### Feature Usage
+Use when the initiative depends on which features users value, adopt, or ignore. Helps teams compare feature ideas, prioritize product changes, and understand which parts of the product create real use.
+**Example methods:** Opportunity scoring · Kano Model · Feature prioritization via weighted scoring · Feature adoption review · Usage pattern analysis · Feature value mapping · Frequency vs. importance matrix · Retention by feature review.
+*Use when the team needs to decide what to build, improve, reduce, or remove.*
 
-- **Methods** — the Focus-facet step that designs *how* signals get collected so Comparing is repeatable.
-- **5 Levers** — Cadence, Instruments, Sample Size, Audience, Conditions; the five settings every Method record locks.
-- **Method Catalog** — default instruments mapped to each slot of the 100-point UX metric stack.
-- **Stackable metric set** — at least one attitudinal + one behavioral + one performance metric, captured together (per Comparing Step 1).
-- **Method version (M1, M2…)** — incremented when any lever changes; Comparing must know about version changes to interpret deltas honestly.
-- **Bridge round** — a parallel collection under both old and new conditions to quantify the impact of a Method-version change.
-- **Normalization at capture** — applying the 100-point transformation when data is recorded rather than during analysis.
-- **Audience recipe** — the reusable recruitment definition (cohort + device + region + recency + filter) that future rounds re-apply.
-- **Kill-threshold sizing** — sizing samples to detect the smallest delta that would trigger the Initiative's kill criterion.
+### Risk and Proof
+Use when the team needs to reduce uncertainty before making a larger investment. Helps teams understand what could break, what needs proof, and what level of evidence is enough to move forward.
+**Example methods:** Four Big Risks · HATS survey · Proof of Concept · Video testing · Risk mapping · Smoke test · Pilot review · Expert review · Stakeholder signal review.
+*Use when the cost of being wrong is high.*
+
+### Frameworks
+Use when the team needs a structured model to organize thinking, compare options, or explain tradeoffs. Frameworks help teams make the work easier to discuss, especially when many people are involved in the decision.
+**Example methods:** 5Ds · 5W1H Framework · Assumption mapping · Content testing · Copywriting frameworks · Full Loop Analytics Framework · Gap analysis · GIST Framework · Google HEART Framework · ICE Scoring Model · KPI Trees · LNO · Measure & Analyze Data · Product Market Fit · RICE Framework · Spotlight Framework · SUS Testing · Value vs. Complexity Quadrant · Weighted scoring prioritization · XYZ Hypothesis · Zenko Mapping.
+
+## How to choose a method — 5 steps
+
+Start with the decision the team needs to make. Do not ask "What test should we run?" — ask "What frame would help us understand this work clearly?"
+
+### 1. Name the initiative objective
+Clarify what the initiative is trying to improve (increase adoption, reduce friction, improve trust, sharpen positioning, simplify a journey, decide which concept deserves more investment). Keeps the method tied to the larger business and user outcome.
+
+### 2. Identify the decision
+Name what the team needs to decide next. This might be: which concept deserves more investment · which part of the journey needs attention · which version creates a stronger signal · which audience should be prioritized · which competitor gap matters most · which direction helps the business move forward. The clearer the decision, the easier it is to choose the frame.
+
+### 3. Look at the data you already have
+Review the signals, findings, UX metrics, user comments, analytics, and stakeholder input already available. The team may already have enough evidence to frame the decision.
+Ask: What signals do we already have? Which UX metrics are relevant? What user comments add context? What business data matters? What is still unclear? Keeps the team from collecting more data before using what it already knows.
+
+### 4. Choose the frame that fits the decision
+Pick the method frame that best organizes the data around the decision.
+- Issue spans steps → journey frame
+- Market context matters → competitor frame
+- Timing matters → timeline frame
+- Different users respond differently → segment frame
+- Choosing between ideas → iteration or comparison frame
+
+The method should make the data easier to interpret.
+
+### 5. Define what gets compared
+Make the comparison explicit. The team might compare: concepts, versions, audiences, journey moments, competitors, lifecycle stages, platforms/devices, features, risks, time periods. Keeps the method from becoming vague.
+
+## What comes out of a method
+
+The output is a clearer frame for action. A strong method gives the team:
+- a way to organize the data
+- a clear comparison
+- a stronger interpretation of the signal
+- a tradeoff the team can explain
+- a finding that supports a decision
+- a next move for the initiative
+
+The value is not just the data — it is the frame that helps the team see what the data means and what to do next.
+
+## Where methods work best
+
+Methods work best when the initiative is clear enough to compare something. Use methods when the team has signals, findings, concepts, or business input but needs a better frame for making sense of it. Especially useful when the team has many possible concepts, competing stakeholder views, or a decision that needs clearer evidence.
+
+Methods work less well when the team has not clarified the initiative. If the user need, business goal, audience, or objective is still unclear, go back to Define or Initiatives first. A method can organize evidence, but it cannot fix a poorly framed problem.
+
+## Where methods fit in Glare
+
+Methods sit inside the Focus facet. Initiatives define the area of work that needs attention. Methods give the team a frame for bringing data into that work. Comparing places the signals side by side. Decisions turn the evidence into action.
+
+In the Focus flow:
+- **Initiatives** define what needs attention.
+- **Methods** frame the data.
+- **Comparing** shows what is stronger.
+- **Decisions** move the work forward.
+
+Methods are how Focus makes data usable.

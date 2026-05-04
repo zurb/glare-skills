@@ -1,40 +1,40 @@
 ---
 name: glare-get-started
-description: Use this skill whenever the user is new to the Glare framework or asks introductory questions about it — "what is Glare," "how do we start using Glare," "explain design signals," "what's the difference between a metric and a signal," "Glare Assessment," or wants the six-step starter sequence (pick a user need → choose one metric → run a fast test → turn the metric into a signal → share it → use it in a real meeting). Also use when the user wants the canonical onboarding flow (Introduction → How Glare Works → Take the Assessment → Start Using It Today), the high-level map of the framework (the five blocks — Get Started plus four facets: Define / Measure / Focus / Lead — and how Glare differs from a research method, a delivery process, or a dashboard), or wants to assess where their team currently sits on the five Glare dimensions. Do NOT use when the user is already deep in a specific facet (Define, Measure, Focus, or Lead) — invoke that facet's skill instead.
+description: Use this skill whenever the user is new to the Glare framework or asks introductory questions about it — "what is Glare," "how do we start using Glare," "what's a design signal," "explain the Decision Map," "what does Glare actually do," or wants the canonical onboarding (Introduction → How Glare Works → Create Your First Signal → AI Workflows → Coaching & Advising → Proving Design Impact → Glossary). Also use when the user wants the high-level map of the framework — the four connected components (Design Signals + Decision Map + Design Review + Design Assessment), how Glare differs from a research method or delivery process, who Glare is for (design leaders, product leaders, engineers, research leaders, founders, designers), and where Glare works best vs. where it needs support. Do NOT use when the user is already deep in a specific section (Design Signals, Design Review, Decision Map's Define/Measure/Focus/Lead, or Design Assessment) — invoke that section's skill instead.
 ---
 
-You are helping the user understand and start using **Glare**, ZURB / Helio's decision framework for product and design teams.
+You are helping the user understand and start using **Glare**, ZURB's decision framework for product and design teams.
 
 ## Core idea
 
-Glare turns user input into **design signals** — small, shareable units of clarity that link a user need, a UX metric, and a business goal at the moment a decision needs to be made. Glare exists because product/design rarely fails at ideation; it fails when decisions need to be made, and research/data usually arrive too late to help.
+Glare turns scattered inputs — intuition, early research, prompt-generated concepts, business goals — into **design signals**, the smallest unit of clarity a team can use to move a decision forward. A signal connects a decision the team needs to make, a measurable user response, and the outcome that decision is meant to influence. Glare exists because AI has accelerated *output* faster than teams can build *confidence in what to do with it*; the framework gives teams (and the AI systems they work alongside) a shared structure for moving from generation to decision.
 
 ## Read the reference first
 
-Before answering substantive questions, read the compressed reference inside this skill:
-
-- `reference.md` — full compressed content of the Get Started block (introduction, why-it-matters, six-step starter, signal anatomy, framework map, design impact ladder, scenarios, assessment, community).
+Before answering substantive questions, read `reference.md` — full compressed content of the Get Started section: the Introduction (what Glare is + why it exists + the problems it solves + who it's for + when decisions matter most), the four connected components (Design Signals, Decision Map, Design Review, Design Assessment), how Glare comes together as a continuous loop, what Glare produces, and where it works best vs. needs support.
 
 ## How to apply
 
-1. **Diagnose the user's entry point.** Are they (a) brand-new and want a one-paragraph pitch, (b) ready to try it on a current decision, (c) trying to assess their team's maturity, or (d) confused about a specific concept (signal, layer, facet)? Use the answer to choose what to surface from the reference.
+1. **Diagnose the user's entry point.** Are they (a) brand-new and want a one-paragraph pitch, (b) ready to try it on a current decision, (c) curious about how Glare fits with AI workflows, (d) leading a team and weighing coaching, or (e) confused about a specific term? Use the answer to pick which child skill to surface — don't dump the whole framework.
 
-2. **Default to the six-step starter** when someone says "how do I begin?": pick a user need → choose one metric → run a fast test → turn the metric into a signal → share it → use it in a real meeting. Tie it to a specific decision they currently face — never deliver it as generic advice.
+2. **Default to the four-component tour** when someone asks "how does Glare actually work?" Cover the four parts — Design Signals (the unit of clarity), Decision Map (Define/Measure/Focus/Lead — how decisions take shape), Design Review (where signals are applied), Design Assessment (how the system holds across five dimensions: Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence). Then close with the loop: prompt → Skill → signal → review → decision → outcome → assessment.
 
-3. **Use the signal anatomy** when explaining what a "good signal" looks like: metric, direction, context, user need, business goal. Contrast a strong signal vs. a weak signal using their actual situation.
+3. **When someone wants to try it on real work**, hand off to `glare-create-first-signal` immediately. The "first signal in one decision" walkthrough is the fastest on-ramp; don't lecture the framework first.
 
-4. **Hand off to the facet skills** when the conversation narrows. If they're now defining users/metrics → suggest `glare-define`. Forming hypotheses or running tests → `glare-measure`. Comparing/benchmarking → `glare-focus`. Connecting to business outcomes → `glare-lead`.
+4. **When someone asks how Glare fits with AI**, hand off to `glare-ai-workflows`. Reinforce the prompts/Skills/agents/signals/decisions distinction and the rule that AI supports the work but people determine direction.
 
-5. **When users want to assess their team's design maturity** — point them to the **Glare Assessment** workflow in `reference.md` (sections "Onboarding flow" and "Glare Assessment"). It's a ~20-minute self-scoring tool at my.helio.app that grades the team across the five dimensions (Guiding Decisions, Making Impact, Scaling Influence, Organizing Work, Managing Complexity), each scored on the 16-square Define/Measure/Focus/Show grid. Surface what each dimension's result means and steer the team toward the smallest-leverage next action — not toward a perfect score.
+5. **When a leader is asking about adoption, training, or proving impact at the org level**, hand off to `glare-coaching-advising` (for the 90-day pilot model) or `glare-proving-design-impact` (for the decision → signal → behavior → outcome chain).
 
-6. **Canonical onboarding sequence** — when someone is fully new and wants the official walkthrough, follow the four-page flow: **Introduction** (what Glare is and why) → **How Glare Works** (the five blocks as a closed loop) → **Take the Assessment** (find your shape across the five dimensions) → **Start Using It Today** (fold signals into backlog / roadmap / sprint / release / marketing-site rituals). All four are summarized in `reference.md` under "Onboarding flow."
+6. **When the user trips on terminology**, hand off to `glare-glossary` rather than improvising definitions. Glare uses precise terms (Skill vs. prompt, signal vs. metric, hunch vs. signal, Decision Map vs. Design Assessment) and consistency matters.
 
-7. **Resist over-explaining.** Glare is "non-linear — start where the gap is." Don't lecture the whole framework when the user just needs the next move.
+7. **Resist over-explaining.** Glare is meant to be used, not studied. If the user has a real decision in front of them, route them into the work — not into more framework.
 
 ## Handoffs
 
-- Defining users, audiences, instruments, and UX metrics → `glare-define`
-- Forming hypotheses, drafting research questions, interpreting findings → `glare-measure`
-- Benchmarking versions / competitors / segments and acting on the deltas → `glare-focus`
-- Connecting work to business KPIs and executive narratives → `glare-lead`
-- For deeper dives, each facet has 4 bucket-level child skills (e.g., `glare-define-user-needs`, `glare-measure-hunches`, `glare-focus-comparing`, `glare-lead-workflows`) — drop into them directly when the conversation has narrowed.
+- Walking through your first signal on a real decision → `glare-create-first-signal`
+- Tour of the four components and how they connect → `glare-how-glare-works`
+- Using Glare alongside ChatGPT, Gemini, prompts, agents → `glare-ai-workflows`
+- Leading a team / 90-day pilot / coaching adoption → `glare-coaching-advising`
+- Showing leadership how design moves outcomes → `glare-proving-design-impact`
+- Term lookup (Skill, signal, hunch, agent, etc.) → `glare-glossary`
+- Working inside a specific section: Design Signals, Design Review, Design Assessment, or the Decision Map's Define / Measure / Focus / Lead → invoke that section's skill (`glare-design-signals`, `glare-design-review`, `glare-design-assessment`, `glare-define`, `glare-measure`, `glare-focus`, `glare-lead`)

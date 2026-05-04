@@ -2,6 +2,11 @@
 
 Every company runs on workflows already in motion whether design is in the room or not. Signals prove how a single user action ripples into adoption, retention, revenue, or cost savings. The Workflows bucket ships eight per-function templates — Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal — each with the same internal structure: top metrics, questions to ask, how to measure, where design creates lift, the function's jargon, and the Design KPI → Product KPI → Business KPI signal chain. Use the section that matches the function the signal is being handed off to. Quick Exercise and Quick Test apply to all eight.
 
+## v1.3 vocabulary
+
+- **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. When translating a signal into a function's language, all six pieces should be present; the function's vocabulary primarily reframes the Business goal and Direction rungs.
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. Distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure. Each function tends to gravitate toward one or two of these (e.g., Sales reads Adopt and Use; Marketing reads Need and Prefer).
+
 ---
 
 ## Sales
@@ -293,5 +298,5 @@ If all three are yes, signals have become proof and workflows show real design i
 
 ## Source docs
 
-- Parent: *Glare | Show, Workflows v1.0* (Sept 14, 2025) — eight-function catalog and Quick Exercise/Quick Test.
+- Parent: *Glare | Lead, Workflows v1.0* (Sept 14, 2025; source title still reads "Glare | Show, Workflows v1.0") — eight-function catalog and Quick Exercise/Quick Test.
 - Per-function v1.0 docs (Sept 21, 2025) — Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal — each with the role, signals, interfacing playbook, jargon glossary, and quick test repeated above.

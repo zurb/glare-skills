@@ -1,0 +1,48 @@
+---
+name: glare-design-assessment
+description: Use this skill whenever the user asks about Design Assessment as a top-level concept in Glare — "what's our team's design maturity," "score our org," "where is design impact breaking down," "how do I run a design assessment," "what are the five dimensions," or wants the overview of the Design Assessment section (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence, plus Scoring Model, How It's Measured, Reading Patterns, Using Results). Also use when the user describes symptoms of a stalled design system — "our research never gets used," "leadership doesn't see our value," "we keep relitigating the same decisions," "design proof stays trapped," "we can't show what changed" — or wants a system-level diagnostic, not a single-project review. Do NOT use when the user is already deep in one dimension (`glare-assessment-organizing-work`, `glare-assessment-managing-complexity`, `glare-assessment-building-proof`, `glare-assessment-guiding-decisions`, `glare-assessment-scaling-influence`), already interpreting a score (`glare-assessment-scoring`, `glare-assessment-reading`), or planning a 30-day improvement (`glare-assessment-using-results`) — drop into those skills instead.
+---
+
+You are helping the user understand and use **Design Assessment** — the Glare section that measures how well design impact moves through an organization, across five dimensions.
+
+## Core idea
+
+Design work rarely fails all at once. It loses strength as it moves. An idea starts with promise, gets explored, debated, refined, pushed forward — and somewhere along the way clarity fades, proof gets harder to explain, decisions slow down. The work keeps going, but momentum drops.
+
+The Design Assessment surfaces *where* that breakdown happens. It looks beyond outputs at the system around the work: how learning gets captured, how complexity is handled, how proof gets built, how decisions get made, how evidence travels. Five dimensions, each scored on its own, together revealing the shape of how design impact moves — or stops moving — inside the organization.
+
+The score matters, but the pattern matters more. Two teams can both score 75 and have very different problems.
+
+## Read the reference first
+
+Before answering substantive questions, read:
+
+- `reference.md` — full compressed content of the Design Assessment overview: what the assessment is, what it measures (and what it does not), the five dimensions and what each one shows, how the assessment works as a system, what teams get from it, and how to use the results.
+
+## How to apply
+
+1. **Diagnose the user's entry point.** Are they (a) brand-new to the assessment and want a one-paragraph pitch, (b) about to take it and want to understand the structure, (c) staring at a result and trying to interpret it, (d) sure which dimension is broken and want to go deep, or (e) trying to choose what to improve first? Route accordingly — don't dump all five dimensions if they only need one.
+
+2. **Default opener for "what is the Design Assessment":** the five dimensions in one breath — Organizing Work (does learning compound or get lost), Managing Complexity (does growing work stay clear or get tangled), Building Proof (does design connect to results or stay trapped), Guiding Decisions (do signals create direction or get lost in debate), Scaling Influence (does proof travel or stay local). Then: each is scored separately on a 0–100 band; the pattern across all five is the real story.
+
+3. **Frame the assessment as system diagnosis, not performance review.** The score does not judge designers. It measures the system around the work. A low score means a part of the system needs more support, not that the team is failing.
+
+4. **When the user names a symptom**, map it to the dimension and hand off:
+   - "Findings keep getting lost" / "Every project starts from scratch" → Organizing Work
+   - "Big initiatives keep getting tangled" / "Dependencies surprise us" → Managing Complexity
+   - "Leaders don't see our value" / "We can't show what changed" → Building Proof
+   - "We keep relitigating the same decisions" / "Reviews end without commitment" → Guiding Decisions
+   - "Our proof stays local" / "Strategy forms without our evidence" → Scaling Influence
+
+5. **Push toward the smallest-leverage next move.** Never recommend chasing a perfect score or fixing all five at once. Ask: which dimension, if it improved, would unlock movement across the others? That is where to start. One visible improvement in 30 days beats a transformation plan.
+
+6. **Resist over-explaining the framework.** The assessment is meant to change what the team does next. If the user has results in front of them, route them into Reading Patterns and Using Results — not into more theory.
+
+## Handoffs
+
+- The five dimensions in detail → `glare-assessment-organizing-work`, `glare-assessment-managing-complexity`, `glare-assessment-building-proof`, `glare-assessment-guiding-decisions`, `glare-assessment-scaling-influence`
+- How the score is built and what each band (Reactive / Developing / Functional / Strong / Leading) means → `glare-assessment-scoring`
+- Interpreting the shape of results across dimensions (balanced, uneven, strong-start-weak-finish, etc.) → `glare-assessment-reading`
+- Turning results into one focused 30-day improvement → `glare-assessment-using-results`
+- Where Design Assessment fits in the broader Glare framework → `glare-get-started`
+- Strengthening the underlying decision system that the assessment measures → `glare-decision-map`, `glare-design-signals`, `glare-design-review`

@@ -1,6 +1,11 @@
 # Lead — Results (verbatim extract)
 
-## Glare | Show, Results v1.0
+## v1.3 vocabulary
+
+- **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. Findings in the Project Work loop should themselves carry all six pieces; an Outcome that can't be traced back to those pieces is the gap.
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. These are the v1.3 categories Outcomes roll up into (distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure).
+
+## Glare | Lead, Results v1.0 (source title still: "Glare | Show, Results v1.0")
 
 Results are where signals prove value. Without structure, metrics stay stuck in reports.
 
@@ -23,7 +28,7 @@ Results are where signals prove value. Without structure, metrics stay stuck in 
 
 ## Glare | Lead, Results v1.1
 
-A reframed Results doc explicitly under the **Lead** banner. Adds a maturity model and a diagnostic.
+A reframed Results doc explicitly under the **Lead** banner (the upward-facing area of the Decision Map). Adds a maturity model and a diagnostic.
 
 **Core thesis**: results = proof that design bridges user needs and business goals; that bridge depends on five dimensions of design maturity.
 

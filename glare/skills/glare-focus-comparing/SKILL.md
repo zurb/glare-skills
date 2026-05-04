@@ -1,41 +1,55 @@
 ---
 name: glare-focus-comparing
-description: Use this skill when the user is doing the Comparing step of Glare's Focus facet — analyzing patterns and performance over time to validate whether design changes actually improve outcomes. Triggers include benchmarking design versions ("v1 vs v2"), competitor reviews, segment or cohort comparison, journey-stage drop-off analysis, platform/device performance comparison, building a baseline, normalizing UX metrics onto the 100-point scale, identifying deltas, or interpreting whether a change improved the experience or merely changed it. Also triggers on the 10 comparison lenses (Iteration, Competitors, Timeline, Segments, Journeys, Platforms/Devices, User Goals/Tasks, Feature Usage, Behavioral Triggers, Season), the 5-step Comparing process (Establish Baseline → Define Benchmark → Normalize → Identify Deltas → Interpret), or the 7 habits to make benchmarking stick. Do NOT use this when the user is still defining goals (use `glare-focus-initiatives`), planning how to collect signals (use `glare-focus-methods`), or acting on benchmarked proof to prioritize/refine/scale (use `glare-focus-decisions`).
+description: Use this skill when the user is **Comparing** in the Glare Focus facet — placing signals side by side to see what performs better. (Note: the v1.3 source doc is titled "Compare" but the skill folder keeps "comparing" to preserve install paths.) Triggers include "compare versions," "v1 vs v2," "we have results but no context," "is this score good or bad," "compare against a benchmark," "compare audiences/segments/cohorts," "competitor comparison," "side by side," "which option is stronger," "what's the tradeoff," "did this actually improve or just change," "compare across platforms/devices," "compare across regions," "before and after," "compare across the journey," "compare across seasons or cycles." Also use when the user mentions any of the 12 comparison points — Iteration, User Goals/Tasks, Competitors, Feature Usage, Timeline, Geographies, Segments, User Lifecycle, Journeys, Behavioral Triggers, Platforms/Devices, Season — or the 5-step comparing process (name the decision → choose the comparison point → use the same metric → look for the strongest signal and the tradeoff → turn the comparison into a finding). Do NOT use when the initiative isn't framed (use `glare-focus-initiatives`), the right frame for the data hasn't been chosen (use `glare-focus-methods`), or the team is ready to commit (use `glare-focus-decisions`).
 ---
 
-You are helping the user work through **Comparing** — the midpoint of Glare's Focus facet. Comparing turns isolated signals into proof by tracking improvements/regressions across releases, audiences, and competitors using a consistent UX metric stack.
+You are helping the user **Compare** signals — the third move in the Glare Focus facet.
 
 ## Core idea
 
-Without comparison, data stays isolated; with it, data becomes proof. Good comparing tracks improvements/regressions across releases, shows shifts in user behavior or satisfaction, validates that design changes deliver measurable outcomes, and gives context for interpreting earlier signals. The four outcomes Comparing creates: **Accountability** (progress visible over time), **Context** (anchored to baselines/competitors), **Confidence** (evidence to prioritize what works and stop what doesn't), and **Continuity** (consistent UX metrics that build a pattern of improvement).
+Once an initiative has a clear frame, the team needs to place signals side by side. A single score (usability, satisfaction, preference, task success) only becomes meaningful when the team understands what it is being compared against. Comparing helps teams see what changed, what improved, what fell behind, and which direction creates the strongest signal. It gives context to the data so teams can explain why one option deserves more energy than another. Without comparison, results stay isolated; with it, signals become easier to trust.
 
 ## Read the reference first
 
-Before answering substantive questions, read:
-
-- `reference.md` — full content from "Glare | Focus, Comparing v1.1": the 10 Comparison Approaches, the 5-step process, the normalization rules (100-point scale: Comprehension, Satisfaction, Desirability, Completion, etc.), the delta-table format, the repeatable worksheet, the Klean Kanteen / Hydro Flask competitive review example, and the 7 habits to make benchmarking stick.
+Before answering substantive questions, read `reference.md` — full compressed content of Compare v1.3: why comparing matters, what goes into a comparison, the 12 comparison points (Iteration, User Goals/Tasks, Competitors, Feature Usage, Timeline, Geographies, Segments, User Lifecycle, Journeys, Behavioral Triggers, Platforms/Devices, Season), the 5-step comparing process, what comes out of comparing, and where comparing works best.
 
 ## How to apply
 
-1. **Anchor on the three benchmarking questions:** *Are we improving the experience or just changing it? Where does friction persist? Which design decisions move the right metrics?* Every comparison the user runs should answer one of these — not produce numbers for their own sake.
+1. **Insist on a shared metric first.** Before placing results side by side, the team needs to know what is being measured and why. The comparison only works if signals are clear enough to line up. Same metric formulas, equivalent context, named exceptions.
 
-2. **Pick 4–5 of the 10 comparison lenses, not all 10.** Most common picks: **Iteration** (v1 → v2), **Competitor** (positioning/differentiation), **Segment** (cohort friction or bias), **Journey** (drop-offs and weak funnel transitions), **Platform** (device-driven usability/speed gaps). Force the user to name *why* each chosen comparison matters before running it.
+2. **Confirm the inputs.** A strong comparison includes a clear initiative, a method frame, two or more things to compare, a UX metric that applies across them, an audience/segment, a signal from users, and a decision the comparison should support.
 
-3. **Walk the 5-step process in order:**
-   - **STEP 1 — Establish Baseline.** Capture the "before" state (typically pulled from Measure → Concepts) with a stacked attitudinal + behavioral + performance metric set. Record version, date, and audience so the baseline is repeatable.
-   - **STEP 2 — Define What You'll Benchmark.** Name the 4–5 chosen comparison types and the rationale for each.
-   - **STEP 3 — Normalize Data.** Force everything onto the **100-point scale** (Comprehension, Satisfaction, Desirability, Completion, etc.). Match metric formulas, equivalent sample sizes/conditions, and adjust for outliers, seasonal cycles, and campaign timing.
-   - **STEP 4 — Identify the Deltas.** Use the table: **Metric | Baseline | Current | Δ Change | Signal Interpretation**. Large deltas (positive *or* negative) point to the design decisions that matter most.
-   - **STEP 5 — Interpret the Signal.** Numbers only matter when they tell a story. Tie each meaningful delta to a specific design decision; reframe the design problem if the data demands it.
+3. **Pick from the 12 comparison points** based on what the decision needs:
+   - **Iteration** — Did the new version improve? Which change created the most lift?
+   - **User Goals/Tasks** — Which task is easiest/hardest? Where does effort increase?
+   - **Competitors** — Where do competitors create more clarity? What expectations are users bringing?
+   - **Feature Usage** — Which features create most value? What should be built/improved/reduced/removed?
+   - **Timeline** — What needs attention first? Are signals improving over time?
+   - **Geographies** — Where does the experience perform better/worse by region?
+   - **Segments** — Which segment sees most value? Which group struggles more?
+   - **User Lifecycle** — What does a new user need vs. existing? Where does momentum break?
+   - **Journeys** — Which journey moment creates most friction? Where does confidence drop?
+   - **Behavioral Triggers** — What makes users start? What causes hesitation?
+   - **Platforms/Devices** — Does the experience work across mobile/desktop/tablet? Where does usability drop?
+   - **Season** — Does behavior change by season/cycle? Is the signal durable?
 
-4. **Reframe the design problem when the data warrants it.** The Klean Kanteen example is the model: a sentiment delta vs Hydro Flask reframed "we need a new homepage" into "we need stronger emotional clarity and originality." Don't let the user stop at "v2 is better" — push them to name the next concrete design move.
+4. **Run the 5-step process:**
+   - **Name the decision.** What does the comparison need to support? If unclear, the comparison feels like a report instead of a guide.
+   - **Choose the comparison point.** What gets placed side by side? Should connect directly to the decision.
+   - **Use the same metric.** Shared UX metric so the comparison is fair. If using different metrics, name that explicitly.
+   - **Look for the strongest signal AND the tradeoff.** Don't only ask which option wins — ask what each option strengthens and what it weakens. The strongest direction is not always the highest score; it's the best signal for the decision.
+   - **Turn the comparison into a finding.** End with: what was compared, which signal was stronger, what tradeoff showed up, what the team should do next. Not a data display — direction.
 
-5. **Reinforce the 7 habits so benchmarking sticks:** connect every benchmark to a user need or business goal, share results in dashboards/reviews, drive sprint and roadmap decisions with comparison data, refresh baselines on a release/quarter cadence, expand scope only when the team is ready, link UX metric lifts to business outcomes (adoption/retention/conversion), and standardize/automate storage of metrics and deltas.
+5. **Don't force a comparison without a metric.** If the team doesn't know what matters, everything looks comparable. Route back to `glare-focus-initiatives` or `glare-focus-methods` to clarify the metric or decision first.
+
+6. **Hand off to `glare-focus-decisions`** once the comparison has produced a finding with a tradeoff — the next move is committing to a decision type.
 
 ## Handoffs
 
-- When the user shifts back to *tightening the initiative's goal, outcome, or kill criterion*, suggest `glare-focus-initiatives`.
-- When they need to *rework how signals are collected* (instrument, cadence, sample size, audience recipe, conditions), suggest `glare-focus-methods`.
-- When a benchmarked delta turns into an action (advance / refine / scale / kill / pivot / reprioritize), suggest `glare-focus-decisions`.
-- When the conversation turns to *executive reporting, ROI, or business KPIs*, hand off to `glare-lead`.
-- For multi-block Focus questions, hand back to `glare-focus`.
+- Reframing the initiative if the metric is unclear → `glare-focus-initiatives`
+- Choosing a different frame if the comparison won't lift → `glare-focus-methods`
+- Turning the finding into a clear next move → `glare-focus-decisions`
+- Upstream: turning hunches into testable signals → `glare-measure`
+- Connecting the chosen direction to business outcomes → `glare-lead`
+- The whole Focus flow → `glare-focus`
+- The Define → Measure → Focus → Lead chain → `glare-decision-map`

@@ -1,45 +1,49 @@
 ---
 name: glare-focus-decisions
-description: Use this skill when the user is at the downstream end of Glare's Focus facet — turning benchmarked, validated signals into action. Triggers include picking one of the 5 decision moves (Advance, Refine, Kill, Scope-differently / Pivot, Reprioritize), writing a Decision record (initiative ref, method version, signal ref, move, rationale, tradeoff, hand-off, owner+date), reading a Comparing delta against an Initiative's outcome target and kill window, articulating the tradeoff (what is given up, what is locked vs flexible), tripping a kill criterion, spawning the next Initiative from a Pivot, parking an Initiative via Reprioritize, or routing a decision into backlog grooming / roadmap review / release-readiness / Lead reporting rituals. Do NOT use when the user is still defining initiative goals (use `glare-focus-initiatives`), planning collection (use `glare-focus-methods`), or running the benchmark itself (use `glare-focus-comparing`). For escalating to executive ROI / business KPI conversations, hand off to `glare-lead`.
+description: Use this skill when the user is making a **Decision** in the Glare Focus facet — turning signals into action. Triggers include "make the call," "we need to decide," "should we ship this," "should we test another iteration," "should we kill this," "should we revisit later," "we keep circling the same debate," "findings sit in decks," "we don't know when to commit," "explain the tradeoff," "lock the next move," writing a decision record, naming what was chosen and why, distinguishing strategic decisions (investment / roadmap / product direction) from tactical decisions (the meeting next-move). Also use when the user picks any of the 5 tactical decision types — **Implement, Refine Design, Test Iteration, Revisit Later, Do Not Pursue** — or asks about the decision triangle (broad strategic at top, tactical at bottom). Do NOT use when the initiative isn't framed (use `glare-focus-initiatives`), the right frame for the data isn't chosen (use `glare-focus-methods`), or signals haven't been placed side by side yet (use `glare-focus-comparing`). For escalating to executive ROI / business KPI conversations, hand off to `glare-lead`.
 ---
 
-> *Note: This skill is drafted scaffolding for the Focus / Decisions bucket. The dedicated source doc is still pending in Drive — the move taxonomy comes from Big Idea #12 and the signal-ref + tradeoff guardrails come from the Ray spec. Treat the framework anchors here as best-effort, not canonical. If asked, surface this caveat once and move on; don't re-caveat every step.*
-
-You are helping the user work through **Decisions** — the downstream step of Glare's Focus facet. Decisions is where benchmarked data becomes proof teams act on, and where Focus closes the loop (often spawning the next Initiative). The Focus sequence is: **Initiatives → Methods → Comparing → Decisions.**
+You are helping the user make a **Decision** — the fourth and final move in the Glare Focus facet.
 
 ## Core idea
 
-Decisions converts a benchmarked delta into one of a small set of explicit moves, recorded so downstream rituals (backlog, roadmap, release-readiness, Lead reporting) can consume the result without re-litigating the evidence. Per Big Idea #12 the moves are **Advance, Refine, Kill, Scope-differently / Pivot, Reprioritize.** Per the Ray spec there are two non-negotiables: **no decision without a signal reference**, and **the tradeoff must be explicit.** The three outcomes Decisions creates: **Closure** (the Initiative is resolved, not drifting), **Direction** (the next concrete move is named with the tradeoff stated), and **Continuity** (the Decision record travels and seeds — or kills — the next Initiative).
+Decisions turn signals into action. By the time a team reaches Decisions, the work should no longer be floating in opinion: the initiative is clear, the method has framed the data, and Comparing has shown what is stronger. Now the team needs to choose. A decision is where Focus becomes movement — it takes the signal, names the tradeoff, and gives the business a clear next step. Without a decision, findings stay in decks, concepts stay open, meetings keep circling the same questions.
 
 ## Read the reference first
 
-Before answering substantive questions, read:
-
-- `reference.md` — the drafted "Glare | Focus, Decisions v0.1" block: the 5 decision-move taxonomy, the criteria-by-delta table, the Decision Record template (initiative / method / signal ref / move / rationale / tradeoff / next initiative / hand-off / owner+date), the hand-off rituals per move, and the worked Mobile Checkout v2 Refine example. Note: this is drafted from framework knowledge, not from an authoritative Drive source — flag that to the user when they ask where the rules come from.
+Before answering substantive questions, read `reference.md` — full compressed content of Decisions v1.3: why decisions matter, the two levels (strategic vs. tactical), the 5 tactical decision types (Implement / Refine Design / Test Iteration / Revisit Later / Do Not Pursue), what goes into a decision, the 5-step process for making one, what comes out of a decision, and where decisions work best.
 
 ## How to apply
 
-1. **Require a signal reference as the entry condition.** No decision without a benchmarked Comparing delta on the table. If the user is making a call from opinion or unbenchmarked data, route them back to `glare-focus-comparing` first. (This is the Ray spec guardrail.)
+1. **Diagnose strategic vs tactical.** Strategic decisions are about direction, investment, roadmap (Should we invest? Should this become a priority? Should this shift resources?). Tactical decisions are about the next move on a specific concept (Should we implement? Refine? Test another iteration? Revisit later? Stop?). Both matter, and both can use the same 5-step process.
 
-2. **Pick exactly one of the 5 moves and name it out loud.** **Advance / Refine / Kill / Scope-differently (Pivot) / Reprioritize.** "Let's keep going" is not a move. Use the criteria-by-delta table:
-   - **Advance** — Δ ≥ target on primary metric; secondary metric not regressed past kill threshold.
-   - **Refine** — 0 < Δ < target; trend in right direction; one more cycle is affordable.
-   - **Kill** — Δ inside the kill window after ≥2 cycles, OR a secondary regressed past kill threshold.
-   - **Scope-differently / Pivot** — Δ flat or wrong-direction AND framing was wrong; reframed Initiative drafted before the Pivot is final.
-   - **Reprioritize** — capacity constraint dominates; park, don't kill.
+2. **Insist on grounding the decision in a signal.** A decision should not come from a feeling alone. It should come from a signal that has been framed and compared clearly enough to support action. If the signal isn't there, route back to `glare-focus-comparing` or `glare-focus-methods`.
 
-3. **Articulate the tradeoff explicitly.** State what is being given up by choosing this move; name what is now locked vs flexible. (Ray spec guardrail #2.) Vague rationale equals stalled decisions.
+3. **Run the 5-step process:**
+   - **Name what is being decided.** What are we deciding? Strategic or tactical? Which initiative does this support? What happens if we do not decide?
+   - **Ground the decision in the signal.** What signal matters most? What metric supports it? What user feedback explains it? What comparison gives it context?
+   - **Explain the tradeoff.** What gets stronger if we choose this? What might get weaker? What risk are we accepting? What are we choosing not to do?
+   - **Choose the decision type.** Pick exactly one of the 5: Implement, Refine Design, Test Iteration, Revisit Later, Do Not Pursue.
+   - **Lock the next move.** Who owns the next step? What needs to happen? What evidence carries forward? When should the decision be reviewed again, if needed?
 
-4. **Tie the Decision back to the originating Initiative.** Report whether the Initiative's outcome was achieved, partially achieved, or missed. If Pivot/Kill, draft the next Initiative record (loop back to `glare-focus-initiatives`) and close the original with a pointer.
+4. **Use the 5 tactical decision types precisely:**
+   - **Implement** — signal is strong, tradeoff acceptable, next step clear; move into production/planning/rollout.
+   - **Refine Design** — direction is right but design needs improvement; the team knows what to change.
+   - **Test Iteration** — direction still open, current signal incomplete; need a sharper comparison or another round.
+   - **Revisit Later** — idea has potential but timing or context is wrong; capture the rationale, keep alive.
+   - **Do Not Pursue** — signal is weak or tradeoff is not worth it; stop or remove from consideration. Not failure — a useful protective decision.
 
-5. **Write the Decision record.** Tight: initiative ref, method version, signal ref (metric | baseline | current | Δ), move, 1–3 sentence rationale, tradeoff, next initiative (or "none"), hand-off route, owner + date. The record is the artifact; meetings without one stall.
+5. **A "Test Iteration" decision is still a decision.** Don't let the team leave the meeting with vague "let's keep exploring" unless the actual decision is to run another iteration with a defined comparison.
 
-6. **Route to the right hand-off ritual:** Advance → release-readiness review (+ Lead reporting); Refine → backlog grooming; Kill → roadmap review (the receipt that prevents zombie return); Pivot → Initiatives intake (new record spawned); Reprioritize → roadmap review (parked with state preserved).
+6. **The decision record should travel.** Capture: the initiative, the concept/flow/feature/message considered, the UX metric, the signal, the comparison, the tradeoff accepted, and the next step. This is what lets product prioritize, design refine, research target, marketing sharpen, and leadership back the direction.
+
+7. **Hand off to `glare-lead`** when the decision is made and the conversation turns to business goals, workflows, KPI relationships, or proving impact at the org level.
 
 ## Handoffs
 
-- When a Decision opens a new initiative (Pivot, Kill-and-reframe, next-round Advance), loop back to `glare-focus-initiatives`.
-- When the next initiative needs a revised collection plan (new instruments, cadence, audience recipe, or a bridge round), suggest `glare-focus-methods`.
-- When the team wants to re-run the benchmark delta against a new baseline, suggest `glare-focus-comparing`.
-- When an Advance or major Refine needs to be reported up in business-KPI / ROI terms, hand off to `glare-lead`.
-- For multi-block Focus questions, hand back to `glare-focus`.
+- Reframing the initiative if the decision feels premature → `glare-focus-initiatives`
+- Choosing a different frame if the data isn't decision-ready → `glare-focus-methods`
+- Sharpening the comparison if the signal isn't strong enough → `glare-focus-comparing`
+- Connecting the chosen direction to business outcomes → `glare-lead`
+- The whole Focus flow → `glare-focus`
+- The Define → Measure → Focus → Lead chain → `glare-decision-map`

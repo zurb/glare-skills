@@ -1,43 +1,55 @@
 ---
 name: glare-focus-methods
-description: Use this skill when the user is planning HOW signals will be collected for a Focus-facet initiative — the upstream step that makes Comparing repeatable. Triggers include choosing collection cadence (per release / quarterly / per major iteration / per campaign), picking instruments per metric (task-success test, first-click, post-task Likert, surveys, heatmaps, clickstream, NPS), sizing samples to detect a kill-threshold delta, writing an audience recipe (cohort + device + region + recency + filter) that future rounds reuse, freezing conditions (device mix, time window, seasonality flags) at v1, planning normalization onto the 100-point UX metric stack at capture time, versioning a Method (M1 → M2) when any lever changes, designing a bridge round to quantify a Method-version change, or any conversation about getting collection ready *before* there is data to compare. Do NOT use when the user is defining the initiative's goals/outcomes (use `glare-focus-initiatives`), already analyzing collected data (use `glare-focus-comparing`), or acting on validated benchmarks (use `glare-focus-decisions`).
+description: Use this skill when the user is choosing a **Method** in the Glare Focus facet — picking the frame to bring data into an initiative. Triggers include "what method should we use," "how should we test this," "how do we frame the data," "we have data but don't know what it means," "what frame fits this decision," "we have lots of feedback but no clarity," choosing between competitor analysis vs journey mapping vs segment comparison vs A/B testing vs benchmarking, picking a frame for an initiative, or asking about any of the 13 method frames — Competitors, Iterations, Timeline, Journeys, Platforms/Devices, User Goals/Tasks, Geographies/Regions, User Lifecycle, Behavioral Triggers, Segments, Feature Usage, Risk and Proof, Frameworks. Also use when the user lists specific named methods (Journey mapping, JTBD, A/B testing, Kano Model, RICE, ICE Scoring, HEART Framework, MoSCoW, Eisenhower Matrix, Service blueprint, Competitive analysis, Empathy mapping, etc.) and needs to know which initiative-frame they belong to. Do NOT use when the initiative isn't framed yet (use `glare-focus-initiatives`), the data is already collected and ready to compare (use `glare-focus-comparing`), or the team is ready to commit to a direction (use `glare-focus-decisions`).
 ---
 
-> *Note: This skill is drafted scaffolding for the Focus / Methods bucket. The dedicated source doc is still pending in Drive — the templates and rules here are extrapolated from the Glare Focus Comparing source doc plus framework cross-references. Treat the framework anchors here as best-effort, not canonical. If asked, surface this caveat once and move on; don't re-caveat every step.*
-
-You are helping the user work through **Methods** — the second step of Glare's Focus facet, between Initiatives and Comparing. Methods is where teams design *how* signals get collected so future iterations can be compared honestly. The Focus sequence is: **Initiatives → Methods → Comparing → Decisions.**
+You are helping the user choose a **Method** — the second move in the Glare Focus facet.
 
 ## Core idea
 
-Methods turns an Initiative's named outcome and metric(s) into a *collection plan* — cadence, instruments, sample size, audience recipe, conditions, normalization rule — so every future round produces data Comparing can normalize and trend without rebuilding the test. The four outcomes Methods creates: **Repeatability** (round N+1 collects the same way as round N), **Stackability** (attitudinal + behavioral + performance metrics together, not in separate one-off tests), **Normalizability** (data lands on the 100-point scale by design), and **Auditability** (every collection records version / date / audience / instrument so a baseline can be re-traced).
+A method gives the team a **frame** for looking at the work. It is broader than "what test to run." Designers often reach for iterative testing and prototyping because those are close to the craft, but Focus methods also include comparing competitors, benchmarking progress, mapping journeys, segmenting audiences, reviewing workflows, evaluating tradeoffs, and connecting findings back to business decisions. The method should match the initiative — choose the frame that helps the team understand the data, compare the right options, and decide what should move forward.
 
 ## Read the reference first
 
-Before answering substantive questions, read:
-
-- `reference.md` — the drafted "Glare | Focus, Methods v0.1" block: the 5 Levers (Cadence, Instruments, Sample Size, Audience, Conditions), the Method Catalog mapped to the 100-point UX metric stack, the Repeatability Rules (version the Method, freeze conditions, normalize at capture, bridge rounds), the Method Record worksheet, and the worked Mobile Checkout M1 example. Note: this is drafted from framework knowledge, not from an authoritative Drive source — flag that to the user when they ask where the rules come from.
+Before answering substantive questions, read `reference.md` — full compressed content of Methods v1.3: why methods matter, what goes into a method, the 13 method frames (Competitors, Iterations, Timeline, Journeys, Platforms/Devices, User Goals/Tasks, Geographies/Regions, User Lifecycle, Behavioral Triggers, Segments, Feature Usage, Risk and Proof, Frameworks) with their named methods, the 5-step method-selection process, what comes out of a method, and where methods work best.
 
 ## How to apply
 
-1. **Pull the metric, audience, outcome target, and kill criterion from the upstream Initiative.** Methods doesn't pick goals; it operationalizes the ones Initiatives named. If the user can't point at an Initiative record, route them back to `glare-focus-initiatives` first.
+1. **Start with the decision, not the test.** Don't ask "what test should we run?" — ask "what frame would help us understand this work clearly?" The method is a way to organize evidence around a decision.
 
-2. **Lock all 5 Levers explicitly:**
-   - **Cadence** — slowest cadence that still meets the decision tempo (per release / quarterly / per campaign).
-   - **Instruments** — one default per metric, drawn from the Method Catalog.
-   - **Sample size** — sized to detect the smallest delta the kill criterion needs to resolve (floor n=30 attitudinal, n=80–120 behavioral; document the rule).
-   - **Audience recipe** — cohort + device + region + recency + recruitment filter, written so future rounds re-apply it verbatim.
-   - **Conditions** — device mix, time window, campaign overlap, seasonality flags. Frozen at v1.
+2. **Confirm the initiative is framed.** Methods can organize evidence but cannot fix a poorly framed problem. If the user need, business goal, audience, or objective is unclear, route back to `glare-focus-initiatives`.
 
-3. **Stack metrics across layers.** Per the Comparing doc's Step 1, stronger baselines combine attitudinal + behavioral + performance. Default: pick one from each layer for every Initiative. Never collect a single-layer benchmark if a stacked one is affordable.
+3. **Run the 5-step selection process:**
+   - **Name the initiative objective** (increase adoption, reduce friction, improve trust, sharpen positioning, simplify a journey, decide which concept deserves more investment).
+   - **Identify the decision** the team needs to make next (which concept, which journey moment, which version, which audience, which competitor gap, which direction).
+   - **Look at the data you already have.** Review existing signals, findings, UX metrics, comments, analytics, stakeholder input. The team may already have enough to frame the decision.
+   - **Choose the frame that fits the decision.** Issue spans steps → journey frame. Market context matters → competitor frame. Timing matters → timeline frame. Different users respond differently → segment frame. Choosing between ideas → iteration/comparison frame.
+   - **Define what gets compared.** Make the comparison explicit — concepts, versions, audiences, journey moments, competitors, lifecycle stages, platforms/devices, features, risks, time periods.
 
-4. **Normalize at capture time, not later.** Plan the 100-point transformation up front (Comprehension, Satisfaction, Desirability, Completion, Error Rate, etc.). For external/third-party data, write the scale-matching rule into the Method record now so Comparing's Step 3 is a check, not a rebuild.
+4. **Pick from the 13 frames** and route the user to named methods inside each:
+   - **Competitors** — Competitive analysis, Competitor UX benchmark, Reverse impact mapping, Feature comparison matrix, Positioning comparison.
+   - **Iterations** — A/B testing, Design test loop, Rapid concept testing, MVP prototype, Variant comparison, Before-and-after testing.
+   - **Timeline** — Eisenhower Matrix, MoSCoW, Opportunity Solution Tree, Now/Next/Later, Roadmap sequencing, Impact vs. effort.
+   - **Journeys** — Journey mapping, Service blueprint, Funnel review, Drop-off mapping, Touchpoint analysis.
+   - **Platforms/Devices** — Device comparison, Cross-platform mapping, Responsive review, Channel comparison, Accessibility device review.
+   - **User Goals/Tasks** — Task analysis, Importance and satisfaction framework, JTBD mapping, Goal friction mapping.
+   - **Geographies/Regions** — Localization review, Market readiness review, Cultural context mapping, Regional benchmark.
+   - **User Lifecycle** — Simple/Lovable/Complete, MVO/MMP/MLP, Lifecycle stage mapping, Adoption path review, Retention moment analysis.
+   - **Behavioral Triggers** — EAST Framework, UX impact mapping, Trigger mapping, Habit loop mapping, Nudge analysis.
+   - **Segments** — Empathy mapping, JTBD, Segment comparison, Role-based journey review, Cohort signal review.
+   - **Feature Usage** — Opportunity scoring, Kano Model, Weighted scoring, Frequency vs. importance matrix.
+   - **Risk and Proof** — Four Big Risks, HATS survey, Proof of Concept, Smoke test, Pilot review, Expert review.
+   - **Frameworks** — 5Ds, 5W1H, HEART Framework, ICE Scoring, KPI Trees, RICE, SUS Testing, Spotlight Framework, Value vs. Complexity Quadrant, XYZ Hypothesis.
 
-5. **Version the Method when any lever changes.** M1 → M2 if cadence, instrument, sample, audience, or conditions shift. Run a **bridge round** (parallel collection under both old and new conditions) so Comparing can quantify the Method-version impact and keep deltas honest.
+5. **Hand off to `glare-focus-comparing`** once the method has produced data — the next move is placing signals side by side using a shared metric.
 
 ## Handoffs
 
-- When the user needs to *tighten the initiative's goal, outcome, or kill criterion* (including when a kill criterion isn't detectable at the planned sample size), suggest `glare-focus-initiatives`.
-- When the first round of data lands and the conversation moves to *normalizing, trending, or interpreting deltas*, suggest `glare-focus-comparing`. Methods owns the plan and discipline; Comparing owns the analysis.
-- When benchmarks are already validated and the team is deciding what to do with them (advance / refine / kill / pivot / reprioritize), suggest `glare-focus-decisions`.
-- When the conversation moves to *executive ROI / business-KPI framing*, hand off to `glare-lead`.
-- For multi-block Focus questions, hand back to `glare-focus`.
+- Reframing the initiative if scope is unclear → `glare-focus-initiatives`
+- Placing signals side by side once data is collected → `glare-focus-comparing`
+- Turning evidence into a clear next move → `glare-focus-decisions`
+- Upstream: clarifying user need or audience → `glare-define`
+- Upstream: turning hunches into testable signals → `glare-measure`
+- Connecting decisions to business outcomes → `glare-lead`
+- The whole Focus flow → `glare-focus`
+- The Define → Measure → Focus → Lead chain → `glare-decision-map`

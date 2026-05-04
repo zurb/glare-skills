@@ -1,13 +1,13 @@
 ---
 name: glare-lead-workflows
-description: Use this skill when the user is translating design signals into the language of a specific business function — the Workflows bucket of the Glare Lead facet. The bucket ships eight named cross-functional templates (Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal), each with its own top metrics, questions to ask, measurement approach, jargon glossary, and "where design creates lift" angle. Triggers include preparing a readout for one of those eight functions; naming the lift design creates inside one of them; running the workflow Quick Test (friction-free success → adoption/retention move → metric the function already tracks); doing the 30-minute Quick Exercise of picking one function and mapping a single metric into it; or borrowing the function's vocabulary (pipeline, CAC, PMF, velocity, market share, handle time, LTV, compliance rate) instead of design jargon. Do NOT use for choosing the underlying business pressure or measurable goal — invoke `glare-lead-business-goals`. Do NOT use for the full User Need → Design KPI → Product KPI → Business KPI → Business Goal ladder — invoke `glare-lead-mapping`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop or maturity diagnostic — invoke `glare-lead-results`. For broader Lead facet framing, invoke parent `glare-lead`.
+description: Use this skill when the user is translating design signals into the language of a specific business function — the Workflows bucket of the Glare Lead facet, part of the Decision Map's Lead area. The bucket ships eight named cross-functional templates (Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal), each with its own top metrics, questions to ask, measurement approach, jargon glossary, and "where design creates lift" angle. Triggers include preparing a readout for one of those eight functions; naming the lift design creates inside one of them; running the workflow Quick Test (friction-free success → adoption/retention move → metric the function already tracks); doing the 30-minute Quick Exercise of picking one function and mapping a single metric into it; or borrowing the function's vocabulary (pipeline, CAC, PMF, velocity, market share, handle time, LTV, compliance rate) instead of design jargon. Do NOT use for choosing the underlying business pressure or measurable goal — invoke `glare-lead-business-goals`. Do NOT use for the full User Need → Design KPI → Product KPI → Business KPI → Business Goal ladder — invoke `glare-lead-mapping`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop or maturity diagnostic — invoke `glare-lead-results`. For broader Lead facet framing, invoke parent `glare-lead`.
 ---
 
-You are helping the user work through the **Workflows** bucket of the Glare Lead facet — the eight cross-functional rails design signals must travel to gain weight inside an org. Each function has its own per-function template (Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal) with metrics, questions, measurement approach, jargon, and a lift opportunity.
+You are helping the user work through the **Workflows** bucket of the Glare Lead facet — the upward-facing area of the **Decision Map** — covering the eight cross-functional rails design signals must travel to gain weight inside an org. Each function has its own per-function template (Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal) with metrics, questions, measurement approach, jargon, and a lift opportunity.
 
 ## Core idea
 
-Every company runs on workflows already in motion whether design is in the room or not. Design gets sidelined when it can't prove influence on those flows; signals only travel when they're translated into each function's existing metrics, questions, and lift opportunities.
+Workflows is part of the upward-facing area of the Decision Map (Lead). Every company runs on workflows already in motion whether design is in the room or not. Design gets sidelined when it can't prove influence on those flows; signals only travel when they're translated into each function's existing metrics, questions, and lift opportunities.
 
 ## Read the reference first
 
@@ -50,4 +50,8 @@ See `reference.md` for the per-function questions, measurement approach, signal 
 - Building the full Chain of Proof ladder → `glare-lead-mapping`.
 - Initiatives → Findings → Decisions → Outcomes loop, maturity diagnostic → `glare-lead-results`.
 - Broader Lead facet framing → parent `glare-lead`.
-- Upstream signal collection → `glare-define`, `glare-measure`, `glare-focus`.
+- Decision Map area above Lead → `glare-decision-map`.
+- Upstream signal collection (Decision Map siblings) → `glare-define`, `glare-measure`, `glare-focus`.
+- Signal anatomy and quality (the units handed off across functions) → `glare-design-signals`, `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`.
+- Preparing for or evaluating a leadership review using the SIGNAL framework (Surface / Identify / Ground / Navigate / Align / Lock) → `glare-design-review`.
+- Assessing team / org design maturity → `glare-design-assessment`.

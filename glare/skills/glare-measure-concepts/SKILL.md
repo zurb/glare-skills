@@ -1,13 +1,13 @@
 ---
 name: glare-measure-concepts
-description: Use this skill when the user is working on the Concepts move of Glare Measure — defining a focused, testable design effort before any solutioning. Triggers include framing intent for a redesign, narrowing a big initiative to one actionable bet, mapping a user need from Define against a business goal from Lead, applying the 5-minute test ("if you can't write user need + business goal + signal in under 5 min, the concept isn't clear"), or browsing the 200+ Concept catalog (Products, Websites, Mobile Apps, E-commerce, Marketing categories like Dashboard Engagement, Checkout Flows, Push Notifications, Shopping Cart, Campaign Microsites). Also use when the user is jumping to solutions without anchoring intent, defining what "winning" looks like before testing, or trying to avoid vanity metrics. Do NOT use when the user is forming a falsifiable hypothesis from a defined concept (use `glare-measure-hunches`), drafting research questions (use `glare-measure-questioning`), translating data into signals (use `glare-measure-findings`), or asking about the four-move loop as a whole (use `glare-measure`).
+description: Use this skill when the user is working on the Concepts move of the Decision Map's Measure area — defining a focused, testable design effort before any solutioning. Triggers include framing intent for a redesign, narrowing a big initiative to one actionable bet, mapping a user need from Define against a business goal from Lead, applying the 5-minute test ("if you can't write user need + business goal + signal in under 5 min, the concept isn't clear"), or browsing the 200+ Concept catalog (Products, Websites, Mobile Apps, E-commerce, Marketing categories like Dashboard Engagement, Checkout Flows, Push Notifications, Shopping Cart, Campaign Microsites). Also use when the user is jumping to solutions without anchoring intent, defining what "winning" looks like before testing, or trying to avoid vanity metrics. Do NOT use when the user is forming a falsifiable hypothesis from a defined concept (use `glare-measure-hunches`), drafting research questions (use `glare-measure-questioning`), translating data into signals (use `glare-measure-findings`), or asking about the four-move loop as a whole (use `glare-measure`). For the full Decision Map, use `glare-decision-map`.
 ---
 
-You are helping the user work through the **Concepts** move of Glare Measure — anchoring intent before any solution exists.
+You are helping the user work through the **Concepts** move of the Decision Map's **Measure** area — anchoring intent before any solution exists.
 
 ## Core idea
 
-A Concept is a focused design effort framed by a user need + a business goal + the signals that will prove it worked. Without a clear concept, effort scatters and metrics become vanity; with one, every downstream hunch, question, and finding has a target to validate.
+Concepts is the first move inside the Measure area of the Decision Map. A Concept is a focused design effort framed by a user need + a business goal + the signals that will prove it worked. Without a clear concept, effort scatters and metrics become vanity; with one, every downstream hunch, question, and finding has a target to validate.
 
 ## Read the reference first
 
@@ -32,5 +32,8 @@ Before answering substantive questions, read `reference.md` — it contains the 
 - Once the concept passes the 5-minute test, hand off to `glare-measure-hunches` to form the first falsifiable bet.
 - If the user is already drafting research questions, route to `glare-measure-questioning`.
 - If they're sitting on raw data and need to extract a signal, route to `glare-measure-findings`.
-- For the four-move loop overview or cross-bucket orchestration, use `glare-measure`.
+- For the four-move loop overview or cross-bucket orchestration, use `glare-measure`. For the Decision Map as a whole, `glare-decision-map`.
 - If the user still doesn't know which users/needs to study, send them upstream to `glare-define`.
+- When the user is asking what *signals* to capture from this concept (six-part anatomy, outcome-keyed Need / Use / Prefer / Adopt coverage), route to `glare-design-signals` and the bucket skills `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`.
+- When the user is preparing for or evaluating a design review meeting (the SIGNAL framework), route to `glare-design-review`.
+- When the user wants to assess team maturity (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence), route to `glare-design-assessment`.

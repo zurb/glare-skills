@@ -1,13 +1,13 @@
 ---
 name: glare-measure-hunches
-description: Use this skill when the user is forming a Hunch in Glare Measure — turning instinct into a falsifiable, testable hypothesis. Triggers include writing or critiquing a "we believe..." statement, applying the verbatim hunch template *"We believe that [change] for [audience] will [impact] because [reason]"*, the belief-statement primer *"We believe users need ___ so they can ___"*, checking falsifiability ("could this be wrong, and is that the point?"), strengthening weak hunches (e.g., rewriting "users like shorter forms" into "removing two steps from the signup form for first-time users will increase completion rates because users drop off at step 3"), or running spark techniques like Empathy Mapping, Customer Journey Framework, Stakeholder Interviews, Competitive Analysis, or Expert Audit. Also use when the user wants to tie an instinct to a UX metric (completion rate, task time, drop-off) before drafting questions. Do NOT use when the user hasn't yet defined intent (use `glare-measure-concepts`), is moving from hunch into open-ended/testable research questions (use `glare-measure-questioning`), is interpreting data into signals (use `glare-measure-findings`), or wants the four-move overview (use `glare-measure`).
+description: Use this skill when the user is forming a Hunch in the Decision Map's Measure area — turning instinct into a falsifiable, testable hypothesis. Triggers include writing or critiquing a "we believe..." statement, applying the verbatim hunch template *"We believe that [change] for [audience] will [impact] because [reason]"*, the belief-statement primer *"We believe users need ___ so they can ___"*, checking falsifiability ("could this be wrong, and is that the point?"), strengthening weak hunches (e.g., rewriting "users like shorter forms" into "removing two steps from the signup form for first-time users will increase completion rates because users drop off at step 3"), or running spark techniques like Empathy Mapping, Customer Journey Framework, Stakeholder Interviews, Competitive Analysis, or Expert Audit. Also use when the user wants to tie an instinct to a UX metric (completion rate, task time, drop-off) before drafting questions. Do NOT use when the user hasn't yet defined intent (use `glare-measure-concepts`), is moving from hunch into open-ended/testable research questions (use `glare-measure-questioning`), is interpreting data into signals (use `glare-measure-findings`), or wants the four-move overview (use `glare-measure`). For the full Decision Map, use `glare-decision-map`.
 ---
 
-You are helping the user work through the **Hunches** move of Glare Measure — turning a shaped instinct into a falsifiable hypothesis that downstream questions and findings can confirm or kill.
+You are helping the user work through the **Hunches** move of the Decision Map's **Measure** area — turning a shaped instinct into a falsifiable hypothesis that downstream questions and findings can confirm or kill.
 
 ## Core idea
 
-A Hunch is an informed guess: *"We believe there is something important here, and we are ready to test it."* A strong hunch is tied to a user friction, expressed as a clear hypothesis, linked to a metric, and **falsifiable** — it could be wrong, and that's the point.
+Hunches sits inside the Measure area of the Decision Map. A Hunch is an informed guess: *"We believe there is something important here, and we are ready to test it."* A strong hunch is tied to a user friction, expressed as a clear hypothesis, linked to a metric, and **falsifiable** — it could be wrong, and that's the point.
 
 ## Read the reference first
 
@@ -34,4 +34,7 @@ Before answering substantive questions, read `reference.md` — it contains the 
 - Once the hunch is concretely worded, falsifiable, and metric-linked, hand off to `glare-measure-questioning` to draft the open-ended and testable research questions.
 - If the user has no clear concept underneath the hunch, send them back to `glare-measure-concepts` to pass the 5-minute test first.
 - If they already have data and want to interpret it, route to `glare-measure-findings`.
-- For the full four-move loop or orchestration across buckets, use `glare-measure`.
+- For the full four-move loop or orchestration across buckets, use `glare-measure`. For the Decision Map as a whole, `glare-decision-map`.
+- When the user is asking what *signals* would test or sharpen this hunch (six-part anatomy, outcome-keyed Need / Use / Prefer / Adopt coverage), route to `glare-design-signals` and the bucket skills `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`.
+- When the user is preparing for or evaluating a design review meeting (the SIGNAL framework), route to `glare-design-review`.
+- When the user wants to assess team maturity (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence), route to `glare-design-assessment`.

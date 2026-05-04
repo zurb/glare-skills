@@ -1,6 +1,11 @@
 # Lead — Business Goals (verbatim extract)
 
-## Glare | Show, Business Goals v1.0
+## v1.3 vocabulary
+
+- **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. The Business goal piece is what this bucket is responsible for naming.
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. Distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure.
+
+## Glare | Lead, Business Goals v1.0 (source title still: "Glare | Show, Business Goals v1.0")
 
 Why metrics die in dashboards: they don't connect to goals. A *signal* ties a metric to intent, creating a chain (task success → adoption → growth) that is proof, not just numbers.
 

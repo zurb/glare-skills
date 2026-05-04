@@ -1,6 +1,11 @@
 # Lead — Mapping (verbatim extract)
 
-## Glare | Show, Mapping v1.0
+## v1.3 vocabulary
+
+- **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. The Mapping ladder is the working space where the User need rung at the bottom and the Business goal + Direction rungs at the top come together; the UX metric is what the v1.0 doc calls the "connective tissue" between them.
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. Distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure.
+
+## Glare | Lead, Mapping v1.0 (source title still: "Glare | Show, Mapping v1.0")
 
 Mapping draws a line from user needs (bottom) to business goals (top), turning outputs into outcomes. Executives care about outcomes, not outputs.
 
@@ -27,9 +32,9 @@ UX metrics are the **connective tissue**: they make product metrics explainable 
 
 **Quick Exercise**: pick one feature this month and walk it up the ladder (need → design KPI → product KPI → business KPI → business goal).
 
-## Glare | Show, Mapping v1.1
+## Glare | Lead, Mapping v1.1 (source title still: "Glare | Show, Mapping v1.1")
 
-A more procedural, training-style rewrite of v1.0 with explicit steps and tables. Mapping is positioned within the **Lead facet** of Glare. It "closes the loop between what teams learn and what leadership values."
+A more procedural, training-style rewrite of v1.0 with explicit steps and tables. Mapping is positioned within the **Lead facet** of Glare (the upward-facing area of the Decision Map). It "closes the loop between what teams learn and what leadership values."
 
 **Section relationships** (Business Goals = north star; Workflows = data/ownership flow; Mapping = ladder of outcomes; Results = visualize and share progress in business language).
 

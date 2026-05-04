@@ -1,13 +1,13 @@
 ---
 name: glare-define
-description: Use this skill when the user is in the foundational / "Credibility" stage of the Glare framework — agreeing on what matters before building. Triggers include: defining user needs, picking the right audience, setting up data collection, or choosing UX metrics; questions like "who are we designing for," "what user need does this solve," "what should we measure," "how do I separate wants from needs," or "which audience signal weighs most." Also use when the user mentions the seven UX Honeycomb layers (Findable, Accessible, Usable, Credible, Reliable, Valuable, Desirable), the four audiences (Project Team, Stakeholders, Customers, Participants), or instruments like SUS, NPS, SEQ, CES, NASA-TLX, first-click, card sorting, A/B, heatmaps. Do NOT use when the user has already defined their needs/metrics and is now forming hypotheses or designing tests — invoke `glare-measure` instead.
+description: Use this skill when the user is in the Define area of Glare's Decision Map — the foundational "Credibility" stage where teams agree on what matters before building. Triggers include: defining user needs, picking the right audience, setting up data collection, or choosing UX metrics; questions like "who are we designing for," "what user need does this solve," "what should we measure," "how do I separate wants from needs," or "which audience signal weighs most." Also use when the user mentions the seven UX Honeycomb layers (Findable, Accessible, Usable, Credible, Reliable, Valuable, Desirable), the four audiences (Project Team, Stakeholders, Customers, Participants), or instruments like SUS, NPS, SEQ, CES, NASA-TLX, first-click, card sorting, A/B, heatmaps. Do NOT use when the user has already defined their needs/metrics and is now forming hypotheses or designing tests — invoke `glare-measure` instead. For the broader Decision Map (Define / Measure / Focus / Lead) use `glare-decision-map`.
 ---
 
-You are helping the user work through the **Define** facet of Glare — the "Credibility" stage that slows teams down just long enough to agree on what matters before building.
+You are helping the user work through the **Define** area of Glare's **Decision Map** — the "Credibility" stage that slows teams down just long enough to agree on what matters before building.
 
 ## Core idea
 
-Define answers four questions: **(1)** What do users actually need? **(2)** Who are we designing for? **(3)** Where will the evidence come from? **(4)** How will we know it worked? It does this through four building blocks — **User Needs, Audience, Collecting Data, UX Metrics** — that turn opinions, hunches, and vanity dashboards into testable signals.
+Define is the first area of the Decision Map (Define → Measure → Focus → Lead). It answers four questions: **(1)** What do users actually need? **(2)** Who are we designing for? **(3)** Where will the evidence come from? **(4)** How will we know it worked? It does this through four building blocks — **User Needs, Audience, Collecting Data, UX Metrics** — that turn opinions, hunches, and vanity dashboards into testable signals downstream areas can sharpen and act on.
 
 ## Read the reference first
 
@@ -38,3 +38,7 @@ Before answering substantive questions, read:
 - Once needs / audience / metrics are locked, moving into hypotheses and tests → `glare-measure`
 - Benchmarking and comparison after signals are collected → `glare-focus`
 - Connecting work to business KPIs and executive narratives → `glare-lead`
+- The full Decision Map (parent of Define / Measure / Focus / Lead) → `glare-decision-map`
+- What signals to capture, the six-part anatomy, and signal types beyond UX metrics → `glare-design-signals`, `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`
+- Preparing for or evaluating a design review meeting (the SIGNAL framework: Surface / Identify / Ground / Navigate / Align / Lock) → `glare-design-review`
+- Assessing team maturity across Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence → `glare-design-assessment`

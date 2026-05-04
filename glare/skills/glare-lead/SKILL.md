@@ -1,13 +1,13 @@
 ---
 name: glare-lead
-description: Use this skill when the user is connecting design work to business impact — the Lead facet of Glare (formerly labeled "Show" in v1.0 docs). Triggers include proving ROI on design, building executive narratives, mapping Design KPIs to Product KPIs to Business KPIs, anchoring work to business pressures (Growth, Retention, UX, Efficiency, Operations), translating signals into the language of Sales / Marketing / Product / Engineering / Strategy / Ops / Finance / Legal, or running an Initiatives → Findings → Decisions → Outcomes loop. Also use when the user mentions the Chain of Proof (User Need → Design KPI → Product KPI → Business KPI → Business Goal), the five Lead Dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence), the 9 business pressures + 20 measurable goals, or the 15-symptom diagnostic. Do NOT use for early signal collection — invoke `glare-define`, `glare-measure`, or `glare-focus` instead.
+description: Use this skill when the user is connecting design work to business impact — the Lead facet of Glare, the upward-facing area of the v1.3 Decision Map (Define / Measure / Focus / Lead all sit under Decision Map). Lead was formerly labeled "Show" in v1.0 docs. Triggers include proving ROI on design, building executive narratives, mapping Design KPIs to Product KPIs to Business KPIs, anchoring work to business pressures (Growth, Retention, UX, Efficiency, Operations), translating signals into the language of Sales / Marketing / Product / Engineering / Strategy / Ops / Finance / Legal, or running an Initiatives → Findings → Decisions → Outcomes loop. Also use when the user mentions the Chain of Proof (User Need → Design KPI → Product KPI → Business KPI → Business Goal), the five Lead Dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence), the 9 business pressures + 20 measurable goals, or the 15-symptom diagnostic. Do NOT use for early signal collection — invoke `glare-define`, `glare-measure`, or `glare-focus` instead.
 ---
 
-You are helping the user work through the **Lead** facet of Glare — the upward-facing layer that turns design work into evidence leadership trusts.
+You are helping the user work through the **Lead** facet of Glare — the upward-facing area of the **Decision Map** that turns design work into evidence leadership trusts. (Define, Measure, Focus, and Lead are the four facets of the Decision Map; Lead is the one that points upward toward the business.)
 
 ## Core idea
 
-Lead translates user signals into the language executives use: revenue, retention, churn, efficiency, market share. It does this through a five-rung **Chain of Proof** — *User Need → Design KPI → Product KPI → Business KPI → Business Goal* — organized around four pillars (**Business Goals, Workflows, Mapping, Results**) and reinforced by a maturity model with five **Dimensions** (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence).
+Lead is the upward-facing area of the Decision Map. It translates user signals into the language executives use: revenue, retention, churn, efficiency, market share. It does this through a five-rung **Chain of Proof** — *User Need → Design KPI → Product KPI → Business KPI → Business Goal* — organized around four pillars (**Business Goals, Workflows, Mapping, Results**) and reinforced by a maturity model with five **Dimensions** (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence).
 
 ## Read the reference first
 
@@ -50,4 +50,8 @@ When the conversation narrows to a receiving function, drop into `glare-lead-wor
 - Translating signals into a specific function's vocabulary (Sales, Marketing, Product, Engineering, Strategy, Ops, Finance, Legal) → `glare-lead-workflows`
 - Drawing the full User Need → Design KPI → Product KPI → Business KPI → Business Goal ladder → `glare-lead-mapping`
 - Initiatives → Findings → Decisions → Outcomes loop, maturity diagnostic, 15-symptom checks → `glare-lead-results`
-- Upstream signal collection → `glare-define`, `glare-measure`, `glare-focus`
+- Parent area above this facet (Define / Measure / Focus / Lead together) → `glare-decision-map`
+- Upstream signal collection (siblings under the Decision Map) → `glare-define`, `glare-measure`, `glare-focus`
+- Signal anatomy and quality (the building blocks Lead translates) → `glare-design-signals`, plus bucket-level: `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`
+- Preparing for or evaluating a leadership review using the SIGNAL framework (Surface / Identify / Ground / Navigate / Align / Lock) → `glare-design-review`
+- Assessing team / org design maturity → `glare-design-assessment`

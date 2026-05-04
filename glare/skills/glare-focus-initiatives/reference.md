@@ -1,105 +1,148 @@
-# Glare | Focus, Initiatives — Drafted (no source doc available)
+# Focus — Initiatives — Compressed (v1.3)
 
-> This block is **drafted from framework knowledge**, not from a dedicated Drive source doc. It extrapolates from `focus-compressed.md` (Comparing v1.1), the `glare-focus` parent skill, and vocabulary established in Measure (`measure-compressed.md`) and Lead (`lead-compressed.md`). Treat as best-effort scaffolding until an authoritative "Glare | Focus, Initiatives" source lands.
+## What an Initiative is
 
-## What this block is about
+Initiatives define the work that needs focus. Most teams have more ideas than capacity — pages to improve, flows to fix, features to rethink, campaigns to sharpen, journeys that need attention. Without a clear initiative, everything feels important at the same time. That is where design work starts to scatter.
 
-In Glare v1.0, **Initiatives** is the upstream step of the Focus facet (sequence: Initiatives → Methods → Comparing → Decisions). Initiatives is where teams make the "why this, why now?" of a design effort *explicit and measurable* before any signal is collected. Per the Comparing doc: "Initiatives — define goals/outcomes; benchmarking validates whether each one is achieved." Without a well-formed Initiative, Methods has nothing to instrument and Comparing has no anchor to validate against.
+An initiative gives the team a clear area of work to improve. It creates a container for signals, methods, comparisons, and decisions. Instead of testing random ideas, the team knows what problem they are trying to move and why it matters.
 
-## Glare | Focus, Initiatives v0.1 (drafted)
+A strong initiative connects three things:
+- a **user need**
+- a **business goal**
+- a **measurable part of the experience**
 
-**What an Initiative is.** A focused design effort framed by a user need, a business goal, and a target outcome that future benchmarking will validate. Initiatives sit between the broader Concept work in Measure (which produces hunches and questions) and the operational Methods step that follows. An Initiative is *not* a deliverable ("redesign checkout"); it is a *measurable shift* ("increase checkout completion on mobile from 62% to 75% by Q3").
+When those are clear, the team can focus its energy, choose the right method, and compare results in a way that supports better decisions.
 
-**Three outcomes Initiatives create:**
-- **Direction** — the team knows what "better" looks like before any test runs.
-- **Measurability** — every Initiative names the UX metric(s) Comparing will later move on a 100-point scale.
-- **Repeatability** — version, date, and audience are recorded at definition time, so the Initiative produces a baseline that holds up across releases.
+## Why initiatives matter
 
-### Anchors — User Need + Business Goal
+Most design work gets messy when the team does not agree on what is being improved. One person thinks the goal is conversion. Another thinks it is clarity. Someone else wants to reduce support tickets. Design may be focused on usability while leadership looks for growth. None of those goals are wrong — they are not yet framed as one clear initiative.
 
-Per the Glare signal model (carried forward from Measure), every Initiative requires both anchors. Without them, the work produces motion without direction.
+Initiatives help teams:
+- name the area of work that deserves attention
+- connect design effort to user and business outcomes
+- decide which signals matter most
+- keep testing focused instead of scattered
+- make progress easier to explain later
 
-- **User Need anchor.** Pulled from Define (or Measure → Concepts). Frame as: "Users need [outcome] so they can [purpose]." Example: "Users need to choose a payment method without errors so they can finish checkout in one session."
-- **Business Goal anchor.** Pulled from Lead → Business Goals (one of the 20 measurable goals across Growth / Retention / UX / Efficiency / Operations). Frame as: "[Reduce/grow/improve] [business KPI] in service of [strategic pressure]." Example: "Reduce payment-step abandonment to drive revenue growth."
+A clear initiative gives the team a shared target: "This is the part of the experience we are trying to improve."
 
-If either anchor is missing or fuzzy, the Initiative is not ready to advance to Methods.
+## How initiatives work
 
-### The Goal / Outcome / Metric Template
+An initiative starts by choosing the area where better decisions would create value — a product flow, marketing page, feature, support path, onboarding moment, or larger customer journey. Size can change; purpose stays the same: give the team a focused area to evaluate and improve.
 
-Every Initiative writes one of these. Tight, three-line, dense.
+From there, the team defines what success should look like. The initiative makes it easier to decide which methods to use, which metrics to track, and which comparisons matter.
 
-```
-GOAL:    [Plain-language intent — what the team is trying to change]
-OUTCOME: [Observable shift — what will be different for the user / business]
-METRIC:  [One or two UX metrics from the 100-point stack:
-          Comprehension, Satisfaction, Desirability, Completion,
-          Error Rate, First-Click Success, Time-on-Task]
-         + target delta and audience
-```
+A good initiative answers:
+- What part of the experience needs attention?
+- Who is affected by it?
+- What user need is involved?
+- What business goal does it connect to?
+- What signal would show progress?
+- What decision needs to be made?
 
-Worked example:
-```
-GOAL:    Make payment selection easier on mobile checkout.
-OUTCOME: First-time mobile users complete checkout without restarting.
-METRIC:  Completion (target +13 pts: 62 → 75 / mobile, first-time, US)
-         Error Rate (target −8 pts on payment step)
-```
+Without those answers, the work may still move, but the learning will be harder to use.
 
-### The Four Anchor Questions (must be answered before benchmarking)
+## What goes into an initiative
 
-The Comparing doc requires baselines tied to a goal; Initiatives is where those answers are produced. A team is not allowed to start Methods until all four are written down:
+An initiative works best when the team has enough clarity to focus the work, but not so much certainty that the decision is already made.
 
-1. **Why this, why now?** What pressure (user friction, business KPI, competitive gap, leadership ask) made this Initiative rise to the top?
-2. **Who is the audience?** Cohort, segment, device, journey stage. This is the audience Methods will recruit and Comparing will normalize against.
-3. **What does success look like?** Stated as the metric delta on the 100-point scale, not as a deliverable.
-4. **What would a kill look like?** What signal would tell us this Initiative isn't worth advancing? (Per Big Idea #12, *kill* is a legitimate Decision move; it has to be defined upfront, not retrofitted.)
+It usually includes:
+- the area of experience being improved
+- the user group or audience involved
+- the user need or behavior the team wants to support
+- the business goal or pressure behind the work
+- the UX metric that will show whether the experience is improving
+- the decision the team needs to make next
 
-If question 4 can't be answered, the Initiative is too vague to falsify and will produce vanity outcomes.
+This keeps the initiative grounded — prevents starting with a solution too early, and keeps the work from becoming a broad research effort with no clear action.
 
-### Initiative Record — Worksheet
+## Types of initiatives
 
-| Field | Action | Output |
-|---|---|---|
-| User Need | Pull from Define / Measure → Concepts. Write one sentence. | Anchored intent. |
-| Business Goal | Pull from Lead → 20 measurable goals. Tie to one of 9 pressures. | Strategic relevance. |
-| Outcome | State the observable shift — not the deliverable. | Falsifiable target. |
-| Metric(s) | 1–2 from the 100-point stack + target delta + audience. | Methods can instrument; Comparing can baseline. |
-| Anchor Q's | Answer all four (why now / who / success / kill). | Initiative is benchmarking-ready. |
-| Version, Date, Audience | Record at definition time. | Repeatable baseline downstream. |
+Initiatives can show up across many kinds of design work. Some focus on a single moment; others span a larger journey. The key is to make the scope clear enough that the team can test, compare, and decide.
 
-**Quick Checklist:** user need + business goal anchored; outcome stated as a shift; metric(s) on the 100-point scale with target delta; audience defined; "what a kill looks like" written down; version/date/audience captured.
+**Common initiative types:**
+- Simplify Identity & Access
+- Accelerate Onboarding & First-Use Success
+- Optimize Navigation & Discovery
+- Streamline Checkout & Payment
+- Increase Engagement & Retention
+- Personalize User Experiences
+- Strengthen Collaboration & Communication
+- Elevate Marketing & Growth Pages
+- Improve Content & Support
+- Expand Device & Context Reach
 
-### See It in Action — Mobile Checkout Initiative
+These are starting points for focused improvement. Each points to a different kind of user friction, business pressure, and signal pattern:
+- An **onboarding** initiative may need metrics around comprehension, task success, and confidence.
+- A **checkout** initiative may focus on completion, effort, trust, and drop-off.
+- A **marketing page** initiative may look at clarity, appeal, intent, and conversion signals.
 
-A retail product team has six months of analytics showing 38% of first-time mobile users abandon at the payment step. Leadership wants conversion lift. Past attempts ran without a defined Initiative — three redesigns shipped, no one could say which moved the metric.
+The initiative helps the team choose the right lens.
 
-Initiative record (drafted in 20 minutes):
-- **User Need:** "First-time mobile users need to pick a payment method without errors so they can finish checkout in one session." (from Define)
-- **Business Goal:** "Reduce payment-step abandonment → drive revenue growth." (from Lead, Growth bucket)
-- **Outcome:** First-time mobile users in the US complete checkout on the first attempt.
-- **Metric:** Completion +13 pts (62 → 75), Error Rate −8 pts. Audience: first-time mobile / US.
-- **Anchor Q's:**
-  1. Why now? Q3 revenue plan depends on mobile conversion.
-  2. Who? First-time mobile users, US, iOS + Android.
-  3. Success? Completion ≥75 / Error Rate ≤22 in the v2 benchmark.
-  4. Kill? If v2 lands within ±2 pts of baseline on both metrics, kill the redesign track and route the problem to a different Initiative (likely payment-provider integration, owned by Engineering).
-- **Version / Date / Audience:** v1 baseline / 2026-04-22 / first-time mobile US (n≥120).
+## How to choose an initiative — 5 steps
 
-This Initiative is now ready to hand to Methods, which will design the cadence and instruments to collect the v1 baseline and the v2 comparison.
+Start with how the work already exists in the business. Many companies already have initiatives defined before design gets involved (a leader may have a goal, roadmap item, campaign, or product bet). By the time work reaches design and product, it often shows up as scattered requests: redesign this page, fix this flow, test this feature, improve this message.
 
-### Next Steps from Initiatives
+Design and product can shape the initiative by connecting the request back to the larger goal, the user need, the concepts worth exploring, and the decision the business needs to make.
 
-- → **Methods** — design how the named metrics get collected for v1 baseline and future iterations.
-- → **Comparing** — once data lands, validate against the outcome and metric targets defined here.
-- → **Decisions** — closes the loop by reporting whether the Initiative's outcome was achieved, partially achieved, or missed (and which decision-move to make).
+### 1. Map the request to the larger goal
+Start with what the business is asking for, then pull back. A page redesign may connect to conversion. A nav change may connect to discovery. A new feature may connect to adoption. A campaign update may connect to trust, clarity, or intent.
+Ask: What is being requested? What business goal is behind it? What part of the experience does it affect? Is this one concept, or part of a larger initiative?
 
-## Key terms
+### 2. Find the user need behind the work
+Once the larger goal is clear, look at what the user is trying to accomplish. The initiative should help users make progress in a way that creates value for the business — not improve something just because it is visible, urgent, or politically important.
+Ask: What is the user trying to do? Where are they getting stuck? What needs to feel clearer, faster, easier, or more valuable? What user behavior would show progress?
 
-- **Initiative** — a focused design effort framed by user need + business goal + target outcome + measurable UX metric(s); the anchor for everything Methods, Comparing, and Decisions do downstream.
-- **User Need anchor / Business Goal anchor** — the two required framings for every Initiative; pulled from Define and Lead respectively.
-- **Outcome** — the observable shift the Initiative is supposed to produce; never a deliverable.
-- **Goal/Outcome/Metric template** — the three-line definition every Initiative writes before advancing.
-- **Four Anchor Questions** — why now / who / success / kill; all four must be answered before benchmarking is allowed.
-- **Kill criterion** — the upfront definition of what signal would end the Initiative; required for falsifiability.
-- **100-point UX metric stack** — Comprehension, Satisfaction, Desirability, Completion, Error Rate, First-Click Success, Time-on-Task; the metrics an Initiative chooses from.
-- **Baseline-readiness** — Initiative has named version, date, and audience so Comparing's Step 1 can repeat reliably.
+### 3. Group the concepts that could create value
+Look for the smaller ideas that belong to the same effort. One initiative might include 10, 50, or even 100 concepts (pages, flows, features, messages, prototypes, content changes, product improvements). The goal is not to test them all at once — it is to see the range of possible moves before narrowing too early.
+Group concepts by: the user need they support, the business goal they connect to, the part of the experience they improve, the decision they help inform.
+
+### 4. Decide what signal would create confidence
+Before choosing the initiative, define what evidence would help the team move forward. The signal might show which concept users understand, which flow creates less friction, which message builds more trust, or which direction has more pull.
+Ask: What do we need to know before investing more? What UX metric would show progress? What comparison would make the decision clearer? What signal would reduce doubt for the team or stakeholders?
+
+### 5. Choose the initiative where design can create the most value
+The best initiative is not always the biggest one — it is the one where design and product can connect many possible concepts to a shared outcome, then use signals to help the business make a better decision.
+
+Choose the initiative when:
+- scattered requests connect to one larger goal
+- the same experience problem appears across pages, flows, or features
+- stakeholders are focused on pieces, but the bigger opportunity is unclear
+- a business goal depends on improving several parts of the user experience
+- the team needs to manage scope without losing direction
+- a clearer signal would help decide which concepts deserve more investment
+
+A strong initiative gives scattered work a sharper frame.
+
+## What comes out of an initiative
+
+The output is a clearer path to decisions that move the business forward. A strong initiative gives the team:
+- a clear area of work
+- a defined audience
+- a user need to support
+- a business goal to connect to
+- a UX metric to track
+- a set of concepts to compare
+- a decision the team needs to make
+
+This gives the work shape. The team can choose the right method, collect the right signal, and compare the right options without losing sight of the bigger goal.
+
+The real value comes from comparative findings — they show which concepts create more clarity, confidence, usefulness, or pull with users. Those findings help different workflows across the business move forward:
+- **Product** can prioritize what deserves investment.
+- **Design** can refine the direction with stronger proof.
+- **Marketing** can sharpen the message around what users value.
+- **Leadership** can see why one path is worth backing.
+
+An initiative does not just organize design work — it helps turn many possible concepts into evidence-backed decisions the business can act on.
+
+## Where initiatives fit in Glare
+
+Initiatives sit inside the Focus facet. Measure helps teams turn concepts, hunches, questions, and findings into signals. Initiatives give those signals a place to work — they define the area where the team needs to compare options and make a decision.
+
+In the Focus flow:
+- **Initiatives** define what needs attention.
+- **Methods** define how the team will learn.
+- **Comparing** shows what performs better.
+- **Decisions** turn the evidence into action.
+
+Initiatives are where Focus begins. They give design work a clear target so signals can build toward decisions that move the work forward.

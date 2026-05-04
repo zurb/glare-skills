@@ -1,125 +1,157 @@
-# Glare | Focus, Decisions — Drafted (no source doc available)
+# Focus — Decisions — Compressed (v1.3)
 
-> This block is **drafted from framework knowledge**, not from a dedicated Drive source doc. It extrapolates from `focus-compressed.md` (Comparing v1.1), the `glare-focus` parent skill, the Big Idea #12 decision-move taxonomy, and the Ray spec's signal-reference and tradeoff-articulation guardrails. Treat as best-effort scaffolding until an authoritative "Glare | Focus, Decisions" source lands.
+## What a Decision is
 
-## What this block is about
+Decisions turn signals into action. By the time a team reaches Decisions, the work should no longer be floating in opinion. The initiative is clear. The method has framed the data. Comparing has shown what is stronger, weaker, or worth changing.
 
-In Glare v1.0, **Decisions** is the downstream step of the Focus facet (sequence: Initiatives → Methods → Comparing → Decisions). Decisions is where benchmarked, validated signals become action — and where Focus closes the loop, often spawning the next Initiative. Per the Comparing doc: "Decisions — act on what's proven; benchmarked data becomes proof to prioritize, refine, or scale." Per Big Idea #12, the available moves are explicit. Per the Ray spec, no decision is allowed without a signal reference and an articulated tradeoff.
+Now the team needs to choose. A decision is where Focus becomes movement. It takes the signal, names the tradeoff, and gives the business a clear next step. Without a decision, findings stay in decks. Concepts stay open. Meetings keep circling the same questions.
 
-## Glare | Focus, Decisions v0.1 (drafted)
+Decisions cut through that. They help teams say what should happen next, why it should happen, and what evidence supports the move.
 
-**What Decisions does.** Decisions converts a benchmarked delta — produced by Comparing against an Initiative's outcome target — into one of a small set of explicit moves, recorded in a way that downstream rituals (backlog, roadmap, release-readiness) can consume without re-litigating the evidence.
+## Why Decisions matter
 
-**Three outcomes Decisions creates:**
-- **Closure** — the Initiative is resolved (achieved / partial / missed) instead of drifting indefinitely.
-- **Direction** — the next concrete move is named, with the tradeoff stated.
-- **Continuity** — the Decision record travels into backlog/roadmap and seeds (or kills) the next Initiative.
+Most teams do not struggle because they lack ideas. They struggle because they do not know when to commit. A team may have strong findings, useful comparisons, and clear user feedback but still hesitate. One stakeholder wants to ship. Another wants another round. Someone else wants to protect scope. The team keeps talking, but the work does not move.
 
-### The 5 Decision Moves (Big Idea #12 taxonomy)
+Decisions help teams:
+- turn evidence into a clear direction
+- explain tradeoffs without reopening the whole debate
+- reduce second-guessing
+- connect design choices to business movement
+- show what should happen next
+- keep meetings from turning into opinion loops
 
-Force the team to name which one. "Let's keep going" is not a decision.
+A strong decision gives the team permission to move.
 
-1. **Advance** — ship / roll out / scale. The Initiative's outcome target was met or exceeded; design and Method are stable enough to widen audience or platform.
-2. **Refine** — iterate again on the same Initiative. Direction is right, magnitude is short. Re-run Methods at the same M-version.
-3. **Kill** — stop the Initiative. The kill criterion (set during Initiatives) was tripped, or repeated refinement isn't moving the metric.
-4. **Scope-differently / Pivot** — the metric isn't moving because the problem was framed wrong. Reframe the Initiative (often the Klean Kanteen pattern: "we need a new homepage" → "we need stronger emotional clarity"). Pivot is a sub-case where the audience or surface changes too.
-5. **Reprioritize** — the data is fine but a higher-priority Initiative now claims the team's capacity. Park, don't kill; record so future planning can resume.
+## Two types of decisions
 
-### Criteria for Each Move — Based on Benchmark Deltas
+Decisions happen at two levels: a broader strategic view (where leaders decide what kind of direction the business should support) and a tactical meeting view (where teams decide what to do next with a specific concept, design, or signal). Both matter.
 
-Read against the Initiative's named outcome target (e.g., Completion +13 pts) and the kill criterion (e.g., ±2 pts).
+### Strategic decisions
+Look across the larger direction of the work. The decision is not only about one screen or test result — it is about whether the evidence supports a bigger move.
 
-| Move | Delta vs target | Other conditions |
-|---|---|---|
-| Advance | Δ ≥ target on primary metric; secondary metric not regressed past kill threshold | Method M-version stable; audience representative; tradeoff articulated. |
-| Refine | 0 < Δ < target; trend in right direction | At least one more refinement cycle is affordable; specific design lever identified. |
-| Kill | Δ inside the kill window (e.g., ±2 pts) after ≥2 cycles, OR a secondary metric regressed past kill threshold | Reframing already attempted, or no plausible reframe remains. |
-| Scope-differently / Pivot | Δ flat or wrong-direction AND post-mortem reveals the Initiative's framing was wrong | Reframed Initiative drafted before the Pivot is final. |
-| Reprioritize | Any Δ; capacity constraint dominates | New top-priority Initiative named; current Initiative parked with state preserved. |
+A strategic decision might answer:
+- Should we invest in this direction?
+- Should this initiative become a priority?
+- Should this concept move into the roadmap?
+- Should we shift resources toward this opportunity?
+- Should this work shape a larger business workflow?
 
-The Ray spec's guardrail applies to all five: **no decision without a signal reference**, and **the tradeoff must be explicit** — what is being given up, which constraints are now locked vs flexible.
+The strategic view often works like a **triangle**:
+- At the top, decisions are broad and directional — they shape priorities, investment, and business confidence.
+- At the bottom, decisions are more tactical — they shape screens, flows, messages, and iterations.
 
-### The Decision Record Template
+Both are connected. A tactical signal can support a strategic direction. A strategic direction can shape which tactical decisions matter most.
 
-Every Decision writes one of these. Tight. The record is the artifact; meetings without one stall.
+### Tactical decisions
+Happen closer to the work — choices teams make in reviews, working sessions, product discussions, or research readouts. The decision should be clear enough that the team knows what happens next.
 
-```
-INITIATIVE:    [link to Initiative record]
-METHOD:        [M-version; link to Method record]
-SIGNAL REF:    [Comparing benchmark output: metric | baseline | current | Δ]
-MOVE:          [Advance | Refine | Kill | Scope-differently / Pivot | Reprioritize]
-RATIONALE:     [1–3 sentences tying the Δ to the move]
-TRADEOFF:      [What is being given up; what is now locked vs flexible]
-NEXT INITIATIVE: [Link if Pivot/Kill spawns a new one; "none" if Advance/Reprioritize]
-HAND-OFF:      [Backlog | Roadmap | Release-readiness | Lead reporting]
-OWNER + DATE:  [Who decided; when]
-```
+A tactical decision might answer:
+- Should we implement this?
+- Should we refine the design?
+- Should we test another iteration?
+- Should we revisit this later?
+- Should we stop pursuing this direction?
 
-### Hand-off Rituals — Where Decisions Travel
+The team should leave the meeting knowing what was chosen, why, and what action follows.
 
-A Decision is only real once it lands in the rituals downstream teams already run. Per move:
+## The 5 tactical decision types
 
-- **Advance →** *Release-readiness review.* The Decision record is the green-light artifact; the Method record is the proof of how the green light was earned. Also goes to **Lead** for cross-functional reporting (Workflows + Mapping pull the chain of proof up to Business KPIs).
-- **Refine →** *Backlog grooming.* The Decision record becomes a prioritized backlog item with the named design lever and the next Method-cycle date.
-- **Kill →** *Roadmap review.* Removes the Initiative from active capacity; the Decision record is the receipt explaining why so the same Initiative doesn't come back as someone's pet idea next quarter.
-- **Scope-differently / Pivot →** *Initiatives intake.* Decision spawns a new Initiative record (back to `glare-focus-initiatives`); the original Initiative is closed with a pointer to the new one.
-- **Reprioritize →** *Roadmap review.* Initiative parked with state preserved (last benchmark, last Method version, kill criterion); resumable when capacity returns.
+A decision should not be vague. Teams need clear decision types so the evidence leads to action.
 
-### Decision Record — Worksheet
+### Implement
+Use when the signal is strong enough to move forward. The team has enough evidence to act. The direction supports the user need, connects to the initiative, and gives the business confidence to invest.
+**Means:** signal is strong · tradeoff acceptable · next step is clear · the team should move into production, planning, or rollout.
 
-| Field | Action | Output |
-|---|---|---|
-| Signal reference | Pull the Comparing delta table row(s) that triggered the Decision. | No decision without evidence. |
-| Move | Pick one of the 5; never "let's keep going." | Concrete next state. |
-| Rationale | Tie the Δ to the move in 1–3 sentences. | Auditable reasoning. |
-| Tradeoff | State what's given up; what's locked vs flexible. | Honest commitment. |
-| Hand-off | Route to backlog / roadmap / release-readiness / Lead reporting. | Decision actually travels. |
-| Loop-back | Spawn next Initiative if Pivot/Kill; close current. | Focus loop closes. |
+### Refine Design
+Use when the direction is right but the design needs improvement. The signal shows potential, but something needs to be clarified, simplified, or strengthened before the team commits fully.
+**Means:** the concept has value · the current version is not strong enough yet · the team knows what needs to change · another pass should improve the signal.
 
-**Quick Checklist:** signal ref present; move named (one of 5); tradeoff explicit; hand-off route chosen; original Initiative closed or refined; Decision record stored where downstream rituals consume it.
+### Test Iteration
+Use when the team needs another signal before deciding. The evidence is useful but not strong enough to act on yet. The team may need to compare a new version, test a different audience, or reduce uncertainty around a specific risk.
+**Means:** the direction is still open · the current signal is incomplete · a sharper comparison is needed · another round will help the team decide.
 
-### See It in Action — Mobile Checkout Decision
+### Revisit Later
+Use when the idea has potential but is not the right move right now. The signal may be mixed, the timing may be wrong, or the initiative may not be ready. Keeps the idea alive without letting it distract the team.
+**Means:** the idea is not dead · timing or context is not right · the team should capture the rationale · the work may return when priorities shift.
 
-Continuing the example from `focus-initiatives-compressed.md` and `focus-methods-compressed.md`. v2 of mobile checkout shipped under Method M1. Comparing produced:
+### Do Not Pursue
+Use when the signal shows the direction is not worth more investment. This is **not failure** — it is a useful decision that protects the team from spending time on work that does not create enough value.
+**Means:** the signal is weak · tradeoff is not worth it · direction does not support the initiative · the team should stop or remove it from consideration.
 
-| Metric | Baseline (v1) | Current (v2) | Δ | Interpretation |
-|---|---|---|---|---|
-| Completion | 62 | 71 | +9 | Direction right, short of +13 target. |
-| Error Rate (inverted, 100-pt) | 67 | 78 | +11 | Exceeded −8 target (8 → +11 in 100-pt terms). |
-| Satisfaction | 64 | 70 | +6 | Confirms the experience improved, not just the funnel. |
+## What goes into a decision
 
-Decision record:
-```
-INITIATIVE:    Mobile Checkout v1 → v2 (first-time mobile US)
-METHOD:        M1 (n=120 task-success + post-task Likert; frozen)
-SIGNAL REF:    Completion +9 (target +13); Error Rate +11 (target +8); Satisfaction +6
-MOVE:          REFINE
-RATIONALE:     Error Rate target met and Satisfaction up, but Completion fell 4 pts short of target.
-               Diagnostic review on the v2 funnel shows residual friction at the address-confirm step,
-               which the redesign didn't touch. One more refinement cycle is affordable in Q3.
-TRADEOFF:      One additional sprint of Engineering capacity now allocated to address-confirm; the
-               adjacent guest-checkout Initiative is delayed two weeks. Locked: Method M1 (no audience
-               or instrument changes). Flexible: the address-confirm UI pattern.
-NEXT INITIATIVE: none (same Initiative, refinement v2.1)
-HAND-OFF:      Backlog grooming (next sprint) + Lead reporting (Q3 mid-cycle update)
-OWNER + DATE:  Design lead — 2026-04-22
-```
+A decision starts with evidence. It should not come from feeling alone — it should come from a signal that has been framed and compared clearly enough to support action.
 
-If Completion had landed at 63 instead of 71, the kill window (±2 pts) would have been tripped and the move would be **Kill** with a pointer to a new Initiative on payment-provider integration (per the Initiative's pre-named kill plan).
+A strong decision usually includes:
+- the initiative being supported
+- the concept, flow, feature, message, or direction being considered
+- the UX metric that matters
+- the signal that shaped the choice
+- the comparison that gave the signal context
+- the tradeoff the team is accepting
+- the next step the team should take
 
-### Next Steps from Decisions
+Without those pieces, the decision can feel like an opinion. With them, the decision becomes easier to trust.
 
-- → **Initiatives** — Pivot/Kill moves spawn new Initiative records; the loop reopens.
-- → **Lead** (`glare-lead`) — Advance moves and major Refine cycles get translated into business-KPI language for executive reporting.
-- → **Methods** — if the Decision included a Method-version change (M1 → M2), Methods owns the bridge round before the next Comparing cycle.
+## How to make a decision — 5 steps
 
-## Key terms
+### 1. Name what is being decided
+Start by naming the exact choice in front of the team — concept, feature, design direction, CTA, flow, message, journey moment.
+Ask: What are we deciding? Is this strategic or tactical? What initiative does this support? What happens if we do not decide?
+Keeps the team from turning one decision into five different debates.
 
-- **Decision** — a recorded move (one of 5) that converts a benchmarked signal into action; closes the Focus loop.
-- **5 Decision Moves** — Advance, Refine, Kill, Scope-differently/Pivot, Reprioritize (per Big Idea #12).
-- **Signal reference** — the specific Comparing delta(s) that justify the Decision; required by Ray spec.
-- **Tradeoff articulation** — explicit statement of what is being given up; required by Ray spec.
-- **Decision record** — the artifact downstream rituals (backlog, roadmap, release-readiness) consume.
-- **Kill window** — the ±delta range, defined upfront in Initiatives, that triggers a Kill move.
-- **Hand-off rituals** — backlog grooming, roadmap review, release-readiness review, Lead reporting; where Decisions actually travel.
-- **Loop closure** — the property that every Decision either closes its Initiative or spawns the next one; Focus is a loop, not a one-shot.
+### 2. Ground the decision in the signal
+Bring the strongest evidence into the conversation. The signal should show what users did, felt, understood, preferred, or struggled with. It should connect back to the UX metric that matters for the initiative.
+Ask: What signal matters most? What metric supports it? What user feedback explains it? What comparison gives it context?
+Keeps the decision from drifting back into preference.
+
+### 3. Explain the tradeoff
+Every decision gives something up. A direction might improve clarity but take more effort to build, create more trust but reduce speed, serve one audience better than another. Name the tradeoff clearly.
+Ask: What gets stronger if we choose this? What might get weaker? What risk are we accepting? What are we choosing not to do?
+Helps stakeholders support the decision without pretending it is perfect.
+
+### 4. Choose the decision type
+Use a clear decision type so the team knows what happens next. Choose one: Implement · Refine Design · Test Iteration · Revisit Later · Do Not Pursue.
+Turns the discussion into action. The team should not leave with a vague "let's keep exploring" unless the decision is actually to test another iteration.
+
+### 5. Lock the next move
+End by naming the next action. A decision is not complete until someone knows what to do with it.
+Define: who owns the next step · what needs to happen next · what evidence should be carried forward · when the decision should be reviewed again, if needed.
+Keeps the decision from getting lost after the meeting.
+
+## What comes out of a decision
+
+A clear next move. A strong decision gives the team:
+- a named choice
+- the signal behind the choice
+- the tradeoff being accepted
+- the decision type
+- the owner or workflow affected
+- the next step
+
+This is what helps the business move forward:
+- **Product** knows what to prioritize.
+- **Design** knows what to refine.
+- **Research** knows what still needs evidence.
+- **Marketing** knows what message to sharpen.
+- **Leadership** knows what direction to back.
+
+A decision should make the work easier to act on, not just easier to talk about.
+
+## Where Decisions work best
+
+Decisions work best when the team has enough signal to choose. Use Decisions when the team has compared concepts, reviewed signals, and needs to move the work into action — design reviews, roadmap discussions, research readouts, sprint planning, leadership updates.
+
+Decisions work less well when the signal is too weak or the initiative is unclear. If the team does not know what matters, what was compared, or what the tradeoff means, go back to Methods or Comparing before forcing the choice. A decision should create confidence, not hide uncertainty.
+
+## Where Decisions fit in Glare
+
+Decisions sit at the end of the Focus facet. Initiatives define the area of work that needs attention. Methods frame the data. Comparing shows what is stronger. Decisions turn that evidence into action.
+
+In the Focus flow:
+- **Initiatives** define what needs attention.
+- **Methods** frame the data.
+- **Comparing** shows what is stronger.
+- **Decisions** move the work forward.
+
+Decisions are where Focus creates momentum. They turn signals into choices, choices into action, and action into business movement.

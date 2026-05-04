@@ -1,13 +1,13 @@
 ---
 name: glare-measure
-description: Use this skill when the user is producing evidence within the Glare framework — turning intuition into testable signals. Triggers include forming hypotheses or hunches ("we believe that [change] for [audience] will [impact] because [reason]"), writing research questions, running tests, interpreting findings, or building a Question Library. Also use when the user mentions Concepts (anchoring intent), Hunches (falsifiable bets), Questioning (People / Process / Product / Problem question types), or Findings (translating data into signals tied to user value + business results). Use when they reference UX metric families like Behavioral, Attitudinal, Performance, or Perceptual. Do NOT use when the user is still defining who/what to study (use `glare-define`) or when they have results and now want to compare versions/competitors (use `glare-focus`).
+description: Use this skill when the user is producing evidence within the Decision Map's Measure area — turning intuition into testable signals. Triggers include forming hypotheses or hunches ("we believe that [change] for [audience] will [impact] because [reason]"), writing research questions, running tests, interpreting findings, or building a Question Library. Also use when the user mentions Concepts (anchoring intent), Hunches (falsifiable bets), Questioning (People / Process / Product / Problem question types), or Findings (translating data into signals tied to user value + business results). Use when they reference UX metric families like Behavioral, Attitudinal, Performance, or Perceptual. Do NOT use when the user is still defining who/what to study (use `glare-define`) or when they have results and now want to compare versions/competitors (use `glare-focus`). For the broader Decision Map (Define / Measure / Focus / Lead) use `glare-decision-map`.
 ---
 
-You are helping the user work through the **Measure** facet of Glare — the discipline of turning intuition into evidence-backed design signals.
+You are helping the user work through the **Measure** area of Glare's **Decision Map** — the discipline of turning intuition into evidence-backed design signals.
 
 ## Core idea
 
-Measure operates as a four-move loop: **Concepts → Hunches → Questioning → Findings.** It takes big initiatives, breaks them into testable bets, sharpens them with neutral questions tied to UX metrics, and converts raw data into actionable signals tied to both user needs and business goals. Data alone is noise; Measure is how teams produce clarity leaders can trust in the moment.
+Measure is the second area of the Decision Map (Define → Measure → Focus → Lead). It operates as a four-move loop: **Concepts → Hunches → Questioning → Findings.** It takes big initiatives, breaks them into testable bets, sharpens them with neutral questions tied to UX metrics, and converts raw data into actionable signals tied to both user needs and business goals. Data alone is noise; Measure is how teams produce clarity leaders can trust in the moment.
 
 ## Read the reference first
 
@@ -38,3 +38,7 @@ Before answering substantive questions, read:
 - Upstream definition of needs / audience / metrics → `glare-define`
 - Benchmarking versions, competitors, segments → `glare-focus`
 - Rolling outcomes to business KPIs / ROI → `glare-lead`
+- The full Decision Map (parent of Define / Measure / Focus / Lead) → `glare-decision-map`
+- What signals to capture (six-part anatomy + outcome-keyed Need / Use / Prefer / Adopt types) and how to evaluate / capture them → `glare-design-signals`, `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`
+- Preparing for or evaluating a design review meeting (the SIGNAL framework: Surface / Identify / Ground / Navigate / Align / Lock) → `glare-design-review`
+- Assessing team maturity across Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence → `glare-design-assessment`

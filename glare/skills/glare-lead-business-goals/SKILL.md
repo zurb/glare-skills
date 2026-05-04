@@ -1,13 +1,13 @@
 ---
 name: glare-lead-business-goals
-description: Use this skill when the user is anchoring design work to the pressures executives already track — the Business Goals bucket of the Glare Lead facet. Triggers include picking which business pressure a project serves (Growth, Retention, User Experience, Efficiency, Operations), choosing among the 20 measurable goals (e.g., "Reduce churn → Achieve product–market fit", "Lower support costs → Reduce support costs", "Prove launch success → Support strategic product launches"), distinguishing the three layers of KPIs (Design KPIs like task completion / error rate / time on task; Product KPIs like adoption / retention / engagement; Business KPIs like revenue growth / churn / LTV), running the three-question Quick Test to decide whether a metric is a true signal vs. a vanity number, or calling out anti-patterns (vanity metrics, correlation-as-causation, reporting without connecting). Do NOT use for cross-functional translation of those goals into Sales / Marketing / Product / Eng / Strategy / Ops / Finance / Legal language — invoke `glare-lead-workflows`. Do NOT use for drawing the full User Need → Design KPI → Product KPI → Business KPI → Business Goal ladder — invoke `glare-lead-mapping`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop or the maturity diagnostic — invoke `glare-lead-results`. For the broader Lead facet overview, invoke parent `glare-lead`.
+description: Use this skill when the user is anchoring design work to the pressures executives already track — the Business Goals bucket of the Glare Lead facet, part of the Decision Map's Lead area. Triggers include picking which business pressure a project serves (Growth, Retention, User Experience, Efficiency, Operations), choosing among the 20 measurable goals (e.g., "Reduce churn → Achieve product–market fit", "Lower support costs → Reduce support costs", "Prove launch success → Support strategic product launches"), distinguishing the three layers of KPIs (Design KPIs like task completion / error rate / time on task; Product KPIs like adoption / retention / engagement; Business KPIs like revenue growth / churn / LTV), running the three-question Quick Test to decide whether a metric is a true signal vs. a vanity number, or calling out anti-patterns (vanity metrics, correlation-as-causation, reporting without connecting). Do NOT use for cross-functional translation of those goals into Sales / Marketing / Product / Eng / Strategy / Ops / Finance / Legal language — invoke `glare-lead-workflows`. Do NOT use for drawing the full User Need → Design KPI → Product KPI → Business KPI → Business Goal ladder — invoke `glare-lead-mapping`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop or the maturity diagnostic — invoke `glare-lead-results`. For the broader Lead facet overview, invoke parent `glare-lead`.
 ---
 
-You are helping the user work through the **Business Goals** bucket of the Glare Lead facet — the layer that anchors design to the pressures leadership already tracks so design becomes a lever, not decoration.
+You are helping the user work through the **Business Goals** bucket of the Glare Lead facet — the upward-facing area of the **Decision Map** that anchors design to the pressures leadership already tracks so design becomes a lever, not decoration.
 
 ## Core idea
 
-A metric only matters when it's tied to intent. Business Goals stack three layers of KPIs (Design → Product → Business) and route them to one of nine business pressures via 20 named goals, so every signal can be defended as proof of impact rather than a number on a dashboard.
+Business Goals is part of the upward-facing area of the Decision Map (Lead). A metric only matters when it's tied to intent. Business Goals stacks three layers of KPIs (Design → Product → Business) and routes them to one of nine business pressures via 20 named goals, so every signal can be defended as proof of impact rather than a number on a dashboard.
 
 ## Read the reference first
 
@@ -33,4 +33,8 @@ Before answering substantive questions, read `reference.md` — it contains the 
 - Building the five-rung Chain of Proof → `glare-lead-mapping`.
 - Initiatives → Findings → Decisions → Outcomes loop, maturity diagnostic → `glare-lead-results`.
 - Broader Lead facet framing → parent `glare-lead`.
-- Upstream signal collection → `glare-define`, `glare-measure`, `glare-focus`.
+- Decision Map area above Lead → `glare-decision-map`.
+- Upstream signal collection (Decision Map siblings) → `glare-define`, `glare-measure`, `glare-focus`.
+- Signal anatomy and quality (the building blocks anchored here) → `glare-design-signals`, `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`.
+- Preparing for or evaluating a leadership review (SIGNAL framework — Surface / Identify / Ground / Navigate / Align / Lock) → `glare-design-review`.
+- Assessing team / org design maturity → `glare-design-assessment`.

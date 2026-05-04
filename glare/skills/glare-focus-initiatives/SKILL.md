@@ -1,43 +1,44 @@
 ---
 name: glare-focus-initiatives
-description: Use this skill when the user is at the upstream end of Glare's Focus facet — defining the goals, outcomes, and target metrics that future benchmarking will validate. Triggers include scoping a new design initiative, naming the user need + business goal anchors behind a change, writing the Goal/Outcome/Metric template, choosing UX metrics from the 100-point stack (Comprehension, Satisfaction, Desirability, Completion, Error Rate, First-Click, Time-on-Task) for an upcoming initiative, answering the four anchor questions (why now / who / success / kill) before benchmarking, defining a kill criterion upfront so the initiative is falsifiable, locking version/date/audience for baseline-readiness, or any conversation about what "better" should mean before signals are collected. Do NOT use when the user is planning *how* to collect signals (use `glare-focus-methods`), already running comparisons on collected data (use `glare-focus-comparing`), or acting on validated benchmarks (use `glare-focus-decisions`).
+description: Use this skill when the user is naming an **Initiative** in the Glare Focus facet — defining the area of work that needs attention before signals, methods, or comparisons run. Triggers include "what should we focus on," "frame the initiative," "scope the work," "scattered requests," "everything feels important at once," "connect this redesign to a goal," "find the bigger picture," "we keep getting one-off requests," "is this one project or part of something larger," picking between requests, mapping a request back to a business goal, defining what success would look like before testing, or grouping concepts under one initiative. Also use when the user mentions any of the 10 common initiative types — Simplify Identity & Access, Accelerate Onboarding & First-Use Success, Optimize Navigation & Discovery, Streamline Checkout & Payment, Increase Engagement & Retention, Personalize User Experiences, Strengthen Collaboration & Communication, Elevate Marketing & Growth Pages, Improve Content & Support, Expand Device & Context Reach. Do NOT use when the initiative is already framed and the user is now choosing how to learn (use `glare-focus-methods`), comparing signals (use `glare-focus-comparing`), or committing to a direction (use `glare-focus-decisions`).
 ---
 
-> *Note: This skill is drafted scaffolding for the Focus / Initiatives bucket. The dedicated source doc is still pending in Drive — the templates and rules here are extrapolated from the Glare Focus Comparing source doc plus framework cross-references. Treat the framework anchors here as best-effort, not canonical. If asked, surface this caveat once and move on; don't re-caveat every step.*
-
-You are helping the user work through **Initiatives** — the upstream step of Glare's Focus facet. Initiatives is where teams make the "why this, why now?" of a design effort *explicit and measurable* before any signal gets collected. The Focus sequence is: **Initiatives → Methods → Comparing → Decisions.**
+You are helping the user name and shape an **Initiative** — the first move in the Glare Focus facet.
 
 ## Core idea
 
-An Initiative is *not* a deliverable ("redesign checkout"); it is a *measurable shift* ("first-time mobile users complete checkout on the first attempt; Completion +13 pts"). Without a well-formed Initiative, Methods has nothing to instrument and Comparing has no anchor to validate against. The three outcomes Initiatives create: **Direction** (the team knows what "better" looks like before any test), **Measurability** (every Initiative names UX metric(s) on the 100-point scale), and **Repeatability** (version, date, and audience are locked at definition time so the resulting baseline holds up across releases).
+Most teams have more ideas than capacity. Pages to improve, flows to fix, features to rethink, campaigns to sharpen, journeys that need attention. Without a clear initiative, everything feels important at the same time and design work scatters. An initiative gives the team a clear area of work to improve — a container for signals, methods, comparisons, and decisions. A strong initiative connects three things: a **user need**, a **business goal**, and a **measurable part of the experience**.
 
 ## Read the reference first
 
-Before answering substantive questions, read:
-
-- `reference.md` — the drafted "Glare | Focus, Initiatives v0.1" block: the User Need / Business Goal anchors, the Goal/Outcome/Metric template, the four anchor questions (why now / who / success / kill), the Initiative Record worksheet, and the worked Mobile Checkout example. Note: this is drafted from framework knowledge, not from an authoritative Drive source — flag that to the user when they ask where the rules come from.
+Before answering substantive questions, read `reference.md` — full compressed content of Initiatives v1.3: why initiatives matter, how they work, what goes into one, the 10 common initiative types, the 5-step method for choosing one, what comes out of an initiative, and where initiatives fit in the Focus flow.
 
 ## How to apply
 
-1. **Force both anchors before anything else.** Every Initiative needs a **User Need anchor** ("Users need [outcome] so they can [purpose]" — pulled from Define / Measure → Concepts) AND a **Business Goal anchor** (one of Lead's 20 measurable goals across Growth / Retention / UX / Efficiency / Operations). If either is missing or fuzzy, stop — the Initiative isn't ready to advance.
+1. **Diagnose whether an initiative is even named.** If the user is describing scattered requests ("redesign this page, fix this flow, test this feature"), that is the symptom of a missing initiative. Don't jump to methods or comparisons until the initiative is framed.
 
-2. **Write the Goal / Outcome / Metric template.** Three lines, dense:
-   - **GOAL** — plain-language intent (what is being changed).
-   - **OUTCOME** — observable shift (what will be different for the user / business — never a deliverable).
-   - **METRIC** — 1–2 from the 100-point stack (Comprehension, Satisfaction, Desirability, Completion, Error Rate, First-Click Success, Time-on-Task) + target delta + audience.
+2. **Force the three connections.** A strong initiative ties (a) a user need, (b) a business goal, and (c) a measurable part of the experience. If any of those is missing, the initiative isn't ready.
 
-3. **Answer all four anchor questions out loud.** No skipping question 4.
-   - **Why this, why now?** What pressure forced this Initiative up?
-   - **Who is the audience?** Cohort + device + region + journey stage.
-   - **What does success look like?** Stated as the 100-point metric delta, not a deliverable.
-   - **What would a kill look like?** The signal that would end this Initiative. If the user can't answer this, the Initiative is too vague to falsify — push back.
+3. **Run the 5-step method when the user is choosing what to focus on:**
+   - **Map the request to the larger goal.** What is being requested? What business goal is behind it? What part of the experience does it affect? Is this one concept or part of a larger initiative?
+   - **Find the user need behind the work.** What is the user trying to do? Where are they getting stuck? What needs to feel clearer, faster, easier, or more valuable?
+   - **Group the concepts that could create value.** One initiative might include 10, 50, or even 100 concepts. Group by user need, business goal, part of experience, decision.
+   - **Decide what signal would create confidence.** What do we need to know before investing more? What UX metric would show progress? What comparison would make the decision clearer?
+   - **Choose the initiative where design can create the most value.** Not always the biggest one — the one where many concepts connect to a shared outcome.
 
-4. **Lock version, date, and audience at definition time.** This is what makes the resulting baseline repeatable downstream. Without it, Comparing's Step 1 can't repeat and every future round becomes a snowflake.
+4. **Use the 10 common initiative types as starting points** when the user can't find a frame: Simplify Identity & Access, Accelerate Onboarding & First-Use Success, Optimize Navigation & Discovery, Streamline Checkout & Payment, Increase Engagement & Retention, Personalize User Experiences, Strengthen Collaboration & Communication, Elevate Marketing & Growth Pages, Improve Content & Support, Expand Device & Context Reach. Each points to a different friction pattern, business pressure, and signal pattern.
+
+5. **Don't over-define.** A good initiative gives the team enough clarity to focus the work, but not so much certainty that the decision is already made. Keep scope tight enough to learn quickly.
+
+6. **Hand off to `glare-focus-methods`** once the initiative names: area of experience, audience, user need, business goal, UX metric, decision the team needs to make next. That set is the input Methods needs.
 
 ## Handoffs
 
-- When the user shifts to *planning how signals get collected* (instruments, cadence, sample size, audience recipe, conditions), suggest `glare-focus-methods`. "Let's also set up the test" is the Methods conversation — re-route.
-- When they jump ahead to *analyzing already-collected data or running deltas*, route through `glare-focus-methods` first, then `glare-focus-comparing`.
-- When they want to *act on validated benchmarks* (advance / refine / kill / pivot / reprioritize), suggest `glare-focus-decisions`.
-- When the conversation needs *executive ROI / business-KPI framing*, hand off to `glare-lead`.
-- For multi-block Focus questions, hand back to `glare-focus`.
+- Choosing the right frame to learn through next → `glare-focus-methods`
+- Placing signals side by side once methods have run → `glare-focus-comparing`
+- Turning evidence into a clear next move → `glare-focus-decisions`
+- Upstream: clarifying the user need or audience first → `glare-define`
+- Upstream: turning hunches into testable signals → `glare-measure`
+- Connecting the chosen direction to business outcomes → `glare-lead`
+- The whole Focus flow → `glare-focus`
+- The Define → Measure → Focus → Lead chain → `glare-decision-map`

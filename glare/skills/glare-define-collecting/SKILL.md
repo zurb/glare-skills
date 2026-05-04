@@ -1,13 +1,13 @@
 ---
 name: glare-define-collecting
-description: Use this skill when the user is in the Collecting Data block of Glare's Define facet — turning raw input into usable signals. Triggers include picking a research approach (Exploratory / Evaluative / Comparative); the five-step collection process (Intent → Stack → Approach → Techniques → Connect); Research Stacks vs Design Stacks; choosing named instruments (SUS, NPS, SEQ, CES, NASA-TLX) or techniques (first-click, card sorting, A/B, heatmaps, surveys, clickstream, tree testing); the four feedback types (View / See / Sense / Hear); or the Define → Capture → Connect cadence. Full instrument and tool catalogs (PURE, SUMI, WAMMI, UEQ, etc.; UserTesting, Maze, Helio, Hotjar, GA, Mixpanel, etc.) live in this skill's `reference.md`. Do NOT use when the user is naming the underlying need (use `glare-define-user-needs`), defining who the data comes from (use `glare-define-audience`), or interpreting / picking the metrics themselves (use `glare-define-ux-metrics`). For broad Define-facet questions that span multiple blocks, use the parent `glare-define` skill instead.
+description: Use this skill when the user is in the Collecting Data block of the Decision Map's Define area — turning raw input into usable signals. Triggers include picking a research approach (Exploratory / Evaluative / Comparative); the five-step collection process (Intent → Stack → Approach → Techniques → Connect); Research Stacks vs Design Stacks; choosing named instruments (SUS, NPS, SEQ, CES, NASA-TLX) or techniques (first-click, card sorting, A/B, heatmaps, surveys, clickstream, tree testing); the four feedback types (View / See / Sense / Hear); or the Define → Capture → Connect cadence. Full instrument and tool catalogs (PURE, SUMI, WAMMI, UEQ, etc.; UserTesting, Maze, Helio, Hotjar, GA, Mixpanel, etc.) live in this skill's `reference.md`. Do NOT use when the user is naming the underlying need (use `glare-define-user-needs`), defining who the data comes from (use `glare-define-audience`), or interpreting / picking the metrics themselves (use `glare-define-ux-metrics`). For broad Define questions that span multiple blocks, use the parent `glare-define`; for the full Decision Map, use `glare-decision-map`.
 ---
 
-You are helping the user work the **Collecting Data** block of Glare's Define facet — the discipline that turns raw input into usable signals and prevents drift back into "loudest voice wins."
+You are helping the user work the **Collecting Data** block of the Decision Map's **Define** area — the discipline that turns raw input into usable signals and prevents drift back into "loudest voice wins."
 
 ## Core idea
 
-Collecting answers "where does clarity come from?" by pairing user needs with business goals, then choosing the right stack, approach, technique, and tool to capture signal in hours instead of months.
+Collecting Data sits inside the Define area of the Decision Map. It answers "where does clarity come from?" by pairing user needs with business goals, then choosing the right stack, approach, technique, and tool to capture signal in hours instead of months.
 
 ## Read the reference first
 
@@ -33,4 +33,7 @@ Before answering, read `reference.md` — it contains the five-step collection p
 - When they ask *who the participants/customers should be*, suggest `glare-define-audience`.
 - When they ask *which numbers to track or how to interpret them*, suggest `glare-define-ux-metrics`.
 - When the data is collected and they're moving to calibrated benchmarks, hand off out of Define toward `glare-measure`.
-- For multi-block Define questions, hand back to `glare-define`.
+- For multi-block Define questions, hand back to `glare-define`. For the Decision Map as a whole, `glare-decision-map`.
+- When the user is asking what *signals* to capture (not just which instruments) and how to structure them, route to `glare-design-signals` and the bucket skills `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`.
+- When the user is preparing for or evaluating a design review meeting (the SIGNAL framework), route to `glare-design-review`.
+- When the user wants to assess team maturity (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence), route to `glare-design-assessment`.

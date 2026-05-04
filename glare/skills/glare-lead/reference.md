@@ -2,22 +2,29 @@
 
 ## What this block is about
 
-"Lead" is the Glare facet (also surfaced under the legacy label "Show") that addresses how design earns credibility and demonstrates business impact. Where earlier facets (Define, Measure, Focus) gather and structure user signals, Lead is the upward-facing layer that translates those signals into language executives use: revenue, retention, churn, efficiency, market share. The block is built around four interlocking ideas — Business Goals, Workflows, Mapping, and Results — plus a maturity model (five Dimensions) and a Workflows sub-folder. The throughline: design only "leads" when it can prove a chain of cause from a user need, to a UX metric, to a product KPI, to a business KPI, to a strategic pressure leadership already tracks. Lead exists to make that chain visible, repeatable, and embedded in cross-functional decision-making.
+"Lead" is the Glare facet — the upward-facing area of the v1.3 **Decision Map** (which also contains Define, Measure, and Focus) — that addresses how design earns credibility and demonstrates business impact. Where the other Decision Map facets (Define, Measure, Focus) gather and structure user signals, Lead translates those signals into language executives use: revenue, retention, churn, efficiency, market share. The block is built around four interlocking ideas — Business Goals, Workflows, Mapping, and Results — plus a maturity model (five Dimensions) and a Workflows sub-folder. The throughline: design only "leads" when it can prove a chain of cause from a user need, to a UX metric, to a product KPI, to a business KPI, to a strategic pressure leadership already tracks. Lead exists to make that chain visible, repeatable, and embedded in cross-functional decision-making. (Many v1.0 source docs were titled "Glare | Show, …"; "Show" is the legacy label and has been replaced everywhere by "Lead" except for the Design Assessment grid axis, which is a separate artifact.)
 
 Note: two folder entries (`Workflows`, `Dimensions`) contained no leaf-level files in this batch — only their parent folder metadata was returned. They are listed but not summarized.
 
-## Glare | Show Overview v1.0
+### v1.3 signal anatomy and signal types
 
-The pitch for the Show/Lead facet. Most teams stop at outputs (wireframes, prototypes, polished UI) and falter when leaders ask "Did it work?" Show is where design earns credibility by linking user signals to outcomes executives care about.
+Two pieces of v1.3 vocabulary the rest of this reference assumes:
 
-- Show is built on four pillars: **Business Goals, Workflows, Mapping, Results**.
+- **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. Lead is most concerned with the last three: a signal only earns leadership trust when the **Business goal** and **Direction** rungs are explicit.
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. These are the v1.3 outcome categories signals roll up into and are distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in the Measure facet.
+
+## Glare | Lead Overview v1.0
+
+The pitch for the Lead facet. Most teams stop at outputs (wireframes, prototypes, polished UI) and falter when leaders ask "Did it work?" Lead is where design earns credibility by linking user signals to outcomes executives care about.
+
+- Lead is built on four pillars: **Business Goals, Workflows, Mapping, Results**.
 - **Business Goals** — anchor design to the pressures execs already track (growth, retention, efficiency); make design a lever, not decoration.
 - **Workflows** — translate signals into the language of each function (Sales, Marketing, Product, Ops, Finance) so signals travel and gain weight.
 - **Mapping** — link Design KPIs (task success, error rate, comprehension) → Product KPIs (adoption, retention, engagement) → Business KPIs (revenue, churn, efficiency).
 - **Results** — tie initiatives, findings, and decisions across workflows into outcomes leadership trusts; show impact across user, product, and business layers.
-- Show builds credibility for the other Glare facets (Define, Measure, Focus, Show), turning scattered improvements into a chain of proof.
+- Lead builds credibility for the other Decision Map facets (Define, Measure, Focus), turning scattered improvements into a chain of proof.
 
-## Glare | Show, Business Goals v1.0
+## Glare | Lead, Business Goals v1.0
 
 Why metrics die in dashboards: they don't connect to goals. A *signal* ties a metric to intent, creating a chain (task success → adoption → growth) that is proof, not just numbers.
 
@@ -65,7 +72,7 @@ Operations
 2. Does it show adoption or retention at the product level?
 3. Does it connect to growth, churn, or revenue at the business level?
 
-## Glare | Show, Workflows v1.0
+## Glare | Lead, Workflows v1.0
 
 Every company runs on workflows that are already in motion whether design is in the room or not. Design gets sidelined when it can't prove influence on those flows. Signals prove how a single user action ripples into adoption, retention, revenue, or cost savings. The doc catalogs nine business functions with the same four-field template (top metrics / questions to ask / how to measure / where design creates lift):
 
@@ -85,7 +92,7 @@ Every company runs on workflows that are already in motion whether design is in 
 2. Did adoption or retention improve?
 3. Did it move a metric this function already tracks?
 
-## Glare | Show, Mapping v1.0
+## Glare | Lead, Mapping v1.0
 
 Mapping draws a line from user needs (bottom) to business goals (top), turning outputs into outcomes. Executives care about outcomes, not outputs.
 
@@ -112,7 +119,7 @@ UX metrics are the **connective tissue**: they make product metrics explainable 
 
 **Quick Exercise**: pick one feature this month and walk it up the ladder (need → design KPI → product KPI → business KPI → business goal).
 
-## Glare | Show, Mapping v1.1
+## Glare | Lead, Mapping v1.1 (still titled "Glare | Show, Mapping v1.1" in source)
 
 A more procedural, training-style rewrite of v1.0 with explicit steps and tables. Mapping is positioned within the **Lead facet** of Glare. It "closes the loop between what teams learn and what leadership values."
 
@@ -135,7 +142,7 @@ A more procedural, training-style rewrite of v1.0 with explicit steps and tables
 
 **Reflection questions**: Did we define business goals before measuring? Does the map clearly connect UX → product → business KPIs? Is the map visible across teams? Have we refreshed since last review?
 
-## Glare | Show, Results v1.0
+## Glare | Lead, Results v1.0
 
 Results are where signals prove value. Without structure, metrics stay stuck in reports.
 
@@ -233,7 +240,8 @@ Sub-folder under Lead, presumably containing the deeper materials for the five m
 
 ## Key terms
 
-- **Glare** — the overarching framework with facets Define, Measure, Focus, Show, and Lead. "Show" appears to be the older or alternate name for the **Lead** facet (v1.0 docs are titled "Glare | Show ..."; v1.1 docs are titled "Glare | Lead ...").
+- **Glare** — the overarching framework. In v1.3 the four facets Define / Measure / Focus / Lead are nested under a top-level **Decision Map** section. "Show" is the legacy v1.0 label for the **Lead** facet (v1.0 docs are titled "Glare | Show …"; v1.1 docs onward use "Glare | Lead …"). The label "Show" should be treated as deprecated everywhere except the Design Assessment grid axis, which is a separate artifact.
+- **Decision Map** — v1.3 top-level section that groups Define, Measure, Focus, and Lead. Lead is the upward-facing area of the Decision Map.
 - **Lead facet** — the credibility-and-impact layer; makes design results visible, measurable, and trusted by leadership; built from Business Goals, Workflows, Mapping, Results.
 - **Signal** — a metric tied to intent; only counts as a signal when it answers yes across user / product / business layers.
 - **Chain of Proof** — the five-rung ladder: User Need → Design KPI → Product KPI → Business KPI → Business Goal.
