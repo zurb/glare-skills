@@ -1,9 +1,9 @@
 ---
 name: glare-define
-description: Use this skill when the user is in the Define area of Glare's Decision Map — the foundational "Credibility" stage where teams agree on what matters before building. Triggers include: defining user needs, picking the right audience, setting up data collection, or choosing UX metrics; questions like "who are we designing for," "what user need does this solve," "what should we measure," "how do I separate wants from needs," or "which audience signal weighs most." Also use when the user mentions the seven UX Honeycomb layers (Findable, Accessible, Usable, Credible, Reliable, Valuable, Desirable), the four audiences (Project Team, Stakeholders, Customers, Participants), or instruments like SUS, NPS, SEQ, CES, NASA-TLX, first-click, card sorting, A/B, heatmaps. Do NOT use when the user has already defined their needs/metrics and is now forming hypotheses or designing tests — invoke `glare-measure` instead. For the broader Decision Map (Define / Measure / Focus / Lead) use `glare-decision-map`.
-version: 1.3.0
+description: Use this skill when the user is in the Define area of Glare's Decision Map — the "Credibility" stage where teams agree on what matters before building. Triggers: defining user needs, picking the right audience, setting up data collection, or choosing UX metrics; questions like "who are we designing for," "what user need does this solve," "what should we measure," "separate wants from needs," "which audience signal weighs most." Also use when the user mentions the five user-need categories (Basics, Trust, Personal, Impact, Feelings) or 22 individual need types; the four audiences (Project Team, Stakeholders, Customers, Participants); the three UX metric types (Attitudinal, Behavioral, Performance); or instruments like SUS, NPS, SEQ, CES, NASA-TLX, first-click, card sorting, A/B, heatmaps. Do NOT use when needs/metrics are already defined and the user is forming hypotheses or designing tests — invoke `glare-measure`. For the broader Decision Map use `glare-decision-map`.
+version: 1.4.0
 source_doc_version: v1.1
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-06
 ---
 
 You are helping the user work through the **Define** area of Glare's **Decision Map** — the "Credibility" stage that slows teams down just long enough to agree on what matters before building.
@@ -16,19 +16,19 @@ Define is the first area of the Decision Map (Define → Measure → Focus → L
 
 Before answering substantive questions, read:
 
-- `reference.md` — full compressed content of the Define block, including the 7-layer UX Honeycomb user needs model, the four-audience model with signal weights, the five-step Collecting process (intent → stack → approach → techniques → connect), the UX metrics taxonomy (Attitudinal / Behavioral / Performance / Perceptual, viewed by Type, Stage, Time, Engagement), and the catalogs of research instruments and platforms.
+- `reference.md` — full compressed content of the Define block, including the five user-need categories (Basics, Trust, Personal, Impact, Feelings) with all 22 individual need types nested under them; the four-audience model with signal weights; the five-step Collecting process (Intent → Stack → Approach → Techniques → Connect); the UX metrics taxonomy (Attitudinal / Behavioral / Performance), and the catalogs of techniques, instruments, and platforms.
 
 ## How to apply
 
 1. **Identify which of the four blocks the user is in.** Don't try to cover all four — pick the one that matches their current question and stay there.
 
-2. **For User Needs:** Anchor in the **7-layer UX Honeycomb** (Findable → Accessible → Usable → Credible → Reliable → Valuable → Desirable). Walk in order; higher layers can't compensate for a broken lower layer. Apply the validation rule: *if users say they need it but ignore it in practice, it's a want masquerading as a need.* Map each named need to a metric type.
+2. **For User Needs:** Anchor in the **five-category stack** (Basics → Trust → Personal → Impact → Feelings). Walk in order; higher categories can't compensate for a broken lower one. When the user names a specific need (e.g., "findable," "secure," "engaging"), pin it to its category and to a metric. Apply the validation rule: *if users say they need it but ignore it in practice, it's a want masquerading as a need.*
 
-3. **For Audience:** Use the **four-audience framing** (Project Team = intent; Stakeholders = direction; Customers = proof; Participants = clarity) and remind the user that internal voices guide while external voices validate. Flag the "design for everyone = design for no one" trap. Help them pick 3–5 attributes total — enough to separate signal from noise.
+3. **For Audience:** Use the **four-voice frame** (Project Team = intent; Stakeholders = direction; Customers = proof; Participants = clarity) and remind the user that internal voices guide while external voices validate. Flag the "design for everyone = design for no one" trap. Help them pick 3–5 attributes total — enough to separate signal from noise.
 
 4. **For Collecting Data:** Walk them through the **five-step process** — Intent → Stack → Approach (Exploratory / Evaluative / Comparative) → Techniques → Connect. Recommend specific instruments from the reference catalog (SUS, NPS, first-click, etc.) tied to the metric they care about.
 
-5. **For UX Metrics:** Treat metrics as the **grammar of signals**. Force a balance of attitudinal + behavioral + performance + perceptual, and balance leading vs lagging indicators. Every metric must tie back to a UX outcome leaders can act on, not a vanity number.
+5. **For UX Metrics:** Treat metrics as the **grammar of signals**. Force a balance of attitudinal + behavioral + performance, and balance leading vs lagging indicators. Every metric must tie back to a UX outcome leaders can act on, not a vanity number. Helio appears throughout as the way to capture attitudinal and behavioral signals as leading indicators before product ships.
 
 6. **End every Define session by checking the four quick-check questions:** Does this solve a real user goal? Can you name 3 audience traits? What real input are you using? Which metric proves progress? If any answer is fuzzy, the team isn't ready to leave Define.
 

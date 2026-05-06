@@ -1,79 +1,174 @@
-# UX Metrics — Reference (extracted from define-compressed.md)
+# UX Metrics — Reference (Glare Define, v1.0 re-edited 2026-05-06)
 
-## Glare | Define, UX Metrics v1.0
+## What a UX metric is
 
-- **A UX metric quantifies how users feel and behave** — turning satisfaction, comprehension, and usability into trackable signals.
-- **Four types (the foundational taxonomy):**
-  - **Attitudinal** (how users feel): Brand Score, Desirability, Expectations, Feeling, Helpfulness, Trust, Loyalty, Satisfaction, Reaction, Sentiment, Usefulness
-  - **Behavioral** (what users do): Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability
-  - **Performance** (efficiency/accuracy): split into Marketing (Avg Time on Page, Avg Session Duration, Pages per Session, Bounce Rate, Exit Rate, Device Type, Event Tracking), eCommerce (Engagement, Abandonment Rate, Bounce Rate, Store Sessions), and Product (Stickiness, Activation Rate, Feature Usage, Time to Activate, Retention Rate, Click-back Rate)
-  - **Perceptual** — what users understand. Examples: Comprehension, Recognition, Mental-Model Fit, Information-Scent. Surfaces gaps where the design works mechanically but users don't grasp it. Added in v1.1.
-- **4-step discipline:** Start small (1–2 metrics tied to a real issue) → Test and learn → Share and align → Adjust as you grow.
-- **Four principles for choosing metrics** (each metric must pass these tests):
-  - **Easy to Understand** — explainable in one sentence; otherwise it won't guide decisions
-  - **Good for Comparison** — patterns over time, not single snapshots ("432 clicks" is trivia; "27% comprehension lift" is proof)
-  - **Use Rates or Ratios** — raw counts are vanity (10k visits with 98% bounce)
-  - **Focus on Behavior** — what people do beats what they say
-- **Four critical comparisons:** Vanity vs Actionable; Qualitative vs Quantitative; Exploratory vs Reporting; Correlated vs Causal (the "Monday usage spike" example: caused by support emails, not the feature).
-- **UX Metrics in Practice — four lenses (each its own sub-doc):**
-  - **By Type** (attitudinal / behavioral / performance / perceptual)
-  - **By Stage** (predictive / proxy / analytics)
-  - **By Time** (leading / lagging)
-  - **By Engagement** (needs / behavior / activity)
-- **Quick checklist:** can it be explained in one sentence; comparable; a rate not a count; behavior-grounded; actionable; pairs *what* with *why*; fits timing; balances leading/lagging.
+A UX metric quantifies how users feel and behave when they interact with your product. Metrics turn concepts like satisfaction, comprehension, and usability into signals you can track, compare, and act on. They are "the grammar of signals" — a 70% completion rate can settle weeks of debate.
 
-## Glare | Define, UX Metrics, By Type v1.0
+> **Compatibility note.** A v1.1 iteration of this doc briefly added a fourth "Perceptual" metric type covering comprehension and mental-model fit. The current source-of-truth UX Metrics doc — v1.0, re-edited 2026-05-06 — explicitly defines **3 metric types only**: Attitudinal, Behavioral, Performance. This reference follows the 3-type taxonomy as canonical. Comprehension is now categorized as a Behavioral metric.
 
-- **Four lenses every product can be measured by:** how users feel (attitudinal), what they do (behavioral), how well they can do it (performance), and what they understand (perceptual). Ignore one and the picture distorts.
-- **Attitudinal Metrics:** Do they trust this? Are they happy? Will they return? Examples: Brand Score, Desirability, Satisfaction.
-- **Behavioral Metrics:** Are they finishing? Do they engage deeply? Where do they drop off? Examples: Completion Rate, Engagement, Usability.
-- **Performance Metrics:** Is it efficient? Where stuck? How smoothly? Examples: Time on Task, Error Rate, Drop-off Rate.
-- **Diagnostic mismatches (key insight):**
-  - High satisfaction + low completion = people like the idea but can't finish.
-  - Strong performance + low engagement = system works but no one cares.
-  - High completion + low satisfaction = users grind through; warning sign for churn.
-- **5-step method:** define the question (perception/action/efficiency) → pick one metric from each type (a trio, not ten) → run a small test → look for mismatches → share the trio together.
-- **Traps:** relying on one type; collecting too many signals; treating metrics as static.
-- **Proof in practice:** team saw 80% signup completion (looked great), then added satisfaction (most users confused) and time on task (slow/painful) — redesigned for clarity, got faster signups and lasting retention.
+## Why measure UX
 
-## Glare | Define, UX Metrics, By Time v1.0
+Most teams measure too late or measure the wrong thing. They chase analytics that arrive after the sprint or collect numbers that look good on slides but never guide a decision. Metrics matter because they cut through noise: they reveal what users need, what they actually do, and how well design supports them.
 
-- **Anticipate Early, Prove Later.** Most teams overweight lagging data because executives recognize it; lagging tells you what already happened when damage is done.
-- **Leading Indicators** — forecast what's likely to happen. Are users interested? Do they understand? Will this block them later? Examples: clicks/sign-ups during early exposure, prototype usage, survey comprehension, beta feedback.
-- **Lagging Indicators** — confirm what happened after launch. Did adoption hold? Did retention grow? Examples: customer satisfaction, revenue, conversion rates, post-launch task success, retention over time.
-- **Why pair them:** leading-only = chasing noise; lagging-only = learning too late. Leading sparks adjustments before launch; lagging proves those adjustments created value.
-- **4-step method:** identify the window (anticipate vs evaluate) → pick matching signal → pair them deliberately → connect them (do leading signals correlate with long-term outcomes? recalibrate if not).
-- **Traps:** relying only on lagging; over-trusting leading (early excitement ≠ loyalty); not linking the two.
-- **Proof in practice:** SaaS collaboration feature had high desirability and beta usage (leading), but adoption plateaued and retention didn't improve (lagging). Mismatch revealed users liked the idea in theory but never built it into workflows; team redirected effort.
+## 4-step discipline
 
-## Glare | Define, UX Metrics, By Stage v1.0
+1. **Start small.** Choose one or two metrics tied to a real issue.
+2. **Test and learn.** Don't wait for perfect data. One strong result can shape a decision.
+3. **Share and align.** Data only matters if the team sees and understands it.
+4. **Adjust as you grow.** Metrics should evolve with your product.
 
-- **Three stages of metrics:** Predictive, Proxy, Analytics. A metric useful in testing is useless once live, and vice versa.
-- **Predictive Metrics** — leading indicators forecasting outcomes by revealing confusion or friction before launch. Logic: "If A happens, B will result, and C should decline." Example: 70% of users confused by a landing page in a survey.
-- **Proxy Metrics** — show how a design performs in controlled settings (usability tests, concept evals). Logic: "If B happens, C will decline." Example: 50% can complete a flow in test.
-- **Analytics** — measure live behavior. Logic: "C is declining." Example: time spent in section + completion → design supports the goal. Analytics show *what* but rarely *why*.
-- **4-step method:** identify the stage (exploring/testing/live) → pick matching metric → pair them → close the loop (feed analytics into next predictive tests).
-- **Traps:** relying only on analytics; trusting proxies too much; forgetting the loop.
-- **Proof in practice:** financial app saw 60% drop-off in old onboarding. Predictive tests on prototypes revealed users didn't understand key terms (refined language); proxy usability showed 90% task completion; analytics post-launch confirmed adoption rose, drop-off fell below 20%.
+---
 
-## Glare | Define, UX Metrics, By Engagement v1.0
+## The three metric types
 
-- **Engagement is a progression, not a single number.** Confirm need → confirm use → confirm return. Skip a step and you chase illusions.
-- **Three layers:**
-  - **Needs-Based** (customer understanding) — does this solve a real problem; do users see value? Examples: brand score, desirability, usefulness, onboarding completion, power-user feature adoption.
-  - **Behavior-Based** (customer behavior) — are users finishing actions; using features meaningfully? Examples: completion rate, navigation paths, usage frequency, engagement scores.
-  - **Activity-Based** (customer activity) — do they keep coming back; how long; routine? Examples: repeat visits, session duration, drop-off rate, recency of use.
-- **Diagnostic mismatches:**
-  - High desirability + low usage = people love the idea but won't adopt.
-  - Strong usage + weak loyalty = try once and move on.
-  - Consistent activity + low value = trapped in habit, no real outcome.
-- **4-step method:** start with needs → layer in behavior → add activity → look for gaps (the lagging layer is your friction point).
-- **Traps:** chasing shallow numbers (clicks/time on page); skipping layers (adoption without loyalty = delayed churn); mistaking activity for value.
-- **Proof in practice:** productivity tool's collaboration feature had high desirability + promising one-time usage, but repeat use dropped within weeks — excitement was real, loyalty missing.
+### Attitudinal — how users feel
+
+Do they trust this? Are they happy? Will they return?
+
+**Examples:** Brand Score, Desirability, Expectations, Feeling, Helpfulness, Trust, Loyalty, Satisfaction, Reaction, Sentiment, Usefulness.
+
+> **Helio callout (from source):** Collect attitudinal metrics as leading indicators in Helio before your product ships.
+
+### Behavioral — what users do
+
+Are they finishing? Do they engage deeply? Where do they drop off?
+
+**Examples:** Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability.
+
+> **Helio callout (from source):** Collect behavioral metrics as leading indicators in Helio before analyzing post-launch performance.
+
+### Performance — efficiency and accuracy
+
+Is the experience efficient? Where do people get stuck? How well does the product perform?
+
+| Sub-area | Example metrics |
+|---|---|
+| **Marketing** | Avg Time on Page, Avg Session Duration, Pages per Session, Bounce Rate, Exit Rate, Device Type, Event Tracking |
+| **eCommerce** | Engagement, Abandonment Rate, Bounce Rate, Store Sessions |
+| **Product** | Stickiness, Activation Rate, Feature Usage, Time to Activate, Retention Rate, Click-back Rate |
+
+Together, these three types give a full picture: how users feel, what they do, how well they can do it. Ignore one and the picture distorts.
+
+---
+
+## Choosing UX metrics — four principles
+
+Each metric must pass these tests.
+
+### 1. Easy to Understand
+
+If the team cannot explain the metric in one sentence, it will never guide a decision. Time-on-task is clear. Net Promoter Score is clear. A complicated index with three footnotes is not.
+
+*Trap:* presenting numbers that only analysts understand. *Fix:* metrics everyone can repeat back without translation.
+
+### 2. Good for Comparison
+
+Metrics only matter if you can compare them over time, across groups, or between versions. "We got 432 clicks" is trivia. "This version improved comprehension by 27%" is proof.
+
+*Trap:* treating single numbers as progress. *Fix:* metrics that reveal patterns, not snapshots.
+
+### 3. Use Rates or Ratios
+
+Raw counts are vanity. Ratios reveal truth. Ten thousand visits to a landing page looks impressive until you see that 98% bounced.
+
+*Trap:* celebrating big totals. *Fix:* rates that reveal outcomes.
+
+### 4. Focus on Behavior
+
+What people say is often polite fiction. What they do is reality. Users may praise a feature, but if usage stays at zero, the signal is clear.
+
+*Trap:* believing surveys without checking actions. *Fix:* pair attitudinal measures with behavioral proof.
+
+---
+
+## Four critical comparisons (filter)
+
+### Vanity vs. Actionable
+Vanity flatters. Actionable guides. Ten thousand page views vs. comprehension rate.
+
+### Qualitative vs. Quantitative
+Quantitative shows *what* happened. Qualitative shows *why*. Without both, you have half the story. 80% signup completion looks strong until paired with satisfaction scores showing users were confused while finishing.
+
+### Exploratory vs. Reporting
+Reporting metrics arrive after the fact. Exploratory metrics prevent failure before launch. Analytics shows adoption is low — but by then the sprint has moved on. Exploratory signals like comprehension or desirability would have flagged the issue weeks earlier.
+
+### Correlated vs. Causal
+Correlation shows a pattern. Causation shows proof. The "Monday usage spike" example: caused by Sunday-night support emails, not the feature itself. Without testing, you improve the wrong thing.
+
+---
+
+## UX Metrics in Practice — four lenses
+
+### By Type — three lenses
+
+- **Attitudinal** — how users feel.
+- **Behavioral** — what users do.
+- **Performance** — how well the system works.
+
+> **Helio callout:** Attitudinal and behavioral metrics can be collected as leading indicators in Helio, giving your team signal before performance data becomes available.
+
+**Diagnostic mismatches:**
+- High satisfaction + low completion = people like the idea but can't finish.
+- Strong performance + low engagement = system works but no one cares.
+- High completion + low satisfaction = users grind through; warning sign for churn.
+
+### By Stage — Predictive, Proxy, Analytics
+
+- **Predictive Metrics** — early warning. Reveal confusion before it turns into churn. A comprehension score on a prototype can save weeks. Logic: "If A happens, B will result, and C should decline."
+- **Proxy Metrics** — test-bed proof. Tell you whether users can complete a task in a controlled environment. Logic: "If B happens, C will decline."
+- **Analytics** — live report card. What happened once the product hit real traffic. Logic: "C is declining."
+
+> **Helio callout:** Attitudinal and behavioral metrics collected in Helio serve as both predictive signals and proxy metrics, surfacing early user confusion and validating ideas in a controlled environment before launch.
+
+Most teams wait for analytics. By then, the sprint is gone. Predictive and proxy keep you from being blindsided.
+
+### By Time — Leading vs. Lagging
+
+- **Leading Indicators** — forecast what's likely to happen. Examples: clicks/sign-ups during early exposure, prototype usage, survey comprehension, beta feedback.
+- **Lagging Indicators** — confirm what happened after launch. Examples: customer satisfaction, revenue, conversion, post-launch task success, retention.
+
+> **Helio callout:** Attitudinal and behavioral metrics collected in Helio serve as leading indicators, giving you user signal weeks before lagging performance metrics arrive.
+
+Leading-only = chasing noise. Lagging-only = learning too late.
+
+### By Engagement — Needs, Behavior, Activity
+
+A progression, not a single number. Confirm need → confirm use → confirm return. Skip a step and you chase illusions.
+
+- **Needs-Based** — does this solve a real problem? Examples: brand score, desirability, usefulness, onboarding completion.
+- **Behavior-Based** — are users finishing actions? Examples: completion rate, navigation paths, usage frequency, engagement scores.
+- **Activity-Based** — do they keep coming back? Examples: repeat visits, session duration, drop-off rate, recency.
+
+**Diagnostic mismatches:**
+- High desirability + low usage = people love the idea but won't adopt.
+- Strong usage + weak loyalty = try once and move on.
+- Consistent activity + low value = trapped in habit, no real outcome.
+
+---
+
+## Quick checklist (9 items, ninth added 2026-05-06)
+
+1. Can everyone understand the metric in one sentence?
+2. Can it be compared across time or groups?
+3. Is it a rate or ratio, not just a raw count?
+4. Does it capture behavior, not just opinion?
+5. Is it actionable, not vanity?
+6. Does it pair *what* happened with *why*?
+7. Does it fit the timing — predictive, proxy, or analytics?
+8. Does it balance leading and lagging signals?
+9. **Does it build momentum instead of slowing it down?** *(new in 2026-05-06 source edit)*
+
+---
+
+## Business impact
+
+When metrics are chosen with discipline, design earns credibility. Leaders trust the data. Teams move faster because decisions are grounded, not debated. Predictive signals show what is coming. Proxy signals validate ideas before scale. Analytics confirm impact once live. Together they create resilience.
 
 ## Related key terms
 
-- **Four UX Metric Types** — Attitudinal, Behavioral, Performance, Perceptual.
+- **Three UX Metric Types** — Attitudinal, Behavioral, Performance.
 - **Four UX Metric Lenses** — By Type, By Stage (Predictive/Proxy/Analytics), By Time (Leading/Lagging), By Engagement (Needs/Behavior/Activity).
 - **Vanity vs Actionable / Qualitative vs Quantitative / Exploratory vs Reporting / Correlated vs Causal** — the four metric-comparison filters.
-- **Signal** — a measurable, trustworthy piece of evidence (vs raw "data"). The unit of credibility in Glare.
+- **Four metric-quality principles** — Easy to Understand · Good for Comparison · Use Rates or Ratios · Focus on Behavior.
+- **Signal** — a measurable, trustworthy piece of evidence. The unit of credibility in Glare.
+- **Helio** — in-house testing platform; collects attitudinal and behavioral metrics as leading indicators / proxies before launch.

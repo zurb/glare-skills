@@ -1,9 +1,9 @@
 ---
 name: glare-define-collecting
-description: Use this skill when the user is in the Collecting Data block of the Decision Map's Define area — turning raw input into usable signals. Triggers include picking a research approach (Exploratory / Evaluative / Comparative); the five-step collection process (Intent → Stack → Approach → Techniques → Connect); Research Stacks vs Design Stacks; choosing named instruments (SUS, NPS, SEQ, CES, NASA-TLX) or techniques (first-click, card sorting, A/B, heatmaps, surveys, clickstream, tree testing); the four feedback types (View / See / Sense / Hear); or the Define → Capture → Connect cadence. Full instrument and tool catalogs (PURE, SUMI, WAMMI, UEQ, etc.; UserTesting, Maze, Helio, Hotjar, GA, Mixpanel, etc.) live in this skill's `reference.md`. Do NOT use when the user is naming the underlying need (use `glare-define-user-needs`), defining who the data comes from (use `glare-define-audience`), or interpreting / picking the metrics themselves (use `glare-define-ux-metrics`). For broad Define questions that span multiple blocks, use the parent `glare-define`; for the full Decision Map, use `glare-decision-map`.
-version: 1.3.0
+description: Use this skill when the user is in the Collecting Data block of the Define area — turning raw input into usable signals. Triggers: picking a research approach (Exploratory / Evaluative / Comparative); the five-step process (Intent → Stack → Approach → Techniques → Connect); Research Stacks vs Design Stacks; named instruments (SUS, NPS, SEQ, CES, NASA-TLX) or the 12 techniques (First Click, Task Success, Time on Task, A/B, Multivariate, Heatmaps, Clickstream, Web Analytics, Conversion Rate, Eye Tracking, Card Sorting, Surveys); the four feedback types (View / See / Sense / Hear); the Define → Capture → Connect cadence. Tool catalogs (PURE, SUMI, WAMMI, UEQ; UserTesting, Maze, Helio, Hotjar, GA, Mixpanel) live in `reference.md`. Do NOT use when naming the need (use `glare-define-user-needs`), defining who data comes from (use `glare-define-audience`), or picking metrics (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the Decision Map, `glare-decision-map`.
+version: 1.4.0
 source_doc_version: v1.1
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-06
 ---
 
 You are helping the user work the **Collecting Data** block of the Decision Map's **Define** area — the discipline that turns raw input into usable signals and prevents drift back into "loudest voice wins."
@@ -14,13 +14,13 @@ Collecting Data sits inside the Define area of the Decision Map. It answers "whe
 
 ## Read the reference first
 
-Before answering, read `reference.md` — it contains the five-step collection process, the three modes (Exploratory / Evaluative / Comparative), the Research Stacks catalog with named instruments, the Techniques table with metric mappings, the Tools four-axis framework, and the proof-in-practice examples.
+Before answering, read `reference.md` — it contains the five-step collection process, the three modes (Exploratory / Evaluative / Comparative), the **12 techniques** with usage guidance, the Research Stacks catalog, the Tools four-axis framework, the three-tier sharing model, and the proof-in-practice examples.
 
 ## How to apply
 
 1. **Walk the five-step collection process in order** — Start with Intent (pair user need with business goal, write the hypothesis) → Choose Your Stack (Research vs Design; pick from Website, Mobile App, Product, E-commerce, Marketing) → Identify the Approach (Exploratory: "what should we solve?"; Evaluative: "does this design work?"; Comparative: "which performs better?") → Apply Techniques → Connect and ready your data (project / cross-team / leadership).
 
-2. **Match technique to approach using the reference catalog** — Exploratory: interviews, journey maps, diary studies, card sorting, surveys → usefulness, satisfaction, effort, trust. Evaluative: first-click, task success, time on task, heatmaps, clickstream, usability tests → completion, comprehension, efficiency, usability. Comparative: A/B, preference, multivariate, conversion, web analytics, eye tracking → conversion, engagement, desirability, confidence.
+2. **Match technique to approach using the 12-technique catalog** — Exploratory: Card Sorting, Surveys & Questionnaires, interviews, journey maps. Evaluative: First Click, Task Success Rate, Time on Task, Heatmaps, Clickstream, usability tests. Comparative: A/B, Multivariate, Conversion Rate Analysis, Eye Tracking, Web Analytics.
 
 3. **Recommend a named instrument or tool** rather than a vague method. Use the Research Stacks list (SUS, SEQ, PURE, SUMI, CES, CASTLE, NASA-TLX, WAMMI, PSSUQ, QUIS, UEQ, UX-Lite, SUPR-Q, NPS, L-DERLY) and the four tool buckets (Attitudinal, Behavioral, Performance, Specialized) with their named platforms.
 
@@ -28,7 +28,9 @@ Before answering, read `reference.md` — it contains the five-step collection p
 
 5. **Apply the Define → Capture → Connect cadence** — every collection effort defines what to measure, captures signal lean, and connects findings back to a metric and an audience that leadership can act on. Always cite techniques + audience + metrics in any shared finding.
 
-6. **Flag the traps** — collecting everything, tool sprawl, treating methods in isolation, running techniques without a metric attached, one-and-done research, and over-relying on one type (e.g., analytics with no attitudinal pair).
+6. **Use the three-tier sharing model** — Project-Level Feedback (within team, in collection tools), Cross-Team Insights (Findings or Glare workspace by concept/metric), Leadership Rollups (key signals + sources in roadmap reviews).
+
+7. **Flag the traps** — collecting everything, tool sprawl, treating methods in isolation, running techniques without a metric attached, one-and-done research, and over-relying on one type (e.g., analytics with no attitudinal pair).
 
 ## Handoffs
 

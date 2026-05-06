@@ -1,5 +1,45 @@
 # Glare Marketplace Changelog
 
+## 1.4.0 — 2026-05-06
+
+Define section content refresh from updated Drive source. Affects 5 skills (parent + 4 buckets); other 49 skills unchanged.
+
+### What changed
+
+- **glare-define-user-needs — major restructure.** The 7-layer UX Honeycomb (Findable / Accessible / Usable / Credible / Reliable / Valuable / Desirable) was replaced by **5 categories × 4 needs = 22 individual user-need types** in the Drive source:
+  - **Basics** — Usable · Useful · Findable · Accessible
+  - **Trust** — Credible · Secure · Reliable · Intuitive
+  - **Personal** — Inclusive · Adaptable · Connected · Insightful
+  - **Impact** — Valuable · Sustainable · Efficient · Scalable
+  - **Feelings** — Desirable · Delightful · Engaging · Empowering
+
+  All 22 needs now have a 1-2 paragraph synthesis in `reference.md` (definition, key questions, signal types, example metrics, common failure mode). A compatibility note explains the 7-layer → 5-category change for readers familiar with the older model.
+
+- **glare-define-ux-metrics — restored to 3 metric types.** The today-edited Drive doc (`Glare | Define, UX Metrics v1.0` — modified 2026-05-06) explicitly defines **Attitudinal / Behavioral / Performance** with NO Perceptual type. Removed all Perceptual references. Comprehension/recognition (formerly under Perceptual) now sit under Behavioral. Reference includes a compatibility note explaining the v1.1 → v1.0 re-edit path. Added Helio integration callouts (attitudinal/behavioral as leading indicators in Helio; proxy stage). Quick checklist gained a 9th item: "Does it build momentum instead of slowing it down?"
+
+- **glare-define-audience — per-voice depth.** Pulled in the four v1.1 sub-docs (Project Team, Stakeholders, Customers, Participants) for richer per-voice content. Four-voice frame intact (internal voices guide, external voices validate).
+
+- **glare-define-collecting — technique catalog.** Added detail from the 12 collection technique docs (A/B, Card Sorting, Conversion Rate, Eye Tracking, Surveys, First Click, Multivariate, Clickstream, Heatmaps, Task Success, Web Analytics, Time on Task) plus Tools and Research Stacks docs. Five-step process intact.
+
+- **glare-define — parent refresh** to reflect downstream changes.
+
+### Version metadata
+
+The 5 Define skills bumped to:
+```yaml
+version: 1.4.0
+source_doc_version: v1.1   # (or "v1.0 (re-edited 2026-05-06)" for ux-metrics)
+last_rebuilt: 2026-05-06
+```
+
+The other 49 skills remain at `version: 1.3.0` since their content didn't change. The plugin's overall version bumps to `1.4.0` because the marketplace as a whole has changed.
+
+### Carry-forward
+
+Cross-references to `glare-measure`, `glare-decision-map`, `glare-signals-*`, `glare-design-review`, `glare-design-assessment` all preserved. The parallel UX-metrics ↔ signal-types distinction (UX metric families ≠ Need/Use/Prefer/Adopt) preserved in UX Metrics SKILL.md.
+
+---
+
 ## 1.3.0 — 2026-05-04
 
 Major rebuild. Replaced the v1.1 5-block model (Get Started + Define / Measure / Focus / Lead) with the v1.3 5-section model (Get Started + Design Review + Design Signals + Decision Map + Design Assessment).

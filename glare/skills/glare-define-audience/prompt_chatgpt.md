@@ -40,6 +40,37 @@ Project Teams form intent -> Stakeholders align impact -> Participants validate 
 
 Don't skip ahead; missing an upstream voice surfaces as misalignment downstream.
 
+### Per-voice depth
+
+**Project Team** — capture three predictions before each test. Use the 5 internal signal types: Intent Clarity, Decision Context, Design Confidence, Iteration Learning, Cross-Discipline Alignment. Trap: silent assumptions, overconfidence, rush to output, disconnected roles.
+
+**Stakeholders** — speak in workflow language:
+- Sales: revenue, conversion, pipeline
+- Marketing: engagement, brand trust
+- Product: adoption, retention, NPS
+- Engineering: efficiency, stability
+- Strategy: alignment, process
+- Finance/Legal: risk, compliance, cost
+
+Three signal types: Trust & Confidence, Clarity of Value, Business Readiness.
+
+**Customers** — locate the user inside the eight lifecycle segments and use per-segment metric guidance:
+- Trial: Comprehension, Time on Task, Activation
+- Freemium: Completion, Satisfaction, Trust
+- New Paying: Completion Rate, Confidence, Error Rate
+- Habitual: Task Success, Retention, Usability
+- Power: Efficiency, Feature Use, Satisfaction
+- Advocates: Sentiment, NPS, Referral Rate
+- Dormant: Frequency, Reactivation Rate, Trust
+- Churned: Churn Rate, Sentiment, Exit Feedback
+
+**Participants** — use the four phases (Exploration -> Definition -> Refinement -> Launch Prep) and four participant types (Target Users, Adjacent Users, Informed Outsiders, Internal Proxies). Five adjacent users + one main task within an hour gives a starting signal.
+
+Three essential questions every participant test answers:
+1. Do people understand what this design is trying to do?
+2. Can they complete the main task easily?
+3. Does it feel trustworthy enough to continue using?
+
 ### The five attribute types (pick 3-5)
 
 | Type | What it captures | Best at measuring |
@@ -61,24 +92,11 @@ Fewer than 3 = noise. More than 5 = over-segmentation.
 5. Collect and compare.
 6. Check whether participant signals predict customer behavior.
 
-### The eight customer lifecycle segments
-
-| Segment | What to measure |
-|---|---|
-| **Trial / Pilot Accounts** | Comprehension, Time on Task, Activation |
-| **Freemium Users** | Completion, Satisfaction, Trust |
-| **New Paying Users** | Completion Rate, Confidence, Error Rate |
-| **Habitual Users** | Task Success, Retention, Usability |
-| **Power Users** | Efficiency, Feature Use, Satisfaction |
-| **Advocates** | Sentiment, NPS, Referral Rate |
-| **Dormant Accounts** | Frequency, Reactivation Rate, Trust |
-| **Churned Accounts** | Churn Rate, Sentiment, Exit Feedback |
-
 ### The four traps
 
 - **Designing for "everyone"** — design for no one.
 - **Over-segmenting** — samples too small.
-- **Assuming you already know** — skipping the test.
+- **Mistaking internal alignment for user understanding.**
 - **The balance trap** — too much participant data = confident in theory, fragile in practice; too much customer data = solid but slow to iterate.
 
 ---
@@ -89,13 +107,13 @@ Fewer than 3 = noise. More than 5 = over-segmentation.
 
 2. **Run the audience-build sequence in order.** Project Teams -> Stakeholders -> Participants -> Customers.
 
-3. **For external audiences, follow the 6-step define flow.**
+3. **For each voice, apply the right method** (predictions for teams; workflow language for stakeholders; lifecycle segments for customers; testing phases for participants).
 
-4. **Pick 3-5 attributes from the five categories.** Attributes structure signals; they don't describe people.
+4. **For external audiences, follow the 6-step define flow.**
 
-5. **For Customers specifically**, locate the user inside the eight lifecycle segments.
+5. **Pick 3-5 attributes from the five categories.** Attributes structure signals; they don't describe people.
 
-6. **Flag the recurring traps** — designing for "everyone," over-segmenting, assuming you already know, the balance trap.
+6. **Flag the recurring traps** — designing for "everyone," over-segmenting, internal-only alignment, design jargon to stakeholders, the balance trap.
 
 ---
 
@@ -119,5 +137,6 @@ Fewer than 3 = noise. More than 5 = over-segmentation.
 - Don't skip ahead in the audience-build sequence. Missing voices surface later as misalignment.
 - For customers, locate the lifecycle segment first — measurement changes by segment.
 - Watch the balance trap: too much participant = theory; too much customer = slow.
+- For stakeholders, translate UX signals into their workflow's metric language.
 
 **The goal is to leave the user with named audiences (with weights) and 3-5 attributes that turn vague groups into testable cohorts.**

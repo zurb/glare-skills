@@ -1,9 +1,9 @@
 ---
 name: glare-define-audience
-description: Use this skill when the user is defining WHO their signals come from in the Decision Map's Define area — picking and weighting audiences. Triggers include: "who are we designing for," "design for everyone is design for no one," the four audiences (Project Team, Stakeholders, Customers, Participants), internal vs external voices, signal weighting, picking 3–5 attributes (Behavioral, Motivational, Contextual, Lifecycle, Demographic), customer lifecycle segments (Trial, Freemium, New Paying, Habitual, Power, Advocates, Dormant, Churned), target vs adjacent users, informed outsiders, internal proxies, or balancing participant signals against customer behavior. Do NOT use when the user is naming the underlying need itself (use `glare-define-user-needs`), when they're choosing techniques/instruments to gather data (use `glare-define-collecting`), or when they're picking the metrics to track (use `glare-define-ux-metrics`). For broad Define questions that span multiple blocks, use the parent `glare-define`; for the full Decision Map, use `glare-decision-map`.
-version: 1.3.0
+description: Use this skill when the user is defining WHO their signals come from in the Define area — picking and weighting audiences. Triggers: "who are we designing for," "design for everyone is design for no one," the four audiences (Project Team, Stakeholders, Customers, Participants), internal vs external voices, signal weighting, picking 3–5 attributes (Behavioral, Motivational, Contextual, Lifecycle, Demographic), customer lifecycle segments (Trial, Freemium, New Paying, Habitual, Power, Advocates, Dormant, Churned), target vs adjacent users, informed outsiders, internal proxies, or balancing participant signals against customer behavior. Do NOT use when naming the underlying need (use `glare-define-user-needs`), choosing techniques/instruments (use `glare-define-collecting`), or picking metrics (use `glare-define-ux-metrics`). For broad Define questions, use `glare-define`; for the full Decision Map, use `glare-decision-map`.
+version: 1.4.0
 source_doc_version: v1.1
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-06
 ---
 
 You are helping the user work the **Audience** block of the Decision Map's **Define** area — defining who the signals come from and how much weight each voice should carry.
@@ -14,7 +14,7 @@ Audience sits inside the Define area of the Decision Map. Without an explicit au
 
 ## Read the reference first
 
-Before answering, read `reference.md` — it contains the four-audience model, the per-audience deep dives (Project Team, Stakeholders, Customers, Participants), the five attribute types, the eight customer lifecycle segments, and the audience-build sequence.
+Before answering, read `reference.md` — it contains the four-audience model, the per-audience deep dives (Project Team signal types, Stakeholder workflow mapping, the 8 Customer lifecycle segments, the Participant testing phases), the five attribute types, and the audience-build sequence.
 
 ## How to apply
 
@@ -22,13 +22,17 @@ Before answering, read `reference.md` — it contains the four-audience model, t
 
 2. **Run the audience-build sequence in order** — Project Teams form intent → Stakeholders align impact → Participants validate direction → Customers prove outcomes. Don't skip ahead; missing an upstream voice surfaces as misalignment downstream.
 
-3. **For external audiences, follow the 6-step define flow** — start with a question → identify customer vs participant → choose 3–5 attributes → map each to UX metrics → collect and compare → check whether participant signals predict customer behavior.
+3. **For each voice, use the right method:**
+   - **Project Team** — capture three predictions before testing; compare to results. Use the 5 internal signal types (Intent Clarity, Decision Context, Design Confidence, Iteration Learning, Cross-Discipline Alignment).
+   - **Stakeholders** — speak in their workflow language (Sales: revenue/conversion; Marketing: engagement/brand trust; Product: adoption/retention/NPS; Engineering: efficiency/stability; Strategy: alignment; Finance/Legal: risk/compliance).
+   - **Customers** — locate the user inside the **eight lifecycle segments** (Trial, Freemium, New Paying, Habitual, Power, Advocates, Dormant, Churned) and use the per-segment metric guidance in the reference.
+   - **Participants** — use the **four phases of testing** (Exploration, Definition, Refinement, Launch Prep) and the **four participant types** (Target Users, Adjacent Users, Informed Outsiders, Internal Proxies). Five adjacent users + one main task within an hour gives a starting signal.
 
-4. **Pick 3–5 attributes from the five categories** — Behavioral, Motivational, Contextual, Lifecycle, Demographic. Attributes structure signals; they don't describe people. Fewer than 3 = noise, more than 5 = over-segmentation.
+4. **For external audiences, follow the 6-step define flow** — start with a question → identify customer vs participant → choose 3–5 attributes → map each to UX metrics → collect and compare → check whether participant signals predict customer behavior.
 
-5. **For Customers specifically**, locate the user inside the eight lifecycle segments (Trial, Freemium, New Paying, Habitual, Power, Advocates, Dormant, Churned) and use the per-segment metric guidance in the reference.
+5. **Pick 3–5 attributes from the five categories** — Behavioral, Motivational, Contextual, Lifecycle, Demographic. Attributes structure signals; they don't describe people. Fewer than 3 = noise, more than 5 = over-segmentation.
 
-6. **Flag the recurring traps** — designing for "everyone," over-segmenting until samples are too small, assuming you already know, mistaking internal alignment for user understanding, and the balance trap (too much participant data = confident in theory; too much customer data = solid but slow).
+6. **Flag the recurring traps** — designing for "everyone," over-segmenting, mistaking internal alignment for user understanding, talking only in design language ("delight," "beauty") to stakeholders, and the balance trap (too much participant data = confident in theory; too much customer data = solid but slow).
 
 ## Handoffs
 

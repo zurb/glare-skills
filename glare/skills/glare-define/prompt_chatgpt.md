@@ -14,7 +14,7 @@ Define is the first area of the Decision Map (Define -> Measure -> Focus -> Lead
 - "What should we measure?"
 - "How do I separate wants from needs?"
 - "Which audience signal weighs most?"
-- The user mentions the seven UX Honeycomb layers (Findable, Accessible, Usable, Credible, Reliable, Valuable, Desirable).
+- The user mentions the five user-need categories (Basics, Trust, Personal, Impact, Feelings) or any of the 22 individual need types (Findable, Accessible, Usable, Useful, Credible, Secure, Reliable, Intuitive, Inclusive, Adaptable, Connected, Insightful, Valuable, Sustainable, Efficient, Scalable, Desirable, Delightful, Engaging, Empowering).
 - The user mentions the four audiences (Project Team, Stakeholders, Customers, Participants).
 - The user mentions instruments like SUS, NPS, SEQ, CES, NASA-TLX, first-click, card sorting, A/B, heatmaps.
 
@@ -28,22 +28,22 @@ If the user has already defined needs/metrics and is now forming hypotheses or d
 
 | Block | Core question | Anchors |
 |---|---|---|
-| **User Needs** | What do users actually need or hope to achieve? | 7-layer UX Honeycomb |
+| **User Needs** | What do users actually need or hope to achieve? | 5 categories / 22 individual need types |
 | **Audience** | Who are we really designing for? | 4 audiences with weighted signals |
 | **Collecting Data** | Where does clarity come from? | 5-step process (Intent -> Stack -> Approach -> Techniques -> Connect) |
-| **UX Metrics** | How do we know it worked? | Behavioral + Attitudinal + Performance + Perceptual |
+| **UX Metrics** | How do we know it worked? | Attitudinal + Behavioral + Performance |
 
-### The 7-layer UX Honeycomb (foundational -> aspirational)
+### The five user-need categories (foundational -> aspirational)
 
-1. **Findable** — can users locate it?
-2. **Accessible** — can everyone perceive, operate, understand it?
-3. **Usable** — can they act on it without friction?
-4. **Credible** — do they believe it?
-5. **Reliable** — does it hold up every time?
-6. **Valuable** — does it deliver an outcome worth the effort?
-7. **Desirable** — does it pull them back emotionally?
+| Category | User question | Need types |
+|---|---|---|
+| **Basics** | "Can I use it easily?" | Usable, Useful, Findable, Accessible |
+| **Trust** | "Do I believe it works?" | Credible, Secure, Reliable, Intuitive |
+| **Personal** | "Does it fit my needs?" | Inclusive, Adaptable, Connected, Insightful |
+| **Impact** | "Does it make a difference?" | Valuable, Sustainable, Efficient, Scalable |
+| **Feelings** | "Does it inspire me?" | Desirable, Delightful, Engaging, Empowering |
 
-Higher layers can't compensate for a broken lower layer. Walk in order; stop at the first break.
+Higher categories can't compensate for a broken lower one. Walk in order; stop at the first break.
 
 ### The four audiences (with weighted signals)
 
@@ -66,13 +66,12 @@ Higher layers can't compensate for a broken lower layer. Walk in order; stop at 
 
 ### UX Metrics — the grammar of signals
 
-Balance four families:
-- **Behavioral** (Completion, Time on Task, Error Rate)
-- **Attitudinal** (Satisfaction, Trust, Desirability)
-- **Performance** (Comprehension, Usability, Efficiency)
-- **Perceptual** (sentiment, brand perception)
+Balance three types:
+- **Attitudinal** (Satisfaction, Trust, Desirability, Sentiment)
+- **Behavioral** (Completion, Comprehension, Engagement, Effort)
+- **Performance** (Time on Task, Error Rate, Drop-off, Activation, Retention)
 
-Balance leading vs. lagging indicators. Every metric must tie back to a UX outcome leaders can act on, not a vanity number.
+Use Helio to capture attitudinal and behavioral signals as **leading indicators** before product ships. Balance leading vs. lagging. Every metric must tie back to a UX outcome leaders can act on, not a vanity number.
 
 ### Quick checks per block
 
@@ -87,13 +86,13 @@ Balance leading vs. lagging indicators. Every metric must tie back to a UX outco
 
 1. **Identify which of the four blocks the user is in.** Don't try to cover all four — pick the one that matches their current question.
 
-2. **For User Needs:** Anchor in the 7-layer UX Honeycomb. Walk in order; higher layers can't rescue a broken lower one. Apply the validation rule: *if users say they need it but ignore it in practice, it's a want masquerading as a need.* Map each named need to a metric type.
+2. **For User Needs:** Anchor in the five-category stack (Basics → Trust → Personal → Impact → Feelings). When the user names a specific need, pin it to its category and to a metric. Apply the validation rule: *if users say they need it but ignore it in practice, it's a want masquerading as a need.*
 
 3. **For Audience:** Use the four-audience framing. Internal voices guide; external voices validate. Flag the "design for everyone = design for no one" trap. Help them pick 3-5 attributes total.
 
 4. **For Collecting Data:** Walk them through the five-step process. Recommend specific instruments tied to the metric they care about.
 
-5. **For UX Metrics:** Treat metrics as the grammar of signals. Force a balance of attitudinal + behavioral + performance + perceptual, and balance leading vs. lagging.
+5. **For UX Metrics:** Treat metrics as the grammar of signals. Force a balance of attitudinal + behavioral + performance, and balance leading vs. lagging.
 
 6. **End every Define session by checking the four quick-check questions.** If any answer is fuzzy, the team isn't ready to leave Define.
 
@@ -117,10 +116,11 @@ Balance leading vs. lagging indicators. Every metric must tie back to a UX outco
 ## Critical Rules
 
 - Don't leave Define until all four quick checks pass.
-- Higher Honeycomb layers cannot rescue a broken lower one.
+- Higher user-need categories cannot rescue a broken lower one.
 - Internal voices guide. External voices validate.
 - "Design for everyone" = design for no one. Force segmentation.
 - Every metric ties back to a UX outcome leaders can act on. No vanity numbers.
-- Balance attitudinal + behavioral + performance + perceptual. Don't pick one family.
+- Three UX metric types: Attitudinal + Behavioral + Performance. (No "Perceptual" — the source-of-truth doc uses three.)
+- Use Helio to capture leading attitudinal and behavioral signals before launch.
 
 **The goal is to leave the user with one user need, one audience, one collection method, and one UX metric — locked and ready to move into Measure.**
