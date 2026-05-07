@@ -1,5 +1,34 @@
 # Glare Marketplace Changelog
 
+## 1.5.1 — 2026-05-06
+
+Cleanup release. Separated installable plugin content from portable prompt content.
+
+### Removed from marketplace
+
+- All 55 `prompt_chatgpt.md` files have been removed from `glare/skills/<skill>/`. Each skill folder now contains only `SKILL.md` and `reference.md` — exactly what the Claude plugin system needs.
+- Marketplace footprint went from 165 skill files (55 × 3) to 110 (55 × 2).
+
+### Where the prompts went
+
+Portable prompt versions now live in their own sibling folder: `~/Desktop/zurb.nosync/skills/glare-prompts-flat/`. 55 files named `<skill-name>.md`, plus `_master-glare-framework.md`. Plus the master prompt remains at `glare-marketplace/glare-framework-prompt.md` (marketplace root) for one-stop access.
+
+### Why
+
+The plugin folder is now strictly the installable artifact. Portable prompts are a separate distributable for users who don't want to install a Claude plugin. Cleaner separation of concerns:
+
+- `glare-marketplace/` — installable Claude plugin (skills only)
+- `glare-skills-flat/` — same skills, no plugin wrapper, for sharing
+- `glare-prompts-flat/` — portable prompts for ChatGPT/Gemini/etc.
+
+### Updated
+
+- `plugin.json` and `marketplace.json` bumped to `1.5.1`
+- `glare/README.md` updated to point at `glare-prompts-flat/` for portable prompts
+- `SKILLS-CATALOG.md` updated to point at `glare-prompts-flat/` for portable prompts
+
+---
+
 ## 1.5.0 — 2026-05-06
 
 Two changes: a YAML bug fix that was breaking 18 skills, and a new cross-section router skill.

@@ -162,4 +162,4 @@ Parent skills (`glare-define`, `glare-measure`, `glare-focus`, `glare-lead`, `gl
 
 ## Outside Claude Code
 
-Each skill folder also contains a `prompt_chatgpt.md` — a portable system prompt you can paste into ChatGPT, Gemini, Claude.ai, or any other chat tool. The master combined prompt at `glare-framework-prompt.md` (marketplace root) covers the whole framework in one shot.
+Portable prompt versions of each skill — for pasting into ChatGPT, Gemini, Claude.ai, custom GPTs, or any other chat tool — live in a sibling folder: `~/Desktop/zurb.nosync/skills/glare-prompts-flat/`. 55 files named `<skill-name>.md`, plus a `_master-glare-framework.md` covering the whole framework in one shot. The master prompt is also at `glare-framework-prompt.md` in this marketplace root.

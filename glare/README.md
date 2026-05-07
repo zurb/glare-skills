@@ -16,7 +16,7 @@ ZURB / Helio's Glare framework v1.3, packaged as 54 skills across 5 sections. In
 | ↳ Lead (area) | `glare-lead` | `lead-business-goals`, `lead-workflows`, `lead-mapping`, `lead-results` |
 | Design Assessment | `glare-design-assessment` | `assessment-organizing-work`, `assessment-managing-complexity`, `assessment-building-proof`, `assessment-guiding-decisions`, `assessment-scaling-influence`, `assessment-scoring`, `assessment-reading`, `assessment-using-results` |
 
-Each skill has a `SKILL.md` with trigger conditions and step-by-step apply instructions, plus a `reference.md` with the compressed source material (worksheets, tables, worked examples) that the skill reads before answering. Each also has a `prompt_chatgpt.md` — a portable system prompt you can paste into ChatGPT, Gemini, Claude.ai, or any other chat tool to get the same behavior outside Claude Code.
+Each skill has a `SKILL.md` with trigger conditions and step-by-step apply instructions, plus a `reference.md` with the compressed source material (worksheets, tables, worked examples) that the skill reads before answering. Portable prompt versions of each skill (for pasting into ChatGPT, Gemini, Claude.ai, etc.) live in a sibling folder: `~/Desktop/zurb.nosync/skills/glare-prompts-flat/`.
 
 ## Install
 
@@ -47,7 +47,7 @@ Parent skills (`glare-design-review`, `glare-design-signals`, `glare-decision-ma
 
 ## Portable prompts
 
-If you want to use a Glare skill in a tool that doesn't support Claude plugins (ChatGPT custom GPTs, Gemini Gems, Claude Projects), each skill folder contains a `prompt_chatgpt.md` — a self-contained system prompt you can paste in. There's also a master combined prompt at the marketplace root (`glare-framework-prompt.md`) covering the whole framework in one shot.
+If you want to use a Glare skill in a tool that doesn't support Claude plugins (ChatGPT custom GPTs, Gemini Gems, Claude Projects), the portable prompt versions live in `~/Desktop/zurb.nosync/skills/glare-prompts-flat/` — 55 files named `<skill-name>.md`, plus a `_master-glare-framework.md` covering the whole framework in one shot. The master prompt is also available at `glare-framework-prompt.md` in this marketplace root.
 
 ## Version
 
