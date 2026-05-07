@@ -1,5 +1,35 @@
 # Glare Marketplace Changelog
 
+## 1.5.0 — 2026-05-06
+
+Two changes: a YAML bug fix that was breaking 18 skills, and a new cross-section router skill.
+
+### Bug fix — YAML frontmatter
+
+The v1.4.0 description-trim pass introduced bare `Triggers:` substrings inside the description value of 18 skill files. YAML parses `Word:` as a new key, which broke skill loading on those files. Replaced with em-dashes (`Triggers —`) inside descriptions. All 55 skill `SKILL.md` files now parse cleanly.
+
+Affected skills: `glare-define`, `glare-define-audience`, `glare-define-collecting`, `glare-define-user-needs`, `glare-define-ux-metrics`, `glare-focus`, `glare-focus-comparing`, `glare-focus-decisions`, `glare-focus-initiatives`, `glare-focus-methods`, `glare-lead-business-goals`, `glare-lead-mapping`, `glare-lead-results`, `glare-lead-workflows`, `glare-measure-concepts`, `glare-measure-findings`, `glare-measure-hunches`, `glare-measure-questioning`.
+
+### New skill — `glare-router`
+
+A cross-section navigation meta-skill. Triggers when users ask "where should I go next," "which Glare skill applies," "I'm stuck and don't know where to start," etc. Diagnoses entry state, asks 1-2 clarifying questions if needed, and recommends ONE specific skill out of the 55 (not a list).
+
+Different from existing routing:
+- `glare-get-started` is for first-time onboarding (canonical tour)
+- Section parents (`glare-define`, `glare-design-review`, etc.) route within their section
+- `glare-router` routes **across** the whole framework when the user is mid-flow and lost
+
+Includes a stuck-pattern shortcut table covering the 18 most common "I'm lost" symptoms (e.g., "meeting ended with no decision" → `glare-review-lock`; "we have data but no decision" → `glare-signals-quality`; "team can't agree on what we're solving" → `glare-define-user-needs`).
+
+3 files: `SKILL.md` (913-char description, valid YAML), `reference.md` (full routing table + 3 named flows + stuck-pattern shortcuts), `prompt_chatgpt.md` (standalone portable version).
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `1.5.0`
+- Description updated to mention 55 skills + router
+
+---
+
 ## 1.4.0 — 2026-05-06
 
 Define section content refresh from updated Drive source. Affects 5 skills (parent + 4 buckets); other 49 skills unchanged.

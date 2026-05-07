@@ -7,8 +7,8 @@
     {
       "name": "glare",
       "source": "./glare",
-      "description": "ZURB / Helio's Glare framework v1.4 — 54 skills across 5 sections: Get Started + Design Review (SIGNAL) + Design Signals + Decision Map (Define / Measure / Focus / Lead) + Design Assessment.",
-      "version": "1.4.0",
+      "description": "ZURB / Helio's Glare framework v1.5 — 55 skills across 5 sections (Get Started + Design Review (SIGNAL) + Design Signals + Decision Map (Define / Measure / Focus / Lead) + Design Assessment) plus a cross-section router skill.",
+      "version": "1.5.0",
       "category": "design",
       "keywords": ["ux", "design", "research", "metrics", "signals", "glare", "zurb", "helio", "design-review", "signal-framework", "decision-map", "design-assessment"]
     }

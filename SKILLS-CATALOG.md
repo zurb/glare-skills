@@ -1,15 +1,23 @@
-# Glare Skills Catalog (v1.4.0)
+# Glare Skills Catalog (v1.5.0)
 
-Quick reference for all **54 skills** in the Glare plugin. Each row shows what the skill is for and the kinds of phrases that auto-trigger it. After installing the plugin, you don't invoke skills by name — Claude loads the right one when your conversation matches its description. This catalog helps you scan what's available.
+Quick reference for all **55 skills** in the Glare plugin. Each row shows what the skill is for and the kinds of phrases that auto-trigger it. After installing the plugin, you don't invoke skills by name — Claude loads the right one when your conversation matches its description. This catalog helps you scan what's available.
 
 **Install once:**
 
 ```
-/plugin marketplace add ~/Desktop/zurb.nosync/skills/glare-marketplace-v2
+/plugin marketplace add ~/Desktop/zurb.nosync/skills/glare-marketplace
 /plugin install glare@glare-marketplace
 ```
 
-All 54 skills become available. Sections below group them by role.
+All 55 skills become available. Sections below group them by role.
+
+---
+
+## Navigation
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-router` | mid-flow and lost — need a cross-section pointer to one specific skill | "where should I go next" · "which Glare skill applies" · "I'm stuck and don't know where to start" |
 
 ---
 
