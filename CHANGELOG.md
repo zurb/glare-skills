@@ -1,5 +1,99 @@
 # Glare Marketplace Changelog
 
+## 2.0.0 — 2026-05-07
+
+**Major scope reduction.** The marketplace now ships only the Decision Map cluster (the spine of Glare) plus the router. Skill count dropped from 56 to 22.
+
+### Why
+
+The Decision Map (Define → Measure → Focus → Lead) is the canonical Glare framework. The other sections (Design Review with SIGNAL, Design Signals, Design Assessment, UX Metrics top-level, Get Started extras) are valuable but functionally independent — they don't need to be installed alongside the Decision Map for it to work. Slimming the install keeps the plugin focused on one mental model and lets users opt into other sections separately.
+
+### What's in the marketplace now (22 skills)
+
+- **`glare-decision-map`** (parent — the spine that connects all four facets)
+- **Define area** (5): `glare-define` parent + `glare-define-user-needs`, `glare-define-audience`, `glare-define-collecting`, `glare-define-ux-metrics`
+- **Measure area** (5): `glare-measure` parent + `glare-measure-concepts`, `glare-measure-hunches`, `glare-measure-questioning`, `glare-measure-findings`
+- **Focus area** (5): `glare-focus` parent + `glare-focus-initiatives`, `glare-focus-methods`, `glare-focus-comparing`, `glare-focus-decisions`
+- **Lead area** (5): `glare-lead` parent + `glare-lead-business-goals`, `glare-lead-mapping`, `glare-lead-results`, `glare-lead-workflows`
+- **`glare-router`** (cross-facet navigation, rewritten for v2.0)
+
+### Removed from marketplace (34 skills, preserved elsewhere)
+
+Removed from `glare/skills/` but **still available in `~/Desktop/zurb.nosync/skills/glare-skills-flat/`** (full skill content) and `~/Desktop/zurb.nosync/skills/glare-prompts-flat/` (portable prompts):
+
+- **Get Started extras** (7): `glare-get-started`, `glare-create-first-signal`, `glare-how-glare-works`, `glare-ai-workflows`, `glare-coaching-advising`, `glare-proving-design-impact`, `glare-glossary`
+- **Design Review** (12): `glare-design-review` + 6 SIGNAL letter skills + techniques + scoring-model + rubric + coach + run-transcript
+- **Design Signals** (5): `glare-design-signals` + components + types + quality + capturing
+- **Design Assessment** (9): `glare-design-assessment` + 5 dimensions + scoring + reading + using-results
+- **UX Metrics** (1): `glare-ux-metrics` (the new top-level section)
+
+### Router rewrite
+
+`glare-router` was rewritten to match the new scope. Now references only the 22 marketplace skills in its primary routing logic. A short "Outside the core marketplace" section in `reference.md` acknowledges the removed sections and points users to `glare-skills-flat/` for full content.
+
+Stuck-pattern shortcuts re-mapped where possible:
+- "Meeting ended with no decision" → `glare-focus-decisions` (was `glare-review-lock`)
+- "I have a number but no decision" → `glare-measure-findings` (was `glare-signals-quality`)
+- Patterns with no Decision Map analog (review-meeting symptoms, org-maturity diagnostics) routed via the "Outside the core" pointer
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `2.0.0`
+- Description rewritten to reflect Decision Map focus
+- Skill count: 56 → 22
+
+### What hasn't changed
+
+- All 22 remaining skills' content is unchanged from v1.6.0
+- `glare-skills-flat/` and `glare-prompts-flat/` still hold all 56 skills and prompts
+- `glare-framework-prompt.md` (master combined prompt at marketplace root) still covers the whole framework — see "Outside this install" note
+
+### Migration
+
+Anyone on v1.x with the full 56 skills installed will see the 34 non-core skills disappear after upgrade. To get them back as a separate install, point at `glare-skills-flat/`. Or stay on v1.6.0 if you need the full set.
+
+---
+
+## 1.6.0 — 2026-05-07
+
+UX Metrics promoted to its own top-level section. New 4th metric type ("Intelligence") for AI-assisted experiences.
+
+### New section — UX Metrics
+
+UX Metrics now sits as a top-level Glare section alongside Get Started / Design Review / Design Signals / Decision Map / Design Assessment. Previously UX Metrics existed only as a block inside the Define area (`glare-define-ux-metrics`). The block stays — it's still where you pick metrics during the Define stage — but the broader framework now has its own home.
+
+- **`glare-ux-metrics`** (new parent skill) — covers the 4-type taxonomy, why UX metrics matter, where they fit across all of Glare, and the planned sub-sections (Types, Metric Structures, Building Metrics, Operationalizing Metrics, Using with Design Signals, UX Metric Stacks, AI + Metrics).
+
+The 7 planned sub-section docs in Drive are still mostly stubs as of 2026-05-07 — only the Overview and Why UX Metrics Matter are substantive. Sub-skills will be added as those docs land. Stub status flagged in `glare-ux-metrics/reference.md`.
+
+### New 4th metric type — Intelligence
+
+Source-of-truth shifted again on metric type count:
+- v1.0 (Sept 2025): 3 types — Attitudinal · Behavioral · Performance
+- v1.1: added Perceptual → 4 types
+- v1.0 re-edit (2026-05-06): removed Perceptual → 3 types
+- **v1.3 UX Metrics Overview (2026-05-07)**: adds **Intelligence** → 4 types
+
+Intelligence metrics evaluate AI-assisted understanding, recommendations, and decision support quality (recommendation quality, prompt effectiveness, AI guidance usefulness, adaptation quality, confidence calibration, workflow assistance). Goal: evaluate whether AI is improving outcomes, not just generating more output.
+
+### Updated — `glare-define-ux-metrics`
+
+- Added Intelligence as the 4th metric type.
+- Reference now includes the full version-history walkthrough (3 → 4 → 3 → 4) so future readers don't get lost.
+- Description updated to handoff to new `glare-ux-metrics` for broad framework questions; this skill stays focused on Define-stage metric picking.
+
+### Source-doc inconsistencies flagged in v1.3 Overview
+
+- The Drive Overview has Attitudinal/Behavioral bullet lists swapped under their headers. Per-metric URL slugs (e.g., `behavioral-metrics/completion`) are correct — the swap is in the bullet text only. Used URL slugs as the source of truth for metric assignments.
+- Intelligence metrics listed by name only; per-metric URL slugs not yet enumerated.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `1.6.0`
+- Skill count: 55 → 56
+
+---
+
 ## 1.5.1 — 2026-05-06
 
 Cleanup release. Separated installable plugin content from portable prompt content.

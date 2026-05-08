@@ -1,10 +1,16 @@
-# UX Metrics — Reference (Glare Define, v1.0 re-edited 2026-05-06)
+# UX Metrics — Reference (Glare Define, v1.3)
 
 ## What a UX metric is
 
 A UX metric quantifies how users feel and behave when they interact with your product. Metrics turn concepts like satisfaction, comprehension, and usability into signals you can track, compare, and act on. They are "the grammar of signals" — a 70% completion rate can settle weeks of debate.
 
-> **Compatibility note.** A v1.1 iteration of this doc briefly added a fourth "Perceptual" metric type covering comprehension and mental-model fit. The current source-of-truth UX Metrics doc — v1.0, re-edited 2026-05-06 — explicitly defines **3 metric types only**: Attitudinal, Behavioral, Performance. This reference follows the 3-type taxonomy as canonical. Comprehension is now categorized as a Behavioral metric.
+> **Version history of the metric-type taxonomy.**
+>
+> - **v1.0** — defined **3 types**: Attitudinal / Behavioral / Performance.
+> - **v1.1** — briefly proposed a fourth "Perceptual" type for comprehension and mental-model fit. Removed.
+> - **v1.3 (canonical)** — defines **4 types**: Attitudinal · Behavioral · Performance · **Intelligence** (AI-assisted experience quality, new in v1.3 with the UX Metrics Overview release).
+>
+> This reference follows the v1.3 four-type taxonomy. Comprehension and recognition (which the v1.1 framing put under "Perceptual") live inside Behavioral. The broader UX Metrics framework (sub-sections, AI workflows, metrics vs signals vs business KPIs) lives in `glare-ux-metrics`; this skill stays focused on Define-stage metric picking.
 
 ## Why measure UX
 
@@ -19,13 +25,13 @@ Most teams measure too late or measure the wrong thing. They chase analytics tha
 
 ---
 
-## The three metric types
+## The four metric types
 
 ### Attitudinal — how users feel
 
 Do they trust this? Are they happy? Will they return?
 
-**Examples:** Brand Score, Desirability, Expectations, Feeling, Helpfulness, Trust, Loyalty, Satisfaction, Reaction, Sentiment, Usefulness.
+**Examples:** Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness.
 
 > **Helio callout (from source):** Collect attitudinal metrics as leading indicators in Helio before your product ships.
 
@@ -37,9 +43,13 @@ Are they finishing? Do they engage deeply? Where do they drop off?
 
 > **Helio callout (from source):** Collect behavioral metrics as leading indicators in Helio before analyzing post-launch performance.
 
-### Performance — efficiency and accuracy
+### Performance — efficiency and reliability
 
 Is the experience efficient? Where do people get stuck? How well does the product perform?
+
+**Examples (from v1.3 Overview):** Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency.
+
+**Domain breakouts (legacy v1.0 framing, still useful):**
 
 | Sub-area | Example metrics |
 |---|---|
@@ -47,7 +57,22 @@ Is the experience efficient? Where do people get stuck? How well does the produc
 | **eCommerce** | Engagement, Abandonment Rate, Bounce Rate, Store Sessions |
 | **Product** | Stickiness, Activation Rate, Feature Usage, Time to Activate, Retention Rate, Click-back Rate |
 
-Together, these three types give a full picture: how users feel, what they do, how well they can do it. Ignore one and the picture distorts.
+### Intelligence — AI-assisted experience quality (NEW in v1.3)
+
+As AI becomes part of product experiences, organizations need new ways to measure whether intelligence is actually improving outcomes instead of simply generating more output.
+
+**Scope:**
+
+- recommendation quality
+- prompt effectiveness
+- AI guidance usefulness
+- adaptation quality
+- confidence calibration
+- workflow assistance
+
+Use Intelligence metrics whenever AI is part of the experience being evaluated — recommendations, generative interfaces, AI guidance, adaptive workflows, decision-support systems.
+
+Together, the four types give a full picture: how users feel, what they do, how well the system performs, and whether AI assistance helps. Ignore one and the picture distorts.
 
 ---
 
@@ -99,11 +124,12 @@ Correlation shows a pattern. Causation shows proof. The "Monday usage spike" exa
 
 ## UX Metrics in Practice — four lenses
 
-### By Type — three lenses
+### By Type — four lenses
 
 - **Attitudinal** — how users feel.
 - **Behavioral** — what users do.
 - **Performance** — how well the system works.
+- **Intelligence** — whether AI-assisted parts of the experience actually improve outcomes (recommendation quality, prompt effectiveness, guidance usefulness, adaptation quality, confidence calibration, workflow assistance). Add this lens when AI is in the experience.
 
 > **Helio callout:** Attitudinal and behavioral metrics can be collected as leading indicators in Helio, giving your team signal before performance data becomes available.
 
@@ -166,7 +192,7 @@ When metrics are chosen with discipline, design earns credibility. Leaders trust
 
 ## Related key terms
 
-- **Three UX Metric Types** — Attitudinal, Behavioral, Performance.
+- **Four UX Metric Types** — Attitudinal, Behavioral, Performance, Intelligence (v1.3 canonical).
 - **Four UX Metric Lenses** — By Type, By Stage (Predictive/Proxy/Analytics), By Time (Leading/Lagging), By Engagement (Needs/Behavior/Activity).
 - **Vanity vs Actionable / Qualitative vs Quantitative / Exploratory vs Reporting / Correlated vs Causal** — the four metric-comparison filters.
 - **Four metric-quality principles** — Easy to Understand · Good for Comparison · Use Rates or Ratios · Focus on Behavior.
