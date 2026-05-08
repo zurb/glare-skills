@@ -1,5 +1,46 @@
 # Glare Marketplace Changelog
 
+## 2.1.0 — 2026-05-08
+
+**Restored full skill set.** v2.0.0 slimmed the marketplace to the Decision Map cluster + router (22 skills); v2.1.0 reverses that — the main marketplace ships everything Glare again. Subset packages (`glare-decision-map`, `glare-design-review`) live separately under `glare-packages/` for users who want a focused install.
+
+### What's in the marketplace now (56 skills)
+
+- **Get Started** (7) — `glare-get-started`, `glare-create-first-signal`, `glare-how-glare-works`, `glare-ai-workflows`, `glare-coaching-advising`, `glare-proving-design-impact`, `glare-glossary`
+- **Design Review** (12) — `glare-design-review` parent + 6 SIGNAL letter skills (Surface · Identify · Ground · Navigate · Align · Lock) + Techniques + Scoring Model + Rubric + Coach + Run a Transcript
+- **Design Signals** (5) — `glare-design-signals` parent + Components, Types, Quality, Capturing
+- **Decision Map** (21) — `glare-decision-map` parent + Define / Measure / Focus / Lead each with 4 buckets + parent
+- **Design Assessment** (9) — `glare-design-assessment` parent + 5 dimensions + Scoring + Reading Patterns + Using Results
+- **UX Metrics** (1) — `glare-ux-metrics` (new top-level section, with 4 metric types including the new Intelligence type)
+- **Navigation** (1) — `glare-router` cross-section meta-skill (refreshed for the full set)
+
+### Why reverse the slim-down?
+
+The Decision Map slim-down made sense as a tighter install for users who only want the spine. But after building three separate packages under `glare-packages/` (Full, Decision Map, Design Review) for testing the vercel-labs/skills install pattern, having two parallel "everything" containers (`glare-marketplace/` slim + `glare-packages/glare-full/`) was confusing. Cleaner: the main marketplace is canonical and ships all of Glare; the test packages live under `glare-packages/` as standalone subsets.
+
+### Router refresh
+
+`glare-router` reverted from the v2.0 slim version (knew 22 skills) to the broader v1.5 version that routes across the full set, then bumped to v2.1.0 with two updates:
+- Skill count corrected to 56 throughout
+- Added a new routing line for `glare-ux-metrics` (top-level UX Metrics section) and `glare-define-ux-metrics` (in-Define metric picking)
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `2.1.0`
+- Description rewritten back to the 6-section, 56-skill framing
+
+### Subset packages (in `glare-packages/`)
+
+For users who want a focused install rather than the full marketplace:
+
+| Package | Skills | Use case |
+|---|---:|---|
+| `glare-packages/glare-full/` | 56 | Same content as this marketplace, packaged as a standalone install |
+| `glare-packages/glare-decision-map/` | 22 | Just the Decision Map cluster + router — for users who want the spine only |
+| `glare-packages/glare-design-review/` | 12 | Just the SIGNAL framework + scoring/rubric/coach — for call evaluation use cases |
+
+---
+
 ## 2.0.0 — 2026-05-07
 
 **Major scope reduction.** The marketplace now ships only the Decision Map cluster (the spine of Glare) plus the router. Skill count dropped from 56 to 22.
