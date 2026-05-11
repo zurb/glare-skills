@@ -1,5 +1,47 @@
 # Glare Marketplace Changelog
 
+## 2.2.0 — 2026-05-10
+
+UX Metrics section expanded from a single overview skill into a full 10-skill library, driven by the v1.32 Drive content drop. Skill count: 56 → 65.
+
+### New UX Metrics cluster
+
+The previous `glare-ux-metrics` parent stays (refreshed to v1.32 content). 9 new sub-skills join it:
+
+| Skill | Source doc |
+|---|---|
+| `glare-ux-metrics` (refreshed) | UX Metrics, Overview v1.32 |
+| `glare-ux-metrics-what-is` | What is a UX Metric? v1.32 — four parts of a UX metric (User Attribute · Data Type · Collection Method · Benchmark) |
+| `glare-ux-metrics-why` | Why UX Metrics Matter v1.32 — AI-acceleration argument, design needs its own signals, leading-indicator framing |
+| `glare-ux-metrics-system` | Measurement System v1.32 — three patterns: Confusion Trap · Friction Wall · Trust Gap |
+| `glare-ux-metrics-attitudinal` | Attitudinal Metrics v1.32 + 9-metric library: Appeal · Brand Score · Desirability · Expectations · Feeling · Loyalty · Satisfaction · Sentiment · Usefulness |
+| `glare-ux-metrics-behavioral` | Behavioral Metrics v1.32 + 8-metric library: Completion · Comprehension · Effort · Engagement · Frequency · Intent · Success · Usability |
+| `glare-ux-metrics-performance` | Performance Metrics v1.32 + 11-metric library: Abandonment Rate · Bounce Rate · Click-Through Rate · Completion Rate · Drop-off Rate · Error Frequency · Error Rate · Recency · Session Duration · Time on Task · Visit Frequency |
+| `glare-ux-metrics-stack` | UX Metrics Stack v1.32 — Design Stacks vs Research Stacks, four experience traps |
+| `glare-ux-metrics-mapping` | Mapping Design Impact v1.32 — Situation → Intent → Outcomes → Results |
+| `glare-ux-metrics-applying` | Applying UX Metrics v1.32 — eight operational use cases |
+
+### Per-metric library
+
+The three type-level skills (Attitudinal · Behavioral · Performance) each include a per-metric summary table inside their `reference.md`: definition, when to use, common mistakes, how it shows up. Compressed from 28 individual metric source docs (each 200KB-2MB) — full per-metric depth lives in Drive.
+
+### Intelligence (4th metric type)
+
+Mentioned in the refreshed `glare-ux-metrics` parent and listed in scope (recommendation quality · prompt effectiveness · AI guidance usefulness · adaptation quality · confidence calibration · workflow assistance) but no separate sub-skill yet. The v1.32 Drive folder ships full per-metric subfolders for the first three types only — Intelligence will get its own sub-skill once that content lands.
+
+### Source-doc inconsistencies flagged (in reference.md notes)
+
+- "Usefulness" doc body in the Attitudinal subfolder contains Sentiment content (copy-paste collision in source) — used the canonical type-level definition.
+- Performance subfolder ships an "Abandonment Rate" doc and a duplicate "Completion" doc that overlaps Behavioral Completion — used the Overview list as canonical.
+- Behavioral type-level doc carries a stale "v1.3" version banner inside a v1.32 file — cosmetic only.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `2.2.0`
+- Skill count: 56 → 65
+
+---
+
 ## 2.1.0 — 2026-05-08
 
 **Restored full skill set.** v2.0.0 slimmed the marketplace to the Decision Map cluster + router (22 skills); v2.1.0 reverses that — the main marketplace ships everything Glare again. Subset packages (`glare-decision-map`, `glare-design-review`) live separately under `glare-packages/` for users who want a focused install.

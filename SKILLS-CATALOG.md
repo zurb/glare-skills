@@ -1,6 +1,6 @@
-# Glare Skills Catalog (v2.0.0)
+# Glare Skills Catalog (v2.2.0)
 
-Quick reference for the **22 skills** in the slimmed Glare plugin. The marketplace now ships only the **Decision Map cluster** (Define · Measure · Focus · Lead, the spine of Glare) plus a cross-facet router. Other Glare sections (Design Review, Design Signals, Design Assessment, UX Metrics, Get Started extras) are available separately — see "Outside this install" at the bottom.
+Quick reference for the **65 skills** in the Glare plugin — the full framework across 6 sections plus a cross-section router.
 
 After installing, you don't invoke skills by name — Claude loads the right one when your conversation matches its description. This catalog helps you scan what's available.
 
@@ -11,7 +11,7 @@ After installing, you don't invoke skills by name — Claude loads the right one
 /plugin install glare@glare-marketplace
 ```
 
-All 22 skills become available.
+All 65 skills become available.
 
 ---
 
@@ -19,7 +19,54 @@ All 22 skills become available.
 
 | Skill | Use when… | Example triggers |
 |---|---|---|
-| `glare-router` | mid-flow and lost — need a pointer to one specific skill in the Decision Map | "where should I go next" · "which Glare skill applies" · "I'm stuck and don't know where to start" |
+| `glare-router` | mid-flow and lost — need a pointer to one specific skill | "where should I go next" · "which Glare skill applies" · "I'm stuck and don't know where to start" |
+
+---
+
+## Get Started (7)
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-get-started` | first-time onboarding, canonical tour of the framework | "what is Glare" · "where do I start" |
+| `glare-create-first-signal` | creating your very first design signal | "my first signal" · "how do I create a signal" |
+| `glare-how-glare-works` | understanding how the framework pieces fit together | "how does Glare work" · "explain the framework" |
+| `glare-ai-workflows` | using AI within the Glare workflow | "AI + design research" · "how does Claude fit in" |
+| `glare-coaching-advising` | coaching or advising mode for design teams | "coach me" · "advise on our process" |
+| `glare-proving-design-impact` | proving design's business value to leadership | "prove design matters" · "design ROI" |
+| `glare-glossary` | looking up Glare terminology | "what does [term] mean in Glare" |
+
+---
+
+## Design Review (12)
+
+The SIGNAL framework for scoring design review conversations.
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-design-review` | running or scoring a design review (parent) | "design review" · "SIGNAL framework" |
+| `glare-review-surface` | Surface step — what's visible | "what do users see first" |
+| `glare-review-identify` | Identify step — name the patterns | "what patterns are emerging" |
+| `glare-review-ground` | Ground step — anchor in evidence | "what data supports this" |
+| `glare-review-navigate` | Navigate step — explore alternatives | "what else could we do" |
+| `glare-review-align` | Align step — converge on direction | "are we aligned" |
+| `glare-review-lock` | Lock step — commit to a decision | "let's lock this in" |
+| `glare-review-techniques` | review techniques catalog | "which technique should I use" |
+| `glare-review-scoring-model` | scoring model for reviews | "how do I score this review" |
+| `glare-review-rubric` | evaluation rubric | "review rubric" |
+| `glare-review-coach` | coaching mode for review facilitation | "coach me through this review" |
+| `glare-review-run-transcript` | score an existing transcript | "score this transcript" · "analyze this call" |
+
+---
+
+## Design Signals (5)
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-design-signals` | working with design signals broadly | "design signals" · "signal anatomy" |
+| `glare-signals-components` | the 6-piece anatomy of a signal | "parts of a signal" · "signal structure" |
+| `glare-signals-types` | signal types (Need / Use / Prefer / Adopt) | "what type of signal is this" |
+| `glare-signals-quality` | signal quality and failure points | "is this signal good enough" |
+| `glare-signals-capturing` | capturing signals (4-stage flow) | "how do I capture this signal" |
 
 ---
 
@@ -75,31 +122,67 @@ The four facets connect into one decision flow: Define → Measure → Focus →
 
 ---
 
+## Design Assessment (9)
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-design-assessment` | assessing org design maturity (parent) | "design assessment" · "maturity model" |
+| `glare-assessment-organizing-work` | Organizing Work dimension | "how organized is our design practice" |
+| `glare-assessment-managing-complexity` | Managing Complexity dimension | "are we managing complexity well" |
+| `glare-assessment-building-proof` | Building Proof dimension | "how strong is our evidence practice" |
+| `glare-assessment-guiding-decisions` | Guiding Decisions dimension | "are we guiding decisions effectively" |
+| `glare-assessment-scaling-influence` | Scaling Influence dimension | "how do we scale design influence" |
+| `glare-assessment-scoring` | scoring the assessment | "score our assessment" |
+| `glare-assessment-reading` | reading assessment patterns | "what do our scores mean" |
+| `glare-assessment-using-results` | acting on assessment results | "what do we do with these results" |
+
+---
+
+## UX Metrics (10)
+
+A full metric framework: the 4-type taxonomy plus 9 deep-dive sub-skills covering what metrics are, why they matter, the measurement system, three metric-type libraries (28 metrics total), metric stacks, mapping impact, and operational use cases.
+
+### UX Metrics parent
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-ux-metrics` | broad UX metrics question — the framework + 4-type taxonomy | "UX metrics" · "what types of metrics exist" · "Attitudinal vs Behavioral vs Performance" |
+
+### Foundations (3)
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-ux-metrics-what-is` | defining what a UX metric actually is (User Attribute · Data Type · Collection Method · Benchmark) | "what is a UX metric" · "parts of a metric" |
+| `glare-ux-metrics-why` | making the case for UX metrics (AI-acceleration, leading indicators) | "why do we need UX metrics" · "why can't we just use product analytics" |
+| `glare-ux-metrics-system` | building a measurement system (Confusion Trap · Friction Wall · Trust Gap) | "measurement system" · "how do metrics work together" |
+
+### Metric-type libraries (3)
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-ux-metrics-attitudinal` | attitudinal metrics — 9-metric library (Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness) | "satisfaction" · "how do users feel" · "attitudinal" |
+| `glare-ux-metrics-behavioral` | behavioral metrics — 8-metric library (Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability) | "task success" · "can users do it" · "behavioral" |
+| `glare-ux-metrics-performance` | performance metrics — 11-metric library (Abandonment Rate, Bounce Rate, CTR, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency) | "bounce rate" · "time on task" · "performance metrics" |
+
+### Application (3)
+
+| Skill | Use when… | Example triggers |
+|---|---|---|
+| `glare-ux-metrics-stack` | designing metric stacks (Design Stacks vs Research Stacks, four experience traps) | "metric stack" · "which metrics go together" |
+| `glare-ux-metrics-mapping` | mapping metrics to impact (Situation → Intent → Outcomes → Results) | "map metrics to business impact" · "design impact mapping" |
+| `glare-ux-metrics-applying` | operationalizing metrics (8 use cases) | "how do I use these metrics" · "metric playbook" |
+
+---
+
 ## How activation works
 
 Claude reads each skill's description (the YAML frontmatter `description:` field) and matches against the user's message. The richer the trigger phrasing in your message, the more reliably the right skill loads. Phrases in quotes above are pulled directly from each skill's description — using them in conversation is the fastest way to invoke a specific skill.
 
-Parent skills (`glare-decision-map`, `glare-define`, `glare-measure`, `glare-focus`, `glare-lead`) handle multi-bucket questions and route to children. If you're not sure which child applies, just stay in the parent — it covers enough surface to keep going.
+Parent skills (`glare-decision-map`, `glare-define`, `glare-measure`, `glare-focus`, `glare-lead`, `glare-ux-metrics`) handle multi-bucket questions and route to children. If you're not sure which child applies, just stay in the parent — it covers enough surface to keep going.
 
-When you're lost across facets, use `glare-router` — it diagnoses entry state and recommends ONE specific skill.
+When you're lost across sections, use `glare-router` — it diagnoses entry state and recommends ONE specific skill.
 
 ## Versioning
 
-- Plugin version: **2.0.0** (slimmed to Decision Map core, 2026-05-07)
+- Plugin version: **2.2.0** (UX Metrics expanded to 10-skill cluster, 2026-05-10)
 - Each `SKILL.md` carries `version`, `source_doc_version` (which Drive doc generation it was built from), and `last_rebuilt`. See `CHANGELOG.md` for the full history.
-
-## Outside this install
-
-The full Glare framework has additional sections that aren't part of this Decision Map–focused install. They're preserved for use as portable prompts and as a separate non-plugin skills folder:
-
-| Topic | Where to find it |
-|---|---|
-| Design Review (SIGNAL framework, score a transcript) | `~/Desktop/zurb.nosync/skills/glare-skills-flat/glare-review-*` and `glare-design-review` |
-| Design Signals (6-piece anatomy, Need/Use/Prefer/Adopt) | `~/Desktop/zurb.nosync/skills/glare-skills-flat/glare-signals-*` and `glare-design-signals` |
-| Design Assessment (5 dimensions, scoring, reading patterns) | `~/Desktop/zurb.nosync/skills/glare-skills-flat/glare-assessment-*` and `glare-design-assessment` |
-| UX Metrics (top-level framework, 4 types incl. Intelligence) | `~/Desktop/zurb.nosync/skills/glare-skills-flat/glare-ux-metrics/` |
-| Get Started extras (onboarding, AI workflows, glossary) | `~/Desktop/zurb.nosync/skills/glare-skills-flat/glare-get-started`, `glare-create-first-signal`, `glare-how-glare-works`, `glare-ai-workflows`, `glare-coaching-advising`, `glare-proving-design-impact`, `glare-glossary` |
-
-For portable prompt versions of any skill — to paste into ChatGPT, Gemini, Claude.ai, custom GPTs — see `~/Desktop/zurb.nosync/skills/glare-prompts-flat/`. 55 prompts named `<skill-name>.md` plus `_master-glare-framework.md`.
-
-The master combined prompt at `glare-marketplace/glare-framework-prompt.md` still covers all sections in one shot — it wasn't slimmed when the marketplace was, since it's a separate distributable.

@@ -1,73 +1,53 @@
-# UX Metrics — Reference (top-level Glare framework, v1.3)
+# UX Metrics — Reference (top-level Glare framework, v1.32)
 
 ## What UX metrics are
 
-UX metrics are measurable ways to understand how people experience a product, workflow, service, or interface. They quantify how users feel, what users do, where friction exists, how efficiently tasks work, and whether AI systems help users move forward.
+UX Metrics are the measurement system teams use to understand how people experience a product, workflow, service, interface, or AI-assisted system. Inside product teams, decisions happen constantly — which concept moves forward, where onboarding breaks down, why users hesitate, whether AI recommendations actually help, which workflow creates less friction, what deserves more investment. Most teams already have data; the harder problem is understanding what the experience actually feels like for users while work is still evolving.
 
-Inside Glare, UX metrics are foundational. They sit underneath Design Signals and create a shared structure for how teams collect, interpret, compare, and discuss user data across the Decision Map, Design Signals, Design Reviews, AI workflows, assessments, benchmarking systems, and product decisions.
+UX metrics help teams evaluate workflows, compare product directions, expose friction, reduce uncertainty, strengthen reviews, and guide decisions earlier — before launch, while concepts and product directions are still moving.
 
 > **Version history of the metric-type taxonomy.**
 >
 > - **v1.0** — defined **3 types**: Attitudinal · Behavioral · Performance.
-> - **v1.1** — briefly proposed a fourth "Perceptual" type for comprehension and mental-model fit. Removed.
-> - **v1.3 (canonical, source May 6, 2025)** — defines **4 types**: Attitudinal · Behavioral · Performance · **Intelligence** (AI-assisted experience quality, NEW). Comprehension and recognition (which v1.1 put under "Perceptual") live inside Behavioral.
+> - **v1.1** — briefly proposed a fourth "Perceptual" type. Removed.
+> - **v1.3 (canonical, May 2025)** — defined **4 types**: Attitudinal · Behavioral · Performance · **Intelligence** (AI-assisted experience quality). Comprehension and recognition (which v1.1 put under "Perceptual") live inside Behavioral.
+> - **v1.32 (May 10, 2026)** — same 4-type taxonomy as v1.3. The v1.32 source folder ships full per-metric subfolders for the first three types only; Intelligence is named in the Overview and Measurement System docs but does not yet have its own subfolder of per-metric docs.
 
-This reference covers the top-level framework. For Define-stage metric *picking* on a specific decision, see `glare-define-ux-metrics`.
+This reference covers the top-level framework. For Define-stage metric *picking* on a specific decision, see `glare-define-ux-metrics`. For each type's per-metric summaries, see `glare-ux-metrics-attitudinal`, `glare-ux-metrics-behavioral`, `glare-ux-metrics-performance`.
 
-## An open metrics system
+## AI increased the need for stronger measurement systems
 
-Glare provides an open system of UX metrics teams can apply using their existing tools and workflows, or through Helio, which already includes many of these metrics directly inside the platform for testing, benchmarking, signal generation, and evaluation.
+AI made it easy for teams to generate more ideas, screens, prompts, workflows, prototypes, and experiments. What did not speed up at the same pace was evaluation. Many organizations now produce more output than they can consistently review, compare, or validate. Product reviews fragment. Stakeholders interpret success differently. Teams move quickly while confidence weakens underneath.
 
-UX metrics transform reactions, behaviors, and performance into evidence teams can compare, discuss, and act on. As metrics accumulate, patterns begin to emerge — completion declines, comprehension weakens, satisfaction improves, retention increases. Those patterns help teams identify friction, strengthen direction, and make decisions with greater confidence. Over time, UX metrics create shared visibility around what is actually happening in the experience, helping organizations move from assumptions and opinions toward measurable evidence.
-
-## Why UX metrics matter
-
-Data is everywhere, but clarity is still rare.
-
-AI accelerated the number of concepts, experiments, prototypes, and AI-assisted workflows teams can generate. What did not accelerate at the same pace was validation, alignment, and organizational confidence. That gap creates friction. Weak ideas survive too long, strong ideas stall in debate, and decisions drift without clear evidence.
-
-UX metrics help teams:
-
-- evaluate direction
-- compare ideas
-- expose friction
-- reduce decision risk
-- connect design work to measurable outcomes
-
-Instead of waiting for post-launch analytics, teams can validate concepts earlier, compare competing directions, and build stronger signals while decisions are still being made.
+UX metrics help teams slow down the right part of the work — evaluation, interpretation, comparison, validation, decision-making. The goal is not more reporting; it is clearer direction under pressure.
 
 ---
 
-## The four UX metric types
+## The four UX metric types (v1.32)
 
 ### Attitudinal — how users feel
 
-Emotional response and perceived value. Trust, happiness, willingness to return.
+Emotional response, trust, confidence, satisfaction, perceived value. These signals often reveal problems before larger business metrics begin changing. Users may complete onboarding while confidence quietly drops; AI recommendations may increase engagement while trust weakens; satisfaction may stay positive while frustration slowly grows.
 
-**Examples:** Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness.
-
-> **Helio callout:** Collect attitudinal metrics as leading indicators in Helio before your product ships.
+**Examples (v1.32):** Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness.
 
 ### Behavioral — what users actually do
 
-Whether users successfully move through the experience or abandon it along the way.
+Whether users hesitate, get confused, abandon workflows, or complete actions. Users may repeatedly scan navigation before clicking; onboarding may technically succeed while users struggle to understand what happens next; AI-assisted workflows may create hidden confusion even when completion looks high.
 
-**Examples:** Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability.
-
-> **Helio callout:** Collect behavioral metrics as leading indicators in Helio before analyzing post-launch performance.
+**Examples (v1.32):** Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability.
 
 ### Performance — efficiency and reliability
 
-Where systems slow users down or create unnecessary effort. Operational friction.
+Where systems slow users down or create unnecessary effort. A checkout flow may have strong completion but extremely high effort; users may finish a task successfully while taking much longer than expected; error frequency may rise after introducing AI-generated recommendations.
 
-**Examples (v1.3 Overview):** Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency.
+**Examples (v1.32 Overview):** Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency.
 
-### Intelligence — AI-assisted experience quality (NEW in v1.3)
+### Intelligence — AI-assisted experience quality
 
-As AI becomes part of product experiences, organizations need new ways to measure whether intelligence is actually improving outcomes instead of simply generating more output.
+As AI becomes part of product workflows, teams need stronger ways to evaluate whether intelligence improves understanding or simply increases output. Recommendations may appear useful while users quietly lose confidence; AI guidance may speed up workflows while increasing comprehension problems; automated suggestions may increase activity while creating hesitation during decisions.
 
-**Scope:**
-
+**Scope (v1.32):**
 - recommendation quality
 - prompt effectiveness
 - AI guidance usefulness
@@ -75,112 +55,21 @@ As AI becomes part of product experiences, organizations need new ways to measur
 - confidence calibration
 - workflow assistance
 
-Use Intelligence metrics whenever AI is part of the experience being evaluated — recommendations, generative interfaces, AI guidance, adaptive workflows, decision-support systems.
-
 Together, the four types give a full picture: how users feel, what they do, how well the system performs, and whether AI assistance helps. Ignore one and the picture distorts.
 
 ---
 
-## The four lenses (Metric Structures)
+## How UX metrics fit into Glare
 
-### By Type
+UX Metrics are the measurement layer underneath the larger Glare system. They support:
 
-Attitudinal · Behavioral · Performance · Intelligence — the four-type lens above. Force coverage; one metric alone distorts.
+- Design Signals
+- AI Skills
+- Design Reviews
+- Decision Maps
+- organizational assessments
 
-**Diagnostic mismatches:**
-- High satisfaction + low completion = people like the idea but can't finish.
-- Strong performance + low engagement = system works but no one cares.
-- High completion + low satisfaction = users grind through; warning sign for churn.
-
-### By Stage — Predictive · Proxy · Analytics
-
-- **Predictive Metrics** — early warning. Reveal confusion before it turns into churn. A comprehension score on a prototype can save weeks. Logic — "If A happens, B will result, and C should decline."
-- **Proxy Metrics** — test-bed proof. Tell you whether users can complete a task in a controlled environment. Logic — "If B happens, C will decline."
-- **Analytics** — live report card. What happened once the product hit real traffic. Logic — "C is declining."
-
-> **Helio callout:** Attitudinal and behavioral metrics collected in Helio serve as both predictive signals and proxy metrics, surfacing early user confusion and validating ideas in a controlled environment before launch.
-
-Most teams wait for analytics. By then, the sprint is gone. Predictive and proxy keep you from being blindsided.
-
-### By Time — Leading vs. Lagging
-
-- **Leading Indicators** forecast what's likely to happen. Examples — clicks/sign-ups during early exposure, prototype usage, survey comprehension, beta feedback.
-- **Lagging Indicators** confirm what happened after launch. Examples — customer satisfaction, revenue, conversion, post-launch task success, retention.
-
-Leading-only = chasing noise. Lagging-only = learning too late.
-
-### By Engagement — Needs · Behavior · Activity
-
-A progression, not a single number. Confirm need → confirm use → confirm return. Skip a step and you chase illusions.
-
-- **Needs-Based** — does this solve a real problem? Examples — brand score, desirability, usefulness, onboarding completion.
-- **Behavior-Based** — are users finishing actions? Examples — completion rate, navigation paths, usage frequency, engagement scores.
-- **Activity-Based** — do they keep coming back? Examples — repeat visits, session duration, drop-off rate, recency.
-
-**Diagnostic mismatches:**
-- High desirability + low usage = people love the idea but won't adopt.
-- Strong usage + weak loyalty = try once and move on.
-- Consistent activity + low value = trapped in habit, no real outcome.
-
----
-
-## The four critical comparisons (filter)
-
-### Vanity vs. Actionable
-Vanity flatters. Actionable guides. Ten thousand page views vs. comprehension rate.
-
-### Qualitative vs. Quantitative
-Quantitative shows *what* happened. Qualitative shows *why*. Without both, you have half the story. 80% signup completion looks strong until paired with satisfaction scores showing users were confused while finishing.
-
-### Exploratory vs. Reporting
-Reporting metrics arrive after the fact. Exploratory metrics prevent failure before launch. Analytics shows adoption is low — but by then the sprint has moved on. Exploratory signals like comprehension or desirability would have flagged the issue weeks earlier.
-
-### Correlated vs. Causal
-Correlation shows a pattern. Causation shows proof. The "Monday usage spike" example — caused by Sunday-night support emails, not the feature itself. Without testing, you improve the wrong thing.
-
----
-
-## The four quality principles
-
-Each metric must pass these tests.
-
-1. **Easy to Understand** — if the team cannot explain the metric in one sentence, it will never guide a decision.
-2. **Good for Comparison** — patterns over time, across groups, between versions. "We got 432 clicks" is trivia. "This version improved comprehension by 27%" is proof.
-3. **Use Rates or Ratios** — raw counts are vanity. Ratios reveal truth. Ten thousand visits looks impressive until you see 98% bounced.
-4. **Focus on Behavior** — what people say is often polite fiction. What they do is reality.
-
----
-
-## The seven sub-sections (planned)
-
-The full UX Metrics section is organized into seven areas that help teams build stronger measurement systems over time.
-
-### 1. Types
-The major categories of UX metrics and what each reveals — the four-type taxonomy above (Attitudinal · Behavioral · Performance · Intelligence). Foundation for everything else.
-
-### 2. Metric Structures
-How metrics evolve across time, stages, engagement, and comparison models — the four lenses above. Teaches teams to think structurally about measurement, not just pick a metric.
-
-### 3. Building Metrics
-Creating metric systems tied to user needs, workflows, and business outcomes. Overlaps with `glare-define-ux-metrics` for picking metrics in the Define area, and with `glare-signals-components` for embedding metrics inside the six-piece signal anatomy.
-
-### 4. Operationalizing Metrics
-Using baselines, benchmarking, scorecards, and comparative testing inside product work. Where measurement becomes part of the operating cadence — sprint reviews, dashboards, monthly readouts. Overlaps with `glare-measure` and `glare-focus-comparing`.
-
-### 5. Using with Design Signals
-Connecting metrics to signals, decisions, and measurable direction. Metrics are the structural layer underneath signals — see `glare-signals-components` for the full six-piece anatomy (design intuition + UX metric + user need + context + business goal + direction).
-
-### 6. UX Metric Stacks
-Reusable metric systems for common product surfaces — onboarding, navigation, dashboards, checkout flows, AI workflows, mobile, e-commerce, marketing. Pre-built stacks teams can adapt rather than building from scratch every sprint. Overlaps with `glare-measure-concepts` (the 200+ Concept catalog).
-
-### 7. AI + Metrics
-How AI changes evaluation, scoring consistency, prompt quality, and signal generation. Practical guidance for measuring AI features (Intelligence type) and using AI in measurement workflows. Overlaps with `glare-ai-workflows`.
-
----
-
-## How UX metrics fit across Glare
-
-UX metrics support every part of the framework:
+As metrics accumulate across workflows and decisions, patterns become easier to see. Teams begin understanding where users hesitate, where trust weakens, which concepts perform better, where workflows create friction, and what deserves momentum. This helps teams create stronger signals before weak decisions spread further into the product.
 
 | Glare area | What metrics do here |
 |---|---|
@@ -196,47 +85,59 @@ UX metrics support every part of the framework:
 
 ---
 
-## From metrics to decisions
+## The nine sub-areas (v1.32)
 
-Organizations already have more data than they can interpret. The challenge is not collecting numbers — it's turning numbers into clear decisions before momentum disappears.
+The full UX Metrics section is organized into nine connected areas:
 
-That is where UX metrics create value inside Glare. They help teams:
-
-- see friction earlier
-- compare ideas faster
-- reduce uncertainty
-- strengthen signals
-- protect momentum
-- prove impact more clearly
-
-Over time, measurement stops being something teams report on after the work is finished. It becomes part of how teams decide what deserves to move forward.
+1. **Why UX Metrics Matter** — why product teams need stronger evaluation systems as AI increases output, experimentation, and decision complexity. Sub-skill — `glare-ux-metrics-why`.
+2. **What Is a UX Metric?** — how UX metrics are structured (User Attribute, Data Type, Collection Method, Benchmark), measured, benchmarked, and interpreted. Sub-skill — `glare-ux-metrics-what-is`.
+3. **Measurement System** — how UX Metrics work together as a connected operational system across workflows, reviews, testing, and decision-making. Sub-skill — `glare-ux-metrics-system`.
+4. **Attitudinal Metrics** — how users feel (9 metrics). Sub-skill — `glare-ux-metrics-attitudinal`.
+5. **Behavioral Metrics** — what users do (8 metrics). Sub-skill — `glare-ux-metrics-behavioral`.
+6. **Performance Metrics** — efficiency, friction, reliability (11 metrics). Sub-skill — `glare-ux-metrics-performance`.
+7. **UX Metric Stacks** — combining 3-7 metrics together to evaluate workflows, journeys, and product experiences. Sub-skill — `glare-ux-metrics-stack`.
+8. **Mapping Design Impact** — connecting UX metrics to product outcomes, business goals, and organizational decisions through Situation → Intent → Outcomes → Results. Sub-skill — `glare-ux-metrics-mapping`.
+9. **Applying UX Metrics** — how teams use UX metrics inside testing, reviews, benchmarking, and decision workflows. Sub-skill — `glare-ux-metrics-applying`.
 
 ---
 
-## Quick checklist (9 items)
+## From metrics to decisions
 
-1. Can everyone understand the metric in one sentence?
-2. Can it be compared across time or groups?
-3. Is it a rate or ratio, not just a raw count?
-4. Does it capture behavior, not just opinion?
-5. Is it actionable, not vanity?
-6. Does it pair *what* happened with *why*?
-7. Does it fit the timing — predictive, proxy, or analytics?
-8. Does it balance leading and lagging signals?
-9. Does it build momentum instead of slowing it down?
+Organizations already have more dashboards, analytics, and feedback than they can consistently interpret. The challenge is not collecting more numbers — it is turning numbers into clearer decisions before momentum disappears. UX Metrics, applied across Glare, help teams compare onboarding flows, identify hesitation before launch, expose friction in AI-assisted workflows, strengthen design reviews, improve stakeholder alignment, reduce rework, validate concepts earlier, and build more confidence in product direction.
+
+Over time, UX Metrics become part of how teams make product decisions together. They help teams compare ideas earlier, spot friction before launch, and build stronger alignment around what deserves momentum. As patterns build, teams gain clearer visibility into what is helping users move forward and where the experience still breaks down.
+
+---
+
+## Source-doc inconsistencies flagged in v1.32
+
+- **Performance Metrics Overview-vs-subfolder mismatch.** The v1.32 Overview lists "Abandonment Rate" as the first Performance metric, but the Performance subfolder ships 11 docs that include both `abandonment-rate` (referenced in the type-level doc table) AND `completion` (which duplicates the Behavioral Completion metric). The type-level Performance doc table lists 11 docs with the same set as the Overview minus "Completion" plus "Abandonment Rate". The `glare-ux-metrics-performance` skill uses the Overview/type-level list as the source of truth.
+- **Usefulness doc body collision.** The Attitudinal subfolder doc titled "Usefulness" contains Sentiment-doc body content (likely a copy-paste error in the source). The canonical Usefulness definition is taken from the Attitudinal type-level doc and the v1.0/v1.3 description ("whether the design is practical, sustainable, and aligned with business goals for long-term success").
+- **Mapping Design Impact "decisions/" trailing slash.** The Overview's "Mapping Design Impact" bullet ends with a trailing `/` instead of a period — purely cosmetic.
+- **Behavioral Metrics doc version banner.** The Behavioral type-level doc carries a "v1.3" version banner inside the body even though the file is v1.32. Treat as a banner-only stale stamp; content matches v1.32.
+- **The Overview bullet swap that affected v1.0 — NOT present in v1.32.** Attitudinal correctly lists Appeal/Brand Score/Desirability/Expectations/Feeling/Loyalty/Satisfaction/Sentiment/Usefulness; Behavioral correctly lists Completion/Comprehension/Effort/Engagement/Frequency/Intent/Success/Usability.
 
 ---
 
 ## Related key terms
 
-- **Four UX Metric Types** — Attitudinal, Behavioral, Performance, Intelligence (v1.3 canonical).
-- **Four UX Metric Lenses** — By Type, By Stage (Predictive/Proxy/Analytics), By Time (Leading/Lagging), By Engagement (Needs/Behavior/Activity).
-- **Four metric-comparison filters** — Vanity vs Actionable, Qualitative vs Quantitative, Exploratory vs Reporting, Correlated vs Causal.
-- **Four metric-quality principles** — Easy to Understand · Good for Comparison · Use Rates or Ratios · Focus on Behavior.
-- **Seven sub-sections** — Types · Metric Structures · Building Metrics · Operationalizing Metrics · Using with Design Signals · UX Metric Stacks · AI + Metrics.
+- **Four UX Metric Types** — Attitudinal, Behavioral, Performance, Intelligence (v1.3/v1.32 canonical).
+- **Four Parts of a UX Metric** — User Attribute, Data Type, Collection Method, Benchmark (from v1.32 What Is a UX Metric).
+- **UX Metric Stack** — a reusable group of 3-7 UX metrics combined to evaluate a larger workflow, feature, product area, or research situation.
+- **Design Stack vs Research Stack** — Design Stacks organize metrics around a workflow or product experience; Research Stacks organize metrics around a research method or evaluative process.
+- **Confusion Trap, Friction Wall, Trust Gap, Commitment Check** — the four recurring patterns surfaced by stacks.
+- **Situation → Intent → Outcomes → Results** — the four stages of mapping design impact, aligned with Define / Measure / Focus / Lead.
 - **Signal** — a measurable, trustworthy piece of evidence. The unit of credibility in Glare.
 - **Helio** — in-house testing platform; collects attitudinal and behavioral metrics as leading indicators / proxies before launch.
 
 ## Source
 
-Drafted from *Glare | UX Metrics, Overview v1.3* (Drive doc 1efa33k8WND9QEybJ9pWdXNZn-8vtOF5rvuOKZMf8TsU, May 6, 2025). The four-type taxonomy and the seven sub-sections come directly from that source. Cross-referenced with the existing `glare-define-ux-metrics` skill (v1.6.0) for voice and structure consistency.
+Drafted from the v1.32 Drive folder (`1F-6tXs88ekDeiAVwhgHujq8HKEoZ13Hz`), all docs dated May 10, 2026:
+
+- *Glare | UX Metrics, Overview v1.32* (`1-bkqUaypPkvzGijTOR1k_R3GpQzrFNVWtM4PiMvaF00`)
+- *What is a UX Metric? v1.32* (`1-teouWMYjBy2sltDWjVvP5BXfolBfZe5dzp_zf9qGHk`)
+- *Why UX Metrics Matter v1.32* (`1g0lrMvS2ZsgokpS3q7xeIxIaoeuPeqvv6nMpJTIWcoI`)
+- *Measurement System v1.32* (`1Ll6Z-4NiIBDu6jBpMQGgKx_SR21YWtRnC1ptsO4KUNU`)
+- *Attitudinal / Behavioral / Performance / Stack / Mapping / Applying* (sibling docs in same folder)
+
+Cross-referenced with the existing `glare-define-ux-metrics` skill (v1.6.0) for voice and structure consistency.

@@ -1,7 +1,7 @@
 {
   "name": "glare",
-  "version": "2.1.0",
-  "description": "ZURB / Helio's Glare framework — 56 skills across 6 sections (Get Started + Design Review + Design Signals + Decision Map + Design Assessment + UX Metrics) plus a cross-section router. Turns user input into design signals leaders can act on.",
+  "version": "2.2.0",
+  "description": "ZURB / Helio's Glare framework — 65 skills across 6 sections (Get Started + Design Review + Design Signals + Decision Map + Design Assessment + UX Metrics with full library) plus a cross-section router. Turns user input into design signals leaders can act on.",
   "author": {
     "name": "ZURB"
   },

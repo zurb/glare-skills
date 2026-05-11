@@ -1,8 +1,8 @@
 # Glare (Claude Code plugin)
 
-ZURB / Helio's Glare framework, packaged as 56 skills across 6 sections. Install once and Claude will automatically load the right skill when you're working a specific part of the framework.
+ZURB / Helio's Glare framework, packaged as 65 skills across 6 sections. Install once and Claude will automatically load the right skill when you're working a specific part of the framework.
 
-## What's inside (56 skills)
+## What's inside (65 skills)
 
 | Section | Skills | Parent | Contents |
 |---|---:|---|---|
@@ -11,7 +11,7 @@ ZURB / Helio's Glare framework, packaged as 56 skills across 6 sections. Install
 | Design Signals | 5 | `glare-design-signals` | Signal anatomy, types, quality, capturing |
 | Decision Map | 21 | `glare-decision-map` | Define / Measure / Focus / Lead (parent + 4 sub-skills each) |
 | Design Assessment | 9 | `glare-design-assessment` | 5 org-maturity dimensions + scoring, reading, using results |
-| UX Metrics | 1 | `glare-ux-metrics` | 4 metric types (Attitudinal, Behavioral, Performance, Intelligence) |
+| UX Metrics | 10 | `glare-ux-metrics` | Framework + foundations (what-is, why, system) + 3 metric-type libraries (28 metrics) + stacks, mapping, applying |
 | Navigation | 1 | `glare-router` | Cross-section meta-skill — points to ONE skill when you're stuck |
 
 Each skill has a `SKILL.md` with trigger conditions and step-by-step apply instructions, plus a `reference.md` with the compressed source material (worksheets, tables, worked examples) that the skill reads before answering.
@@ -25,7 +25,7 @@ Install happens through slash commands inside a Claude Code or Cowork session. P
 /plugin install glare@glare-marketplace
 ```
 
-Then run `/reload-plugins` to activate. After that, the 22 skills auto-trigger when you mention their domain.
+Then run `/reload-plugins` to activate. After that, the 65 skills auto-trigger when you mention their domain.
 
 For a graphical manager instead of typed commands, run `/plugin` or `/plugins` and use the Discover / Manage panels.
 
@@ -47,6 +47,6 @@ For tools that don't support Claude plugins (ChatGPT, Gemini, Claude Projects), 
 
 ## Version
 
-**2.1.0** (2026-05-08) — Full 56-skill set restored across all 6 sections.
+**2.2.0** (2026-05-10) — UX Metrics expanded to full 10-skill cluster (65 skills total).
 
 See [CHANGELOG.md](../CHANGELOG.md) at the marketplace root for the full history.
