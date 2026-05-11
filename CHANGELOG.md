@@ -1,5 +1,51 @@
 # Glare Marketplace Changelog
 
+## 2.3.0 — 2026-05-11
+
+New Patterns block under Define. Decision Map and Define parent skills refreshed to v1.34/v1.1+patterns. Skill count: 65 → 66.
+
+### New skill — `glare-define-patterns`
+
+The Define area of the Decision Map now has **5 blocks** instead of 4: User Needs · Audience · Collecting · UX Metrics · **Patterns**. The new Patterns block reconnects raw metrics to the situations that surround behavior — same metric (e.g., long session duration) can mean engagement OR confusion OR hesitation OR comparison OR overload, and patterns help the team read the situation accurately rather than reacting to isolated data points.
+
+Source: `Glare | Define, Patterns v1.0` (Drive, created today). Frontmatter: `version: 2.3.0`, `source_doc_version: v1.0 (Patterns) — created 2026-05-11`, `last_rebuilt: 2026-05-11`.
+
+### Refresh — `glare-decision-map`
+
+Refreshed from `Glare | Decision Map v1.34` (Drive, modified today). v1.34 changes vs prior v1.3:
+
+- Opening framing tightened to "operational system" — the Decision Map is what *connects user needs, design signals, decisions, and outcomes across product and design work*.
+- AI now explicitly named as one of the streams that fragment without the map ("research, testing, AI systems, reviews, metrics, stakeholders, business goals").
+- Define facet description emphasizes context and recurring situations — dovetails with new Patterns block.
+- Canonical worked example reframed from "simplify mobile navigation" → "simplify mobile onboarding" (same four-facet shape).
+
+No structural shift to Measure / Focus / Lead. Loop and chain unchanged.
+
+### Refresh — `glare-define`
+
+Updated to describe **5 blocks** (added Patterns). Description triggers updated to include pattern-related phrasing. Handoffs section gained a route to `glare-define-patterns`.
+
+### Source-doc note
+
+The Define Overview Drive doc (`1bH6Of8XXB9aRyZ8I_GQ6ajeio-fYjlwhQp6CxUl-MUI`) is still v1.1 and still describes 4 blocks. The new Patterns block is sourced from its own v1.0 doc but isn't yet integrated into the parent Overview. The marketplace's `glare-define/reference.md` carries an explicit callout flagging this — the Overview should be re-edited upstream to reflect 5 blocks.
+
+The Decision Map source doc header reads "May 10, 2026 v1.4" but the Drive title says "v1.34." Used `v1.34` per the file title; worth confirming the canonical label.
+
+### Synced
+
+All three changes copied to `glare-skills-flat/` to keep the archive in sync.
+
+### Research Stacks expansion (not yet absorbed)
+
+A new `Research Stacks/` subfolder under Define landed 2026-05-10 with 16 per-instrument .docx files (SUS · NPS · SEQ · CES · NASA-TLX · SUMI · QUIS · WAMMI · SUPR-Q · PSSUQ · PURE · UEQ · UX-Lite · L-DERLY · CASTLE · Usability Heuristics). These deepen the existing `glare-define-collecting` skill rather than need their own skills. Flagged for a future content refresh of `glare-define-collecting`.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `2.3.0`
+- Skill count: 65 → 66
+
+---
+
 ## 2.2.1 — 2026-05-11
 
 Content refresh for `glare-measure-hunches` and `glare-measure-questioning` from updated Drive docs.

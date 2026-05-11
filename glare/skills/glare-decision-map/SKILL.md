@@ -1,19 +1,19 @@
 ---
 name: glare-decision-map
 description: Use this skill when the user is working with the Glare Decision Map — the four-facet flow that connects user needs to measurable outcomes. Triggers include "Decision Map," "decision flow," "Define Measure Focus Lead," "how do the Glare facets connect," "trace a decision from problem to outcome," "map a decision," "where does this decision sit," "what facet am I in," "how do I move from signal to outcome," asking about the loop from outcome back into the next problem, asking how Define hands off to Measure, Measure to Focus, Focus to Lead, or Lead back to Define, which facet to enter for a given situation, or wanting the canonical end-to-end example. Also use when the user is confused about which facet a piece of work belongs to or work is "scattering" across docs/meetings/tools and needs to be re-connected as one chain. Do NOT use when the user is already deep inside one facet — invoke `glare-define`, `glare-measure`, `glare-focus`, or `glare-lead` directly.
-version: 1.3.0
-source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+version: 2.3.0
+source_doc_version: v1.34
+last_rebuilt: 2026-05-11
 ---
 
 You are helping the user work with the **Decision Map** — the spine of the Glare framework that connects Define, Measure, Focus, and Lead into one continuous decision flow.
 
 ## Core idea
 
-The Decision Map shows how a single design decision moves from a user need to a measurable outcome. Most teams already have research, tests, reviews, and reports — but those pieces sit in different docs, tools, and meetings. The Decision Map keeps the **chain** intact: what you Define is what you Measure, what you Measure is what you Focus on, what you Focus on becomes a decision Led to outcome, and that outcome feeds the next Define cycle. It is a loop, not a line.
+The Decision Map is the **operational system** that connects user needs, design signals, decisions, and outcomes across product and design work. Modern product workflows move across research, testing, AI systems, reviews, metrics, stakeholders, and business goals — and as work speeds up, teams lose connection between those parts. The Decision Map keeps the **chain** intact: what you Define is what you Measure, what you Measure is what you Focus on, what you Focus on becomes a decision Led to outcome, and that outcome feeds the next Define cycle. It is a loop, not a line.
 
 The four facets each play one role:
-- **Define** sets the foundation — user needs, audience, context, success.
+- **Define** sets the foundation — user needs, audience, **patterns**, collecting data, UX metrics. (Patterns was added in v1.34 as the fifth building block — it helps teams recognize recurring situations before weak decisions gain momentum, especially as AI accelerates output faster than evaluation.)
 - **Measure** creates evidence — concepts, hunches, questions, findings, signals.
 - **Focus** shapes direction — initiatives, methods, comparing, decisions.
 - **Lead** connects to impact — business goals, workflows, KPI relationships, results.
@@ -40,7 +40,8 @@ Before answering substantive questions, read `reference.md` — full compressed 
 
 ## Handoffs
 
-- Clarifying user need, audience, context, success → `glare-define`
+- Clarifying user need, audience, patterns, context, success → `glare-define`
+- Recognizing recurring situations before weak decisions scale → `glare-define-patterns`
 - Turning concepts/hunches into questions, findings, signals → `glare-measure`
 - Naming initiatives, choosing methods, comparing, deciding → `glare-focus`
 - Connecting decisions to business goals, workflows, KPIs, results → `glare-lead`

@@ -1,14 +1,16 @@
-# Decision Map — Compressed (v1.3)
+# Decision Map — Compressed (v1.34, 2026-05-11)
 
 ## What the Decision Map is
 
-The Decision Map shows how design work moves through Glare. Glare is built on four facets — **Define, Measure, Focus, Lead** — each playing a different role:
+The Decision Map is the **operational system** that connects user needs, design signals, decisions, and outcomes across product and design work. (v1.34 framing — earlier versions described it as a "map"; v1.34 makes the operational-system framing explicit.) Glare is built on four facets — **Define, Measure, Focus, Lead** — each playing a different role:
 - **Define** clarifies what matters.
 - **Measure** creates signals.
 - **Focus** turns those signals into decisions.
 - **Lead** connects those decisions to results.
 
 The Decision Map brings these pieces together. It shows how a decision moves from a **user need** to a **measurable outcome** without getting lost between tools, teams, or conversations.
+
+Modern product workflows move across **research, testing, AI systems, reviews, metrics, stakeholders, and business goals**. As work speeds up, teams often lose connection between those parts. The Decision Map helps teams keep direction connected as work moves through Define, Measure, Focus, and Lead.
 
 A Decision Map is a way to follow a design decision from where it starts to what it changes. Most teams already have ideas, testing, reviews, and feedback. The problem is those pieces sit in different places: research in one doc, metrics in another tool, decisions in meetings, outcomes reported later. The map connects the chain.
 
@@ -50,8 +52,11 @@ Define is where work becomes grounded. The team is not solving anything yet — 
 Define focuses on:
 - identifying real user needs, not just requests
 - understanding who the audience is and how they behave
+- recognizing recurring **patterns** (situations that repeatedly produce the same behaviors and signals — added as the fifth Define building block in v1.34)
 - clarifying the context around the problem
 - agreeing on what success should look like
+
+Define's five building blocks: **User Needs, Audience, Patterns, Collecting Data, UX Metrics.** Patterns was added in v1.34 because as AI accelerates output, teams need a faster way to recognize recurring situations before momentum scales a weak decision.
 
 When Define is strong, the rest of the work has something real to respond to. When Define is weak, teams test ideas without a clear reason — work may move forward, but it becomes harder to know whether it is solving the right problem.
 
@@ -103,14 +108,14 @@ You can use the map to:
 
 Each Skill focuses on a specific part of the map, but they work best together. Over time, they build a consistent way of making and evaluating decisions.
 
-## Worked example: simplify mobile navigation
+## Worked example: simplify mobile onboarding (v1.34 example)
 
-**Decision:** Simplify the mobile navigation.
+**Decision:** Simplify a mobile onboarding flow. (v1.34 reframed the canonical example from mobile navigation to mobile onboarding; the chain is identical.)
 
-- **Define** — Users are struggling to find key account actions. The team needs to understand which actions matter most and where people lose confidence.
-- **Measure** — The team tests two navigation concepts using task success, comprehension, and satisfaction.
-- **Focus** — One version performs better across key tasks. The team chooses that direction because users find important actions faster and report less confusion.
-- **Lead** — The decision connects to product outcomes like task completion, support reduction, and account activity. The team can now explain why the navigation change matters beyond the screen.
+- **Define** — Users are struggling to understand the next step after account setup. The team needs to understand which actions matter most and where people lose confidence.
+- **Measure** — The team tests multiple onboarding directions using **comprehension, usability, task success, and confidence** metrics. Signals reveal where users hesitate and which flow creates stronger understanding.
+- **Focus** — One onboarding direction consistently performs better across key metrics and creates less confusion. The team chooses that direction because the evidence holds up across user response and workflow performance.
+- **Lead** — The onboarding decision connects to **activation, support reduction, onboarding completion, and product adoption.** The team can now explain why the decision matters beyond the interface itself.
 
 This is the purpose of the Decision Map: connect the need, signal, decision, and result into one clear story.
 
@@ -173,3 +178,10 @@ The Decision Map master doc surfaces several concepts that don't sit cleanly ins
 - **What you define is what you measure / what you measure is what you decide on / what you decide connects to outcome.** The "thread" rule that holds the four facets together; belongs in the Decision Map parent and should be cross-referenced from each facet's parent skill.
 - **"Work loses strength as it moves forward."** The failure mode the map exists to prevent — applies to all four facets.
 - **Strategic vs tactical decisions.** Surfaces in Decisions (Focus) but also relevant to Lead, since strategic decisions often shape investment, resourcing, and roadmap.
+
+## What changed in v1.34 (2026-05-11)
+
+- **Opening framing tightened to "operational system."** Earlier versions described the Decision Map as something teams *use*; v1.34 makes the operational-system framing explicit — it is what connects user needs, design signals, decisions, and outcomes across product and design work.
+- **Explicit AI mention in the modern-workflow context.** v1.34 lists "research, testing, AI systems, reviews, metrics, stakeholders, and business goals" as the parts the map holds together. AI is now named as one of the streams that fragments unless the map holds.
+- **Patterns added to Define.** Inside the Define facet description, the v1.34 source surfaces a fifth building block: Patterns — recognizing recurring situations before weak decisions gain momentum. Patterns sits alongside User Needs, Audience, Collecting Data, and UX Metrics, with its own dedicated v1.0 source doc.
+- **No structural shift to Measure / Focus / Lead.** The four-facet flow itself is unchanged; the loop back from Lead to Define is unchanged; the worked mobile-onboarding example is unchanged in shape (now framed around onboarding rather than mobile navigation, but the four-facet trace is the same chain).

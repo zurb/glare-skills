@@ -1,8 +1,10 @@
-# Define — Compressed (v1.1, 2026-05-06)
+# Define — Compressed (v1.1 + patterns v1.0, 2026-05-11)
 
 ## What this block is about
 
-Define is the first (and foundational) facet of Glare — the "Credibility" facet. Its job is to slow teams down just long enough to agree on what matters before they start building. Define answers four questions: (1) What do users actually need? (2) Who are we designing for? (3) Where will the evidence come from? (4) How will we know it worked? It does this through four building blocks — **User Needs, Audience, Collecting Data, and UX Metrics** — that turn opinions, hunches, and vanity dashboards into testable signals. The recurring move across every doc is the same: replace opinion debates with structured signals tied to real users; balance attitudinal/behavioral/performance data; balance leading and lagging indicators; balance internal voices (team, stakeholders) with external voices (participants, customers); and tie every metric back to a UX outcome leaders can act on. Helio is the named in-house tool that lets these signals get captured in hours rather than months.
+Define is the first (and foundational) facet of Glare — the "Credibility" facet. Its job is to slow teams down just long enough to agree on what matters before they start building. Define answers five questions: (1) What do users actually need? (2) Who are we designing for? (3) What recurring situations keep producing the same behavior? (4) Where will the evidence come from? (5) How will we know it worked? It does this through **five** building blocks — **User Needs, Audience, Patterns, Collecting Data, and UX Metrics** — that turn opinions, hunches, and vanity dashboards into testable signals.
+
+> **Note on the Patterns block (added 2026-05-11).** The Define Overview source doc (v1.1, Oct 25, 2025) still describes four blocks. The marketplace structure was extended on 2026-05-11 with a fifth block — Patterns — sourced from its own v1.0 doc ("Glare | Define, Patterns v1.0," 2026-05-10). Patterns is now treated as a peer of the original four. Until the Define Overview doc is re-edited, treat the v1.0 Patterns doc as canonical for that block and this skill as the integration point. The recurring move across every doc is the same: replace opinion debates with structured signals tied to real users; balance attitudinal/behavioral/performance data; balance leading and lagging indicators; balance internal voices (team, stakeholders) with external voices (participants, customers); and tie every metric back to a UX outcome leaders can act on. Helio is the named in-house tool that lets these signals get captured in hours rather than months.
 
 > **Note on the User Needs model.** Earlier compressed versions of Define described User Needs as a **7-layer UX Honeycomb** (Findable → Desirable). The current source-of-truth Define Overview v1.1 (Oct 25, 2025) and User Needs v1.1 (Oct 25, 2025) restructure this into **5 categories with 22 individual need types** (Basics, Trust, Personal, Impact, Feelings). The 22 individual need-type pages remain consistent with their earlier honeycomb-style framing; what changed is the category-level grouping. This skill follows the v1.1 five-category model.
 
@@ -13,16 +15,17 @@ Define is the first (and foundational) facet of Glare — the "Credibility" face
 ## Glare | Define Overview v1.1
 
 - **Define = the Credibility facet of Glare.** It is "the first light that cuts through the Fog" of indecision; everything in Measure, Focus, and Lead later builds on what gets defined here.
-- **Four building blocks** with a one-line core question for each:
+- **Five building blocks** (v2.3 — added Patterns 2026-05-11) with a one-line core question for each:
   - **User Needs** — "What do users actually need or hope to achieve?" Anchors design in real problems, not assumptions.
   - **Audience** — "Who are we really designing for?" Ensures empathy and precision; keeps data relevant.
+  - **Patterns** — "What recurring situation keeps producing this behavior?" Recognizes the situation surrounding the signal before weak decisions scale.
   - **Collecting Data** — "Where does clarity come from?" Turns hunches into hard evidence early.
   - **UX Metrics** — "How do we know it worked?" Gives design credibility through visible proof.
 - **Five user-need categories (foundational → aspirational):** Basics, Trust, Personal, Impact, Feelings. Each category groups four individual need types. Higher categories earn the right to the next; a broken Basic can't be rescued by a strong Feeling.
 - **Audience principle:** "Design for everyone and you design for no one." A marketer tracks bounce rate; a PM tracks adoption — same product, different signals.
 - **Collecting principle:** Skipping collection only delays clarity. One small signal saves weeks. Cited proof: a university navigation test produced a 41% increase in positive impressions before launch.
 - **UX Metrics principle:** Metrics are "the grammar of signals." A 70% completion rate can settle weeks of debate.
-- **Quick checks per block:** Does this solve a real user goal? Can you name 3 audience traits? What real input are you using (survey/test/analytics)? Which metric proves progress (completion, effort, satisfaction)?
+- **Quick checks per block:** Does this solve a real user goal? Can you name 3 audience traits? What recurring pattern keeps showing up around this situation? What real input are you using (survey/test/analytics)? Which metric proves progress (completion, effort, satisfaction)?
 - **Without Define:** needs are guesses, audiences vague, data missing, metrics hollow. **With Define:** hunches become signals, ideas become user-backed decisions.
 
 ## The five-category user-need stack (v1.1)
@@ -51,6 +54,18 @@ Each category contains four individual need types (22 total — see the User Nee
 - **Five core attribute types:** Behavioral, Motivational, Contextual, Lifecycle, Demographic. Use 3–5 attributes total.
 - **6-step define-and-measure flow for external audiences:** start with a question → identify customer vs participant → choose 3–5 attributes → map to UX metrics → collect and compare → check whether participant signals predict customer behavior.
 - **The flow:** Project Teams form intent → Stakeholders align impact → Participants validate direction → Customers prove outcomes.
+
+## Glare | Define, Patterns v1.0 (added 2026-05-11)
+
+- **A pattern is a recurring situation where similar conditions repeatedly produce similar behaviors and signals.** Not a metric, dashboard, trend, persona, or isolated observation.
+- **Situations create meaning.** The same behavior (e.g., long session duration) can signal engagement, confusion, hesitation, comparison, or cognitive overload — only the surrounding situation reveals which.
+- **Four pattern types:**
+  - **User Patterns** — hesitation during onboarding, abandoning high-effort flows, comparison paralysis, repeated misunderstanding, low-confidence purchasing.
+  - **Workflow Patterns** — endless review cycles, late validation, siloed optimization, repeated decision reopening, weak cross-functional alignment.
+  - **Signal Patterns** — engagement rises while trust declines, usability improves while retention weakens, completion increases while effort grows, AI adoption rises while confidence falls.
+  - **AI Workflow Patterns** — faster production with weaker evaluation, shallow iteration loops, overproduction without prioritization, AI-generated consistency masking weak thinking.
+- **Patterns and UX Metrics:** patterns reconnect metrics to the surrounding situation. The four metric lenses (By Type, By Stage, By Time, By Engagement) each reveal a different kind of pattern.
+- **Why patterns matter more now:** AI accelerates output, not understanding. Faster generation without pattern recognition scales weak decisions faster than teams can fix them. The goal is **directional confidence while work is still evolving**, not perfect certainty.
 
 ## Glare | Define, Collecting v1.1
 
