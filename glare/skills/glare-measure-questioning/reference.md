@@ -1,76 +1,296 @@
 # Reference — Glare Measure: Questioning
 
-Verbatim extraction of the Questioning-relevant sections of `measure-compressed.md` (v1.0 and v1.1).
+> Refreshed 2026-05-11 from Drive doc *Glare | Measure, Questioning v1.1* (Oct 26, 2025).
+
+> **Source-doc note (taxonomy):** This document preserves the **Behavioral / Attitudinal / Performance / Perceptual** UX-metric families as written in Questioning v1.1. The Glare marketplace **UX Metrics framework v1.32** has since moved to **Attitudinal · Behavioral · Performance · Intelligence** as the 4th type — the Perceptual content (comprehension, recognition, interpretation) has been folded into the Behavioral family. When a user crosses into the UX Metrics skills (`glare-ux-metrics`, `glare-define-ux-metrics`, `glare-ux-metrics-applying`, etc.), use the v1.32 taxonomy. When working strictly inside the Questioning step, the v1.1 wording (Perceptual) is fine.
 
 ---
 
-## Glare | Measure, Questioning v1.0
+## Turn curiosity into clarity
 
-The first version of the Questioning module: a stepped process for creating research questions that produce useful UX measurement.
+Every signal starts with a question. Questioning turns curiosity into measurable clarity. It transforms hunches into testable direction and helps teams prove whether their ideas truly make sense.
 
-- **Why questioning matters**: Weak questions stall in indecision; strong questions expose where users struggle, what they value, and whether the design works. Questioning aligns metrics to intent.
-- **What good questioning does**: surfaces hidden challenges; avoids bias; guides design with targeted insights; translates curiosity into measurable data.
-- **STEP 1 — Clarify the Initiative**. Ask: what are we trying to learn/improve/validate? What decision will this inform? Where in the process are we (exploration, prototyping, post-launch)? Who needs the insight? What's the risk if we don't get it right?
-- **Types of Questions** (4 categories): **People** (habits/preferences/behaviors — "How often do users complete this workflow?"); **Process** (steps + friction — "What steps do users take to upload a file?"); **Product** (clarity/usefulness — "Do users understand the purpose of this page?"); **Problem** (barriers — "What prevents users from completing checkout?").
-- **STEP 2 — Identify Knowledge Gaps**: List unknowns important to the decision. Check user mindset/context — language they'll understand, what matters in the moment — to avoid jargon.
-- **STEP 3 — Turn Gaps into Broad Learning Goals**: Define what to learn before drafting questions. Distinguish strategic (broad, long-term) vs. tactical (specific feature/flow).
-- **STEP 4 — Write Open-Ended Research Questions**: Open-ended, user-focused, unbiased. Bias check: is it leading? Echoing internal assumptions? Emotionally loaded or too technical?
-- **STEP 5 — Translate to Testable Questions**: Frame so each connects to a technique and yields actionable feedback. Examples: "Can users locate pricing within 5 seconds?" → First Click Testing; "Do users understand the page purpose?" → Survey + Heatmap; "What stops checkout?" → Clickstream + Task Success.
-- **UX Metric Types table**: Behavioral (what users do — heatmaps, clickstream); Attitudinal (what they think/feel — surveys); Performance (how well they complete tasks — task success, time on task).
-- **Testable question criteria**: Specific & focused; linked to measurable outcome; actionable; aligned with user goals (not just business). Weak: "Do people like our homepage?" Strong: "Can users find pricing info on the homepage within 5 seconds?"
-- **STEP 6 — Align Questions with UX Metrics**: Mapping table — task success ↔ completion rate; time on task ↔ efficiency; survey + comprehension ↔ clarity; first click ↔ intuition/desirability.
-- **STEP 7 — Prioritize and Refine**: by relevance to design decision, feasibility (timeline, resources), and impact on outcome.
-- **STEP 8 — Match Questions to Techniques**: Observe action → behavioral techniques (Clickstream, Heatmaps); Measure performance → task-based metrics (Completion, Time); Understand opinions → attitudinal methods (Surveys).
-- The Glare Questioning Canvas exists as a Figma-style React layout with form-style input boxes (light theme) for running this process.
+When questioning is strong, it reveals not just what people say but what they actually understand, expect, and value. Weak questions collect noise; strong ones expose truth — the gap between what users intend to do and what the design allows them to do.
 
----
+Questioning is where ideas take shape. It links **Concepts** to **Hunches**, converts them into **Questions**, and produces **Findings** that become usable signals.
 
-## Glare | Measure, Questioning v1.1
+### What good questioning does
 
-Evolved version of Questioning. Adds a **Mode of Questioning** layer (Exploratory/Evaluative/Comparative), reframes the 8-step process around the Concepts→Hunches→Questions→Findings rhythm, and adds workflow-integration guidance.
+- Surfaces hidden user challenges.
+- Avoids bias so feedback reflects reality, not team assumptions.
+- Guides the design process with targeted insights.
+- Translates raw curiosity into measurable data.
 
-- **Section structure**: Getting Started → Begin Questioning → Make It Practical → See It in Action → Apply and Evolve.
-- **Element-to-Questioning mapping**: Concepts (initial ideas → questioning defines how they're evaluated); Hunches (early beliefs → questioning exposes whether they hold); Questions (focused prompts → questioning structures investigation); Findings (emerging patterns → questioning supplies the input).
-- **4 Question Types** (same as v1.0): People, Process, Product, Problem. People + Process give context; Product + Problem give clarity.
-- **What makes a question testable** (3 criteria): defines a gap in understanding; points to observable behavior or perception; can be measured and acted upon. ❌ "Do people like our homepage?" / ✅ "Can users find pricing info on the homepage within 5 seconds?" Pre-test by having teammates review and running a small dry test.
-- **Modes of Questioning**:
-  - **Exploratory** — early discovery, no firm hypotheses; "What should we learn or improve?"; yields patterns, context, unmet needs.
-  - **Evaluative** — mid-cycle, designs exist; "Does this design work for users?"; yields clarity, comprehension, usability metrics.
-  - **Comparative** — late-stage, choosing between directions; "Which version performs better?"; yields confidence and proof of improvement.
-- **8-Step Process (v1.1 phrasing)**:
-  1. **Clarify the concept** — surface assumptions; what success looks like if hunch is right.
-  2. **Identify knowledge gaps** — what's untested, where confidence is weak, what would surprise you if false.
-  3. **Define learning goals** — pick mode (Exploratory/Evaluative/Comparative) and frame the goal.
-  4. **Write open-ended research questions** — explore perception/experience without assumption; bias check.
-  5. **Translate into testable questions** — observable behavior/perception, point directly to data.
-  6. **Align with UX metrics** — Behavioral (First Click Success), Attitudinal (Satisfaction/Sentiment), Performance (Time on Task), Perceptual (Comprehension).
-  7. **Prioritize and refine** — filters: Gap Size, Impact, Feasibility, Confidence; questions at intersection of large-gap + high-impact + feasible rise to top.
-  8. **Match questions to techniques** — Behavioral (first-click, task success), Attitudinal (surveys, desirability, satisfaction scoring), Performance (usability tests, time tracking, error rate).
-- **Make It Practical — Worksheet** mirrors the 8 steps with action + output for each, becoming a roadmap for a questioning cycle. Pre-cycle checklist confirms one concept, identified gaps, clear learning mode, metric per question, prioritization, ready techniques, and connection to findings.
-- **Integrate into Workflow** (repeatable routine):
-  1. **Weekly Discovery Review** — identify assumptions/behaviors needing clarity.
-  2. **Sprint Planning** — pair every major task with at least one measurable question on the board.
-  3. **Post-Test Reflection** — review which questions produced usable signals; refine biased/broad ones.
-  4. **Share the questions, not just the answers** — include the question that led to a finding.
-  5. **Build a Question Library** — collect well-framed, tested questions for reuse.
-- **Business impact**: Faster Focus (cuts discovery cycles to hours); Better Decisions (credible findings); Cross-Team Alignment (shared frameworks across product/design/marketing); Proven Value (measurable insight → conversion/churn impact).
-- **Reflection prompts**: Did questions address biggest gaps? Which produced strong findings vs. stayed broad? Was each tied to a UX metric? How did answers change the next decision? What will we ask differently?
-- **Next-step transitions table**: Concepts→Hunches (clarify belief & learning need) → Hunches→Questioning (turn beliefs into measurable prompts) → Questioning→Findings (collect & analyze through metrics) → Findings→Signals (combine metrics into patterns proving impact).
+### 5-section structure of the source doc
+
+1. **Getting Started**
+2. **Begin Questioning** (the 8-step process)
+3. **Make It Practical** (worksheet + checklist)
+4. **See It in Action**
+5. **Apply and Evolve**
 
 ---
 
-## Supporting framing (from Overview)
+## GETTING STARTED — Why questioning matters
 
-- *Questioning* call-outs: avoid biased framing; tie questions to outcomes; uncover the "why" behind behavior; refine each round.
+Questioning gives shape to curiosity. It turns the first spark of an idea into something measurable. In Glare, Questioning lives in the **Measure** layer — it connects early hunches to evidence and makes sense of what users show and say.
+
+Strong questioning is not about asking more. It is about asking with intent. Each question defines what you need to learn and what kind of evidence will make that learning useful.
+
+### Element-to-Questioning mapping (Concepts → Hunches → Questions → Findings)
+
+| Element  | What it focuses on                                            | How it connects to questioning                            |
+| -------- | ------------------------------------------------------------- | --------------------------------------------------------- |
+| Concepts | The initial ideas or experiences that need understanding.     | Questioning defines how these ideas will be evaluated.    |
+| Hunches  | Early beliefs about what might work for users.                | Questioning helps expose whether those beliefs hold true. |
+| Questions | Focused prompts that clarify what to measure and why.        | Questioning turns curiosity into structured investigation.|
+| Findings | Patterns that emerge from user responses and behaviors.       | Questioning provides the input that becomes measurable proof. |
+
+### The 4 question types
+
+| Type    | What it focuses on                                            | Purpose                                          | Example                                            |
+| ------- | ------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------- |
+| People  | The motivations, preferences, and habits of your users.       | Learn who users are and what drives behavior.    | "How often do users complete this workflow?"       |
+| Process | The steps and decisions users take to reach a goal.           | Understand where friction occurs.                | "What steps do users take to upload a file?"       |
+| Product | The clarity and usefulness of what has been designed.         | Evaluate how users understand and interact.      | "Do users understand the purpose of this page?"    |
+| Problem | The barriers that prevent success or satisfaction.            | Uncover what breaks down, confuses, or frustrates. | "What prevents users from completing checkout?"  |
+
+**People + Process** give context. **Product + Problem** give clarity.
+
+### What makes a question testable
+
+A testable question (1) defines a gap in understanding, (2) points to observable behavior or perception, and (3) can be measured and acted upon.
+
+- ❌ "Do people like our homepage?"
+- ✅ "Can users find pricing info on the homepage within 5 seconds?"
+
+Before finalizing, pre-test: ask a colleague to review, run a small dry test, check if users understand what's being asked.
+
+### Modes of Questioning
+
+| Mode         | When to use                                          | Core question                                  | What you get                                  |
+| ------------ | ---------------------------------------------------- | ---------------------------------------------- | --------------------------------------------- |
+| Exploratory  | Early discovery, before firm hypotheses.             | What should we learn or improve?               | Patterns, context, unmet needs.               |
+| Evaluative   | Mid-cycle, once ideas or designs exist.              | Does this design work for users?               | Clarity, comprehension, usability metrics.    |
+| Comparative  | Later, when choosing between directions.             | Which version performs or communicates better? | Confidence and measurable proof of improvement. |
+
+Exploratory work builds understanding. Evaluative work strengthens clarity. Comparative work provides confidence in what to move forward with.
+
+---
+
+## BEGIN QUESTIONING — The 8-step process
+
+Each step follows the rhythm: **Concepts → Hunches → Questions → Findings**.
+
+### STEP 1 — Clarify the concept
+
+Strong questions begin with clarity. Your concept is the focus (the product, flow, or message). Your hunches are the beliefs that guide it.
+
+- What assumptions are we making about how users will act or respond?
+- What part of this concept do we most need to understand?
+- What outcomes are we hoping to confirm or challenge?
+- What would success look like if our hunch is correct?
+
+### STEP 2 — Identify knowledge gaps
+
+Turn hunches upside down — surface what you *don't* know.
+
+- What assumptions haven't been tested?
+- Where do we lack proof or confidence?
+- What do we think we know but can't yet show with data?
+- What would surprise us if it turned out to be false?
+
+### STEP 3 — Define learning goals
+
+Translate uncertainty into direction. Pick a mode and frame the goal.
+
+| Mode         | When to use                                  | Learning goal                                          | Example                                                 |
+| ------------ | -------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------- |
+| Exploratory  | Early stages, little is known.               | Discover unmet needs or behaviors.                     | "Understand how users choose between two plan types."   |
+| Evaluative   | Mid-stage, testing an existing concept.      | Measure clarity, usability, or comprehension.          | "See if users can complete checkout without confusion." |
+| Comparative  | Later stages, choosing between options.      | Decide which version performs better or builds trust.  | "Compare two headlines to see which drives more sign-ups." |
+
+### STEP 4 — Write open-ended research questions
+
+Open-ended questions explore user perception and experience without assumption. They help you understand behavior, language, and decision-making.
+
+Examples:
+
+- What do users expect when they first see this page?
+- How do they describe the purpose of this feature in their own words?
+- What steps do they take when they get stuck?
+
+**Bias check:**
+
+- Is this question leading users to say "yes"?
+- Does it echo our internal assumptions?
+- Is the language emotionally charged or too technical for real users?
+
+Neutral questions surface what people actually experience. They turn curiosity into honest feedback.
+
+### STEP 5 — Translate into testable questions
+
+Turn research questions into measurable prompts that show observable behavior or perception.
+
+- Can users find the pricing information within five seconds?
+- Can users complete checkout without help?
+- Do users understand what this feature does after reading the headline?
+
+Testable questions point directly to data — not opinions.
+
+### STEP 6 — Align questions with UX metrics
+
+| UX Metric Type | What it reveals                  | Example question                                          | Example metric                  |
+| -------------- | -------------------------------- | --------------------------------------------------------- | ------------------------------- |
+| Behavioral     | What users do.                   | Where do users click first?                               | First Click Success             |
+| Attitudinal    | What users think or feel.        | How satisfied are users after completing the task?        | Satisfaction or Sentiment Score |
+| Performance    | How efficiently users succeed.   | How long does it take to complete checkout?               | Time on Task                    |
+| Perceptual     | What users understand or interpret. | Do users understand the purpose of this page?          | Comprehension                   |
+
+> **Source-doc note:** v1.1 still lists Perceptual as the 4th family. The marketplace v1.32 UX Metrics framework now uses **Intelligence** in that slot, and comprehension/recognition have moved into Behavioral. If you route to a UX-metric skill, expect the v1.32 mapping there.
+
+Behavioral and attitudinal metrics can be collected directly in **Helio** as leading indicators. Run surveys and concept tests in Helio to capture what users do and how they feel — early enough to change direction.
+
+### STEP 7 — Prioritize and refine
+
+Most teams have more questions than time or budget. Prioritize:
+
+| Factor      | What it reveals                                          | How to use it                                       |
+| ----------- | -------------------------------------------------------- | --------------------------------------------------- |
+| Gap Size    | The degree of uncertainty or risk in current understanding. | Focus on areas with the least clarity.           |
+| Impact      | The potential value of answering the question.            | Prioritize questions tied to decisions that affect users or outcomes directly. |
+| Feasibility | The time, cost, and resources available.                  | Choose what can realistically be tested this cycle. |
+| Confidence  | The team's belief in current assumptions.                 | Address low-confidence areas first.                 |
+
+Questions at the intersection of **large gap + high impact + feasible effort** rise to the top.
+
+### STEP 8 — Match questions to techniques
+
+| Technique Focus | Common methods                                         | Typical metrics                              | Example question                                    |
+| --------------- | ------------------------------------------------------ | -------------------------------------------- | --------------------------------------------------- |
+| Behavioral      | First-click tests, task success analysis               | Completion, engagement, navigation clarity   | "Where do users click first on this page?"          |
+| Attitudinal     | Surveys, desirability studies, satisfaction scoring    | Trust, sentiment, satisfaction               | "How confident do users feel after completing this task?" |
+| Performance     | Usability tests, time tracking, error rate             | Efficiency, error reduction                  | "How long does it take to complete checkout?"       |
+
+For behavioral and attitudinal techniques, Helio is the platform for collecting these as leading indicators. First-click tests, surveys, desirability studies, and satisfaction scoring can all run in Helio before your product reaches real traffic.
+
+The **Glare Questioning Canvas** is a full-featured Figma-style layout using React components with form-style input boxes and a light theme.
+
+---
+
+## MAKE IT PRACTICAL — Plan your questioning cycle
+
+| Step                       | Action                                                  | Output                                              |
+| -------------------------- | ------------------------------------------------------- | --------------------------------------------------- |
+| 1. Clarify the Concept     | Identify the idea or assumption you want to explore.    | Clear articulation of what you believe and want to learn. |
+| 2. Identify Gaps           | List the uncertainties or missing knowledge areas.      | Focused list of what you do not yet understand.     |
+| 3. Define Learning Goals   | Choose exploring, evaluating, or comparing.             | Framed goals that define what success looks like.   |
+| 4. Write Questions         | Draft open-ended questions that reveal user understanding. | Structured list of user-focused prompts.         |
+| 5. Make Them Testable      | Translate each question into a measurable version.      | Test-ready questions linked to metrics.             |
+| 6. Align With UX Metrics   | Assign metrics for clarity, satisfaction, and success.  | Consistent measurement plan across studies.         |
+| 7. Prioritize              | Evaluate which questions are most valuable or feasible. | Ranked question list ready for testing.             |
+| 8. Match to Techniques     | Select the right testing or research methods.           | Plan of which tools and techniques to use.          |
+
+### Quick Checklist (before each round)
+
+- We've defined a single concept or assumption to explore.
+- We've identified what we don't understand yet.
+- Our learning goal is clear — exploratory, evaluative, or comparative.
+- Each question connects to a UX metric.
+- We've prioritized based on gaps, impact, and feasibility.
+- Our techniques and tools are ready to run.
+- The results will connect to findings that move design forward.
+
+Strong questioning is less about volume and more about precision.
+
+---
+
+## 5 routines for integrating questioning into workflow
+
+1. **Weekly Discovery Review** — Begin each week by identifying which assumptions or user behaviors need clarity. Frame these into questions you can test or observe within the week.
+2. **Sprint Planning** — Pair every major design or product task with at least one measurable question. Make it visible on the board: *"What do we need to learn before we move forward?"*
+3. **Post-Test Reflection** — End each sprint or test cycle by reviewing which questions produced usable signals. Note which were too broad or biased, and refine them for the next round.
+4. **Share the Questions, Not Just the Answers** — When findings are shared, include the questions that led to them. This helps others understand intent and replicate the method.
+5. **Build a Question Library** — Over time, collect well-framed, tested questions in a shared workspace. Reuse them as templates for future projects to keep consistency.
+
+### Workflow benefits
+
+| Benefit       | What it delivers                                            |
+| ------------- | ----------------------------------------------------------- |
+| Focus         | Teams align around what to learn next instead of debating opinions. |
+| Speed         | Clear questions shorten the time between testing and decisions. |
+| Confidence    | Each question backed by metrics creates evidence leaders can trust. |
+| Scalability   | Reusing question frameworks builds consistency across projects. |
+
+---
+
+## SEE IT IN ACTION
+
+*How a single question turned confusion into clarity* — paired worked example showing weak ("Do people like our homepage?") vs. strong ("Can users find pricing within 5 seconds?") and how the testable form fed directly into a first-click test that produced an actionable signal.
+
+---
+
+## APPLY AND EVOLVE
+
+### Business impact
+
+| Benefit              | What it creates                                                   | Example impact                                              |
+| -------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------- |
+| Faster Focus         | Clear learning goals eliminate wasted research.                   | Teams cut discovery cycles to hours instead of weeks.       |
+| Better Decisions     | Questions tied to metrics create credible findings.               | A single comprehension test clarifies layout choice, saving dev time. |
+| Cross-Team Alignment | Shared questioning frameworks connect research, design, product.  | Product, design, and marketing test message clarity using the same questions. |
+| Proven Value         | Measurable questions link user insight to business results.       | Improved comprehension leads to higher conversion and reduced churn. |
+
+### Reflection prompts
+
+- Did our questions address the biggest gaps in understanding?
+- Which questions produced strong findings, and which stayed too broad?
+- Did we link each question to a clear UX metric and measurable outcome?
+- How did the answers change what we decided to do next?
+- What will we ask differently next time?
+
+### Next steps (transitions)
+
+| If you are here          | Move to                                       | What you gain                                  |
+| ------------------------ | --------------------------------------------- | ---------------------------------------------- |
+| Concepts → Hunches       | Clarify what you believe and what to learn.   | Clear intent for what to test.                 |
+| Hunches → Questioning    | Turn beliefs into measurable prompts.         | Defined questions linked to UX metrics.        |
+| Questioning → Findings   | Collect results and analyze through metrics.  | Actionable insights grounded in data.          |
+| Findings → Signals       | Combine metrics into patterns that prove impact. | Clear, comparable signals that build design credibility. |
+
+### Closing thought
+
+Good questions are the foundation of design measurement. They connect curiosity to clarity, intent to evidence, and intuition to influence. When your team questions well, design stops being opinion and becomes proof that earns trust.
 
 ---
 
 ## Key terms (Questioning-relevant)
 
 - **Question (Research vs. Testable)** — Research questions are open-ended and user-focused; testable questions point to observable behavior/perception and a measurable outcome.
-- **Question Types** — People, Process, Product, Problem. People+Process = context; Product+Problem = clarity.
-- **Modes of Questioning** — Exploratory (discover), Evaluative (validate clarity/usability), Comparative (decide between options). v1.1 addition.
-- **UX Metric Types** — Behavioral (what users do), Attitudinal (what they think/feel), Performance (how efficiently they succeed), Perceptual (what they understand) — last added in v1.1.
-- **Bias check** — Pre-flight on questions: is it leading? echoing assumptions? emotionally loaded? too technical?
+- **Question Types** — People, Process, Product, Problem. People + Process = context; Product + Problem = clarity.
+- **Modes of Questioning** — Exploratory (discover), Evaluative (validate clarity/usability), Comparative (decide between options).
+- **UX Metric Types (v1.1 doc)** — Behavioral, Attitudinal, Performance, Perceptual. (v1.32 framework swaps Perceptual for Intelligence; comprehension moves into Behavioral.)
+- **Bias check** — Pre-flight: is it leading? echoing assumptions? emotionally loaded? too technical?
 - **Question Library** — Reusable, well-framed, tested questions stored in a shared workspace for cross-project consistency.
-- **Glare Questioning Canvas** — Figma-style React layout (light theme, form input boxes) that operationalizes the questioning steps.
+- **Glare Questioning Canvas** — Figma-style React layout (light theme, form input boxes) that operationalizes the steps.
+
+---
+
+## Resources
+
+- *User Research Questions* — UX Research Field Guide, User Interviews
+  <https://www.userinterviews.com/ux-research-field-guide-chapter/user-research-questions>
+- *The Best User Research Questions (+ How to Ask Them)* — Maze
+  <https://maze.co/blog/research-questions/>
+- *A Step-by-Step Guide to Writing Better Research Questions* — dscout
+  <https://dscout.com/people-nerds/guide-better-questions>
+- *How to ask good questions and level-up your user research skills* — Envoy Design
+  <https://medium.com/envoy-design/how-to-ask-good-questions-and-level-up-your-user-research-skills-19fd28b275a4>
+- *Crafting good UX research questions for qualitative research* — PlaybookUX
+  <https://www.playbookux.com/crafting-good-ux-research-questions-for-qualitative-research/>
+- *The NCredible Framework — UX research questions prioritised* — UX Insight
+  <https://uxinsight.org/a-practical-tool-for-prioritising-research-questions-and-ensuring-that-they-dont-all-end-up-in-a-usability-test/>
+- *How to ask the right UX questions and avoid the wrong ones* — Reddit r/userexperience
+  <https://www.reddit.com/r/userexperience/comments/oorfjq/how_to_ask_the_right_ux_questions_and_avoid_the/>
+- *How to write effective UX research questions (with examples)* — Hotjar
+  <https://www.hotjar.com/ux-research/questions/>

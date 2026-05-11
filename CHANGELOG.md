@@ -1,5 +1,48 @@
 # Glare Marketplace Changelog
 
+## 2.2.1 — 2026-05-11
+
+Content refresh for `glare-measure-hunches` and `glare-measure-questioning` from updated Drive docs.
+
+### glare-measure-hunches
+
+Refreshed from `Glare | Measure, Hunches v1.0` (Sep 21, 2025; re-edited 2026-05-11). Net additions:
+- Ideation framing (hunches + questions emerge from the wide ideation space)
+- Helio integration callouts (attitudinal/behavioral metrics as leading indicators)
+- 6 Benefits of Using Hunches as a labeled callout
+- Full Resources list (Torres, Gothelf, MacCarthy, Stillman, Berger, Schirò, Zmijewski/Helio, Sokhan)
+
+5-step process unchanged: Start with Context → Capture Initial Assumptions → Spot Opportunities → Form Your Hunch → Translate Into Questions. "We believe..." templates and weak/strong example preserved verbatim.
+
+### glare-measure-questioning
+
+Refreshed from `Glare | Measure, Questioning v1.1` (Oct 26, 2025; re-edited 2026-05-11). Net additions:
+- 5-section scaffold: Getting Started → Begin Questioning → Make It Practical → See It in Action → Apply and Evolve
+- 5 workflow routines: Weekly Discovery Review · Sprint Planning · Post-Test Reflection · Share the Questions Not Just Answers · Build a Question Library
+- Question Library surfaced as a named concept (added to description and body)
+- Helio integration callouts at Step 6 (UX metric alignment) and Step 8 (technique matching)
+- Verbatim bias check
+- Full Resources list (User Interviews, Maze, dscout, Envoy, PlaybookUX, UX Insight, Hotjar)
+
+8-step process unchanged. 4 question types (People · Process · Product · Problem) and 3 modes (Exploratory · Evaluative · Comparative) preserved.
+
+### Perceptual vs Intelligence taxonomy note
+
+The v1.1 Questioning source doc still uses **Behavioral · Attitudinal · Performance · Perceptual** as the 4 UX-metric families. The marketplace UX Metrics framework v1.32 (added in v2.2.0) uses **Attitudinal · Behavioral · Performance · Intelligence** instead, with Perceptual content folded into Behavioral.
+
+`glare-measure-questioning/reference.md` preserves the source-doc Perceptual wording (so users inside Questioning get the doc's own vocabulary) but adds a Source-doc note flagging the conflict and pointing handoffs to `glare-ux-metrics` for the v1.32 mapping. SKILL.md handoff section also notes this.
+
+### Synced to glare-skills-flat
+
+Both refreshed skill folders copied to `~/Desktop/zurb.nosync/skills/glare-skills-flat/glare-measure-hunches/` and `~/Desktop/zurb.nosync/skills/glare-skills-flat/glare-measure-questioning/`.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `2.2.1` (patch — content refresh, no structural change)
+- Skill count unchanged: 65
+
+---
+
 ## 2.2.0 — 2026-05-10
 
 UX Metrics section expanded from a single overview skill into a full 10-skill library, driven by the v1.32 Drive content drop. Skill count: 56 → 65.
