@@ -1,12 +1,14 @@
 ---
 name: glare-ux-metrics-attitudinal
 description: Use this skill when the user is working with Attitudinal metrics — how users feel about an experience. Triggers — phrases like "attitudinal metrics," "how users feel," "trust," "satisfaction," "confidence," "desirability," "loyalty," "sentiment," "appeal," "feeling," "expectations," "usefulness," "brand score," "NPS," "CSAT," "users finished but felt confused," "attitudinal vs behavioral," "users may complete but not trust," or asks how to capture emotional response and perceived value. Also use when the user is picking among the nine attitudinal metrics, debugging which emotional signal to measure, or pairing emotional signals with behavioral and performance metrics inside a stack. Do NOT use for the broader UX Metrics framework (use `glare-ux-metrics`), Behavioral or Performance metrics specifically (use `glare-ux-metrics-behavioral` / `glare-ux-metrics-performance`), or Define-stage picking on a specific decision (use `glare-define-ux-metrics`).
-version: 2.2.0
-source_doc_version: v1.32
-last_rebuilt: 2026-05-10
+version: 3.0.0
+source_doc_version: v1.32 (per-metric pages added)
+last_rebuilt: 2026-05-11
 ---
 
 You are helping the user select, structure, and apply **Attitudinal metrics** — the family that measures how users *feel* about the experience.
+
+> **Canonical metric list (recommend ONLY from these nine).** Appeal · Brand Score · Desirability · Expectations · Feelings · Loyalty · Satisfaction · Sentiment · Usefulness. Do not invent or borrow attitudinal metric names from other frameworks — if the user's question doesn't match one of these nine, route to `glare-ux-metrics` or another type-level skill instead.
 
 ## Core idea
 

@@ -1,8 +1,8 @@
 ---
 name: glare-measure-hunches
 description: Use this skill when the user is forming a Hunch in the Measure area — turning instinct into a falsifiable, testable hypothesis. Triggers — writing or critiquing a "we believe..." statement, the hunch template *"We believe that [change] for [audience] will [impact] because [reason]"*, the belief primer *"We believe users need ___ so they can ___"*, checking falsifiability, strengthening weak hunches (e.g., "users like shorter forms" → "removing two steps will increase completion because users drop off at step 3"), spark techniques (Empathy Mapping, Customer Journey, Stakeholder Interviews, Competitive Analysis, Expert Audit). Also when tying an instinct to a UX metric (completion rate, task time, drop-off). Do NOT use when intent isn't defined (use `glare-measure-concepts`), moving into questions (use `glare-measure-questioning`), interpreting data (use `glare-measure-findings`), or wanting the loop overview (use `glare-measure`). For the Decision Map, use `glare-decision-map`.
-version: 2.2.1
-source_doc_version: v1.0 (Hunches) — refreshed 2026-05-11
+version: 3.0.0
+source_doc_version: v1.0 (Hunches) — refreshed 2026-05-11 + canonical-28 constraint
 last_rebuilt: 2026-05-11
 ---
 
@@ -23,6 +23,19 @@ Ideation is the widest space — open, messy, unfiltered. From it, the first edg
 ## Read the reference first
 
 Before answering substantive questions, read `reference.md` — it contains the verbatim Hunches material, the belief and hypothesis templates, the spark techniques, the weak-vs-strong examples, the 6 Benefits of Using Hunches, and the Helio integration callouts.
+
+## Critical rules
+
+**Canonical metric constraint.** When linking a hunch to a UX metric, use only the 28 canonical metrics listed in `glare-ux-metrics-attitudinal`, `glare-ux-metrics-behavioral`, and `glare-ux-metrics-performance`. Do not invent metric names or use legacy names not in this list. If the hunch needs a metric that's not in the canonical list, flag it explicitly as "outside the canonical 28" and explain why.
+
+Canonical 28:
+
+- Attitudinal (9) — Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness.
+- Behavioral (8) — Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability.
+- Performance (11) — Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency.
+- Intelligence — in development; the v1.34 framework defines this 4th type for AI-assisted experiences, but no canonical per-metric list exists yet. Treat any AI-specific metric as "outside the canonical 28" until that list ships.
+
+Translate shorthand from the source doc into canonical names — "completion rate" → Completion Rate, "task time" → Time on Task, "drop-off" → Drop-off Rate, "form abandonment" → Abandonment Rate.
 
 ## How to apply — the 5-step process
 

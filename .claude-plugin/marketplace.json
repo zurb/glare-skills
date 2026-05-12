@@ -7,8 +7,8 @@
     {
       "name": "glare",
       "source": "./glare",
-      "description": "ZURB / Helio's Glare framework v2.2 — 65 skills across 6 sections (Get Started + Design Review (SIGNAL) + Design Signals + Decision Map (Define / Measure / Focus / Lead) + Design Assessment + UX Metrics with 10-skill library) plus a cross-section router skill.",
-      "version": "2.3.0",
+      "description": "ZURB / Helio's Glare framework v3 — 60 skills across 6 components (Getting Started + Decision Map + Design Review + UX Metrics + Design Signals + Design Assessment) plus a master orchestrator. Includes canonical 28 UX metrics with full per-metric pages.",
+      "version": "3.0.0",
       "category": "design",
       "keywords": ["ux", "design", "research", "metrics", "signals", "glare", "zurb", "helio", "design-review", "signal-framework", "decision-map", "design-assessment"]
     }

@@ -1,5 +1,52 @@
 # UX Metrics — Reference (Glare Define, v1.3)
 
+## Canonical 28 Metrics
+
+When recommending or naming UX metrics, recommend **only** from these 28. Anything else is "outside the canonical 28" and must be flagged with a reason.
+
+### Attitudinal (9) — how users feel
+
+- **Appeal** — strength of attraction or interest the experience generates on first impression.
+- **Brand Score** — composite measure of how users perceive and rate the brand.
+- **Desirability** — degree to which users want to use, return to, or recommend the experience.
+- **Expectations** — alignment between what users anticipate and what they encounter.
+- **Feeling** — emotional tone users report after an interaction.
+- **Loyalty** — likelihood of repeat use, advocacy, or long-term commitment.
+- **Satisfaction** — overall contentment with the experience or outcome.
+- **Sentiment** — directional valence (positive / neutral / negative) of expressed user feedback.
+- **Usefulness** — perceived value the experience delivers against a user's need.
+
+### Behavioral (8) — what users do
+
+- **Completion** — whether users finish a defined flow or task.
+- **Comprehension** — whether users correctly understand content, options, or outcomes.
+- **Effort** — perceived or observed work required to reach a goal.
+- **Engagement** — depth and quality of interaction with the experience.
+- **Frequency** — how often a user performs a behavior in a window of time.
+- **Intent** — observable signal of a user's goal or next action.
+- **Success** — whether the user achieved the intended outcome of a task.
+- **Usability** — overall ease and quality of interacting with the design.
+
+### Performance (11) — efficiency and reliability
+
+- **Abandonment Rate** — share of users who leave a flow before completion.
+- **Bounce Rate** — share of sessions that exit after a single page or step.
+- **Click-Through Rate** — share of impressions that produced a click on the target element.
+- **Completion Rate** — share of users who finish a defined task or flow.
+- **Drop-off Rate** — share of users lost at a specific step of a flow.
+- **Error Frequency** — count of user-facing errors over a defined window.
+- **Error Rate** — share of attempts that produced an error.
+- **Recency** — time since a user's last meaningful interaction.
+- **Session Duration** — length of a single user session.
+- **Time on Task** — time required to complete a defined task.
+- **Visit Frequency** — how often a user returns over a defined window.
+
+### Intelligence — in development
+
+The v1.34 UX Metrics framework defines a 4th type for AI-assisted experiences (recommendation quality, prompt effectiveness, AI guidance usefulness, adaptation quality, confidence calibration, workflow assistance), but no canonical per-metric list has shipped yet. Until it does, AI-specific metrics are "outside the canonical 28."
+
+---
+
 ## What a UX metric is
 
 A UX metric quantifies how users feel and behave when they interact with your product. Metrics turn concepts like satisfaction, comprehension, and usability into signals you can track, compare, and act on. They are "the grammar of signals" — a 70% completion rate can settle weeks of debate.

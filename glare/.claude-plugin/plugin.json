@@ -1,7 +1,7 @@
 {
   "name": "glare",
-  "version": "2.3.0",
-  "description": "ZURB / Helio's Glare framework — 66 skills across 6 sections (Get Started + Design Review + Design Signals + Decision Map + Design Assessment + UX Metrics) plus a cross-section router. Decision Map's Define area now has 5 blocks: User Needs, Audience, Collecting, UX Metrics, and Patterns.",
+  "version": "3.0.0",
+  "description": "ZURB / Helio's Glare framework v3 — 60 skills across 6 components (Getting Started + Decision Map + Design Review + UX Metrics + Design Signals + Design Assessment) plus a master orchestrator skill. Includes the canonical 28 UX metrics library with full per-metric pages.",
   "author": {
     "name": "ZURB"
   },

@@ -1,9 +1,9 @@
 ---
 name: glare-define-collecting
 description: Use this skill when the user is in the Collecting Data block of the Define area — turning raw input into usable signals. Triggers — picking a research approach (Exploratory / Evaluative / Comparative); the five-step process (Intent → Stack → Approach → Techniques → Connect); Research Stacks vs Design Stacks; named instruments (SUS, NPS, SEQ, CES, NASA-TLX) or the 12 techniques (First Click, Task Success, Time on Task, A/B, Multivariate, Heatmaps, Clickstream, Web Analytics, Conversion Rate, Eye Tracking, Card Sorting, Surveys); the four feedback types (View / See / Sense / Hear); the Define → Capture → Connect cadence. Tool catalogs (PURE, SUMI, WAMMI, UEQ; UserTesting, Maze, Helio, Hotjar, GA, Mixpanel) live in `reference.md`. Do NOT use when naming the need (use `glare-define-user-needs`), defining who data comes from (use `glare-define-audience`), or picking metrics (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the Decision Map, `glare-decision-map`.
-version: 1.4.0
-source_doc_version: v1.1
-last_rebuilt: 2026-05-06
+version: 3.0.0
+source_doc_version: v1.1 + canonical-28 constraint
+last_rebuilt: 2026-05-11
 ---
 
 You are helping the user work the **Collecting Data** block of the Decision Map's **Define** area — the discipline that turns raw input into usable signals and prevents drift back into "loudest voice wins."
@@ -15,6 +15,19 @@ Collecting Data sits inside the Define area of the Decision Map. It answers "whe
 ## Read the reference first
 
 Before answering, read `reference.md` — it contains the five-step collection process, the three modes (Exploratory / Evaluative / Comparative), the **12 techniques** with usage guidance, the Research Stacks catalog, the Tools four-axis framework, the three-tier sharing model, and the proof-in-practice examples.
+
+## Critical rules
+
+**Canonical metric constraint.** When recommending or naming UX metrics — including the metric a technique or instrument should target — use only the 28 canonical metrics listed in `glare-ux-metrics-attitudinal`, `glare-ux-metrics-behavioral`, and `glare-ux-metrics-performance`. Do not invent metric names or use legacy names not in this list. If the situation needs a metric that's not in the canonical list, flag it explicitly as "outside the canonical 28" and explain why.
+
+Canonical 28:
+
+- Attitudinal (9) — Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness.
+- Behavioral (8) — Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability.
+- Performance (11) — Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency.
+- Intelligence — in development; the v1.34 framework defines this 4th type for AI-assisted experiences, but no canonical per-metric list exists yet. Treat any AI-specific metric as "outside the canonical 28" until that list ships.
+
+Some technique tables in `reference.md` use legacy or shorthand terms (Efficiency, Trust, Conversion, Visual Attention, Conversion Rate, Confidence, Drop-Off). When you recommend a metric, translate to a canonical name (e.g., Drop-Off → Drop-off Rate; Efficiency → Time on Task or Completion Rate, depending on intent; Trust → Loyalty or Sentiment) or flag the term as outside the canonical 28.
 
 ## How to apply
 

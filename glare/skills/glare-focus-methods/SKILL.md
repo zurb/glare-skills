@@ -1,9 +1,9 @@
 ---
 name: glare-focus-methods
 description: Use this skill when the user is choosing a **Method** in the Focus facet — picking the frame to bring data into an initiative. Triggers — "what method should we use," "how should we test this," "how do we frame the data," "we have data but don't know what it means," choosing between competitor analysis vs journey mapping vs segment comparison vs A/B testing vs benchmarking, or asking about any of the 13 method frames (Competitors, Iterations, Timeline, Journeys, Platforms/Devices, User Goals/Tasks, Geographies, User Lifecycle, Behavioral Triggers, Segments, Feature Usage, Risk and Proof, Frameworks). Also when the user lists named methods (Journey mapping, JTBD, A/B, Kano, RICE, ICE, HEART, MoSCoW, Eisenhower, Service blueprint, Empathy mapping) and needs to know which frame they belong to. Do NOT use when the initiative isn't framed (use `glare-focus-initiatives`), data is ready to compare (use `glare-focus-comparing`), or team is ready to commit (use `glare-focus-decisions`).
-version: 1.3.0
-source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+version: 3.0.0
+source_doc_version: v1.3 + canonical-28 constraint
+last_rebuilt: 2026-05-11
 ---
 
 You are helping the user choose a **Method** — the second move in the Glare Focus facet.
@@ -15,6 +15,19 @@ A method gives the team a **frame** for looking at the work. It is broader than 
 ## Read the reference first
 
 Before answering substantive questions, read `reference.md` — full compressed content of Methods v1.3: why methods matter, what goes into a method, the 13 method frames (Competitors, Iterations, Timeline, Journeys, Platforms/Devices, User Goals/Tasks, Geographies/Regions, User Lifecycle, Behavioral Triggers, Segments, Feature Usage, Risk and Proof, Frameworks) with their named methods, the 5-step method-selection process, what comes out of a method, and where methods work best.
+
+## Critical rules
+
+**Canonical metric constraint.** Methods are evaluated against UX metrics. When you call out which metric a method should target — or which metric the resulting comparison should use — use only the 28 canonical metrics listed in `glare-ux-metrics-attitudinal`, `glare-ux-metrics-behavioral`, and `glare-ux-metrics-performance`. Do not invent metric names or use legacy names not in this list. If the method needs a metric that's not in the canonical list, flag it explicitly as "outside the canonical 28" and explain why.
+
+Canonical 28:
+
+- Attitudinal (9) — Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness.
+- Behavioral (8) — Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability.
+- Performance (11) — Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency.
+- Intelligence — in development; the v1.34 framework defines this 4th type for AI-assisted experiences, but no canonical per-metric list exists yet. Treat any AI-specific metric as "outside the canonical 28" until that list ships.
+
+Method names (Kano, RICE, HEART, SUS, etc.) are not UX metrics — they are scoring or framing models. When a method produces a number, name the canonical UX metric the number maps to (e.g., a SUS run reports Usability; a HEART rollup reports Engagement, Satisfaction, Completion, Success, plus Recency for the Retention letter).
 
 ## How to apply
 

@@ -1,5 +1,52 @@
 # Focus — Methods — Compressed (v1.3)
 
+## Canonical 28 Metrics
+
+When a method calls out a UX metric — either as the target of the comparison or as the output of the frame — recommend **only** from these 28. Anything else is "outside the canonical 28" and must be flagged with a reason. Method names (Kano, RICE, HEART, SUS, etc.) are scoring or framing models, not metrics; name the canonical metric the method's number maps to.
+
+### Attitudinal (9) — how users feel
+
+- **Appeal** — strength of attraction or interest the experience generates on first impression.
+- **Brand Score** — composite measure of how users perceive and rate the brand.
+- **Desirability** — degree to which users want to use, return to, or recommend the experience.
+- **Expectations** — alignment between what users anticipate and what they encounter.
+- **Feeling** — emotional tone users report after an interaction.
+- **Loyalty** — likelihood of repeat use, advocacy, or long-term commitment.
+- **Satisfaction** — overall contentment with the experience or outcome.
+- **Sentiment** — directional valence (positive / neutral / negative) of expressed user feedback.
+- **Usefulness** — perceived value the experience delivers against a user's need.
+
+### Behavioral (8) — what users do
+
+- **Completion** — whether users finish a defined flow or task.
+- **Comprehension** — whether users correctly understand content, options, or outcomes.
+- **Effort** — perceived or observed work required to reach a goal.
+- **Engagement** — depth and quality of interaction with the experience.
+- **Frequency** — how often a user performs a behavior in a window of time.
+- **Intent** — observable signal of a user's goal or next action.
+- **Success** — whether the user achieved the intended outcome of a task.
+- **Usability** — overall ease and quality of interacting with the design.
+
+### Performance (11) — efficiency and reliability
+
+- **Abandonment Rate** — share of users who leave a flow before completion.
+- **Bounce Rate** — share of sessions that exit after a single page or step.
+- **Click-Through Rate** — share of impressions that produced a click on the target element.
+- **Completion Rate** — share of users who finish a defined task or flow.
+- **Drop-off Rate** — share of users lost at a specific step of a flow.
+- **Error Frequency** — count of user-facing errors over a defined window.
+- **Error Rate** — share of attempts that produced an error.
+- **Recency** — time since a user's last meaningful interaction.
+- **Session Duration** — length of a single user session.
+- **Time on Task** — time required to complete a defined task.
+- **Visit Frequency** — how often a user returns over a defined window.
+
+### Intelligence — in development
+
+The v1.34 UX Metrics framework defines a 4th type for AI-assisted experiences (recommendation quality, prompt effectiveness, AI guidance usefulness, adaptation quality, confidence calibration, workflow assistance), but no canonical per-metric list has shipped yet. Until it does, AI-specific metrics are "outside the canonical 28."
+
+---
+
 ## What a Method is
 
 Methods help teams frame the data inside an initiative. Once an initiative is clear, design needs a way to bring signals into the work. This is not only about testing a prototype or running another study — those are useful techniques, but methods are broader.

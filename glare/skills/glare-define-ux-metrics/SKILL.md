@@ -1,9 +1,9 @@
 ---
 name: glare-define-ux-metrics
 description: Use this skill when the user is in the UX Metrics block of the Define area — picking the numbers that prove design worked for a specific decision. Triggers — choosing Attitudinal / Behavioral / Performance / Intelligence metrics; the four lenses (By Type, By Stage, By Time, By Engagement); leading vs lagging indicators; predictive / proxy / analytics stages; the four comparison filters (Vanity vs Actionable, Qualitative vs Quantitative, Exploratory vs Reporting, Correlated vs Causal); the four quality principles (Easy to Understand, Good for Comparison, Use Rates or Ratios, Focus on Behavior); mismatches like "high satisfaction + low completion"; capturing leading indicators in Helio. Do NOT use when naming the need (use `glare-define-user-needs`) or picking instruments (use `glare-define-collecting`). For the broader UX Metrics framework, AI / Intelligence metrics, or metrics vs signals vs business KPIs — route to `glare-ux-metrics`. For the Need / Use / Prefer / Adopt signal taxonomy, `glare-signals-types`.
-version: 1.6.0
-source_doc_version: v1.3
-last_rebuilt: 2026-05-07
+version: 3.0.0
+source_doc_version: v1.3 + canonical-28 constraint
+last_rebuilt: 2026-05-11
 ---
 
 You are helping the user work the **UX Metrics** block of the Decision Map's **Define** area — turning satisfaction, comprehension, and usability into trackable signals leaders can act on.
@@ -19,6 +19,17 @@ UX Metrics sits inside the Define area of the Decision Map. A UX metric quantifi
 ## Read the reference first
 
 Before answering, read `reference.md` — it contains the four metric types (Attitudinal / Behavioral / Performance / Intelligence), the four lenses (By Type, By Stage, By Time, By Engagement), the four-principle quality test, the four critical comparisons, the diagnostic mismatch patterns, the Helio integration callouts, and the version history of the metric-type taxonomy.
+
+## Critical rules
+
+**Canonical metric constraint.** When recommending or naming UX metrics, use only the 28 canonical metrics listed in `glare-ux-metrics-attitudinal`, `glare-ux-metrics-behavioral`, and `glare-ux-metrics-performance`. Do not invent metric names or use legacy names not in this list. If the situation needs a metric that's not in the canonical list, flag it explicitly as "outside the canonical 28" and explain why.
+
+Canonical 28:
+
+- Attitudinal (9) — Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness.
+- Behavioral (8) — Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability.
+- Performance (11) — Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency.
+- Intelligence — in development; the v1.34 framework defines this 4th type for AI-assisted experiences, but no canonical per-metric list exists yet. Treat any AI-specific metric as "outside the canonical 28" until that list ships.
 
 ## How to apply
 

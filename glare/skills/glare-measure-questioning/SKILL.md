@@ -1,8 +1,8 @@
 ---
 name: glare-measure-questioning
 description: Use this skill when the user is drafting, critiquing, or organizing research questions in the Measure area. Triggers — sorting questions into the four types — **People** (habits/behaviors), **Process** (steps/friction), **Product** (clarity/usefulness), **Problem** (barriers); choosing a Mode — **Exploratory**, **Evaluative**, **Comparative**; the bias check (leading? loaded? jargon-heavy?); promoting open questions into testable ones (e.g., "Do people like our homepage?" → "Can users find pricing within 5 seconds?"); aligning to a UX metric family — Behavioral, Attitudinal, Performance, Perceptual; the Glare Questioning Canvas; building a reusable Question Library. Do NOT use when anchoring intent (use `glare-measure-concepts`), forming a hunch (use `glare-measure-hunches`), translating data (use `glare-measure-findings`), or asking about the loop (use `glare-measure`). For the Decision Map, use `glare-decision-map`. For Need / Use / Prefer / Adopt, use `glare-signals-types`.
-version: 2.2.1
-source_doc_version: v1.1 (Questioning) — refreshed 2026-05-11
+version: 3.0.0
+source_doc_version: v1.1 (Questioning) — refreshed 2026-05-11 + canonical-28 constraint
 last_rebuilt: 2026-05-11
 ---
 
@@ -17,6 +17,19 @@ Note on taxonomies: the **Behavioral / Attitudinal / Performance / Perceptual** 
 ## Read the reference first
 
 Before answering substantive questions, read `reference.md` — it contains the verbatim Questioning v1.1 material, the four question types, the modes, the 8-step process, the bias check, the testable-question criteria, the metric-and-technique mapping tables, the 5 integration routines, the Question Library concept, and the source-doc note about the Perceptual → Intelligence taxonomy shift in v1.32 UX Metrics.
+
+## Critical rules
+
+**Canonical metric constraint.** When you align a question to a specific UX metric (not just a family), use only the 28 canonical metrics listed in `glare-ux-metrics-attitudinal`, `glare-ux-metrics-behavioral`, and `glare-ux-metrics-performance`. Do not invent metric names or use legacy names not in this list. If the question needs a metric that's not in the canonical list, flag it explicitly as "outside the canonical 28" and explain why.
+
+Canonical 28:
+
+- Attitudinal (9) — Appeal, Brand Score, Desirability, Expectations, Feeling, Loyalty, Satisfaction, Sentiment, Usefulness.
+- Behavioral (8) — Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability.
+- Performance (11) — Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency.
+- Intelligence — in development; the v1.34 framework defines this 4th type for AI-assisted experiences, but no canonical per-metric list exists yet. Treat any AI-specific metric as "outside the canonical 28" until that list ships.
+
+Family-level talk inside Questioning still uses the v1.1 wording (Behavioral / Attitudinal / Performance / Perceptual). When promoting a family to a specific metric, snap to the canonical 28 — e.g., "Perceptual" question about page understanding → Comprehension (Behavioral, canonical); "First Click Success" → Success or Completion; "Sentiment Score" → Sentiment; "Time on Task" stays as-is.
 
 ## How to apply
 
