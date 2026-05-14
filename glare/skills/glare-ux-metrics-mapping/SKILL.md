@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics-mapping
-description: Use this skill when the user is connecting UX metrics to business outcomes — phrases like "mapping design impact," "design impact," "connect UX to business," "UX metrics to business outcomes," "Situation — Intent — Outcomes — Results," "design impact creates pull," "leading vs lagging indicators," "trust may weaken before retention drops," "AI hesitation before adoption weakens," "translate user needs into business outcomes," "we improved UX but leadership doesn't see it," "we keep getting watered down in stakeholder review," or asks how UX metrics influence adoption, retention, conversion, support reduction, or operational efficiency. Also use when preparing a leadership readout that needs the UX-to-business chain. Do NOT use for the broader UX Metrics framework (use `glare-ux-metrics`), the technical Chain of Proof (use `glare-lead-mapping`), or proving design impact at the org-readiness level (use `glare-proving-design-impact`).
-version: 2.2.0
+description: Use this skill when the user is connecting UX metrics to business outcomes — phrases like "mapping design impact," "design impact," "connect UX to business," "UX metrics to business outcomes," "Situation — Intent — Outcomes — Results," "design impact creates pull," "leading vs lagging indicators," "trust may weaken before retention drops," "AI hesitation before adoption weakens," "translate user needs into business outcomes," "we improved UX but leadership doesn't see it," "we keep getting watered down in stakeholder review," or asks how UX metrics influence adoption, retention, conversion, support reduction, or operational efficiency. Also use when preparing a leadership readout that needs the UX-to-business chain. Do NOT use for the broader UX Metrics framework (use `glare-ux-metrics`), the technical Chain of Proof (use `glare-lead-mapping`), or proving design impact at the org-readiness level (use `glare-getting-started`).
+version: 3.1.0
 source_doc_version: v1.32
-last_rebuilt: 2026-05-10
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user **map design impact** through UX metrics — connecting user behavior, emotional signals, workflow performance, and operational outcomes into one clearer system.
@@ -51,7 +51,7 @@ Before answering, read `reference.md` — it carries the full v1.32 Mapping Desi
 
 - For the broader UX Metrics framework and the four metric TYPES, route to `glare-ux-metrics`.
 - For the technical Chain of Proof (User Need → Design KPI → Product KPI → Business KPI → Goal), route to `glare-lead-mapping`.
-- For proving design impact at the org-readiness level (with leadership stories, not just metrics), route to `glare-proving-design-impact`.
+- For proving design impact at the org-readiness level (with leadership stories, not just metrics), route to `glare-getting-started`.
 - For applying UX metrics inside reviews, prioritization, comparison, launch readiness, AI workflow evaluation, route to `glare-ux-metrics-applying`.
 - For combining metrics into a stack to expose friction, route to `glare-ux-metrics-stack`.
 - For Design Signals as the bridge between metrics and business impact, route to `glare-design-signals` and `glare-signals-components`.

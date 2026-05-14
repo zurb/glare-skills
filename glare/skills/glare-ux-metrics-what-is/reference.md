@@ -14,6 +14,17 @@ A UX metric gives structure to what users are actually experiencing. Over time, 
 
 ---
 
+## When to use
+
+- When the user asks what a UX metric actually IS or how one is structured.
+- When walking through the four parts — User Attribute, Data Type, Collection Method, Benchmark.
+- When distinguishing a UX metric from a raw analytics number or a business KPI.
+- When the user is writing their first UX metric or debugging one that feels incomplete.
+- When asking "70% completion — is that good?" (the missing piece is benchmark).
+- When turning a fuzzy reaction like "this feels confusing" into something measured.
+
+**Don't use when** the user wants the four metric TYPES at the framework level (`glare-ux-metrics`), Define-stage metric picking (`glare-define-ux-metrics`), or stacking metrics together (`glare-ux-metrics-stack`).
+
 ## The four parts of a UX metric
 
 In Glare a UX metric is built from four connected parts. These layers turn raw information into something measurable and actionable.
@@ -111,3 +122,13 @@ Over time, UX metrics become part of how organizations build confidence in produ
 ## Source
 
 Drafted from *Glare | UX Metrics, What is a UX Metric? v1.32* (Drive doc `1-teouWMYjBy2sltDWjVvP5BXfolBfZe5dzp_zf9qGHk`, May 10, 2026). The four-part structure and the trust-during-onboarding example come directly from that source.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Metric without a benchmark.** "70% completion" without a comparison means nothing — it could be excellent or terrible. Always include the benchmark in the metric.
+- **Confusing analytics numbers with UX metrics.** "Page views" or "session length" off an analytics tool aren't UX metrics until they have a User Attribute, Data Type, Collection Method, and Benchmark.
+- **Skipping User Attribute.** Reporting a number ("85% finished") without naming what user experience attribute it ties to (Comprehension? Trust? Effort?). The attribute is what makes the metric interpretable.
+- **Made-up data types.** Using categories that don't fit the three (Attitudinal, Behavioral, Performance) or the v1.32 fourth (Intelligence). Stick to the canonical types so metrics combine cleanly into stacks.
+

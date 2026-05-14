@@ -1,9 +1,9 @@
 ---
 name: glare-review-rubric
 description: Use this skill when the user wants to evaluate a design review or client call using the full SIGNAL rubric — scoring call quality, diagnosing where conversations broke down, and producing a structured evaluation report. Triggers include pasting a call transcript, asking to review or score a call, requesting a SIGNAL evaluation, asking about call quality, wanting to understand what went wrong on a specific call, or asking for the rubric output. Also use when the user mentions Surface/Identify/Ground/Navigate/Align/Lock dimensions, talk time ratio, problem ownership, decision language, or reframe adoption together. Do NOT use when the user wants to prepare for an upcoming call or coach someone on behavioral improvements — use `glare-review-coach` instead. Do NOT use for internal standups, async Slack/email threads, or purely informational calls where no decisions were being made.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 Evaluate a design review or client call using the full SIGNAL rubric. This is a lightweight offline version of the Call Rubric tool in the Glare Playground / Ray app — same definitions, same scoring, no app required.

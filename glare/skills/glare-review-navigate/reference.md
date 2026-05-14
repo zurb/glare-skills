@@ -6,6 +6,17 @@ Compressed source: Glare | Design Review, Navigating Techniques v1.3 + the N row
 
 Lead the decision process and secure commitment. Move the group from open discussion to a clear path forward.
 
+## When to use
+
+- When the user is leading the decision and securing commitment in a review.
+- When the team keeps exploring without choosing, or won't make a recommendation.
+- When ideas are being treated equally instead of one direction being named.
+- When Navigate scored 1–2 on the SIGNAL rubric.
+- When prepping a review where you need to come in with a recommendation.
+- When the call is almost over and direction is still soft.
+
+**Don't use when** there's no evidence yet to support a direction (use `glare-review-ground`) or when a decision was made but ownership is unclear (use `glare-review-align`).
+
 ## Why it matters
 
 Direction without agreement creates rework. If decisions are not secured in the room, they reopen later.
@@ -126,3 +137,13 @@ Agreement is often assumed but not confirmed. People may leave with different in
 ## Bottom line
 
 Help the conversation move toward a clear direction. When decisions are guided well, the group stops exploring and starts aligning. The work becomes clearer, and the next step becomes easier to define.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Showing two options without a recommendation.** Letting the room pick. The room defaults to the most familiar option, not the strongest one. Navigate means naming the recommendation *with* the tradeoff — the room can challenge it, but defaults shouldn't be the answer.
+- **Treating Navigate as more discussion.** Re-airing the same arguments instead of moving toward a call. By Navigate, the team should be choosing, not exploring. If exploration is still needed, return to Ground.
+- **Navigating without Ground.** Recommending a direction without evidence behind it. Stakeholders push back ("how do you know?") and the direction collapses. Always pair the recommendation with the signal it rests on.
+- **One person owns Navigate.** Letting the designer or PM make the call alone in the room. Navigate is shared — the recommendation comes from the work, but the commitment comes from the team.
+

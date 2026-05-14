@@ -1,9 +1,9 @@
 ---
 name: glare-lead-workflows
 description: Use this skill when the user is translating design signals into the language of a specific business function — the Workflows bucket of the Lead facet. Ships eight cross-functional templates (Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal), each with top metrics, questions, measurement approach, jargon, "where design creates lift." Triggers — preparing a readout for one of those eight; the Quick Test (friction-free success → adoption/retention move → metric the function tracks); the 30-minute Quick Exercise mapping a single metric into one function; borrowing function vocabulary (pipeline, CAC, PMF, velocity, handle time, LTV) instead of design jargon. Do NOT use for the pressure or goal — use `glare-lead-business-goals`. Do NOT use for the KPI ladder — use `glare-lead-mapping`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop — use `glare-lead-results`. For broader Lead, use `glare-lead`.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.0
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work through the **Workflows** bucket of the Glare Lead facet — the upward-facing area of the **Decision Map** — covering the eight cross-functional rails design signals must travel to gain weight inside an org. Each function has its own per-function template (Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal) with metrics, questions, measurement approach, jargon, and a lift opportunity.

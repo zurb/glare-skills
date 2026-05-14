@@ -23,6 +23,17 @@ UX metrics help teams slow down the right part of the work — evaluation, inter
 
 ---
 
+## When to use
+
+- When the user asks about UX Metrics as a top-level Glare framework.
+- When introducing the four UX metric types — Attitudinal · Behavioral · Performance · Intelligence (AI-assisted experience quality).
+- When the user wants the overview (Why → What Is → Measurement System → Attitudinal → Behavioral → Performance → Stack → Mapping → Applying).
+- When clarifying how UX metrics differ from signals and from business KPIs.
+- When the team is comparing UX metrics, signals, and business KPIs and needs the relationships named.
+- When introducing UX metrics as the measurement layer underneath Design Signals, AI Skills, Design Reviews, and Decision Maps.
+
+**Don't use when** the user is in Define-stage metric picking on a specific decision (`glare-define-ux-metrics`) or asking about the Need / Use / Prefer / Adopt signal-type taxonomy (`glare-signals-types`).
+
 ## The four UX metric types (v1.32)
 
 ### Attitudinal — how users feel
@@ -118,6 +129,15 @@ Over time, UX Metrics become part of how teams make product decisions together. 
 - **The Overview bullet swap that affected v1.0 — NOT present in v1.32.** Attitudinal correctly lists Appeal/Brand Score/Desirability/Expectations/Feeling/Loyalty/Satisfaction/Sentiment/Usefulness; Behavioral correctly lists Completion/Comprehension/Effort/Engagement/Frequency/Intent/Success/Usability.
 
 ---
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Single-type measurement.** Anchoring the whole framework on one type (usually Behavioral). The four-type model exists because no single type catches everything — attitudinal leads, behavioral shows action, performance shows cost, intelligence catches AI-assisted experience quality.
+- **Skipping Intelligence.** The v1.32 fourth type addresses AI-assisted experiences specifically — recommendation quality, prompt effectiveness, AI guidance usefulness. Treating it as optional misses the central case for v1.32.
+- **Confusing UX metrics with business KPIs.** Reporting "retention up" as a UX metric. Retention is a business KPI; UX metrics are the leading attribute-anchored signals that explain *why* retention moved.
+- **Routing too late.** Staying in `glare-ux-metrics` when the user is actually in the Define stage for a specific decision (`glare-define-ux-metrics`) or working on a specific metric family (route to the type sub-skill).
 
 ## Related key terms
 

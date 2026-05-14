@@ -1,5 +1,15 @@
 # Behavioral Metrics — Reference (v1.32, per-metric pages added)
 
+## When to use
+
+- When the user is working with what users actually *do* — hesitation, abandonment, navigation breakdowns, click patterns, completion.
+- When real behavior diverges from the path designed for users (scanning, hesitating, looping, skipping).
+- When picking among the eight canonical behavioral metrics (Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability).
+- When behavioral signals matter most — onboarding, navigation, AI-assisted workflows, search, dashboards, enterprise experiences.
+- When the team needs to move beyond scoreboards toward what is actually changing user behavior.
+
+**Don't use when** the user wants the broader framework (`glare-ux-metrics`), Attitudinal or Performance metrics specifically, or Define-stage picking on a specific decision (`glare-define-ux-metrics`).
+
 ## What behavioral metrics measure
 
 Behavioral metrics measure what users actually do while interacting with a product, workflow, or system. They help teams understand:
@@ -257,3 +267,13 @@ Drafted from *Glare | UX Metrics, Behavioral Metrics v1.32* (Drive doc `116rGaIq
 - Intent (`1mLCGElVJH_TYTxBKeLufe1EGk15jvyzcA6biY7gJ_p8`)
 - Success (`15xWiC-_d_on6izXwYpYvlXgbTEJEM-E1U25i_eZtzX8`)
 - Usability (`1yaxxUayhTH9mcKiwY17W_vDMhWY7e61n8wK8LzYgCYA`)
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Inventing behavioral metrics.** Borrowing "stickiness," "viral coefficient," or other engagement names that aren't in the canonical eight. Stick to Completion, Comprehension, Effort, Engagement, Frequency, Intent, Success, Usability — or route to another type.
+- **Behavioral-only stacks.** Tracking only what users do without checking how they feel (attitudinal) or how efficiently the system works (performance). Behavioral alone shows the path without the cost or the trust.
+- **Measuring behavior on the wrong workflow.** High engagement on a sub-workflow doesn't mean the primary task succeeded. Anchor behavioral metrics to the workflow tied to the decision, not the surface that's easiest to instrument.
+- **Confusing high engagement with good behavior.** Users repeatedly scanning the nav can look like engagement; it's actually friction. Pair engagement with effort or hesitation to read what the behavior means.
+

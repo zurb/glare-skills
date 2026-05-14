@@ -1,9 +1,9 @@
 ---
 name: glare-lead-mapping
 description: Use this skill when the user is drawing the ladder from user need to business goal — the Mapping bucket of the Lead facet. Triggers — building or auditing a Chain of Proof (User Need → Design KPI → Product KPI → Business KPI → Goal); naming UX metrics as "connective tissue" between product and business metrics; working upward from a Design KPI or downward from a goal; the Five Steps to Map (Align on Goals → Understand Workflows → Map the Chain → Share → Keep Visible) or the Make-It-Practical routine (Define Goal → Connect Workflow → Build Chain → Share Story → Refresh Data); the Quick Checklist; the onboarding-to-revenue example (55%→85% completion → trial-to-paid doubled → pipeline +25%). Do NOT use for picking the pressure/goal — use `glare-lead-business-goals`. Do NOT use for cross-functional language — use `glare-lead-workflows`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop — use `glare-lead-results`. For broader Lead, use `glare-lead`.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.1
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work through the **Mapping** bucket of the Glare Lead facet — the upward-facing area of the **Decision Map** — which turns outputs into outcomes by connecting user needs at the bottom to business goals at the top.

@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics-system
 description: Use this skill when the user is treating UX metrics as a connected system rather than isolated scores — phrases like "measurement system," "UX metrics as a system," "metrics work together," "metrics form patterns," "operational measurement," "shared visibility across teams," "different dashboards different conclusions," "we have lots of dashboards but no clarity," "measurement breaks down across the org," "Confusion Trap," "Friction Wall," "Trust Gap," "high completion long time on task," "strong engagement weak trust," or asks how to evolve from isolated dashboards to a shared measurement system. Also use when wrestling with org-wide measurement fragmentation or wanting to understand the four measurement areas as one connected system. Do NOT use for the four metric TYPES at the framework level (use `glare-ux-metrics`), per-metric definitions (use the type sub-skills), or stacking specific metrics (use `glare-ux-metrics-stack`).
-version: 2.2.0
+version: 3.1.0
 source_doc_version: v1.32
-last_rebuilt: 2026-05-10
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user run UX Metrics as a **connected operational system** — not as a scoreboard, and not as isolated dashboards.

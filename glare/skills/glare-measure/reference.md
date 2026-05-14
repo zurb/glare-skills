@@ -6,6 +6,16 @@ Measure is the second facet of the Glare framework (a Helio methodology for cutt
 
 ---
 
+## When to use
+
+- When the user is producing evidence within the Decision Map's Measure area.
+- When forming hypotheses or hunches, writing research questions, running tests, or interpreting findings.
+- When working the four-move loop — Concepts → Hunches → Questioning → Findings.
+- When using UX metric families (Behavioral / Attitudinal / Performance / Perceptual).
+- When the team has hunches but no falsifiable bets, or data but no signals.
+
+**Don't use when** still defining who/what to study (use `glare-define`) or when there are results and the team needs to compare versions (`glare-focus`). For depth in one move, use `glare-measure-concepts`, `glare-measure-hunches`, `glare-measure-questioning`, or `glare-measure-findings`.
+
 ## Glare | Measuring Overview v1.0
 
 The high-level introduction to the Measure facet. Establishes the "Fog vs. Signal" framing and the four-move loop.
@@ -163,3 +173,13 @@ Findings are the final move of Measure: they turn raw data into design signals t
 - **Bias check** — Pre-flight on questions: is it leading? echoing assumptions? emotionally loaded? too technical?
 - **Question Library** — Reusable, well-framed, tested questions stored in a shared workspace for cross-project consistency.
 - **Glare Questioning Canvas** — Figma-style React layout (light theme, form input boxes) that operationalizes the questioning steps.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Skipping Concepts.** Jumping into Hunches and Questions without anchoring intent first. The Measure work then produces signals that don't tie back to anything Focus or Lead can use.
+- **Hunches as ideation.** Treating hunch-writing as brainstorm sessions without falsifiability. Hunches must be bets that could be wrong; without that, they shape nothing.
+- **Findings without translation.** Reporting raw data as the deliverable instead of running it through the user-need + business-result chain. Data alone is noise — the Findings move turns it into signal.
+- **Treating the four moves as a one-time pipeline.** Concepts → Hunches → Questions → Findings is a *loop* — findings produce new concepts. Linear teams stop after one pass; loop teams compound learning.
+

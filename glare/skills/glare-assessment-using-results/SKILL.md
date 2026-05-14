@@ -1,9 +1,9 @@
 ---
 name: glare-assessment-using-results
 description: Use this skill when the user has Design Assessment results and is asking what to do next — "what do we do with our score," "how do we turn the assessment into action," "where should we start," "what's our 30-day next move," "which dimension should we improve first," "how do we run a results review," or wants the worksheet for choosing one improvement area, one working question, and one visible 30-day action. Also use when the user is at risk of common failure modes — trying to fix all five dimensions at once, treating the score as the point, building a long transformation plan, ranking teams, or letting results turn into observations without commitment. Do NOT use when the user is still trying to understand what their scores mean (`glare-assessment-scoring` for individual scores, `glare-assessment-reading` for the pattern across dimensions), or wants the broader assessment overview (`glare-design-assessment`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user **turn Design Assessment results into one focused 30-day action** — moving from interpretation to commitment.
@@ -55,5 +55,5 @@ Before answering substantive questions, read `reference.md` — full compressed 
 - Understanding how scores are built and what bands mean → `glare-assessment-scoring`
 - Reading the *shape* across dimensions → `glare-assessment-reading`
 - Going deeper on the dimension you chose to improve → `glare-assessment-organizing-work`, `glare-assessment-managing-complexity`, `glare-assessment-building-proof`, `glare-assessment-guiding-decisions`, `glare-assessment-scaling-influence`
-- Running a 90-day pilot to grow design influence → `glare-coaching-advising`
-- Showing leadership how the improvement created impact → `glare-proving-design-impact`
+- Running a 90-day pilot to grow design influence → `glare-getting-started`
+- Showing leadership how the improvement created impact → `glare-getting-started`

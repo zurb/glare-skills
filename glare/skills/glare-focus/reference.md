@@ -8,6 +8,16 @@ Focus is where teams stop treating every idea the same. A design may be understa
 
 It brings structure to how teams run initiatives, choose methods, compare results, and make decisions. The goal is not to test everything — it is to learn enough to put energy behind the right work.
 
+## When to use
+
+- When the user has findings and needs to turn them into direction.
+- When circling, scattered findings, or the team can't pick what to commit to.
+- When working through Focus's four moves — Initiatives → Methods → Comparing → Decisions.
+- When the user mentions the five tactical decision types (Implement / Refine Design / Test Iteration / Revisit Later / Do Not Pursue).
+- When narrowing scattered concepts into one clear direction the team can defend.
+
+**Don't use when** still gathering findings (use `glare-measure`), defining the problem (use `glare-define`), or escalating to leadership KPIs (use `glare-lead`). For depth in one move, use `glare-focus-initiatives`, `glare-focus-methods`, `glare-focus-comparing`, or `glare-focus-decisions`.
+
 ## The four moves
 
 Focus works through four moves, in order:
@@ -132,3 +142,13 @@ Focus sits between Measure and Lead in the Decision Map.
 - **Lead** shows what it drives.
 
 Focus is the turning point where signals become choices, and choices become momentum.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Skipping straight to Decisions.** Teams under deadline pressure compress Initiatives, Methods, and Comparing into one meeting and call the move "the decision." It isn't — without framing and comparison, the call is opinion in a faster wrapper.
+- **Comparing before framing the initiative.** "Which version is better?" without naming what the initiative is for produces winners no one trusts. Initiative comes first.
+- **Letting Focus turn into another round of Measure.** When findings feel weak, the impulse is to gather more data. Focus exists to *use* findings; if the team keeps cycling back to Measure, name what specific finding is missing rather than re-running everything.
+- **No decision record at the end.** A Focus cycle that produces alignment but no written decision leaks the same call into the next meeting. Lock the decision into a one-line record before moving on.
+

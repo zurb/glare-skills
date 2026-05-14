@@ -1,9 +1,9 @@
 ---
 name: glare-focus-initiatives
 description: Use this skill when the user is naming an **Initiative** in the Focus facet — defining the area of work before methods or comparisons run. Triggers — "what should we focus on," "frame the initiative," "scope the work," "scattered requests," "everything feels important," "connect this redesign to a goal," "find the bigger picture," "we keep getting one-off requests," picking between requests, mapping a request to a business goal, grouping concepts under one initiative. Also when the user mentions any of the 10 initiative types (Simplify Identity & Access, Accelerate Onboarding, Optimize Navigation, Streamline Checkout & Payment, Increase Engagement & Retention, Personalize Experiences, Strengthen Collaboration, Elevate Marketing & Growth Pages, Improve Content & Support, Expand Device & Context Reach). Do NOT use when already framed and choosing how to learn (use `glare-focus-methods`), comparing signals (use `glare-focus-comparing`), or committing (use `glare-focus-decisions`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user name and shape an **Initiative** — the first move in the Glare Focus facet.

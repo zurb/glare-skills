@@ -4,6 +4,16 @@ Compressed from "Glare | Design Assessment, Reading Patterns v1.3" (May 3, 2026)
 
 > "The pattern matters more than any single score."
 
+## When to use
+
+- When the user has Design Assessment results across all five dimensions and wants to interpret the *shape*, not the individual numbers.
+- When dimension scores are uneven — strong in one place, weak in another — and the user is trying to understand what the pattern reveals.
+- When the user describes a recognizable shape: "balanced and strong," "strong proof weak influence," "strong start weak finish," "high activity low impact."
+- When one weak dimension seems to be dragging the others, and the question is which break to fix first.
+- When two teams have the same total score but very different problems.
+
+**Don't use when** the user wants to understand *how* scores are built (`glare-assessment-scoring`), is choosing a 30-day next move (`glare-assessment-using-results`), or is deep in one specific dimension — drop into that dimension's skill.
+
 ## Why patterns matter
 
 Most teams want to know their score first. That is natural. A score gives the assessment a clear starting point. But the score is only useful if it leads to a better conversation.
@@ -196,6 +206,15 @@ The goal is not to improve every score at once, but to make the next improvement
 A pattern is not a permanent label. It is a current read on how design impact is moving through the organization. Patterns can change as teams improve how they capture evidence, guide decisions, build proof, manage complexity, and scale influence.
 
 Do not use patterns to blame teams. Use them to understand where the system needs support.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Treating the total as the answer.** A team scores 75 and thinks they know where they stand — but two 75s can have completely different patterns. The number is a summary; the pattern is the diagnosis.
+- **Fixing the lowest score by default.** "Scaling Influence is lowest, let's fix it first" — but the low score might be caused by a different weak dimension upstream. Read the *flow* before picking the fix.
+- **Ignoring a weak link that's creating drag.** A balanced 80-80-80-80-50 looks healthy from a distance, but the 50 is breaking the whole system. Patterns make the weak link visible; treating it as "one outlier" misses the point.
+- **Naming a pattern that doesn't match the data.** Reaching for "strong proof weak influence" because it sounds right rather than because Building Proof and Scaling Influence scores actually support it. Anchor the pattern call to the specific dimension shape.
 
 ## Note on terminology
 

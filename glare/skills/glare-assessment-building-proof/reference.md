@@ -18,6 +18,16 @@ A team strong in this dimension can clearly answer:
 - What evidence supports the story?
 - How can we show the impact clearly?
 
+## When to use
+
+- When the user is evaluating whether design work connects to user outcomes and business results, not just outputs.
+- When leadership keeps asking "what did this change?" and the team answers with effort, craft, or process instead of outcomes.
+- When research, design, and outcome data exist but don't sit in the same proof chain.
+- When defining what proof should look like *before* a project begins (the highest-leverage move).
+- When you see symptoms like "design feels like opinion," "wins get described without numbers," or "we measure activity instead of outcomes."
+
+**Don't use when** the user wants the broader assessment (`glare-design-assessment`), is in a different dimension, or is interpreting the overall score pattern (`glare-assessment-reading`).
+
 ## Why it matters
 
 Most teams believe their design work matters. They improve flows, simplify screens, run research, shape concepts, reduce friction. But when the work reaches leadership, the proof is often hard to see.
@@ -186,6 +196,15 @@ When Building Proof is strong, design becomes easier to defend and scale:
 - design wins turn into reusable proof stories
 
 This is where design maturity becomes visible.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Starting with tooling instead of one project.** Teams buy analytics platforms or roll out measurement frameworks before they have a single intact proof chain. The instinct is to fix everything; the move is to fix one project's Research → Intent → Outcome → Impact chain first.
+- **Defining proof after the work.** Outcome and Impact get back-filled at the end, so they feel like spin instead of measurement. Define what proof would make the project trustworthy *before* the work begins.
+- **Mistaking activity for impact.** Reporting research hours, deliverables, or shipped features as proof. These are inputs, not outcomes. Strong proof names what changed for the user and what changed for the business.
+- **A complete chain with a weak Intent link.** Research exists, outcomes exist, business numbers exist — but Intent (what the work was trying to do) was never made explicit, so the chain reads as coincidence, not causation.
 
 ## How this dimension supports the others
 

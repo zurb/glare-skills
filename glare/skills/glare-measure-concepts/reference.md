@@ -25,6 +25,16 @@ Concepts are the first move: focused design efforts tied to user needs and busin
 
 ---
 
+## When to use
+
+- When the user is anchoring a focused, testable design effort before solutioning.
+- When framing intent for a redesign or narrowing a big initiative to one actionable bet.
+- When mapping a user need (from Define) against a business goal (from Lead).
+- When running the 5-minute test: if you can't write user need + business goal + signal in 5 minutes, the concept isn't clear yet.
+- When browsing the 200+ Concept catalog (Products, Websites, Mobile Apps, E-commerce, Marketing — Dashboard Engagement, Checkout Flows, Push Notifications, Shopping Cart, Campaign Microsites).
+
+**Don't use when** forming a hypothesis (use `glare-measure-hunches`), drafting questions (`glare-measure-questioning`), translating data (`glare-measure-findings`), or asking about the loop (`glare-measure`).
+
 ## Supporting framing (from Overview)
 
 - Ideas collapse not because they're bad but because proof comes too late; Measure cuts through by producing evidence in the moment.
@@ -40,3 +50,13 @@ Concepts are the first move: focused design efforts tied to user needs and busin
 - **Lead** — Adjacent Glare facet that supplies business goals and business metrics into Measure.
 - **Vanity metrics** — Metrics disconnected from intent; what concepts/signals are designed to avoid.
 - **Fog** — The default state of design indecision: stalled debates, late proof, lost momentum. Glare/Measure exists to "cut through" it.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Concept as solution.** Naming "the new onboarding flow" as the Concept — that's a solution. The Concept names the *intent* the solution will be tested against (e.g., "increase first-session activation among Trial users").
+- **Skipping the 5-minute test.** If the team can't say user need + business goal + signal in 5 minutes, the Concept will produce hunches and questions that drift. Slow down here to save downstream rework.
+- **Concept too broad.** "Improve checkout" can't be Hunched, Questioned, or measured cleanly. Narrow until one decision can be tested with one signal.
+- **Concept without a downstream signal.** Naming intent without specifying what would prove it worked. The Concept must include the signal that will close the loop — otherwise Findings has nothing to compare against.
+

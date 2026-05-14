@@ -6,6 +6,16 @@ Compressed source: Glare | Design Review, Grounding Techniques v1.3 + the G row 
 
 Anchor decisions in evidence instead of opinion. Move the conversation from "I think" to "we're seeing."
 
+## When to use
+
+- When the user is anchoring a design review in evidence instead of opinion.
+- When the conversation keeps looping on preference, taste, or assumptions treated as facts.
+- When the team has signals or baselines to bring in but isn't using them.
+- When Ground scored 1–2 on the SIGNAL rubric.
+- When prepping a review where you have signals to introduce at the right moment.
+
+**Don't use when** outcomes still aren't defined (use `glare-review-identify`) or when there's evidence but no recommendation has formed (use `glare-review-navigate`). For building the underlying signals, see `glare-design-signals`.
+
 ## Why it matters
 
 Design signals reduce politics and increase credibility. They create shared language across design and business.
@@ -138,3 +148,13 @@ Signals only help if the group has time to process them. In fast-moving conversa
 ## Bottom line
 
 Bring real signals into the conversation. When the discussion is grounded in what is actually happening, feedback becomes clearer, alignment happens faster, and decisions are easier to make.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Waiting for perfect data.** Holding back signals because they're "not statistically significant yet." Signals don't need to be perfect — they need to be real enough to shift the conversation. Bring in what you have; name the confidence level.
+- **Reading data without interpretation.** Showing a chart and letting the room interpret it. The room will reach for the interpretation that supports their pre-existing view. Ground means naming what the signal says before the room argues with it.
+- **One signal carrying everything.** A single survey result or one A/B test getting cited as proof on a complex question. Pair signals across types (attitudinal + behavioral + performance) when stakes are high.
+- **Bringing signals nobody can verify.** Citing "the research" without naming the study, the audience, the metric, or the date. Unverifiable signals get dismissed faster than no signals.
+

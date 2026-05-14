@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics-why
 description: Use this skill when the user is asking WHY UX metrics matter — phrases like "why do we need UX metrics," "why measure UX at all," "we already have analytics — why add UX metrics," "convince me UX metrics are worth it," "UX metrics business case," "design needs its own signals," "AI changed how product teams work," "we ship faster than we evaluate," "loudest opinion wins," "decisions keep reopening," "stakeholders interpret success differently," "we are reacting to opinions not evidence," "weak ideas survive too long," "strong ideas stall in debate," "trust may weaken before retention drops," "leading vs lagging on user experience," or "why design needs different signals than business systems." Also use when the user is justifying UX measurement to leadership, product, or finance. Do NOT use for the four metric TYPES (use `glare-ux-metrics`), what a UX metric IS structurally (use `glare-ux-metrics-what-is`), or proving design impact through Chains of Proof (use `glare-lead-mapping`).
-version: 2.2.0
+version: 3.1.0
 source_doc_version: v1.32
-last_rebuilt: 2026-05-10
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user make the case for **why UX metrics matter** — especially as AI accelerates output and evaluation lags behind.

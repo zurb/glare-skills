@@ -1,9 +1,9 @@
 ---
 name: glare-signals-components
 description: Use this skill when the user is building or strengthening an individual Design Signal — "what goes into a signal," "anatomy of a signal," "what are the parts of a design signal," "how do I structure a signal," "my signal feels incomplete," "how do I make a signal stronger." Triggers also include the six-part structure (design intuition, UX metric, user need, context, business goal, direction), questions about turning a hunch into a usable signal, debugging which piece is missing or weak, or asking how to clarify / isolate context / pick the right metric / connect to a decision. Do NOT use when the user is asking about the four signal types Need/Use/Prefer/Adopt (`glare-signals-types`), evaluating whether a signal is good enough to act on (`glare-signals-quality`), or the end-to-end capture workflow inside the work (`glare-signals-capturing`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user **build a complete Design Signal** by walking through its structural components.

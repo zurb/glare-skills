@@ -23,6 +23,17 @@ It helps the team see:
 
 Without that connection, work still moves forward, but the logic gets harder to follow. The map makes the path visible.
 
+## When to use
+
+- When the user is trying to trace a decision end-to-end across Define → Measure → Focus → Lead.
+- When work is "scattering" across docs, meetings, tools, and tickets and needs to be reconnected as one chain.
+- When the user can't tell which facet a piece of work belongs to.
+- When asking how facets hand off — Define to Measure, Measure to Focus, Focus to Lead, Lead back to Define.
+- When the user wants the canonical end-to-end example (onboarding flow → signals → decision → business outcome).
+- When recognizing recurring situations and the Patterns block (v1.34) before weak decisions gain momentum.
+
+**Don't use when** the user is already deep inside one facet — invoke `glare-define`, `glare-measure`, `glare-focus`, or `glare-lead` directly.
+
 ## Why it matters
 
 Work loses strength as it moves forward:
@@ -168,6 +179,15 @@ The Decision Map keeps everything aligned as work moves forward. By keeping each
 - show how design work creates real impact
 
 It turns separate activities into a system that works together.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Treating the map as a linear pipeline.** Define → Measure → Focus → Lead is a *loop*, not a one-way line. Teams that finish Lead and then start a new Define cycle without using Lead's outcomes to shape it lose the compounding benefit.
+- **Skipping Define under deadline pressure.** "We already know the user need" gets said often. The downstream Measure work then produces signals that don't connect to anything, and Focus ends up comparing things no one agrees matter. Slow down on Define so Measure isn't wasted.
+- **Working two facets in parallel without naming the handoff.** Measure and Focus running at once with no explicit "this finding moves to that comparison" produces parallel decks that never meet. The handoff is the work.
+- **Calling output "the outcome."** A shipped feature is an output. The outcome lives in Lead — adoption changed, retention moved, support tickets dropped. Confusing the two collapses the chain.
 
 ## Cross-cutting concepts (referenced across multiple facets)
 

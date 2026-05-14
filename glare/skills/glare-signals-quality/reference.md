@@ -8,6 +8,17 @@ Not everything that looks like a signal can guide a decision. Teams often see mo
 
 Signal Quality answers a simple question: **Is this signal complete enough to guide a decision?**
 
+## When to use
+
+- When the user is evaluating whether a Design Signal is complete enough to guide a decision.
+- When asking "is this signal usable" or "is this a signal or just a metric."
+- When applying the usable / not-usable filter before a decision.
+- When debugging signals that produce more debate than direction.
+- When identifying common failure points (missing need, missing context, wrong metric, no direction).
+- When deciding whether to act on a signal or refine it first.
+
+**Don't use when** the user wants the structural anatomy (`glare-signals-components`), the four signal types (`glare-signals-types`), or the capture workflow (`glare-signals-capturing`).
+
 ## What Signal Quality does
 
 Signal Quality gives you a simple way to evaluate a signal before acting on it.
@@ -108,3 +119,13 @@ Signal Quality focuses on **whether a signal can be trusted**.
 - **Capturing Signals** shows how they are created
 
 Together, these help the team move from input to decisions with confidence.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Acting on not-usable signals.** Movement in a metric without need, context, or direction gets treated as enough — and the resulting decision feels confident but is shaky. Run the filter before acting.
+- **Treating quality as a yes/no on data.** Signal quality isn't about whether the data is "good" — it's about whether the *structure* is complete. A weak survey with all six components beats a perfect dashboard with two.
+- **Confirming the signal you wanted.** Looking at a signal through the lens of the answer you already prefer. Quality means stress-testing — what would make this signal not usable?
+- **Refining forever.** Treating quality as a perfectionism game. Signals don't need to be perfect; they need to pass the usable filter. Once they pass, act.
+

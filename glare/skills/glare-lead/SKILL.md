@@ -1,9 +1,9 @@
 ---
 name: glare-lead
 description: Use this skill when the user is connecting design work to business impact — the Lead facet of Glare's Decision Map (formerly "Show" in v1.0). Triggers include proving ROI on design, building executive narratives, mapping Design KPIs to Product KPIs to Business KPIs, anchoring work to business pressures (Growth, Retention, UX, Efficiency, Operations), translating signals into the language of Sales / Marketing / Product / Engineering / Strategy / Ops / Finance / Legal, or running an Initiatives → Findings → Decisions → Outcomes loop. Also use when the user mentions the Chain of Proof (User Need → Design KPI → Product KPI → Business KPI → Business Goal), the five Lead Dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence), the 9 business pressures + 20 measurable goals, or the 15-symptom diagnostic. Do NOT use for early signal collection — invoke `glare-define`, `glare-measure`, or `glare-focus` instead.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.0
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work through the **Lead** facet of Glare — the upward-facing area of the **Decision Map** that turns design work into evidence leadership trusts. (Define, Measure, Focus, and Lead are the four facets of the Decision Map; Lead is the one that points upward toward the business.)
@@ -31,6 +31,14 @@ Before answering substantive questions, read:
 5. **For maturity / org diagnosis, use the five Dimensions and 15-symptom diagnostic.** Help the user pinpoint whether the alignment between user needs and business goals is breaking at Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, or Scaling Influence — then prescribe the corresponding next move.
 
 6. **Push from outputs to outcomes.** A pillar of Lead is that most teams stop at outputs (wireframes, prototypes, polished UI) and stall when leaders ask "Did it work?" If the user is delivering an artifact, force the question: *what outcome did this drive, and how is it visible to leadership?*
+
+## Critical rules
+
+- **Every rung of the Chain of Proof must be named** — User Need → Design KPI → Product KPI → Business KPI → Business Goal; don't jump to executive language until every rung is filled in.
+- **A metric must pass the three-part Quick Test to count as a signal** — (a) proves design works for users, (b) shows adoption or retention at the product level, (c) connects to growth, churn, or revenue at the business level; one missing answer makes it a vanity number.
+- **Anchor every initiative to one of the 9 business pressures** — Growth, Retention, UX, Efficiency, or Operations; work without a named pressure won't survive an executive review.
+- **Translate signals into the receiving function's language** — design ROI lands differently in a Finance review than an Engineering retro; use the workflow template for Sales, Marketing, Product, Engineering, Strategy, Ops, Finance, or Legal.
+- **Outputs aren't outcomes** — wireframes and prototypes don't answer "did it work"; force the outcome question on every artifact and make the result visible to leadership.
 
 ## Function-by-function quick reference
 

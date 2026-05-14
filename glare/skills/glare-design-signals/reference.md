@@ -10,6 +10,16 @@ In product and design work, teams have no shortage of data. Dashboards show what
 
 The gap is not information. It is direction. **Design signals close that gap by connecting what users do to what the team should do next.**
 
+## When to use
+
+- When the user is trying to move from dashboards/feedback/intuition to an actual decision.
+- When asking "what is a design signal," "signals vs metrics," "signals vs feedback," or "how do I turn data into a decision."
+- When the team has data but no direction.
+- When the user wants the overview of the Design Signals section (Components, Signal Types, Signal Quality, Capturing Signals) or needs to drop into a child skill.
+- When introducing the working definition: a signal connects user behavior, UX metrics, design decisions, and business outcomes.
+
+**Don't use when** the user is already working on one specific aspect — anatomy (`glare-signals-components`), types (`glare-signals-types`), quality (`glare-signals-quality`), or capture workflow (`glare-signals-capturing`).
+
 ## What is a Design Signal
 
 A design signal is a **measurable input from users that makes the invisible obvious**.
@@ -121,3 +131,13 @@ Signals start as input, take shape through structure, are evaluated for quality,
 Signals are most useful when treated as **questions first**. They help surface what is happening, where the work is breaking down, and what needs to change.
 
 That is what turns data into direction and keeps decisions moving.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Confusing a metric for a signal.** A 70% completion rate is a metric. It becomes a signal only when paired with user need, context, business goal, and a direction. Reporting metrics alone produces dashboards, not decisions.
+- **Confusing feedback for a signal.** A stakeholder quote or a user comment is feedback. Signals require structure — the six components — before they can guide a decision.
+- **Skipping past signal quality.** Acting on the first signal-shaped thing without checking whether it's usable. Quality is a filter; bypass it and the team makes confident decisions on shaky ground.
+- **Treating signals as a one-time research output.** Signals are most useful when they're part of the work, not delivered after. Build the capture flow into the sprint, not the post-mortem.
+

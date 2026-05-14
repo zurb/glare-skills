@@ -6,6 +6,17 @@ Compressed source: Glare | Design Review, Lock Momentum v1.3 + the L row of the 
 
 Convert insight into forward motion. Make sure the decision continues beyond the meeting.
 
+## When to use
+
+- When the user is converting agreement into forward motion at the end of a review.
+- When calls end with "we'll follow up" and no timing or owner gets set.
+- When the same conversation keeps coming back because nothing was locked.
+- When Lock scored 1–2 on the SIGNAL rubric.
+- When prepping the closing minutes of a design review or decision meeting.
+- When feedback isn't getting acted on after the call.
+
+**Don't use when** ownership is still unclear (use `glare-review-align`) or when no direction has formed (use `glare-review-navigate`). For tracking momentum across multiple calls, see `glare-review-coach`.
+
 ## Why it matters
 
 Momentum compounds influence. If meetings end without next steps, value evaporates.
@@ -136,3 +147,13 @@ If any one of these is missing, Lock is not done.
 ## Bottom line
 
 Make sure the conversation leads to action. When momentum is locked, the work continues, progress is clear, and the team does not need to repeat the same discussion.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Lock as a calendar invite.** "Let's regroup next week" isn't Lock. Lock names the decision, the owner, the next step, and the trigger for revisiting. The calendar is a side effect.
+- **Lock without timing.** Naming the next step but not when. "We'll iterate" with no date evaporates within 72 hours. Concrete dates create accountability.
+- **Locking a soft decision.** Confirming a vague "directionally yes" as if it were a real commitment. Lock requires Navigate to have actually landed; if the decision is still ambiguous, return to Navigate.
+- **Skipping the recap.** Ending the call without the team verbally confirming the decision and the owner. Without the recap, two people leave with two versions of what was decided.
+

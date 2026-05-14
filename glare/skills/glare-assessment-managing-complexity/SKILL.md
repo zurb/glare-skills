@@ -1,9 +1,9 @@
 ---
 name: glare-assessment-managing-complexity
 description: Use this skill when the user is focused on the Managing Complexity dimension of the Design Assessment — "our work keeps getting tangled," "dependencies surprise us," "we can't tell simple from complex problems," "every project feels overweight," "complicated work has unclear ownership," "we lock plans before we understand the problem," or asks about its three levels (Simple → Complicated → Complex). Also use when matching structure to the kind of work, separating repeatable tasks from uncertain problems, or strengthening how the team handles work that grows across products, teams, systems, and decisions. Do NOT use when the user wants the broader assessment (`glare-design-assessment`), a different dimension (`glare-assessment-organizing-work`, `glare-assessment-building-proof`, `glare-assessment-guiding-decisions`, `glare-assessment-scaling-influence`), or interpreting the score (`glare-assessment-scoring`, `glare-assessment-reading`, `glare-assessment-using-results`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user evaluate and strengthen **Managing Complexity** — the Design Assessment dimension that measures whether growing work stays clear or becomes harder to move.

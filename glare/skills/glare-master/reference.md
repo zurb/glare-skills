@@ -19,6 +19,16 @@ Total: **60 skills** (master + 59 across the 6 components).
 
 ---
 
+## When to use
+
+- When the user can't tell which of the 6 components applies to their question.
+- When work spans more than one component — "how does X relate to Y in Glare," "how do Signals connect to Decision Map."
+- When the user is mid-flow and lost — "I lost the thread," "where should I go next."
+- When disambiguating between a parent and a child skill, or between two parents.
+- When explaining cross-component handoffs (Signals → Decision Map → Design Review → outcomes).
+
+**Don't use when** already inside one component — invoke that component's parent (`glare-getting-started`, `glare-decision-map`, `glare-design-review`, `glare-ux-metrics`, `glare-design-signals`, `glare-design-assessment`) and let it route within.
+
 ## How the components connect
 
 The components are interconnected, not parallel. Work flows between them.
@@ -263,3 +273,13 @@ If diagnosis is genuinely 50/50 between two very different components, ask ONE q
 ## Outside this install
 
 For v3, there is **no "outside"** — the marketplace ships all 6 components together, and every skill the master might reference lives inside this install. If a future v3.x adds new components or splits an existing one (e.g., promoting `glare-define-patterns` to its own top-level component, or splitting Getting Started back into its v2-era constituent skills), the master and this reference are the two files to update first — the master's description and the reference's component table and phrase lookup are the only places "the 6 components" and "60 skills" are asserted as facts. Treat this section as the future-proofing note: if those counts ever change, this file is the source of truth that needs to change with them.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Coaching from the master.** The master is a router, not a coach. Trying to teach Focus or Lead content from inside the master fragments the answer and skips the deeper skill. Diagnose, route, hand off.
+- **Returning more than one destination.** "You could use these three skills" defeats the point. Preserve the ONE-skill rule: name the single best destination and explain the handoff if needed.
+- **Routing without orientation.** Sending the user to a child skill without first naming which component they're in. The destination skill expects context; the master should establish it.
+- **Treating every cross-component question as orchestration.** If the user asks "what is a signal," that's `glare-design-signals`. The master shines on questions that genuinely span components, not on single-component questions in disguise.
+

@@ -1,9 +1,9 @@
 ---
 name: glare-review-run-transcript
 description: Use this skill when the user wants the practical workflow for evaluating a real design review transcript end-to-end. Triggers include "I have a transcript — what do I do with it," "how do I run a transcript through SIGNAL," "what do I need before scoring a call," "what tool should I use to evaluate a call (Skill / Prompt / Ray)," "what does the SIGNAL output look like," or "walk me through evaluating a recorded review." Also use when the user is choosing between the offline Skill, the AI prompt, and the Ray app, or asking how to interpret the output of any of those. Do NOT use when they just want the scoring rubric → `glare-review-rubric` or `glare-review-scoring-model`. Do NOT use for prepping an upcoming call → `glare-review-coach`.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user **run a design review transcript** through SIGNAL — the practical end-to-end workflow.

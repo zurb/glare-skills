@@ -1,9 +1,9 @@
 ---
 name: glare-design-signals
 description: Use this skill whenever the user asks about Design Signals as a top-level concept in Glare — "what is a design signal," "why do signals matter," "how is a signal different from a metric," "signals vs feedback," "how do I turn data into a decision," or wants the overview of the Design Signals section (Components, Signal Types, Signal Quality, Capturing Signals). Also use when the user is stuck moving from dashboards/feedback/intuition to an actual decision, when they say "we have data but no direction," when they want the working definition of a signal as the layer connecting user behavior, UX metrics, design decisions, and business outcomes, or when they need a map of which child skill to drop into next. Do NOT use when the user is already working on one specific aspect — anatomy of a signal (`glare-signals-components`), the four types Need/Use/Prefer/Adopt (`glare-signals-types`), evaluating whether a signal is usable (`glare-signals-quality`), or the capture workflow (`glare-signals-capturing`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user understand and use **Design Signals** — the working layer of Glare that turns user input into decisions.
@@ -31,6 +31,13 @@ Before answering substantive questions, read:
 4. **Keep signals as questions first.** Per the master doc: signals are most useful when treated as questions that surface what is happening, where the work is breaking down, and what needs to change. Resist letting the user collapse a signal into a single number.
 
 5. **Hand off as soon as the question narrows** — see Handoffs below. Don't try to cover all four child topics in one answer.
+
+## Critical rules
+
+- **A signal needs all four pieces** — behavior observed + metric capturing reaction + context explaining why + direction becoming clear; a metric, a piece of feedback, or a hunch alone is not a signal.
+- **Signals are questions first, numbers second** — resist collapsing a signal into a single number; a signal's job is to surface what is happening, where work is breaking, and what needs to change.
+- **A signal is not a metric** — metrics describe what happened, feedback describes what users said, intuition suggests what might be wrong; the signal is what connects them into actionable direction.
+- **Route to the right child quickly** — don't cover Components, Types, Quality, and Capturing in one answer; diagnose whether the user is building, classifying, evaluating, or capturing, then hand off.
 
 ## Handoffs
 

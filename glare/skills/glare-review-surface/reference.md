@@ -6,6 +6,17 @@ Compressed source: Glare | Design Review, Surface Techniques v1.3 + the S row of
 
 Expose the real tension behind the request. Move the conversation from describing what is wanted to describing what is happening.
 
+## When to use
+
+- When the user is exposing the real tension behind a request in a design review.
+- When the team is reacting to the design before agreeing on the problem.
+- When feedback is scattered, the goal of the work is unclear, or no one named what is actually breaking.
+- When Surface scored 1–2 on the SIGNAL rubric.
+- When prepping a kickoff or any review where the problem is fuzzy.
+- When the conversation jumped to solutions before naming consequence.
+
+**Don't use when** the problem is already clear and the team needs success criteria (`glare-review-identify`) or when the team is debating opinion despite knowing the problem (`glare-review-ground`).
+
 ## Why it matters
 
 Most requests are symptoms. If we optimize the surface, we create polished irrelevance. When the real challenge is visible, priorities clarify and influence increases.
@@ -128,3 +139,13 @@ A problem without consequence rarely creates urgency. Without urgency, feedback 
 ## Bottom line
 
 Start with the problem, not the work. When the challenge is clear, feedback improves, decisions form faster, and the conversation moves forward with more confidence.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Accepting the stated request at face value.** "They said redesign, so we're redesigning." The request is usually a symptom; Surface means naming what's actually breaking underneath.
+- **Moving to solutions before understanding the problem.** The room jumps to "what if we…" within the first five minutes. Hold the line until the problem is named.
+- **Letting the client or PM set the frame.** Treating the requester's framing as the truth. Reframing is part of Surface — "before we react to this, what's not working today?"
+- **Naming the problem without naming the consequence.** "Onboarding is confusing" doesn't create urgency. "Onboarding is confusing AND we're seeing a 40% drop in week-one retention" does. Both halves matter.
+

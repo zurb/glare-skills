@@ -26,6 +26,17 @@ Findings are the final move of Measure: they turn raw data into design signals t
 
 ---
 
+## When to use
+
+- When the user is turning raw data into evidence-backed signals — drop-off rates, survey scores, heatmaps, task-success numbers.
+- When tying a finding to a user need (comprehension, usefulness, satisfaction, clarity, trust).
+- When tying a finding to a business result (conversion, retention, efficiency, revenue).
+- When cross-checking findings against the concept or hunch.
+- When following the chain raw data → finding → user value → business results → act.
+- When deciding signal vs noise — "metrics don't tell us anything yet."
+
+**Don't use when** anchoring intent (use `glare-measure-concepts`), forming a hunch (`glare-measure-hunches`), drafting questions (`glare-measure-questioning`), or asking about the loop (`glare-measure`).
+
 ## Findings as described inside Concepts v1.0
 
 - **Step 3 — Findings → Turning Data into Signals**. Inputs: measurement data. Outputs: signals tied to business and customer outcomes. A signal forms when metrics tie to a design choice, a user need, and a business goal. Process: translate data → findings → tie to user value → tie to business results → connect back to intent → act → share widely.
@@ -53,3 +64,13 @@ Findings are the final move of Measure: they turn raw data into design signals t
 - **Signal** — Evidence-backed recommendation that tells the team what to do next; the output of the Measure loop. Replaces opinion-based debate.
 - **Vanity metrics** — Metrics disconnected from intent; what concepts/signals are designed to avoid.
 - **UX Metric Types** — Behavioral (what users do), Attitudinal (what they think/feel), Performance (how efficiently they succeed), Perceptual (what they understand).
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Finding = data.** Reporting "drop-off is 40%" as a finding. That's data — the finding adds the user need it ties to, the business result it implies, and the recommended action.
+- **Finding without a user need.** Numbers without a "what users were trying to do" connection produce dashboards, not direction. Always name the user need the finding touches.
+- **Finding that doesn't loop back to the Concept.** Each finding should be testable against the original Concept's intent. Findings that drift produce parallel stories that never converge.
+- **Confusing noise for signal.** Acting on a small movement in a metric before checking sample size, comparison baseline, or whether the metric is leading or lagging. Use the four UX metric filters before treating a finding as actionable.
+

@@ -8,6 +8,16 @@ Signals don't exist in isolation. A strong decision depends on understanding how
 
 Signal types help organize where to look. They show how an idea connects to users, how it works in practice, and whether it holds up over time.
 
+## When to use
+
+- When the user is checking coverage across the four signal types — Need, Use, Prefer, Adopt.
+- When asking "what kinds of signals should we collect" or "are we covering the full experience."
+- When the team only has one kind of signal (e.g., all behavioral, no preference).
+- When a direction needs to hold up across the experience — credibility (Need), usefulness (Use), desirability (Prefer), behavior (Adopt).
+- When mapping a research question to the signal type it produces.
+
+**Don't use when** the user is asking about the six structural parts (`glare-signals-components`), evaluating a single signal's trustworthiness (`glare-signals-quality`), or the capture workflow (`glare-signals-capturing`).
+
 ## The Four Signal Types
 
 Signals are grouped into four types. Each one highlights a different way an idea can succeed or fail.
@@ -135,3 +145,13 @@ Signal Types shows **where signals apply**.
 - **Capturing Signals** shows how they are created
 
 Together, they help the team move from partial input to complete decisions.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Single-type coverage.** Relying entirely on Adopt signals (behavioral analytics) without checking Need, Use, or Prefer. The team sees what users *do* but not why — and misses the credibility, comprehension, and desirability story.
+- **Treating types as sequence.** Acting like Need has to come before Use before Prefer before Adopt. The four types are *coverage*, not a pipeline. Strong decisions usually need at least three types in parallel.
+- **Confusing Prefer with Adopt.** Users say they want it (Prefer) but don't use it in practice (Adopt). The two are different signal types and must be checked separately.
+- **Skipping Need.** Jumping into Use and Prefer testing without first confirming the underlying need is real. The team optimizes a solution to a problem users don't have.
+

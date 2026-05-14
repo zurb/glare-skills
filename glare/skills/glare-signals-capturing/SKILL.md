@@ -1,9 +1,9 @@
 ---
 name: glare-signals-capturing
 description: Use this skill when the user wants the practical, end-to-end workflow for creating Design Signals inside the work — "how do I capture a signal," "how do we run a fast signal-capture loop," "we always gather feedback too late," "how do I turn this hunch into a real signal," "how do I make signals part of the sprint." Triggers also include the four-stage flow (Frame → Ground → Measure → Use), turning a hunch into a question, grounding to user need + business goal, anchoring to a metric, putting the signal next to real options, bringing in lightweight user input, comparing and reading versions, deciding what moves forward, and keeping the signal attached to the decision over time. Do NOT use for the structural anatomy of a single signal (`glare-signals-components`), the four signal types (`glare-signals-types`), or evaluating whether a built signal is usable (`glare-signals-quality`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user **capture Design Signals as part of everyday work** — not after the fact.

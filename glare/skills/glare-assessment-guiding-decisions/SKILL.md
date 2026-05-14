@@ -1,9 +1,9 @@
 ---
 name: glare-assessment-guiding-decisions
 description: Use this skill when the user is focused on the Guiding Decisions dimension of the Design Assessment — "we keep relitigating decisions," "reviews end without commitment," "research is interesting but not decisive," "loudest voice wins," "we keep asking for more data," "no one can explain why one path was chosen," or asks about its four areas (Exploratory, Operational, Analytical, Evidential). Also use when matching decision type to evidence type. Do NOT use for the broader assessment (`glare-design-assessment`), a different dimension (`glare-assessment-organizing-work`, `glare-assessment-managing-complexity`, `glare-assessment-building-proof`, `glare-assessment-scaling-influence`), or score interpretation (`glare-assessment-scoring`, `glare-assessment-reading`, `glare-assessment-using-results`). For one design review meeting use `glare-design-review` — single-conversation rubric, not a system dimension.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user evaluate and strengthen **Guiding Decisions** — the Design Assessment dimension that measures whether signals create direction or get lost in debate.

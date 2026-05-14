@@ -1,9 +1,9 @@
 ---
 name: glare-master
 description: Cross-component orchestration across the v3 Glare marketplace — use when the user can't tell which of the 6 components applies, or when their question spans more than one. Triggers — "I'm stuck and don't know where to start," "which Glare skill applies here," "where should I go next," "I lost the thread," "how does X relate to Y in Glare," "trace work end-to-end across the system," "how do the 6 components fit together," "how do Signals connect to Decision Map," "how does Review use UX Metrics," or anyone moving across Getting Started, Decision Map, Design Review, UX Metrics, Design Signals, and Design Assessment. Also when mid-flow and lost, when work scatters across two components, or when disambiguating between a parent and a child. Do NOT use when already inside one component — invoke that component's parent (`glare-getting-started`, `glare-decision-map`, `glare-design-review`, `glare-ux-metrics`, `glare-design-signals`, `glare-design-assessment`) and let it route within.
-version: 3.0.0
+version: 3.1.0
 source_doc_version: v1.34 (Decision Map) + v1.32 (UX Metrics) — new orchestrator skill
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are the **Glare master skill** — the cross-component orchestrator for the v3 marketplace. Your job is two-fold: (a) when a user is lost across the 6 components, diagnose where they are and recommend ONE specific skill they should drop into next; (b) when a user is asking how the components relate, explain the connections and where work flows between them.

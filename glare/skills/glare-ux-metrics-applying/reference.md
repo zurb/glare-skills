@@ -25,6 +25,16 @@ The goal is to help teams understand what users are actually experiencing while 
 
 ---
 
+## When to use
+
+- When the user is putting UX metrics to work inside real product moments — reviews, prioritization, comparison, launch readiness, AI evaluation.
+- When reviews keep landing in subjective territory ("this feels confusing," "I like the other direction").
+- When the team wants to evaluate workflows earlier, not after launch.
+- When grounding design reviews in stronger evaluation or comparing onboarding flows side by side.
+- When picking among the eight operational use cases for UX metrics.
+
+**Don't use when** the user wants the broader framework (`glare-ux-metrics`), what a UX metric IS structurally (`glare-ux-metrics-what-is`), or stacking specific metrics together (`glare-ux-metrics-stack`).
+
 ## The eight operational use cases
 
 ### 1. UX Metrics change product reviews
@@ -143,3 +153,13 @@ The goal is not perfect measurement — it is helping teams understand the exper
 ## Source
 
 Drafted from *Glare | UX Metrics, Applying UX Metrics v1.32* (Drive doc `1ECrjbI4t02lCk9zRcgdx2g2aIcUgrjcCK_SVL5p334M`, May 10, 2026).
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Applying metrics after the decision.** Pulling UX metrics into a review only after the direction is set — at which point the metrics feel like justification, not evaluation. Apply during the work, not after.
+- **One metric per use case.** Trying to evaluate a product review with just completion rate or just satisfaction. The eight use cases need multi-metric stacks to be useful.
+- **Borrowing metrics that don't fit the moment.** Using attitudinal metrics to evaluate operational efficiency, or performance metrics to evaluate emotional response. Match the metric type to the question.
+- **Treating "applying" as a meeting type.** Booking a "UX metrics meeting" instead of weaving metrics into the meetings the team already runs. UX metrics become valuable when they live inside reviews, prioritization, and launches — not in a separate slot.
+

@@ -1,9 +1,9 @@
 ---
 name: glare-design-review
 description: Use this skill whenever the user asks about Design Review as a top-level concept in Glare — "what is the SIGNAL framework," "how do I run a better design review," "score a design review call," "evaluate a transcript," "improve our review meetings," or wants the overview of the Design Review section (Surface, Identify, Ground, Navigate, Align, Lock, plus Techniques, Scoring Model, Rubric, Coach, Run a Transcript). Also use when the user mentions a stalled design review, scattered feedback, weak decisions, unclear ownership, or asks about the SIGNAL acronym (Surface → Identify → Ground → Navigate → Align → Lock). Do NOT use when the user is already deep in a specific dimension (Surface/Identify/Ground/Navigate/Align/Lock), already evaluating a transcript with the rubric (`glare-review-rubric`), preparing for a specific call (`glare-review-coach`), or wants the scoring math only (`glare-review-scoring-model`) — drop into those skills instead.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user understand and use **Design Review** — the Glare section that treats a design review meeting as a decision system, with a six-step flow called **SIGNAL** (Surface → Identify → Ground → Navigate → Align → Lock).
@@ -38,6 +38,14 @@ Before answering substantive questions, read:
 
 5. **Resist over-explaining.** Use the smallest move that unsticks the conversation. Most reviews need one well-timed technique, not a full framework lecture.
 
+## Critical rules
+
+- **SIGNAL is a decision cycle, not a checklist** — each letter reduces a different kind of uncertainty (tension, clarity, evidence, commitment, responsibility, momentum); never treat it as a sequence of agenda items.
+- **Skipped letters cause stalls** — when a review stalls, an earlier letter was almost always skipped or undercooked; diagnose backward to find the gap before adding more conversation.
+- **Map the stuck moment to one dimension** — "jumped to solutions" → Surface, "all preference" → Identify, "looping on opinion" → Ground, "can't pick" → Navigate, "no owner" → Align, "comes back next week" → Lock; route to that dimension, don't try to fix the whole call.
+- **Use the smallest unsticking move** — one well-timed technique beats a framework lecture; reviews fail from over-explaining as often as from under-explaining.
+- **Decisions must be confirmed, not implied** — people leave reviews with different versions of what was decided unless Lock is explicit; an implied decision is no decision.
+
 ## Handoffs
 
 - The six dimensions in detail → `glare-review-surface`, `glare-review-identify`, `glare-review-ground`, `glare-review-navigate`, `glare-review-align`, `glare-review-lock`
@@ -46,5 +54,5 @@ Before answering substantive questions, read:
 - Full evaluation rubric (scores + observations + behavioral metrics + automation opportunities) → `glare-review-rubric`
 - Preparing for an upcoming call or coaching after one → `glare-review-coach`
 - Practical workflow for evaluating a real transcript end-to-end → `glare-review-run-transcript`
-- Where reviews fit in the broader Glare framework → `glare-get-started`
+- Where reviews fit in the broader Glare framework → `glare-getting-started`
 - Bringing real signals into the Ground step → `glare-design-signals`

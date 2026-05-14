@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics-what-is
 description: Use this skill when the user asks what a UX metric actually IS or how one is structured — phrases like "what is a UX metric," "what counts as a UX metric," "anatomy of a UX metric," "the four parts of a UX metric," "User Attribute — Data Type — Collection Method — Benchmark," "how is a UX metric built," "how do I structure a UX metric," "explain UX metrics simply," "UX metric vs analytics number," "UX metric vs KPI," "trust during onboarding example," "how do metrics turn fuzzy ideas into signals," "why does a metric need a benchmark," or "70 percent completion — is that good." Also use when the user is trying to write their first UX metric, debug a metric that feels incomplete, or distinguish a usable UX metric from a raw analytics number. Do NOT use for the four metric TYPES (use `glare-ux-metrics`), Define-stage metric picking (use `glare-define-ux-metrics`), or stacking metrics together (use `glare-ux-metrics-stack`).
-version: 2.2.0
+version: 3.1.0
 source_doc_version: v1.32
-last_rebuilt: 2026-05-10
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user understand the **anatomy of a UX metric** — the four parts that turn a fuzzy reaction into something teams can measure, compare, and act on.

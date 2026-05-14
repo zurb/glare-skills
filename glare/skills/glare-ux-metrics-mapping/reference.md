@@ -24,6 +24,17 @@ As AI increases product velocity, this becomes even more important. Teams now la
 
 ---
 
+## When to use
+
+- When the user is connecting UX metrics to business outcomes — making design impact visible to leadership.
+- When leadership keeps asking "did it improve the business" after a UX win.
+- When using UX metrics as the *translation layer* between user behavior and business signals.
+- When working through the four-stage chain — Situation (Define) → Intent (Measure) → Outcomes (Focus) → Results (Lead).
+- When preparing a leadership readout that needs the UX-to-business chain.
+- When the team keeps getting watered down in stakeholder review.
+
+**Don't use when** the user wants the broader framework (`glare-ux-metrics`), the technical Chain of Proof (`glare-lead-mapping`), or proving design impact at the org-readiness level (`glare-getting-started`).
+
 ## Design impact starts with Situation
 
 Without the right context, design impact rarely happens. Many teams jump directly into solutions, interfaces, metrics, AI workflows, and experiments. A team may redesign onboarding because conversion dropped. Another may add AI recommendations because leadership wants faster workflows. Someone else may simplify a dashboard because users called it "confusing."
@@ -150,3 +161,13 @@ Over time, UX metrics help organizations create clearer visibility across how us
 ## Source
 
 Drafted from *Glare | UX Metrics, Mapping Design Impact v1.32* (Drive doc `1t9UNieGE3IcHRRMiGVDNycgCfhNBCgrHzeSUJ-hf-eA`, May 10, 2026 — large doc, sampled selectively).
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Mapping after the fact.** Drawing the UX-to-business chain at launch to justify the result. The chain is most useful *before* the work — tell the team what to measure so the proof can be claimed honestly.
+- **Skipping Situation or Intent.** Jumping straight from a UX metric to a business outcome without the middle stages. The chain breaks and leadership reads it as design taking credit for unrelated movement.
+- **One-link mapping.** "Trust improved so retention improved" — without the connective UX metrics in between, the chain is unfalsifiable. Use the four-stage chain to keep each link visible.
+- **UX jargon at the business end.** Reporting "improved comprehension" to a CFO who tracks support cost per ticket. Translate the UX metric into the function's vocabulary at the Results stage.
+

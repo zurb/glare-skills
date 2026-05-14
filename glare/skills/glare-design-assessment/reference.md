@@ -18,6 +18,16 @@ The assessment looks beyond outputs at the *system around the work*. It shows ho
 
 It is not a judgment of the team. It is a way to see where the system is strong, where it is uneven, and where a small improvement could unlock the most movement.
 
+## When to use
+
+- When the user wants a system-level diagnostic of design maturity — not a single-project review.
+- When asking "where is design impact breaking down" or "what's our team's design maturity."
+- When introducing the five dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence).
+- When the user names symptoms — "research never gets used," "leadership doesn't see our value," "design proof stays trapped."
+- When two teams score the same total but feel like they have different problems — the dimension shape will tell you why.
+
+**Don't use when** deep in one dimension (route to that dimension's skill), interpreting a score (`glare-assessment-scoring`, `glare-assessment-reading`), or planning improvement (`glare-assessment-using-results`).
+
 ## The five dimensions
 
 Design impact does not break in one place. It breaks across a few repeatable failure points. Each dimension answers one question about the system:
@@ -86,6 +96,15 @@ Then choose **one dimension** to strengthen first. Small, visible improvements b
 - **Decision Map (Define / Measure / Focus / Lead)** is the operating cycle the assessment evaluates. Organizing Work explicitly uses the Decision Map blocks to trace how knowledge moves.
 - **Design Review** is one place where the system gets tested in real time — weak Guiding Decisions or weak Building Proof show up most visibly in stalled review meetings.
 - **Get Started** introduces the assessment as the fifth check on whether the rest of the system is holding.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Using the assessment as a single-project review.** It's a system-level instrument. Running it against one launch produces a misleading snapshot — the dimensions describe how design impact moves through the organization over time, not how one project performed.
+- **Skipping straight to the score.** The total is the *least* informative output; the pattern across dimensions is the diagnosis. Reading the system means reading the shape, not the number.
+- **Running the assessment too often.** Re-scoring every quarter produces noise rather than insight. A 6–12 month rhythm lets the system actually change between measurements.
+- **Treating it as a performance review for designers.** The assessment measures the system *around* the work — workflows, organizational habits, leadership posture. Using it to evaluate designers misreads the instrument and damages trust.
 
 ## Note on terminology
 

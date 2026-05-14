@@ -1,9 +1,9 @@
 ---
 name: glare-define-collecting
 description: Use this skill when the user is in the Collecting Data block of the Define area — turning raw input into usable signals. Triggers — picking a research approach (Exploratory / Evaluative / Comparative); the five-step process (Intent → Stack → Approach → Techniques → Connect); Research Stacks vs Design Stacks; named instruments (SUS, NPS, SEQ, CES, NASA-TLX) or the 12 techniques (First Click, Task Success, Time on Task, A/B, Multivariate, Heatmaps, Clickstream, Web Analytics, Conversion Rate, Eye Tracking, Card Sorting, Surveys); the four feedback types (View / See / Sense / Hear); the Define → Capture → Connect cadence. Tool catalogs (PURE, SUMI, WAMMI, UEQ; UserTesting, Maze, Helio, Hotjar, GA, Mixpanel) live in `reference.md`. Do NOT use when naming the need (use `glare-define-user-needs`), defining who data comes from (use `glare-define-audience`), or picking metrics (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the Decision Map, `glare-decision-map`.
-version: 3.0.0
+version: 3.1.0
 source_doc_version: v1.1 + canonical-28 constraint
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work the **Collecting Data** block of the Decision Map's **Define** area — the discipline that turns raw input into usable signals and prevents drift back into "loudest voice wins."

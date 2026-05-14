@@ -1,9 +1,9 @@
 ---
 name: glare-review-ground
 description: Use this skill when the user is working on the Ground step of a design review — anchoring decisions in evidence instead of opinion. Triggers include "the conversation keeps looping on opinion," "people are defending preferences," "we have data but it's not changing the discussion," "feedback is opinion-driven," "Ground scored low" (1–2 on the SIGNAL rubric), "how do I bring signals into a review," "what's a Ground technique," or "the team is debating taste." Also use when prepping a review where you have signals/baselines to bring in. Do NOT use when outcomes still aren't defined (use `glare-review-identify`) or when there's evidence but no recommendation has formed (use `glare-review-navigate`). For building or capturing the underlying signals themselves, see `glare-design-signals`.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user run the **Ground in Signals** step — the G in SIGNAL. This is where the review moves from "I think" to "we're seeing."

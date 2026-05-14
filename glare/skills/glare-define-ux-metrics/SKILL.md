@@ -1,9 +1,9 @@
 ---
 name: glare-define-ux-metrics
 description: Use this skill when the user is in the UX Metrics block of the Define area — picking the numbers that prove design worked for a specific decision. Triggers — choosing Attitudinal / Behavioral / Performance / Intelligence metrics; the four lenses (By Type, By Stage, By Time, By Engagement); leading vs lagging indicators; predictive / proxy / analytics stages; the four comparison filters (Vanity vs Actionable, Qualitative vs Quantitative, Exploratory vs Reporting, Correlated vs Causal); the four quality principles (Easy to Understand, Good for Comparison, Use Rates or Ratios, Focus on Behavior); mismatches like "high satisfaction + low completion"; capturing leading indicators in Helio. Do NOT use when naming the need (use `glare-define-user-needs`) or picking instruments (use `glare-define-collecting`). For the broader UX Metrics framework, AI / Intelligence metrics, or metrics vs signals vs business KPIs — route to `glare-ux-metrics`. For the Need / Use / Prefer / Adopt signal taxonomy, `glare-signals-types`.
-version: 3.0.0
+version: 3.1.0
 source_doc_version: v1.3 + canonical-28 constraint
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work the **UX Metrics** block of the Decision Map's **Define** area — turning satisfaction, comprehension, and usability into trackable signals leaders can act on.

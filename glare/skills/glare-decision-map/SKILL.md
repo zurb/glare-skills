@@ -1,9 +1,9 @@
 ---
 name: glare-decision-map
 description: Use this skill when the user is working with the Glare Decision Map — the four-facet flow that connects user needs to measurable outcomes. Triggers include "Decision Map," "decision flow," "Define Measure Focus Lead," "how do the Glare facets connect," "trace a decision from problem to outcome," "map a decision," "where does this decision sit," "what facet am I in," "how do I move from signal to outcome," asking about the loop from outcome back into the next problem, asking how Define hands off to Measure, Measure to Focus, Focus to Lead, or Lead back to Define, which facet to enter for a given situation, or wanting the canonical end-to-end example. Also use when the user is confused about which facet a piece of work belongs to or work is "scattering" across docs/meetings/tools and needs to be re-connected as one chain. Do NOT use when the user is already deep inside one facet — invoke `glare-define`, `glare-measure`, `glare-focus`, or `glare-lead` directly.
-version: 2.3.0
+version: 3.1.0
 source_doc_version: v1.34
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work with the **Decision Map** — the spine of the Glare framework that connects Define, Measure, Focus, and Lead into one continuous decision flow.
@@ -38,6 +38,13 @@ Before answering substantive questions, read `reference.md` — full compressed 
 
 7. **Frame the Decision Map relative to the rest of Glare.** Design Review improves the conversations where decisions get made. Design Signals provide the evidence. The Decision Map is what keeps everything aligned as work moves forward. Design Assessment shows where the system is strong or breaking.
 
+## Critical rules
+
+- **Keep the chain intact** — what you Define is what you Measure, what you Measure is what you Focus on, what you Focus on is what you Lead; if the chain breaks anywhere, the decision loses evidence or impact.
+- **The map is a loop, not a line** — outcomes feed the next Define cycle; treat one-shot decisions as the system failing, not finishing.
+- **Place the user in one facet before answering** — don't coach all four facets in one turn; diagnose entry point, then route into `glare-define`, `glare-measure`, `glare-focus`, or `glare-lead`.
+- **Name the break before prescribing the fix** — when work is scattered across docs, tools, and meetings, the chain is broken; naming which handoff failed (Define↔Measure, Measure↔Focus, Focus↔Lead) is half the fix.
+
 ## Handoffs
 
 - Clarifying user need, audience, patterns, context, success → `glare-define`
@@ -48,4 +55,4 @@ Before answering substantive questions, read `reference.md` — full compressed 
 - The conversations where decisions actually get made → `glare-design-review`
 - The evidence that flows through the map → `glare-design-signals`
 - Where the system is strong or breaking → `glare-design-assessment`
-- New to Glare entirely → `glare-get-started`
+- New to Glare entirely → `glare-getting-started`

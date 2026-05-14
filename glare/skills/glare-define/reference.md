@@ -28,6 +28,16 @@ Define is the first (and foundational) facet of Glare — the "Credibility" face
 - **Quick checks per block:** Does this solve a real user goal? Can you name 3 audience traits? What recurring pattern keeps showing up around this situation? What real input are you using (survey/test/analytics)? Which metric proves progress (completion, effort, satisfaction)?
 - **Without Define:** needs are guesses, audiences vague, data missing, metrics hollow. **With Define:** hunches become signals, ideas become user-backed decisions.
 
+## When to use
+
+- When the user is in the "Credibility" stage of the Decision Map — agreeing on what matters before building.
+- When defining user needs, picking audience, recognizing recurring patterns, setting up data collection, or choosing UX metrics.
+- When the team is debating "who is the user" or "what does success look like" before any work begins.
+- When the user mentions the five user-need categories, the four audiences, the four pattern types, or the UX metric types.
+- When the team is forming hypotheses without first agreeing on the credibility foundation underneath them.
+
+**Don't use when** needs/metrics are set and the user is forming hypotheses — invoke `glare-measure`. For the broader Decision Map, use `glare-decision-map`.
+
 ## The five-category user-need stack (v1.1)
 
 | Category | Core question | Design focus | Sample metrics |
@@ -111,3 +121,13 @@ Each category contains four individual need types (22 total — see the User Nee
 - **Four UX Metric Lenses** — By Type, By Stage (Predictive/Proxy/Analytics), By Time (Leading/Lagging), By Engagement (Needs/Behavior/Activity).
 - **Define → Capture → Connect** — the cadence pattern across all "-ing" pages in Glare.
 - **Four research-instrument families** — Usability & Ease (SUS, SEQ, PURE, SUMI), Effort & Workload (CES, CASTLE, NASA-TLX), Satisfaction & Experience (WAMMI, PSSUQ, QUIS, UEQ, UX-Lite, SUPR-Q), Trust & Loyalty (NPS, L-DERLY).
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Skipping Define because "we know our users."** The most common failure. Every downstream signal then floats — Measure can't ground its hunches, Focus can't compare credibly, Lead can't tie outcomes back to a need. Slow down here so the rest of the chain holds.
+- **Treating Define as a one-time document.** A persona deck written 18 months ago doesn't count as Define. The five blocks evolve as the product evolves; refresh Define whenever a major shift happens in audience, market, or product surface.
+- **Defining everything before deciding anything.** Building a 200-page Define artifact before any Measure work begins. Define is a *credibility floor*, not a research deliverable — 5 user needs, 1 audience, 3 metrics, ready to test in a week.
+- **Skipping Patterns because it's the newest block.** Without recognizing recurring situations, the team reads single signals out of context — engagement up gets celebrated when the pattern shows hesitation. Patterns is the v1.34 addition; use it.
+

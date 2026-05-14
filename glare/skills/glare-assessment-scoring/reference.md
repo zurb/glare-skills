@@ -42,6 +42,16 @@ Each of the five dimensions receives its own score:
 
 Each dimension can be strong or weak on its own. A team might be strong at organizing work but weak at scaling influence. Another team might make fast decisions but struggle to build proof. The full assessment shows how those strengths and gaps work together.
 
+## When to use
+
+- When the user is asking how the Design Assessment is calculated, what the bands mean, or what their number actually represents.
+- When the user wants the five bands explained — Reactive (0–40), Developing (41–60), Functional (61–80), Strong (81–90), Leading (91–100).
+- When understanding why each dimension has its own score and how layered scoring helps explain *why* a dimension is strong or weak.
+- When the user is preparing to take or review an assessment and needs to know how survey responses become scores.
+- When clarifying what the assessment does NOT measure (individual designer skill, craft, output quality).
+
+**Don't use when** the user is interpreting the shape across dimensions (`glare-assessment-reading`), choosing what to do next (`glare-assessment-using-results`), or already deep in one dimension's content.
+
 ## What goes into the score
 
 The score comes from the Design Assessment **survey**. Each survey response is mapped to one of the five dimensions and to a layer inside that dimension. Responses are scored to show how consistently the team shows mature design behaviors in each area.
@@ -179,6 +189,15 @@ Design impact rarely depends on talent alone. It depends on whether the organiza
 - **Using Results** explains how to turn the assessment into a focused improvement plan.
 
 Use the Scoring Model first to understand the maturity level. Then use the other scoring pages to understand what the pattern means and what to strengthen next.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Treating the score as the point.** Teams fixate on moving from 65 to 70 and lose sight of what behavior creates the score. The number is a window into the system; the system is what changes.
+- **Ranking teams against each other.** Using the assessment to compare design teams across business units or vendors. The assessment measures *the system around the work*, not the people; ranking misreads the instrument and damages trust.
+- **Reading a single dimension score without layers.** A 60 on Building Proof tells you it's weak but not *which* layer (Research / Intent / Outcome / Impact). The layer is where the improvement lives.
+- **Re-scoring constantly.** Running the assessment monthly so the number "moves." The score is a system snapshot — it moves on a 6–12 month rhythm, not weekly. More frequent measurement creates noise, not signal.
 
 ## Note on terminology
 

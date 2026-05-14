@@ -1,5 +1,59 @@
 # Glare Marketplace Changelog
 
+## 3.1.0 — 2026-05-13
+
+Audit-driven cleanup pass + uniform skill version reset. No structural changes; this is a polish release driven by the v0.2 Skill Quality Rubric audit (see `audit/RUBRIC-RESULTS.md`).
+
+### What changed
+
+**1. Critical rules sections added to 9 parent SKILL.md files** — non-negotiable rules lifted out of buried numbered steps into a dedicated `## Critical rules` section. Sets the template for child skills:
+- `glare-decision-map`, `glare-define`, `glare-measure`, `glare-focus`, `glare-lead`
+- `glare-design-review`, `glare-design-signals`, `glare-design-assessment`, `glare-ux-metrics`
+
+**2. `## When to use` section added to all 60 reference.md files** — surfaces trigger and anti-trigger info that was scattered through prose. 3-5 "use when" bullets + 1 "don't use when" line per skill.
+
+**3. `## Failure modes` section added to all 60 reference.md files** — each skill now names 3-5 specific ways it goes wrong in practice with cause and fix. Sourced from existing scattered material plus skill-domain extrapolation where source had no explicit failure content.
+
+**4. Three broken handoff references renamed:**
+- `glare-get-started` → `glare-getting-started` (typo)
+- `glare-coaching-advising` → `glare-getting-started` (content absorbed into consolidated)
+- `glare-proving-design-impact` → `glare-getting-started` (content absorbed into consolidated)
+
+Affected SKILL.md files: `glare-design-assessment`, `glare-decision-map`, `glare-design-review`, `glare-assessment-scaling-influence`, `glare-assessment-using-results`, `glare-ux-metrics-mapping`.
+
+**5. Symptoms-to-skill lookup table added to SKILLS-CATALOG.md** — 25 rows mapping common stuck patterns ("Meeting ended with no decision," "We have data but no decision," etc.) to entry-point skills.
+
+### Uniform version reset
+
+All 60 SKILL.md files reset to:
+```yaml
+version: 3.1.0
+last_rebuilt: 2026-05-13
+```
+
+Previously skill versions had drifted across 1.3.0 / 1.4.0 / 2.2.0 / 2.3.0 / 3.0.0 from accumulated content edits. Reset to a clean baseline since reference.md content changed for all 60.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `3.1.0`
+- Skill count unchanged: 60
+
+### Audit impact
+
+Predicted shift from the rubric:
+- Section 3.5 (Critical rules): 48 Missing → ~0 Missing for 9 parents (children still need follow-up)
+- Section 5.4 (When to use): 40 Missing → 0 Missing
+- Section 5.6 (Failure modes): 13 Missing + 47 Partial → mostly Strong
+- Section 8.1 (Graph integrity, broken handoffs): Partial → Strong
+- Sections 9.4 + 10.1 (Discoverability): Partial → Strong
+- System-wide Missing: 12% → ~3-4%
+
+### What's next
+
+Bucket-level skills (the ~30-40 children under the 9 parents) still don't have `## Critical rules` sections. The 9 parents now set the template — applying it to children is the next high-leverage pass.
+
+---
+
 ## 2.3.0 — 2026-05-11
 
 New Patterns block under Define. Decision Map and Define parent skills refreshed to v1.34/v1.1+patterns. Skill count: 65 → 66.

@@ -16,6 +16,16 @@ Capturing signals gives you a simple way to turn input into direction as you go.
 
 This helps the team move forward without waiting for perfect certainty.
 
+## When to use
+
+- When the user wants the end-to-end workflow for creating Design Signals as part of the work, not after.
+- When the team gathers feedback too late and decisions are already made by the time signals arrive.
+- When following the four-stage flow — Frame → Ground → Measure → Use.
+- When turning a hunch into a question, anchoring to a metric, comparing versions, and keeping the signal attached to the decision.
+- When making signals part of the sprint rather than a post-launch activity.
+
+**Don't use when** the user wants the structural anatomy of one signal (`glare-signals-components`), the four signal types (`glare-signals-types`), or evaluating whether a built signal is usable (`glare-signals-quality`).
+
 ## How signals are captured
 
 Signals don't start as signals. They start as small moments in the work. A question comes up in a review. A design feels unclear. Two directions are on the table and no one is sure which one will hold. The team has a sense of what might be happening, but not enough clarity to move forward with confidence.
@@ -167,6 +177,15 @@ To capture a signal:
 - keep the signal attached
 
 You don't need perfect clarity. You need enough to move.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Capture-after-launch.** Treating signal capture as a research deliverable that arrives after decisions are made. By then the direction is locked and the signal has no leverage. Move capture earlier — during Frame and Ground, not after Use.
+- **Skipping Frame.** Jumping into Measure without anchoring the question. The data arrives but doesn't answer anything because nothing was framed.
+- **Heavy capture.** Stacking 5+ instruments on one signal because the team is uncertain. Heavy capture slows the loop and produces conflicting data. Light, fast, repeated capture beats one perfect session.
+- **Signal detached from the decision.** Capturing signals and then letting them sit in a research repo while the decision moves forward without them. Keep the signal attached — name which decision it informs and surface it at the decision moment.
 
 ## Cross-references the source doc explicitly calls out
 

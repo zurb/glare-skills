@@ -1,9 +1,9 @@
 ---
 name: glare-measure-questioning
 description: Use this skill when the user is drafting, critiquing, or organizing research questions in the Measure area. Triggers — sorting questions into the four types — **People** (habits/behaviors), **Process** (steps/friction), **Product** (clarity/usefulness), **Problem** (barriers); choosing a Mode — **Exploratory**, **Evaluative**, **Comparative**; the bias check (leading? loaded? jargon-heavy?); promoting open questions into testable ones (e.g., "Do people like our homepage?" → "Can users find pricing within 5 seconds?"); aligning to a UX metric family — Behavioral, Attitudinal, Performance, Perceptual; the Glare Questioning Canvas; building a reusable Question Library. Do NOT use when anchoring intent (use `glare-measure-concepts`), forming a hunch (use `glare-measure-hunches`), translating data (use `glare-measure-findings`), or asking about the loop (use `glare-measure`). For the Decision Map, use `glare-decision-map`. For Need / Use / Prefer / Adopt, use `glare-signals-types`.
-version: 3.0.0
+version: 3.1.0
 source_doc_version: v1.1 (Questioning) — refreshed 2026-05-11 + canonical-28 constraint
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work through the **Questioning** move of the Decision Map's **Measure** area — sharpening hunches into neutral, testable prompts that yield usable signals.

@@ -191,6 +191,16 @@ When teams use assessment results well, design maturity becomes easier to improv
 
 This is where the assessment becomes useful.
 
+## When to use
+
+- When the user has Design Assessment results and is asking what to do next — turning interpretation into commitment.
+- When the user wants the worksheet for picking one dimension, one working question, and one visible 30-day action.
+- When at risk of trying to fix all five dimensions at once or building a long transformation plan.
+- When the team is running a results review and needs structure to convert observation into action.
+- When the user has interpreted the pattern and now needs the 30-day move.
+
+**Don't use when** the user is still trying to understand the scores (`glare-assessment-scoring` for individual scores, `glare-assessment-reading` for the pattern), or wants the broader overview (`glare-design-assessment`).
+
 ## Worksheet
 
 Use this after reviewing your results.
@@ -203,6 +213,16 @@ Use this after reviewing your results.
 6. **What 30-day action will we take?** Choose one small, visible action.
 7. **Who owns it?** Name the person or team responsible.
 8. **What will visible progress look like?** Define what the team should be able to point to after 30 days.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Trying to fix all five dimensions at once.** The results feel urgent, so the team launches initiatives in every dimension and finishes none. Pick one — strengths can be leverage too.
+- **Letting the results review end in observations.** Everyone agrees the data is interesting, the meeting ends, and nothing visible happens in 30 days. The point of the worksheet is to leave with one named action; without that, the assessment fades.
+- **Building a year-long transformation plan.** Sweeping multi-quarter plans break before quarter two because too many things have to be true. Small, visible, 30-day actions build momentum; long plans build risk.
+- **Picking a "pet" action instead of a leveraged one.** Choosing the dimension someone wants to fix rather than the one the pattern says will unblock the most. Anchor the choice to the assessment pattern, not preference.
+- **Ranking teams using the worksheet.** Same mistake as scoring — using a 30-day action plan to compare teams instead of strengthen the system. Keep it about the work.
 
 ## How this connects to the other scoring pages
 

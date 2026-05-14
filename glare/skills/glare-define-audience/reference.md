@@ -1,5 +1,15 @@
 # Audience — Reference (Glare Define, v1.1, 2026-05-06)
 
+## When to use
+
+- When the user is defining WHO their signals should come from before collecting data.
+- When customer data, stakeholder opinion, and personal preference are being weighted equally and metrics lose meaning.
+- When picking among the four audiences (Project Team, Stakeholders, Customers, Participants) or the eight Customer lifecycle segments.
+- When choosing 3–5 attributes (Behavioral, Motivational, Contextual, Lifecycle, Demographic) to turn a vague group into a testable one.
+- When balancing fast participant signals against slow customer evidence.
+
+**Don't use when** naming the underlying need (use `glare-define-user-needs`), choosing techniques/instruments (`glare-define-collecting`), or picking metrics (`glare-define-ux-metrics`).
+
 ## The four-voice frame
 
 Audience defines who your signals come from and how much weight each voice should carry. Without it, customer data, stakeholder opinion, and personal preference all get weighted equally — and metrics lose meaning. Glare extends "audience" beyond marketing-style segments to include anyone whose perspective influences design decisions.
@@ -211,6 +221,16 @@ You don't need demographic perfection. You need functional perspectives.
 | Too much customer data | Accurate proof, slower iteration | Solid performance, slow improvement |
 
 Collect fast signals from participants to guide direction, then slow signals from customers to confirm results.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **"Designing for everyone."** When the audience is "all users," signals end up too generic to act on and stakeholders fill the gap with their own version. Pick a primary audience, name it explicitly, then check adjacent users.
+- **Over-relying on participant data.** Fast, recruited testing produces clean signals but doesn't validate against real-world friction. Pair participant signals with customer behavior data before committing.
+- **Over-relying on customer data.** Existing customer behavior reflects what users already do, not what users are trying to do — so it can lock the team into improving the wrong thing. Pair with participant signals from target and adjacent users.
+- **Picking too many attributes.** Beyond 5 attributes the audience becomes unrecruitable and the signals stop comparing. 3–5 is the working range.
+- **Ignoring the lifecycle stage.** Treating a Trial user and a Power user as the same audience erases the most important context. Always name which of the eight lifecycle segments the audience sits in.
 
 ## Related key terms
 

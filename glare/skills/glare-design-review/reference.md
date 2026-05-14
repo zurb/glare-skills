@@ -57,6 +57,16 @@ The **SIGNAL Call Rubric** evaluates how well a review followed the flow. The ea
 
 Using the transcript, teams can see where the problem became clear, where success was defined or left vague, where signals shaped the direction, where the conversation circled or moved forward, where ownership was clarified, and where momentum was locked into action.
 
+## When to use
+
+- When the user is running, scoring, or improving a design review — the meeting itself.
+- When asking "what is SIGNAL" or wanting the overview (Surface → Identify → Ground → Navigate → Align → Lock).
+- When a review stalled, feedback scattered, decisions felt weak, or ownership ended unclear.
+- When picking which of the six dimensions to drop into next.
+- When choosing between scoring a transcript (`glare-review-rubric`) or prepping a call (`glare-review-coach`).
+
+**Don't use when** already deep in one dimension (Surface/Identify/Ground/Navigate/Align/Lock), evaluating a transcript with the rubric (`glare-review-rubric`), preparing for a specific call (`glare-review-coach`), or wanting the scoring math only (`glare-review-scoring-model`).
+
 ## Scoring
 
 Each dimension is scored 1–5 (see `glare-review-scoring-model` for the full rubric).
@@ -105,3 +115,13 @@ Design reviews improve when teams can see how decisions are forming. SIGNAL make
 | `glare-review-rubric` | Full evaluation output (scores + observations + behavioral metrics) |
 | `glare-review-coach` | Pre-call prep + post-call coaching |
 | `glare-review-run-transcript` | Practical end-to-end workflow |
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Treating SIGNAL as a checklist.** The six letters are diagnostic, not procedural. A review can land Surface and Identify in 90 seconds and spend the rest of the call on Navigate. Forcing equal time on each letter wastes the room.
+- **Skipping Surface to "save time."** The most common failure. The review jumps to Navigate and Align, ownership gets assigned for solving the wrong problem, and the same conversation comes back two weeks later. Surface is where time pays back tenfold.
+- **Lock as a calendar entry.** "Let's follow up next week" isn't Lock. Lock names who, by when, and what triggers the next conversation. Without that, decisions evaporate within 48 hours.
+- **Running design reviews without a problem owner.** SIGNAL assumes someone in the room is accountable for moving the decision. When no one owns the problem, every letter softens — Surface drifts, Navigate stalls, Align stays vague.
+

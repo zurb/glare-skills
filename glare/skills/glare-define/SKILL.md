@@ -1,9 +1,9 @@
 ---
 name: glare-define
 description: Use this skill when the user is in the Define area of Glare's Decision Map — the "Credibility" stage where teams agree on what matters before building. Triggers — defining user needs, picking audience, recognizing recurring patterns, setting up data collection, or choosing UX metrics; questions like "who are we designing for," "what user need does this solve," "wants vs needs," "what pattern are we seeing," "pattern library," "patterns," "engagement up but trust down." Also use when the user mentions the five user-need categories (Basics, Trust, Personal, Impact, Feelings); the four audiences (Project Team, Stakeholders, Customers, Participants); the four pattern types (User, Workflow, Signal, AI Workflow); the three UX metric types (Attitudinal, Behavioral, Performance); or instruments like SUS, NPS, SEQ, NASA-TLX, first-click, card sorting, A/B, heatmaps. Do NOT use when needs/metrics are set and the user is forming hypotheses — invoke `glare-measure`. For the broader Decision Map use `glare-decision-map`.
-version: 2.3.0
+version: 3.1.0
 source_doc_version: v1.1 + patterns v1.0
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work through the **Define** area of Glare's **Decision Map** — the "Credibility" stage that slows teams down just long enough to agree on what matters before building.
@@ -33,6 +33,14 @@ Before answering substantive questions, read:
 6. **For UX Metrics:** Treat metrics as the **grammar of signals**. Force a balance of attitudinal + behavioral + performance, and balance leading vs lagging indicators. Every metric must tie back to a UX outcome leaders can act on, not a vanity number. Helio appears throughout as the way to capture attitudinal and behavioral signals as leading indicators before product ships.
 
 7. **End every Define session by checking the five quick-check questions:** Does this solve a real user goal? Can you name 3 audience traits? What recurring pattern keeps showing up around this situation? What real input are you using? Which metric proves progress? If any answer is fuzzy, the team isn't ready to leave Define.
+
+## Critical rules
+
+- **Stay in one block per turn** — don't try to cover User Needs, Audience, Patterns, Collecting, and UX Metrics in a single answer; pick the block that matches the user's question and hold there.
+- **Reject wants masquerading as needs** — if users say they need it but ignore it in practice, it's a want, not a need; the five-category stack (Basics → Trust → Personal → Impact → Feelings) must be walked in order.
+- **Never design for everyone** — internal voices guide and external voices validate; force 3–5 audience attributes before signal collection, or you'll get noise.
+- **Every metric must tie to a UX outcome** — vanity numbers fail the test; require attitudinal + behavioral + performance balance and a tie back to a user need leaders can act on.
+- **Don't leave Define with fuzzy answers** — if the five quick-check questions (real goal, 3 traits, recurring pattern, real input, proving metric) can't all be answered cleanly, the team isn't ready for Measure.
 
 ## Handoffs
 

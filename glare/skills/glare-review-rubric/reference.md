@@ -10,6 +10,16 @@ Decision cycle: **Tension → Clarity → Evidence → Commitment → Responsibi
 
 Each dimension builds on the previous. When a call stalls, it's almost always because an earlier dimension was skipped or undercooked.
 
+## When to use
+
+- When the user wants to evaluate a design review or client call using the full SIGNAL rubric.
+- When scoring call quality, diagnosing where conversations broke down, or producing a structured evaluation report.
+- When the user pastes a call transcript and wants a SIGNAL evaluation.
+- When tracing a stalled project back to a specific conversation.
+- When evaluating talk time ratio, problem ownership, decision language, or reframe adoption together.
+
+**Don't use when** preparing for an upcoming call or coaching behavior — use `glare-review-coach`. Don't use for internal standups, async Slack/email threads, or purely informational calls where no decisions were being made.
+
 ## Inputs
 
 - Speaker-attributed transcript
@@ -292,3 +302,13 @@ The single most important thing to change for the next call.
 - **Speakers not identified**: Ask before guessing. Misattribution breaks behavioral metrics.
 - **One-sided transcript**: Note this limitation. Score what's observable but flag gaps.
 - **No decisions were made**: This is itself a finding — score N and L accordingly and call out why.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Scoring without observations.** Giving each dimension a number without naming what in the transcript supports it. The rubric is diagnostic — observations make the score teachable.
+- **Scoring an informational call.** Running the rubric against a status update or standup. SIGNAL evaluates conversations where decisions are at stake; informational calls will score poorly because they shouldn't be scored.
+- **Averaging dimensions.** Reading the total /30 as the answer. The total summarizes; the *dimension shape* diagnoses. A 22 with a 1 on Lock is a different problem from a 22 with a 1 on Surface.
+- **Using the rubric as a grade.** Sharing the score without the behavioral context turns coaching into judgment. The rubric is for improvement, not ranking.
+

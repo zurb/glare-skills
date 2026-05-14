@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics-behavioral
 description: Use this skill when the user is working with Behavioral metrics — what users actually do inside the workflow. Triggers — phrases like "behavioral metrics," "what users do," "users hesitate," "users abandon," "navigation breakdowns," "how do users actually move through this," "users repeatedly scan," "click patterns," "completion," "comprehension," "effort," "engagement," "frequency," "intent," "success," "usability," "users finished but it took forever," or asks how to capture interaction behavior across a workflow. Also use when the user is picking among the eight behavioral metrics, debugging where a workflow breaks down at the click level, or pairing behavioral signals with attitudinal and performance metrics. Do NOT use for the broader UX Metrics framework (use `glare-ux-metrics`), Attitudinal or Performance metrics specifically (use `glare-ux-metrics-attitudinal` / `glare-ux-metrics-performance`), or Define-stage picking on a specific decision (use `glare-define-ux-metrics`).
-version: 3.0.0
+version: 3.1.0
 source_doc_version: v1.32 (per-metric pages added)
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user select, structure, and apply **Behavioral metrics** — the family that measures what users *do* while interacting with a product.

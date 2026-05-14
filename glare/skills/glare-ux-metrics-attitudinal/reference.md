@@ -1,5 +1,15 @@
 # Attitudinal Metrics — Reference (v1.32, per-metric pages added)
 
+## When to use
+
+- When the user is working with how users *feel* about an experience — trust, confidence, satisfaction, frustration, desirability.
+- When users complete workflows but feel confused, unsure, or disconnected.
+- When attitudinal metrics serve as *leading indicators* — trust weakens before retention drops, confidence falls before abandonment rises.
+- When picking among the nine canonical attitudinal metrics (Appeal, Brand Score, Desirability, Expectations, Feelings, Loyalty, Satisfaction, Sentiment, Usefulness).
+- When attitudinal signals matter most — onboarding, fintech, healthcare, AI-assisted systems, automation, enterprise software.
+
+**Don't use when** the user wants the broader UX Metrics framework (`glare-ux-metrics`), Behavioral or Performance metrics (`glare-ux-metrics-behavioral` / `glare-ux-metrics-performance`), or Define-stage picking on a specific decision (`glare-define-ux-metrics`).
+
 ## What attitudinal metrics measure
 
 Attitudinal metrics measure how users feel about an experience — trust, confidence, satisfaction, frustration, desirability, emotional response. Product teams often focus heavily on clicks, completion, engagement, and conversion. Users can technically complete a workflow while still feeling confused, frustrated, unsure, or disconnected. Attitudinal metrics help teams understand what is happening emotionally underneath the workflow, not just what users completed on the surface.
@@ -277,3 +287,13 @@ Drafted from *Glare | UX Metrics, Attitudinal Metrics v1.32* (Drive doc `1vuyPfZ
 - Satisfaction (`1riBOTICZnKLYu8d-9-K_fSaK3KH3YydFaI27Eov_mcA`)
 - Sentiment (`1iLVbsMucJ_8OofLAeMfDtjzoLMVwgz8x7eYCki4B43E`)
 - Usefulness (`1oZo62aV0EZOTNuQHfoNJV9bmg2oOBPn_nGJ_puh8fyM`) — *body content collision flagged; canonical definition taken from type-level doc*
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Inventing attitudinal metrics.** Borrowing names from other frameworks ("delight score," "happiness index") that aren't in the canonical nine. Stick to Appeal, Brand Score, Desirability, Expectations, Feelings, Loyalty, Satisfaction, Sentiment, Usefulness — or route to a different metric type.
+- **Treating attitudinal as the whole picture.** High satisfaction with low completion is a recognizable trap — users say it's fine and never come back. Always pair with behavioral and performance metrics.
+- **One-shot survey timing.** Capturing satisfaction once at end-of-task and treating it as the trust signal. Trust and confidence change *during* the workflow; capture at multiple moments.
+- **Ignoring the leading-indicator nature.** Treating attitudinal as nice-to-have because it lags retention. The opposite is true — attitudinal usually leads, so attitudinal change predicts behavioral change downstream.
+

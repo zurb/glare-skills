@@ -1,9 +1,9 @@
 ---
 name: glare-lead-results
 description: Use this skill when the user is closing the loop between learning and leadership trust — the Results bucket of the Lead facet. Triggers — running the Project Work loop (Initiatives → Findings → Decisions → Outcomes); identifying which layer is broken; assessing maturity against the five Dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence); spotting any of the 15 diagnostic symptoms ("metrics exist but no one trusts them," "loudest voice wins," "wins stay local"); the three principles (See → Tighten workflow → Measure what matters); the Results Alignment Checklist; Helio Glare Assessment; "clarity beats precision" mantra. Also the University Website case study (nav +36%, RFI +19%, homepage +57%). Do NOT use for pressures/goals — use `glare-lead-business-goals`. Do NOT use for cross-functional language — use `glare-lead-workflows`. Do NOT use for the KPI ladder — use `glare-lead-mapping`. For broader Lead, use `glare-lead`.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.1
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work through the **Results** bucket of the Glare Lead facet — the upward-facing area of the **Decision Map** — where signals prove value through a continuous Initiatives → Findings → Decisions → Outcomes loop, reinforced by a five-Dimension maturity model.

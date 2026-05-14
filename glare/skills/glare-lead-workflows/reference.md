@@ -283,6 +283,16 @@ Pick one business function you work with this week.
 
 This proves design belongs in their workflow.
 
+## When to use
+
+- When the user is translating design signals into the language of a specific business function.
+- When preparing a readout for Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, or Legal.
+- When running the Quick Test — friction-free success → adoption/retention move → metric the function tracks.
+- When the 30-minute Quick Exercise maps a single design metric into one function's vocabulary.
+- When the team needs to borrow function jargon (pipeline, CAC, PMF, velocity, handle time, LTV) instead of using design jargon.
+
+**Don't use when** picking the pressure/goal (`glare-lead-business-goals`), drawing the KPI ladder (`glare-lead-mapping`), or running the Initiatives → Findings → Decisions → Outcomes loop (`glare-lead-results`).
+
 ## Quick Test (workflow impact is real if all three are yes)
 
 1. Did users succeed without friction?
@@ -300,3 +310,13 @@ If all three are yes, signals have become proof and workflows show real design i
 
 - Parent: *Glare | Lead, Workflows v1.0* (Sept 14, 2025; source title still reads "Glare | Show, Workflows v1.0") — eight-function catalog and Quick Exercise/Quick Test.
 - Per-function v1.0 docs (Sept 21, 2025) — Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal — each with the role, signals, interfacing playbook, jargon glossary, and quick test repeated above.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Same readout for every function.** Sending the Sales team the same deck the Finance team gets. Each function has its own metrics, jargon, and lift opportunities — without translation, the signal doesn't land.
+- **Using design jargon.** Talking to Finance about "user delight" instead of "support cost per ticket," or to Engineering about "consistency" instead of "defect rate" and "velocity." Borrow their vocabulary or stay invisible.
+- **Translating into one function and stopping.** Design signals usually touch three or four functions. Translating into Product but not Sales/Finance/Operations means the signal travels halfway and dies.
+- **Faking the metric.** Inventing a Sales-language metric that doesn't actually exist in Sales operations. The Quick Test (does this metric move in the function's existing dashboards?) catches this — if not, the translation isn't real.
+

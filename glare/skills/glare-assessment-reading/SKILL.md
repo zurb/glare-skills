@@ -1,9 +1,9 @@
 ---
 name: glare-assessment-reading
 description: Use this skill when the user wants to interpret the *shape* of their Design Assessment results across dimensions — "what does our pattern mean," "how do I read these scores together," "we're balanced but low," "we're strong on proof but weak on influence," "we have a strong start, weak finish," "high activity, low impact," "what pattern do we have," or asks how multiple dimension scores work together. Also use when the user describes a specific shape — uneven scores, one strong dimension carrying the others, weak link creating drag — or names a common pattern like "balanced and strong," "weak start strong finish," "strong proof weak influence," "strong decisions weak proof," "strong organization weak complexity," "local strength limited scale." Do NOT use when the user wants to understand how scores are *built* (`glare-assessment-scoring`), is choosing a 30-day next move (`glare-assessment-using-results`), or is in one specific dimension — drop into those instead.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user **read the pattern** across their five Design Assessment scores — what the shape reveals about how design impact is moving (or not moving) through the organization.

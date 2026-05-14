@@ -77,6 +77,16 @@ Pair at least two so you get *what* and *why*.
 
 ---
 
+## When to use
+
+- When the user is choosing how to gather evidence — research approach, technique, instrument, or tool.
+- When picking among Exploratory / Evaluative / Comparative modes for a specific question.
+- When the user mentions named instruments (SUS, NPS, SEQ, CES, NASA-TLX) or any of the 12 techniques (First Click, Task Success, Time on Task, A/B, Heatmaps, Card Sorting, Surveys, etc.).
+- When sequencing the five-step process — Intent → Stack → Approach → Techniques → Connect.
+- When the team wants signal in hours instead of months and needs a sharper stack.
+
+**Don't use when** naming the need (use `glare-define-user-needs`), defining who data comes from (`glare-define-audience`), or picking metrics (`glare-define-ux-metrics`).
+
 ## Five-step collection process
 
 ### Step 1 — Start with Intent
@@ -287,6 +297,16 @@ A university struggled with navigation. Meetings circled for weeks. Everyone had
 | Comparing | → Mapping | Translate clarity into measurable impact |
 
 A Design Signal is what happens when data starts to make sense. It is the moment evidence becomes direction.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Starting from the technique.** "Let's run a usability test" before naming intent or audience. The technique should fall out of the question, not lead it. Skipping Intent → Stack means you optimize tooling and ignore decisions.
+- **Mixing modes inside one study.** Running an Exploratory and Comparative study at the same time produces data that supports neither — open enough to generate hypotheses, structured enough to be misread as evidence. Pick one mode per study.
+- **Over-instrumenting the stack.** Stacking SUS + NPS + CES + SEQ + heatmaps in one round produces noise, not signal. 1–2 well-chosen instruments per session beat five overlapping ones.
+- **Skipping the Connect step.** Collecting data and never tying it back to the original Intent or to a UX metric leaves a deck no one acts on. The Connect step is what turns raw input into usable signal.
+- **Treating analytics as primary evidence in Exploratory work.** Web Analytics and Clickstream tell you what happens; they rarely tell you *why* without paired participant or qualitative data.
 
 ## Related key terms
 

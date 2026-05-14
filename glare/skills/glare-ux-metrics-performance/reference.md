@@ -1,5 +1,15 @@
 # Performance Metrics — Reference (v1.32, per-metric pages added)
 
+## When to use
+
+- When the user is working with how efficiently a workflow actually functions — time, errors, abandonment, reliability.
+- When workflows technically work but users finish slowly, struggle the whole time, or repeat errors.
+- When picking among the eleven canonical performance metrics (Abandonment Rate, Bounce Rate, Click-Through Rate, Completion Rate, Drop-off Rate, Error Frequency, Error Rate, Recency, Session Duration, Time on Task, Visit Frequency).
+- When measuring the *cost* of friction that other metric types miss.
+- When pairing performance signals with attitudinal and behavioral metrics in a full stack.
+
+**Don't use when** the user wants the broader framework (`glare-ux-metrics`), Attitudinal or Behavioral metrics specifically, or Define-stage picking (`glare-define-ux-metrics`).
+
 ## What performance metrics measure
 
 Performance metrics measure how efficiently a workflow, system, or experience actually functions. They help teams understand:
@@ -342,3 +352,13 @@ Drafted from *Glare | UX Metrics, Performance Metrics v1.32* (Drive doc `1uLK-Q-
 - Time on Task (`1Ua3Gz-2Jo6Uhr27s8KLi3kLeWfpR2VSmxixHMZeKo7o`)
 - Visit Frequency (`1SzQekKWOB5KZn2iuQjBiCzcYO81CfkTxhUL_bf1RHVQ`)
 - Abandonment Rate — no dedicated subfolder doc; synthesized from Overview content
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Inventing performance metrics.** Borrowing names like "engagement velocity," "friction score," or other made-up names. Stick to the canonical eleven — or route to another type.
+- **Performance-only stacks.** Reading time-on-task and error rate without trust or comprehension. The workflow may be fast but emotionally exhausting, or efficient but confusing.
+- **Confusing speed for ease.** Fast completion doesn't mean low effort — users may be powering through high friction. Pair performance with effort and hesitation to read what the speed means.
+- **Treating completion rate as the headline.** Completion alone doesn't tell you how difficult the experience was. Two 80% completion rates can be very different experiences underneath; performance metrics need each other to read clearly.
+

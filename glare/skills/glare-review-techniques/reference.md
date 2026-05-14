@@ -15,6 +15,16 @@ Design reviews can feel productive and still lead to weak outcomes. That happens
 
 Techniques are simple ways to bring the conversation back. You are responding to what is happening in the room.
 
+## When to use
+
+- When the user wants the cross-cutting view of Design Review techniques — small in-the-moment moves.
+- When asking "what techniques can I use" or "the conversation is going off the rails — what do I do."
+- When choosing a technique by stuck-moment ("the room is reacting too quickly," "people agree but no one owns the work").
+- When introducing the technique map across all six SIGNAL letters.
+- When the user needs to know which dimension a specific technique belongs to.
+
+**Don't use when** the user is already inside one specific dimension's techniques — drop into `glare-review-surface`, `glare-review-identify`, `glare-review-ground`, `glare-review-navigate`, `glare-review-align`, or `glare-review-lock`.
+
 ## How techniques work
 
 Used in the moment. Notice where the conversation is losing strength, then pick a matching move. The output is a shift in the conversation — confusion to clarity, reaction to direction, agreement to action.
@@ -99,3 +109,13 @@ Used in the moment. Notice where the conversation is losing strength, then pick 
 Techniques help teams shape the conversation while it is happening. Over time, this creates more consistent design reviews, clearer decisions, and stronger outcomes.
 
 For the deeper "why" and coaching for each technique, see the individual dimension skills (`glare-review-surface`, `glare-review-identify`, `glare-review-ground`, `glare-review-navigate`, `glare-review-align`, `glare-review-lock`).
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Using all 24 techniques.** The techniques are a *menu*, not a sequence. One well-timed move usually shifts the whole review. Trying to use them all turns the facilitator into the focus instead of the work.
+- **Wrong technique for the moment.** Reaching for a Lock technique when the room is still stuck in Surface. The technique chooser (by stuck-moment) exists so the move matches the actual moment.
+- **Technique as performance.** Treating the wording as a script. The technique works because of the *move*, not the words. Adapt to the room.
+- **Skipping the diagnosis.** Reaching for a technique without first naming where the conversation is losing strength. Diagnose first; pick the technique second.
+

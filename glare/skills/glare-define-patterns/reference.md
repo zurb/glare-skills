@@ -17,6 +17,16 @@ Patterns are NOT:
 
 Patterns emerge when teams repeatedly see the same friction, hesitation, workflow breakdowns, or signal relationships appearing across experiences.
 
+## When to use
+
+- When the user is recognizing recurring situations before weak decisions gain momentum.
+- When the same problem keeps showing up — engagement up but trust down, completion high but support tickets rise, AI produces more but the team trusts it less.
+- When the team needs to slow down enough to interpret a signal before momentum scales a weak decision.
+- When sorting observations into the four pattern types (User, Workflow, Signal, AI Workflow).
+- When the same metric (e.g., long session duration) could mean strong engagement OR confusion — the situation creates the meaning.
+
+**Don't use when** naming user needs (use `glare-define-user-needs`), picking audience (`glare-define-audience`), gathering evidence (`glare-define-collecting`), or picking metrics (`glare-define-ux-metrics`).
+
 ## Why this matters now (situations create meaning)
 
 People do not act in isolation. Behavior emerges from situations shaped by pressure, uncertainty, goals, workflows, habits, incentives, and emotional conditions. Because of that, the same behavior can mean completely different things depending on the situation.
@@ -132,6 +142,15 @@ The real problem is not "completion." The pattern is that users can technically 
 - **User Pattern / Workflow Pattern / Signal Pattern / AI Workflow Pattern** — the four pattern types covering user behavior, organizational behavior, metric relationships, and AI-accelerated production.
 - **Directional confidence** — the goal of pattern recognition; not certainty, but enough clarity to act while work is still evolving.
 - **Situations create meaning** — the foundational rule: the same behavior means different things in different situations.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Naming a one-off as a pattern.** A single observation isn't a pattern. Patterns require *recurrence* — similar conditions repeatedly producing similar behaviors. Naming an isolated event as a pattern leads the team to over-correct on noise.
+- **Reading the metric without the situation.** "Long session duration" gets reported as engagement and the team doubles down — when the actual pattern is users stuck and re-scanning. The pattern reconnects the metric to the situation; skipping that reverses the diagnosis.
+- **Letting AI overproduce before pattern recognition.** AI generates output faster than the team can evaluate it; without pattern checks, the team builds on top of weak ideas because they shipped quickly. Patterns are the slow-down that protects strong ideas.
+- **Confusing pattern naming with library building.** A pattern library is useful only when patterns are detected in live work. Cataloging patterns no team actually checks during decisions produces vocabulary without behavior change.
 
 ## Cross-references inside Glare
 

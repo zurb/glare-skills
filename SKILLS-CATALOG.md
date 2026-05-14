@@ -11,7 +11,41 @@ After installing, you don't invoke skills by name — Claude loads the right one
 /plugin install glare@glare-marketplace
 ```
 
-All 65 skills become available.
+All 60 skills become available.
+
+---
+
+## What you're feeling → which skill
+
+A reverse index. If you can name your symptom, this table points to one skill. (For more exhaustive routing, see `glare-master/reference.md`.)
+
+| Symptom | Use skill |
+|---|---|
+| "I'm stuck — don't know where to start" | `glare-master` |
+| "What is Glare / how do I begin" | `glare-getting-started` |
+| "We have data but no decision" | `glare-signals-quality` |
+| "I have a Helio test result and don't know what to do with it" | `glare-measure-findings` |
+| "Meeting ended with no decision" | `glare-review-lock` |
+| "The call was just opinion ping-pong" | `glare-review-ground` |
+| "Designs got pushed back without clear feedback" | `glare-review-ground` |
+| "Team can't agree on what we're solving" | `glare-define-user-needs` |
+| "Designers, PMs, engineers see different problems" | `glare-define-audience` |
+| "We keep seeing the same situation across projects" | `glare-define-patterns` |
+| "We're picking metrics and they're not landing" | `glare-define-ux-metrics` |
+| "Which UX metric should we even pick" | `glare-ux-metrics` |
+| "Our metrics don't work together" | `glare-ux-metrics-stack` |
+| "We have v1 and v2 and can't choose" | `glare-focus-comparing` |
+| "We have a roadmap but can't prove anything moved" | `glare-lead-results` |
+| "We did the research but can't connect it to business" | `glare-lead-mapping` |
+| "Leadership doesn't see what we're contributing" | `glare-getting-started` (proving-impact narrative) |
+| "We keep relitigating the same decision" | `glare-assessment-guiding-decisions` |
+| "We keep starting over on the same problem" | `glare-assessment-organizing-work` |
+| "Every project feels overweight" | `glare-assessment-managing-complexity` |
+| "Our proof stays local — leaders never see it" | `glare-assessment-scaling-influence` |
+| "Output is exploding faster than we can decide" | `glare-getting-started` |
+| "Use Glare with Claude / ChatGPT / agents" | `glare-getting-started` (AI workflows) |
+| "We're pushing Glare across the company" | `glare-getting-started` (coaching/advising) |
+| "What does [Glare term] mean" | `glare-getting-started` (glossary) |
 
 ---
 

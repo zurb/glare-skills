@@ -1,9 +1,9 @@
 ---
 name: glare-review-navigate
 description: Use this skill when the user is working on the Navigate step of a design review — leading the decision and securing commitment. Triggers include "we keep exploring without choosing," "the team won't make a recommendation," "we have signals but can't pick a direction," "ideas keep being treated equally," "Navigate scored low" (1–2 on the SIGNAL rubric), "how do I get to a decision in the room," "what's a Navigate technique," or "the call is almost over and direction is still soft." Also use when prepping a design review or decision meeting where you need to come in with a recommendation. Do NOT use when there's no evidence yet to support a direction (use `glare-review-ground`) or when a decision was made but ownership is unclear (use `glare-review-align`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user run the **Navigate Decisions** step — the N in SIGNAL. This is where the conversation moves from open discussion to a clear path forward.

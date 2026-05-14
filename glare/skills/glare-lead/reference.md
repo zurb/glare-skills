@@ -234,6 +234,16 @@ The same University Website case study from the v1.0 Results doc is included ver
 
 Sub-folder under Lead. Skipped — only folder metadata returned, no leaf documents in this batch. (ID 16nUqL181hKlvWENYdm2W_gliaGuQnOJd, parent: Lead.)
 
+## When to use
+
+- When the user is connecting design work to business impact — proving ROI, executive narratives, or KPI mapping.
+- When anchoring work to business pressures (Growth, Retention, UX, Efficiency, Operations) and the 20 measurable goals.
+- When translating signals into Sales / Marketing / Product / Engineering / Strategy / Ops / Finance / Legal language.
+- When building the Chain of Proof (User Need → Design KPI → Product KPI → Business KPI → Business Goal).
+- When running the Initiatives → Findings → Decisions → Outcomes loop, or assessing maturity against the five Lead Dimensions.
+
+**Don't use when** the user is in early signal collection — invoke `glare-define`, `glare-measure`, or `glare-focus`. For depth in a Lead bucket, use `glare-lead-business-goals`, `glare-lead-mapping`, `glare-lead-workflows`, or `glare-lead-results`.
+
 ## Dimensions (folder)
 
 Sub-folder under Lead, presumably containing the deeper materials for the five maturity dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence). Skipped — only folder metadata returned. (ID 1gNutrMFhsY-eh3TpA513iyWCdRvsrtB1, parent: Lead.)
@@ -256,3 +266,13 @@ Sub-folder under Lead, presumably containing the deeper materials for the five m
 - **Vanity metrics** — pageviews/clicks not tied to adoption or retention; explicit anti-pattern.
 - **Helio Glare Assessment** — referenced diagnostic tool to find where alignment breaks.
 - **Connective tissue** — recurring metaphor for UX metrics linking user behavior to business outcomes.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Jumping to Lead without intact upstream facets.** Trying to prove business impact when Define, Measure, and Focus weren't tight produces stories executives can't trust. The Chain of Proof is only as strong as its weakest upstream rung.
+- **Speaking only in design language.** Reporting up in usability scores, completion rates, and journey maps when leadership tracks revenue, churn, and retention. The signal exists but doesn't translate.
+- **Lead as a one-time deck.** Building the Chain of Proof once at launch and never refreshing it. The chain is most valuable when it stays visible across quarters, with the metrics updated.
+- **Treating Lead as a separate workstream.** Design doing Lead in isolation, away from Product/Finance/Strategy, produces a beautiful artifact no one outside design uses. Lead is the *handoff*, not a deliverable — build it with the receiving function.
+

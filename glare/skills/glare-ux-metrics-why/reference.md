@@ -8,6 +8,17 @@ But many teams still struggle to clearly understand what is actually happening i
 
 This problem becomes more visible as product work speeds up.
 
+## When to use
+
+- When the user is making the case for *why* UX metrics matter — to leadership, product, or finance.
+- When justifying UX measurement beyond "we already have analytics."
+- When framing the argument around AI accelerating output faster than evaluation.
+- When the team is reacting to opinions not evidence, weak ideas survive too long, or strong ideas stall in debate.
+- When introducing leading vs lagging indicators on user experience.
+- When explaining why design needs different signals than business systems.
+
+**Don't use when** the user wants the four metric TYPES (`glare-ux-metrics`), what a UX metric IS structurally (`glare-ux-metrics-what-is`), or proving design impact through Chains of Proof (`glare-lead-mapping`).
+
 ## AI changed how product teams work
 
 AI made it easy to generate more ideas, screens, prompts, workflows, prototypes, and experiments. But evaluation did not speed up at the same pace. Product work also became more fragmented as research, analytics, AI systems, and stakeholder feedback spread across disconnected tools and workflows.
@@ -119,3 +130,13 @@ Over time, teams begin seeing larger patterns across the product — where users
 ## Source
 
 Drafted from *Glare | UX Metrics, Why UX Metrics Matter v1.32* (Drive doc `1g0lrMvS2ZsgokpS3q7xeIxIaoeuPeqvv6nMpJTIWcoI`, May 10, 2026).
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **"Because design said so."** Justifying UX metrics by appeal to authority instead of the actual gap they fill (output-evaluation imbalance, decision reopening, scattered measurement). The argument needs to land on the listener's pain.
+- **Ignoring the AI context.** Pitching UX metrics as a general improvement when the v1.32 case rests on a specific change: AI accelerated output, evaluation didn't keep up. Skip that framing and the argument lands weaker.
+- **Conflating UX metrics with analytics.** Telling leadership "we already collect this" — they hear it as duplication. UX metrics are *different* signals (leading, attribute-anchored, comparable across workflows), not more of the same.
+- **Selling without a use case.** Making the abstract case without showing one place UX metrics already changed a specific decision. Always pair the why with a concrete moment.
+

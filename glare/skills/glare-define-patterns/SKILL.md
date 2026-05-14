@@ -1,9 +1,9 @@
 ---
 name: glare-define-patterns
 description: Use this skill when the user is working on the Patterns block of the Define area — recognizing recurring situations before weak decisions gain momentum. Triggers — "patterns," "pattern library," "we keep seeing the same problem," "engagement up but trust down," "completion high but support tickets rise," "AI produces more but we trust it less," "situations create meaning." Also use for the four pattern types — User Patterns (hesitation, abandonment, comparison paralysis), Workflow Patterns (review cycles, late validation, siloed optimization), Signal Patterns (engagement up while trust down, usability up while retention weakens), AI Workflow Patterns (faster output, weaker evaluation, overproduction). Do NOT use when naming user needs (use `glare-define-user-needs`), picking audience (`glare-define-audience`), gathering evidence (`glare-define-collecting`), or picking metrics (`glare-define-ux-metrics`). For broad Define, use `glare-define`. For the Decision Map, use `glare-decision-map`.
-version: 2.3.0
+version: 3.1.0
 source_doc_version: v1.0 (Patterns) — created 2026-05-11
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work the **Patterns** block of the Decision Map's **Define** area — the fifth and newest building block, which helps teams recognize recurring situations before weak decisions gain momentum.

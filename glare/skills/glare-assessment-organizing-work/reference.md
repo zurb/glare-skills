@@ -17,6 +17,16 @@ A team strong in this dimension can clearly answer:
 - Where can this evidence be reused?
 - How does this work help the next decision?
 
+## When to use
+
+- When the user is diagnosing why design knowledge keeps getting lost or rediscovered.
+- When new team members can't get context without interviews, research findings disappear after the deck, or the same studies keep getting rerun.
+- When design decisions are explained differently by different people six months later.
+- When tracing one project's chain from Objectives → Drivers → Learning → Outputs to see where the chain breaks.
+- When evidence exists but is scattered across tools, decks, files, and individual memories.
+
+**Don't use when** the user wants the broader assessment (`glare-design-assessment`), is in another dimension, or is interpreting the score (`glare-assessment-scoring`, `glare-assessment-reading`).
+
 ## Why it matters
 
 Most teams have plenty of evidence. The problem is that evidence gets scattered. When that happens:
@@ -170,6 +180,15 @@ When Organizing Work is strong, design becomes easier to scale:
 - a shared language for design impact forms
 
 This is where design maturity starts to compound.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Building a library instead of a chain.** Teams create a research repository or pattern library that catalogs *artifacts* but doesn't preserve the Objective → Driver → Learning → Output reasoning. Future projects can find old findings but not understand why they mattered.
+- **Documenting outputs without learnings.** Decks and Figma files survive, but the learning that justified the decisions doesn't. New projects either redo the work or copy the output without the reasoning.
+- **Centralizing too fast.** Forcing every team into one tool or one template before there's shared understanding of which four layers matter. The system collapses under maintenance and people stop contributing.
+- **Treating organizing as a librarian job.** Assigning "knowledge management" to one person while every project keeps making the same chain-breaking mistakes. Organizing has to be how the work itself moves, not a side activity.
 
 ## How this dimension supports the others
 

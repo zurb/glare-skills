@@ -6,6 +6,16 @@ Source: Glare | Design Signal, Components v1.3, May 3, 2026.
 
 Signals only work when the pieces come together. Many teams already have input — they see behavior, review metrics, talk through what feels off — but those pieces don't always connect. The result is more discussion, not more clarity. Components shows how to bring that input together so it can guide a decision.
 
+## When to use
+
+- When the user is building or strengthening an individual Design Signal.
+- When asking "what goes into a signal" or "my signal feels incomplete."
+- When walking through the six structural components — Design intuition, UX metric, User need, Context, Business goal, Direction.
+- When debugging which piece is missing or weak in an existing signal.
+- When turning a hunch into a usable signal by adding the missing components.
+
+**Don't use when** the user is asking about the four signal types Need/Use/Prefer/Adopt (`glare-signals-types`), evaluating whether a signal is good enough to act on (`glare-signals-quality`), or the end-to-end capture workflow (`glare-signals-capturing`).
+
 ## What goes into a signal
 
 Every signal starts with a mix of input:
@@ -106,3 +116,13 @@ Components focuses on **how signals are built**.
 - **Capturing Signals** shows how to create them in the work
 
 Together, these make signals something the team can rely on, not just discuss.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Signal without Direction.** Five components present but no recommended next move. The signal describes the situation but doesn't guide a decision. Always close the signal with what should happen next.
+- **Signal without Context.** A metric and a user need without the surrounding situation. The same 70% completion can mean strong activation OR users powering through despite confusion — context names which.
+- **Signal without Business goal.** Tying to user need but not to the business pressure the team is under. The signal feels meaningful inside design but doesn't travel.
+- **Component mash-up.** Listing the six parts but not connecting them as one signal. The signal becomes a checklist, not a story — and stories are what shape decisions.
+

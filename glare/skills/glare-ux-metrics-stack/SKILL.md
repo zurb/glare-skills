@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics-stack
 description: Use this skill when the user is combining multiple UX metrics together to evaluate a workflow or experience — phrases like "UX metric stack," "metric stack," "combine UX metrics," "stack of metrics," "Design Stack," "Research Stack," "feature findability stack," "onboarding stack," "checkout stack," "metrics that explain each other," "high completion plus low confidence," "Confusion Trap," "Friction Wall," "Trust Gap," "Commitment Check," "behavior plus attitudinal plus performance," or asks how 3-7 metrics work together. Also use when the user wants to build a reusable stack for a recurring workflow type, or compare workflows using a stack instead of single metrics. Do NOT use for single-metric definitions (use type sub-skills `glare-ux-metrics-attitudinal` / `glare-ux-metrics-behavioral` / `glare-ux-metrics-performance`), the broader framework (use `glare-ux-metrics`), or research-method picking (use `glare-define-collecting`).
-version: 2.2.0
+version: 3.1.0
 source_doc_version: v1.32
-last_rebuilt: 2026-05-10
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user build and use **UX Metric Stacks** — reusable groups of 3-7 metrics combined together to evaluate a larger workflow, feature, product area, or research situation.

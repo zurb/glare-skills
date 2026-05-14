@@ -1,9 +1,9 @@
 ---
 name: glare-getting-started
 description: Use whenever the user is new to Glare or asks an intro question — "what is Glare," "how do we start," "conceptual tour," "the six components," "create my first signal," "I have a real decision," "two directions no clear winner," "use Glare with ChatGPT or Gemini," "what is Ray," "prompt vs Skill vs agent," "roll Glare out," "the 90-day pilot," "coach our team," "prove design impact," "design ROI," "leading vs lagging indicator," the chain decision → signal → user behavior → product outcome → business impact, or any "what does X mean" vocab question (design signal, hunch, UX metric, Decision Map, Design Review, Design Assessment, AI Skill, AI Agent, the 6 components, the 5 dimensions, the 4 metric types). Also for first-time onboarding or picking a sub-skill. Do NOT use when the user is already deep inside a component — invoke `glare-decision-map`, `glare-design-review`, `glare-design-signals`, `glare-design-assessment`, or `glare-ux-metrics` instead.
-version: 3.0.0
+version: 3.1.0
 source_doc_version: v1.3 + v1.32 + v1.34 (multi-source, consolidated)
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user **get started with Glare** — ZURB's open decision framework for product and design teams. This skill is the consolidated on-ramp: first-time introduction, conceptual tour of the six components, first-signal walkthrough, AI workflow guidance, coaching/rollout framing, design-impact narrative, and vocabulary lookup all live here.

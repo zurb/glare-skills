@@ -5,6 +5,16 @@
 - **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. The Mapping ladder is the working space where the User need rung at the bottom and the Business goal + Direction rungs at the top come together; the UX metric is what the v1.0 doc calls the "connective tissue" between them.
 - **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. Distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure.
 
+## When to use
+
+- When the user is building or auditing a Chain of Proof — User Need → Design KPI → Product KPI → Business KPI → Goal.
+- When UX metrics need to serve as connective tissue between product and business metrics.
+- When working upward from a Design KPI or downward from a goal.
+- When running the Five Steps (Align on Goals → Understand Workflows → Map the Chain → Share → Keep Visible) or the Make-It-Practical routine.
+- When narrating a concrete example like onboarding-to-revenue (55% → 85% completion → trial-to-paid doubled → pipeline +25%).
+
+**Don't use when** picking the pressure or goal (`glare-lead-business-goals`), translating into specific function language (`glare-lead-workflows`), or running the project work loop (`glare-lead-results`).
+
 ## Glare | Lead, Mapping v1.0 (source title still: "Glare | Show, Mapping v1.0")
 
 Mapping draws a line from user needs (bottom) to business goals (top), turning outputs into outcomes. Executives care about outcomes, not outputs.
@@ -54,6 +64,15 @@ A more procedural, training-style rewrite of v1.0 with explicit steps and tables
 **Worked example** (verbatim 5 steps): trial-to-paid conversion problem — Goal: Growth → Workflow: Product+Sales → Design KPI: usability (55% → 85% onboarding completion) → Product KPI: trial-to-paid doubled → Business KPI: pipeline +25%. Lesson: a single usability signal becomes business proof when mapped end-to-end.
 
 **Reflection questions**: Did we define business goals before measuring? Does the map clearly connect UX → product → business KPIs? Is the map visible across teams? Have we refreshed since last review?
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Missing rungs.** A chain that goes User Need → Business Goal skipping Design KPI, Product KPI, and Business KPI is unfalsifiable — it's a story, not a chain. Five rungs, every time.
+- **Mapping after the fact.** Writing the chain at the end of the project to justify the result. The chain is most useful *before* the work — it tells the team what to measure so the proof can be claimed honestly.
+- **Treating mapping as a one-time deck.** A Chain of Proof drafted once and never refreshed loses credibility as the product evolves. Keep it visible and update it when the metric or goal moves.
+- **Confusing UX metrics with the chain itself.** UX metrics are the *connective tissue* between Design and Product KPIs — they live inside the chain, not as a substitute for it. The chain still needs the five rungs.
 
 ## Related key terms
 

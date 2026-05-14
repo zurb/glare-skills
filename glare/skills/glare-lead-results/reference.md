@@ -5,6 +5,17 @@
 - **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. Findings in the Project Work loop should themselves carry all six pieces; an Outcome that can't be traced back to those pieces is the gap.
 - **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. These are the v1.3 categories Outcomes roll up into (distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure).
 
+## When to use
+
+- When the user is closing the loop between learning and leadership trust.
+- When running the Project Work loop — Initiatives → Findings → Decisions → Outcomes.
+- When identifying which of the four layers is broken (most teams stall between Findings and Decisions).
+- When assessing maturity against the five Dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence).
+- When spotting any of the 15 diagnostic symptoms ("metrics exist but no one trusts them," "loudest voice wins," "wins stay local").
+- When applying the three principles — See → Tighten workflow → Measure what matters.
+
+**Don't use when** anchoring to pressures/goals (`glare-lead-business-goals`), translating cross-functionally (`glare-lead-workflows`), or building the KPI ladder (`glare-lead-mapping`).
+
 ## Glare | Lead, Results v1.0 (source title still: "Glare | Show, Results v1.0")
 
 Results are where signals prove value. Without structure, metrics stay stuck in reports.
@@ -96,6 +107,15 @@ The same University Website case study from the v1.0 Results doc is included ver
 ## Folder note
 
 A `Dimensions` sub-folder exists under Lead, presumably containing deeper materials for the five maturity dimensions, but contained no leaf-level files in the source extract.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Stopping at Findings.** The most common break. Research lands in a deck, the team agrees the findings are interesting, no decision gets made, and outcomes never come back to compare. Force every Findings step to produce a named Decision.
+- **Naming Outcomes that aren't measurable.** "Improved user experience" isn't an outcome — it's an aspiration. Outcomes have numbers, comparison points, and timing.
+- **Diagnosing the wrong dimension.** Reading a symptom like "loudest voice wins" as a Guiding Decisions problem when the root cause is Building Proof (the team has no evidence to push back with). The 15-symptom diagnostic exists to map symptom to dimension cleanly.
+- **Precision before clarity.** Trying to perfect the measurement instrument before any results flow through the loop. Clarity beats precision; rough measurement that flows is more valuable than perfect measurement that stalls.
 
 ## Related key terms
 

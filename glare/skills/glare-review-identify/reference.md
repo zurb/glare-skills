@@ -6,6 +6,17 @@ Compressed source: Glare | Design Review, Identify Techniques v1.3 + the I row o
 
 Define what "better" means in measurable terms. Turn reactions into something more specific: what should improve, what should change for the user, how success will show up.
 
+## When to use
+
+- When the user is defining what "better" means in measurable terms before reacting to feedback.
+- When stakeholders critique artifacts because outcomes aren't clear.
+- When the team can't pick a direction because success is unclear.
+- When the conversation is about deliverables instead of user outcomes.
+- When Identify scored 1–2 on the SIGNAL rubric.
+- When prepping a review where you need an outcome statement up front.
+
+**Don't use when** the problem itself is still unclear (use `glare-review-surface`) or when the outcome is clear but the team is debating opinion (use `glare-review-ground`).
+
 ## Why it matters
 
 Without clarity about outcomes, stakeholders critique artifacts. Clear outcomes shift focus from screens to results.
@@ -122,3 +133,13 @@ When too many things are discussed at once, the conversation spreads out and slo
 ## Bottom line
 
 Give the review a target. When success is clear, feedback has something to point toward and decisions become easier to make.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **"Better" without numbers.** Outcomes phrased as "cleaner," "simpler," "more delightful" don't tell the team when it lands. Define what the user should be able to *do* and how the team will know it's working.
+- **Outcome that's actually a deliverable.** "Ship the new flow" is a deliverable; the outcome is what the new flow enables (e.g., "first-time users complete activation in under 90 seconds").
+- **Identifying after Navigating.** Letting the team pick a direction and then back-filling the outcome to match. Identify must precede Navigate or the team optimizes for the wrong target.
+- **Outcome statement nobody owns.** Naming a goal without an owner means the goal doesn't survive the room. Tie the outcome to a single person who will be checking it post-launch.
+

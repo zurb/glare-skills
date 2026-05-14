@@ -1,9 +1,9 @@
 ---
 name: glare-review-identify
 description: Use this skill when the user is working on the Identify step of a design review — defining what "better" means in measurable terms, turning vague feedback into a clear outcome, or aligning the room on what success looks like. Triggers include "feedback is all preference," "people keep saying 'better' or 'cleaner' without defining it," "the team can't pick a direction because success is unclear," "we're talking about deliverables instead of outcomes," "Identify scored low" (1–2 on the SIGNAL rubric), "how do I get the room aligned on a goal," or "what's an Identify technique." Also use when prepping a review where you need an outcome statement up front. Do NOT use when the problem itself is still unclear (use `glare-review-surface`) or when the outcome is clear but the team is debating opinion (use `glare-review-ground`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user run the **Identify Outcomes** step — the I in SIGNAL. This is where the review defines what success looks like before reacting to feedback.

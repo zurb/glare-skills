@@ -1,9 +1,9 @@
 ---
 name: glare-assessment-organizing-work
 description: Use this skill when the user is focused on the Organizing Work dimension of the Design Assessment — "where does design knowledge get lost," "we keep restarting from scratch," "research findings disappear after the deck," "new team members lack context," "we keep rerunning the same studies," "design decisions are explained differently by different people," or asks about its four layers (Objectives → Drivers → Learning → Outputs). Also use when evaluating whether learning compounds across projects, tracing one project from objective to output, or making evidence findable and reusable. Do NOT use for the broader assessment (`glare-design-assessment`), a different dimension (`glare-assessment-managing-complexity`, `glare-assessment-building-proof`, `glare-assessment-guiding-decisions`, `glare-assessment-scaling-influence`), or score interpretation (`glare-assessment-scoring`, `glare-assessment-reading`, `glare-assessment-using-results`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user evaluate and strengthen **Organizing Work** — the Design Assessment dimension that measures whether design knowledge compounds or gets lost.

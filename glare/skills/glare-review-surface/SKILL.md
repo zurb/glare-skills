@@ -1,9 +1,9 @@
 ---
 name: glare-review-surface
 description: Use this skill when the user is working on the Surface step of a design review — exposing the real tension behind the request, naming what is actually breaking, or making consequence visible. Triggers include "the team is reacting to the design before agreeing on the problem," "feedback is scattered," "we keep talking about features instead of the real issue," "no one named what is actually wrong," "how do I surface the real problem in a review," "what's a Surface technique," "Surface scored low" (1–2 on the SIGNAL rubric), or pasting a snippet where the conversation jumped to solutions. Also use when prepping a kickoff or any review where the problem is fuzzy. Do NOT use when the problem is already clear and the team needs success criteria (use `glare-review-identify`) or when the team is debating opinion despite knowing the problem (use `glare-review-ground`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user run the **Surface Challenges** step — the S in SIGNAL. This is where a design review names the real problem before reacting to the work.

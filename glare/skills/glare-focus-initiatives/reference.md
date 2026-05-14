@@ -13,6 +13,16 @@ A strong initiative connects three things:
 
 When those are clear, the team can focus its energy, choose the right method, and compare results in a way that supports better decisions.
 
+## When to use
+
+- When the user is naming the *area of work* before methods or comparisons run.
+- When everything feels important and design work is scattering across one-off requests.
+- When mapping a request to a business goal or grouping concepts under one initiative.
+- When picking among the 10 initiative types (Simplify Identity & Access, Accelerate Onboarding, Optimize Navigation, Streamline Checkout & Payment, Increase Engagement & Retention, Personalize Experiences, Strengthen Collaboration, Elevate Marketing & Growth Pages, Improve Content & Support, Expand Device & Context Reach).
+- When a strong initiative needs to connect a user need, a business goal, and a measurable part of the experience.
+
+**Don't use when** already framed and choosing how to learn (use `glare-focus-methods`), comparing signals (`glare-focus-comparing`), or committing (`glare-focus-decisions`).
+
 ## Why initiatives matter
 
 Most design work gets messy when the team does not agree on what is being improved. One person thinks the goal is conversion. Another thinks it is clarity. Someone else wants to reduce support tickets. Design may be focused on usability while leadership looks for growth. None of those goals are wrong — they are not yet framed as one clear initiative.
@@ -146,3 +156,13 @@ In the Focus flow:
 - **Decisions** turn the evidence into action.
 
 Initiatives are where Focus begins. They give design work a clear target so signals can build toward decisions that move the work forward.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Initiative as feature list.** "Redesign onboarding" is a project; "Reduce drop-off in first-session activation among Trial users" is an initiative. Without a user need, a business goal, and a measurable experience surface, downstream Methods and Comparing won't hold.
+- **Initiative too big.** "Improve the product" or "fix the website" can't be Measured, Compared, or Decided. Narrow until it fits into a single Decision Map cycle.
+- **Initiative too small.** "Move this button" doesn't need the Focus machinery; it's a tactical decision. Reserve initiatives for work that connects to a goal worth tracking.
+- **Initiative without a goal.** Naming the area but not the outcome it serves — the team works hard on the right surface for the wrong reason. Tie every initiative to a Lead goal up front.
+

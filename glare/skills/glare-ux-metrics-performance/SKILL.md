@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics-performance
 description: Use this skill when the user is working with Performance metrics — efficiency, reliability, and operational friction. Triggers include "performance metrics," "efficiency metrics," "reliability," "operational friction," "how long tasks take," "where users drop off," "abandonment rate," "bounce rate," "click-through rate," "completion rate," "drop-off rate," "error frequency," "error rate," "recency," "session duration," "time on task," "visit frequency," "the workflow works but takes forever," "users finish but slowly," or asks how to capture the operational health of the experience underneath the workflow. Also use when picking among the eleven performance metrics or pairing performance signals with attitudinal and behavioral metrics. Do NOT use for the broader UX Metrics framework (use `glare-ux-metrics`), Attitudinal or Behavioral metrics (use `glare-ux-metrics-attitudinal` / `glare-ux-metrics-behavioral`), or Define-stage picking (use `glare-define-ux-metrics`).
-version: 3.0.0
+version: 3.1.0
 source_doc_version: v1.32 (per-metric pages added)
-last_rebuilt: 2026-05-11
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user select, structure, and apply **Performance metrics** — the family that measures *how efficiently* a workflow actually functions during real usage.

@@ -6,6 +6,17 @@ Compressed source: Glare | Design Review, Aligning Techniques v1.3 + the A row o
 
 Create clarity around responsibility and boundaries. Connect the decision to a person and a role.
 
+## When to use
+
+- When the user is making ownership visible before a design review ends.
+- When everyone agreed on the direction but no one owns the execution.
+- When responsibility is blurry — who's leading vs supporting vs reviewing vs approving.
+- When Align scored 1–2 on the SIGNAL rubric.
+- When prepping the closing minutes of a review or kickoff where execution is unclear.
+- When scope keeps creeping because boundaries weren't set.
+
+**Don't use when** no decision has been made yet (use `glare-review-navigate`) or when ownership is clear but next steps are vague (use `glare-review-lock`).
+
 ## Why it matters
 
 Ambiguity creates drift. When ownership is unclear, accountability weakens and complexity increases.
@@ -125,3 +136,13 @@ Even when ownership is discussed, it can be interpreted in different ways. A qui
 ## Bottom line
 
 Make responsibility clear before the conversation ends. When ownership is aligned, decisions turn into action, progress continues, and the work moves forward without unnecessary delays.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **"Team will own it."** No individual is accountable, so it falls to whoever has the most time — and usually doesn't get done. Name a person, not a team.
+- **Owner without authority.** Naming someone responsible who can't actually move the work (no scope authority, no access to the system, no stakeholder relationship). The owner must have the room to act.
+- **Skipping the "supporting" role.** Naming a primary owner without naming who reviews, approves, or unblocks. The owner stalls when missing inputs aren't anticipated.
+- **Re-opening the decision in Align.** Treating Align as another round of debate about whether the call was right. Align is execution — if the decision is still in play, return to Navigate.
+

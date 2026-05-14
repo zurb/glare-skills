@@ -32,6 +32,16 @@ The metrics begin explaining each other. Instead of looking at isolated scores, 
 
 ---
 
+## When to use
+
+- When the user is treating UX metrics as a connected operational system, not isolated scores.
+- When organizations measure differently across teams (product on speed, leadership on revenue, design on usability) and signals stay disconnected.
+- When the team has lots of dashboards but no clarity, and measurement breaks down across the org.
+- When metrics need to form patterns — Confusion Trap, Friction Wall, Trust Gap, "high completion long time on task."
+- When evolving from isolated dashboards to a shared measurement system that the org argues from.
+
+**Don't use when** the user wants the four metric types at the framework level (`glare-ux-metrics`), per-metric definitions (use the type sub-skills), or stacking specific metrics (`glare-ux-metrics-stack`).
+
 ## The three recurring patterns
 
 As teams compare metrics together, certain patterns begin repeating across workflows and experiences. These patterns often reveal deeper problems that isolated dashboards miss.
@@ -151,3 +161,13 @@ As more reviews, launches, onboarding flows, and AI-assisted experiences get mea
 ## Source
 
 Drafted from *Glare | UX Metrics, Measurement System v1.32* (Drive doc `1Ll6Z-4NiIBDu6jBpMQGgKx_SR21YWtRnC1ptsO4KUNU`, May 10, 2026).
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **System as another dashboard.** Building a "UX metrics dashboard" alongside the product and revenue dashboards instead of integrating with them. The system has to rebuild *shared visibility*, not add another window.
+- **Forcing one definition on every team.** Insisting product, design, and research use identical metrics. Each function has reasons for its definitions; the system rebuilds connections, not uniformity.
+- **System without pattern recognition.** Pulling metrics together but never naming the recurring patterns (Confusion Trap, Friction Wall, Trust Gap). The patterns are what turn metrics into operating memory.
+- **Skipping the org-language layer.** Building the system inside design tools without ever translating into product or business vocabulary. The system needs to surface in the meetings where decisions happen, not in research repos.
+

@@ -20,6 +20,16 @@ The stack helps teams understand not just whether users completed the workflow, 
 
 ---
 
+## When to use
+
+- When the user is combining multiple UX metrics together (3–7) to evaluate a workflow.
+- When asking about Design Stacks (workflow-anchored) vs Research Stacks (method-anchored).
+- When building a reusable stack for a recurring workflow type (onboarding, checkout, navigation, AI workflow).
+- When metrics explain each other — "high completion plus low confidence," Confusion Trap, Friction Wall, Trust Gap, Commitment Check.
+- When comparing workflows using a stack instead of single metrics.
+
+**Don't use when** the user wants single-metric definitions (use type sub-skills), the broader framework (`glare-ux-metrics`), or research-method picking (`glare-define-collecting`).
+
 ## Two kinds of stacks
 
 ### Design Stacks
@@ -191,3 +201,13 @@ These are starter stacks — adapt to the specific workflow, audience, and decis
 ## Source
 
 Drafted from *Glare | UX Metrics, UX Metric Stack v1.32* (Drive doc `1IjDhKKWUIpE9dDbN4Bit3-DQnNQyOPvg13LfgzJp9fI`, May 9-10, 2026).
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Stacks too big.** 10+ metrics in one stack become dashboards, not stacks. Stay in the 3–7 range so metrics can actually explain each other.
+- **Single-type stacks.** A "stack" of five behavioral metrics isn't really a stack — it can't catch the experience underneath the workflow. Strong stacks span attitudinal, behavioral, and performance.
+- **Stacks without recognized patterns.** Pulling metrics together without naming the patterns that connect them (Confusion Trap, Friction Wall, Trust Gap, Commitment Check). The patterns are how stacks become diagnostic.
+- **One stack across all workflows.** Trying to use the onboarding stack to evaluate checkout. Each workflow type needs its own metric mix; reuse the *structure* of the stack, not the specific metrics.
+

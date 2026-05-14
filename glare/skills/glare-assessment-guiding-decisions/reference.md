@@ -18,6 +18,16 @@ A team strong in this dimension can clearly answer:
 - What choice did we make?
 - What happens next because of that choice?
 
+## When to use
+
+- When the user is diagnosing why decisions keep reopening, stalling, or going to "loudest voice wins."
+- When research is interesting but not decisive — meetings consume evidence without using it.
+- When the team forces every decision through the same process regardless of certainty or stakes.
+- When matching the *kind* of decision (Exploratory, Operational, Analytical, Evidential) to the *kind* of reasoning the moment actually needs.
+- When you see symptoms like "we keep asking for more data," "no one can explain why this path was chosen," or "we keep relitigating the same call."
+
+**Don't use when** the user wants the broader assessment (`glare-design-assessment`), is in another dimension, is interpreting overall results, or is scoring a single design review meeting — use `glare-design-review` for that.
+
 ## Why it matters
 
 Most teams have more input than they can act on. They hear from users, stakeholders, leadership, sales, support, research, analytics, the market. The problem is not that teams lack information — it is that information often does not turn into a decision.
@@ -195,6 +205,15 @@ When Guiding Decisions is strong, design becomes easier to act on:
 - momentum survives after the review
 
 This is where design maturity becomes easier to lead.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Treating every decision as Evidential.** Demanding causal proof for early exploratory bets freezes the team in analysis. Exploratory and Operational decisions don't need the same weight of evidence; using the framework means matching reasoning to moment.
+- **Treating every decision as Exploratory.** The opposite: staying open and "still shaping" when the moment actually needs commitment. The team feels collaborative but ships nothing; signals show up but never convert into direction.
+- **Confusing volume of input with quality of decision.** Adding more stakeholders, more research, or more rounds rarely fixes a decision that lacks the right *type* of evidence. The fix is matching evidence type to decision type, not adding more of whatever you already have.
+- **Re-deciding instead of revisiting.** A decision that gets reopened every two weeks isn't being made — the team is mistaking debate for evidence. Name when a decision is locked, what would force a revisit, and stop relitigating until that trigger fires.
 
 ## How this dimension supports the others
 

@@ -18,6 +18,16 @@ A team strong in this dimension can clearly answer:
 - Does proof support resourcing or investment?
 - Does the organization reuse design signals beyond one project?
 
+## When to use
+
+- When the user is diagnosing why design proof stays local and doesn't shape strategy or investment decisions.
+- When leaders only see final outputs, strong findings stay inside project teams, or design gets invited late.
+- When the team keeps re-explaining the same value story to new audiences.
+- When investment, roadmap, or resourcing decisions happen without design evidence in the room.
+- When matching proof packaging to audience (Contributors → Experts → Leaders).
+
+**Don't use when** the user wants the broader assessment (`glare-design-assessment`), is in another dimension, or is interpreting the overall score pattern.
+
 ## Why it matters
 
 Most design teams create more value than the organization can see. They improve experiences, reduce friction, clarify user needs, run tests, shape direction. But too often, that proof stays close to the people who created it.
@@ -178,6 +188,15 @@ When Scaling Influence is strong, design becomes easier to lead with:
 - design's role in strategy increases
 
 This is where design maturity becomes organizational influence.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **One-size-fits-all proof.** Sending the same research deck to a designer, a product VP, and a CFO. Contributors need source detail; Experts need pattern and signal; Leaders need impact and decision implication. One packaging never reaches all three.
+- **Hoping influence happens automatically.** Strong findings sit in a Slack channel, a Notion doc, or a closed deck. Scaling influence requires deliberately moving evidence — not assuming it will travel because it's good.
+- **Translating value into design language only.** Telling executives about "user delight" and "consistency" instead of retention, conversion, or risk. Use the audience's own framing of impact.
+- **Confusing visibility with influence.** Design gets cited in all-hands or shows up in dashboards, but isn't actually shaping the next quarter's roadmap. Influence is measured by what decisions change because of design evidence, not how many slides mention it.
 
 ## How this dimension supports the others
 

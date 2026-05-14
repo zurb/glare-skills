@@ -1,9 +1,9 @@
 ---
 name: glare-assessment-scaling-influence
 description: Use this skill when the user is focused on the Scaling Influence dimension of the Design Assessment — "our proof stays local," "leaders only see final outputs," "design evidence doesn't shape strategy," "we keep re-explaining the same value story," "investment decisions happen without our evidence," "design is invited late," "strong findings stay inside project teams," or asks about its three levels (Contributors → Experts → Leaders). Also use when evaluating whether design proof travels, packaging evidence for different audiences, or shaping roadmap and investment decisions. Do NOT use for the broader assessment (`glare-design-assessment`), a different dimension (`glare-assessment-organizing-work`, `glare-assessment-managing-complexity`, `glare-assessment-building-proof`, `glare-assessment-guiding-decisions`), or score interpretation (`glare-assessment-scoring`, `glare-assessment-reading`, `glare-assessment-using-results`).
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.3
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user evaluate and strengthen **Scaling Influence** — the Design Assessment dimension that measures whether design proof travels or stays local.
@@ -46,4 +46,4 @@ Before answering substantive questions, read `reference.md` — full compressed 
 - Other dimensions that depend on traveling proof → `glare-assessment-organizing-work`
 - Interpreting the Scaling Influence score against the other four → `glare-assessment-reading`
 - Choosing a 30-day improvement → `glare-assessment-using-results`
-- Coaching design leaders or running a 90-day pilot to grow influence → `glare-coaching-advising`, `glare-proving-design-impact`
+- Coaching design leaders or running a 90-day pilot to grow influence → `glare-getting-started`, `glare-getting-started`

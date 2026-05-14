@@ -1,9 +1,9 @@
 ---
 name: glare-measure-concepts
 description: Use this skill when the user is working on the Concepts move of the Measure area — defining a focused, testable design effort before solutioning. Triggers — framing intent for a redesign, narrowing a big initiative to one actionable bet, mapping a user need from Define against a business goal from Lead, the 5-minute test ("if you can't write user need + business goal + signal in 5 min, the concept isn't clear"), browsing the 200+ Concept catalog (Products, Websites, Mobile Apps, E-commerce, Marketing — Dashboard Engagement, Checkout Flows, Push Notifications, Shopping Cart, Campaign Microsites). Also when jumping to solutions without anchoring intent, defining what "winning" looks like, or avoiding vanity metrics. Do NOT use when forming a hypothesis (use `glare-measure-hunches`), drafting questions (use `glare-measure-questioning`), translating data (use `glare-measure-findings`), or asking about the loop (use `glare-measure`). For the Decision Map, use `glare-decision-map`.
-version: 1.3.0
+version: 3.1.0
 source_doc_version: v1.1
-last_rebuilt: 2026-05-04
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user work through the **Concepts** move of the Decision Map's **Measure** area — anchoring intent before any solution exists.

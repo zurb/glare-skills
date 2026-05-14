@@ -1,5 +1,15 @@
 # User Needs — Reference (Glare Define, v1.1, 2026-05-06)
 
+## When to use
+
+- When the user is naming what users actually need before any solution exists.
+- When distinguishing wants from needs ("faster horse" vs "faster travel").
+- When picking among the five user-need categories (Basics, Trust, Personal, Impact, Feelings) or the 22 individual need types.
+- When tying a need to a metric type (foundational needs → usability/completion; aspirational → desirability/loyalty).
+- When the team is debating "what's the right feature" without agreement on which user need is unmet.
+
+**Don't use when** the question is about who to test with (use `glare-define-audience`), how to gather evidence (`glare-define-collecting`), or which numbers to track (`glare-define-ux-metrics`).
+
 ## The five-category user-need stack
 
 Glare organizes user needs into **five categories** ordered foundational → aspirational, with **22 individual need types** nested inside them. The categories are levels of confidence users build through design — function, then trust, then relevance, then results, then meaning. Each level earns the right to the next.
@@ -246,6 +256,15 @@ The highest layer, where credibility, relevance, and value combine to create exp
 6. Revisit and refine as users evolve.
 
 If you can't list three concrete needs tied to a specific need type and a metric, you're not done.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Solving a want instead of a need.** Users say "make it faster" and the team optimizes performance — when the underlying need was Findable or Useful, not Performance. Translate the want into one of the 22 needs before designing.
+- **Jumping straight to aspirational needs.** Teams chase Delight or Emotional Pull while users can't find the feature in the first place (Findable, Usable). The five categories are *ordered*; foundational needs earn the right to aspirational ones.
+- **Treating every need as equally weighted.** Picking 6+ needs for one project guarantees none get served well. Pick 1–2 primary needs per initiative and let the rest serve as guardrails.
+- **Skipping the credibility category.** Trust needs (Credible, Secure, Reliable, Intuitive) often go unnamed until users churn. They don't show up in feature requests; they show up in retention and trust metrics.
 
 ## Related key terms
 

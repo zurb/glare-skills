@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics-applying
 description: Use this skill when the user is putting UX metrics to work inside real product moments — phrases like "applying UX metrics," "using UX metrics in product reviews," "UX metrics in prioritization," "UX metrics for concept comparison," "launch readiness," "UX metrics for AI workflow evaluation," "UX metrics in design critiques," "shared language across teams," "decision support," "this feels confusing," "I don't think users will understand this," "I like the other direction better," "we keep validating too late," "evaluate workflows earlier," "ground reviews in stronger evaluation," "compare onboarding flows side by side," or asks how UX metrics change reviews, prioritization, AI evaluation, or alignment. Also use when the user wants the eight operational use cases for UX metrics. Do NOT use for the broader framework (use `glare-ux-metrics`), what a UX metric IS structurally (use `glare-ux-metrics-what-is`), or stacking specific metrics together (use `glare-ux-metrics-stack`).
-version: 2.2.0
+version: 3.1.0
 source_doc_version: v1.32
-last_rebuilt: 2026-05-10
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user **apply UX metrics inside real product moments** — reviews, prioritization, comparison, launch readiness, AI workflow evaluation, and decision support.

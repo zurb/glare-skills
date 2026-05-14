@@ -78,6 +78,16 @@ Use when the idea has potential but is not the right move right now. The signal 
 Use when the signal shows the direction is not worth more investment. This is **not failure** — it is a useful decision that protects the team from spending time on work that does not create enough value.
 **Means:** the signal is weak · tradeoff is not worth it · direction does not support the initiative · the team should stop or remove it from consideration.
 
+## When to use
+
+- When the user is turning signals into action — making the call.
+- When findings are sitting in decks, meetings are circling, or the team can't pick a direction.
+- When choosing among the 5 tactical decision types — Implement, Refine Design, Test Iteration, Revisit Later, Do Not Pursue.
+- When distinguishing strategic decisions (investment / roadmap / product direction) from tactical ones (the decision triangle).
+- When writing a decision record that names the tradeoff and the next move.
+
+**Don't use when** the initiative isn't framed (use `glare-focus-initiatives`), the frame isn't chosen (use `glare-focus-methods`), or signals haven't been compared (`glare-focus-comparing`). For executive ROI / KPI escalation, use `glare-lead`.
+
 ## What goes into a decision
 
 A decision starts with evidence. It should not come from feeling alone — it should come from a signal that has been framed and compared clearly enough to support action.
@@ -155,3 +165,13 @@ In the Focus flow:
 - **Decisions** move the work forward.
 
 Decisions are where Focus creates momentum. They turn signals into choices, choices into action, and action into business movement.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Confusing "discuss" with "decide."** Meetings end with shared understanding but no commitment. A decision names the choice, the tradeoff, the owner, and the next move. Without all four, it's still discussion.
+- **Defaulting to Refine Design.** When five tactical options exist, teams pick "iterate" because it feels safe. But sometimes the strongest move is Do Not Pursue (kill it) or Revisit Later (park it). The full menu exists for a reason.
+- **Treating every decision as strategic.** Big-room debates for tactical decisions waste leadership attention and leave the team unable to move. Most decisions should sit at the tactical level; reserve strategic decisions for investment / direction / kill.
+- **No decision record.** A decision that lives only in someone's memory gets relitigated. Write the call down, name the tradeoff, name what would trigger a revisit — three sentences is enough.
+

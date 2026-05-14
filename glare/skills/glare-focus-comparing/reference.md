@@ -24,6 +24,16 @@ Comparing cuts through that uncertainty. It helps teams:
 
 A strong comparison gives the team a reason to choose.
 
+## When to use
+
+- When the user is placing signals side by side — versions, audiences, segments, journeys, platforms, competitors, before/after.
+- When asking "is this score good or bad" — a single score only becomes meaningful in comparison.
+- When picking among the 12 comparison points (Iteration, User Goals/Tasks, Competitors, Feature Usage, Timeline, Geographies, Segments, User Lifecycle, Journeys, Behavioral Triggers, Platforms/Devices, Season).
+- When running the 5-step process: name decision → choose point → same metric → find strongest signal/tradeoff → turn into finding.
+- When the team needs to explain why one direction got more energy than another.
+
+**Don't use when** the initiative isn't framed (use `glare-focus-initiatives`), frame isn't chosen (use `glare-focus-methods`), or ready to commit (use `glare-focus-decisions`).
+
 ## What goes into Comparing
 
 Comparing starts with a **shared metric**. Before placing results side by side, the team needs to know what is being measured and why it matters. The comparison only works if signals are clear enough to line up.
@@ -149,3 +159,13 @@ In the Focus flow:
 - **Decisions** move the work forward.
 
 Comparing is how Focus creates context — helps teams see the difference between options, explain tradeoffs, and choose the direction most likely to create value.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Comparing on different metrics.** Version A measured on completion, Version B on satisfaction. The comparison is meaningless — same metric is the floor, not the ceiling. Always anchor to one comparable measurement.
+- **Cherry-picking the comparison point.** Choosing the comparison axis after seeing the data so the preferred direction wins. Pick the comparison point *before* running the comparison; let the data speak inside the frame.
+- **Comparing without context.** A score of 65 is good against a baseline of 50 and bad against an industry benchmark of 80. Always name what you're comparing against.
+- **Forcing a winner where the answer is a tradeoff.** Not every comparison produces a winner. Sometimes the finding is "A is stronger on conversion, B is stronger on trust" — that *is* the signal, and the next move is testing the tradeoff, not picking falsely.
+

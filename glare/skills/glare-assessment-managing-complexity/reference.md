@@ -18,6 +18,16 @@ A team strong in this dimension can clearly answer:
 - Who needs to stay aligned?
 - What structure will help the work move?
 
+## When to use
+
+- When the user is diagnosing why work keeps tangling, dependencies surprise the team, or every project feels overweight.
+- When the team can't separate Simple (just do it) from Complicated (coordination) from Complex (learn-as-you-go) work.
+- When plans get locked before the problem is understood — or when simple repeatable tasks get crushed under heavy process.
+- When work is growing across products, teams, and decisions and the existing structure isn't scaling.
+- When ownership inside complicated work is unclear and surprises land late.
+
+**Don't use when** the user wants the broader assessment (`glare-design-assessment`), is in a different dimension, or is interpreting the overall score pattern.
+
 ## Why it matters
 
 Most product and design work does not stay simple for long. A small idea touches more screens. A flow connects to more systems. A decision affects more teams. The problem is not that the work is complex — it is that teams often do not have a shared way to manage it.
@@ -175,6 +185,15 @@ When Managing Complexity is strong, teams move through bigger work with less con
 - large initiatives move forward with less drag
 
 This is where design maturity becomes easier to sustain as the work grows.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Treating complex work as complicated.** Locking a plan, naming milestones, and tracking burndown for work that is actually still being figured out. Symptoms: replans every sprint, "we hit the milestone but the work is wrong," scope creep that's actually scope discovery.
+- **Treating simple work as complex.** Wrapping a small, repeatable change in research rounds, multiple reviews, and discovery — turning a 2-day fix into a 4-week project. The structure becomes the work.
+- **Hiding complexity by splitting it.** Breaking complex work into many small "complicated" tickets so it fits the existing system. Each ticket finishes, but the whole still doesn't add up because the underlying learning never happened.
+- **No shared vocabulary for the three levels.** Without Simple / Complicated / Complex as named modes, every project feels the same and the team can't ask "what kind of problem is this?" before choosing a structure.
 
 ## How this dimension supports the others
 

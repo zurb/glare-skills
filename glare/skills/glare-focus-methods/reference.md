@@ -63,6 +63,16 @@ Designers often reach for iterative testing and prototyping because they are clo
 
 The method should match the initiative. The goal is not to use every method — it is to choose the frame that helps the team understand the data, compare the right options, and decide what should move forward.
 
+## When to use
+
+- When the user is choosing how to *frame* the data inside an initiative.
+- When asking "what method should we use" or "how should we test this."
+- When choosing among the 13 method frames (Competitors, Iterations, Timeline, Journeys, Platforms/Devices, User Goals/Tasks, Geographies, User Lifecycle, Behavioral Triggers, Segments, Feature Usage, Risk and Proof, Frameworks).
+- When the user lists named methods (Journey mapping, JTBD, A/B, Kano, RICE, ICE, HEART, MoSCoW, Eisenhower, Service blueprint, Empathy mapping) and needs to know which frame they belong to.
+- When the team has data but doesn't know what frame would make sense of it.
+
+**Don't use when** the initiative isn't framed (use `glare-focus-initiatives`), data is ready to compare (use `glare-focus-comparing`), or team is ready to commit (use `glare-focus-decisions`).
+
 ## Why methods matter
 
 Most teams have more data than clarity. They may have user comments, analytics, survey results, stakeholder feedback, support tickets, research findings, and prototype reactions. Without a method, that evidence stays scattered — people see different things in the same data.
@@ -220,3 +230,13 @@ In the Focus flow:
 - **Decisions** move the work forward.
 
 Methods are how Focus makes data usable.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Defaulting to A/B testing.** Designers reach for iterative testing because it's familiar — but if the initiative is about understanding the journey or matching user lifecycle, A/B can't see the right thing. Match the frame to the initiative, not to comfort.
+- **Mixing frames inside one method run.** Trying to compare competitors AND segments AND iterations in one study produces data that points everywhere. Pick one frame per cycle; layer frames across cycles.
+- **Method without a clear handoff to Comparing.** Choosing a method that produces beautiful artifacts (journey maps, personas) but doesn't feed into a comparable signal. The method's job is to *set up the comparison* — if the output can't be compared, the frame was wrong.
+- **Treating frameworks (RICE, MoSCoW, Eisenhower) as decision engines.** They're prioritization frames, not decisions. A RICE score informs Focus but the team still has to make the call.
+

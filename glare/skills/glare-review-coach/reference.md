@@ -7,6 +7,17 @@ Compressed source: signal-call-coach (existing standalone skill, refreshed for G
 - **Mode 1: Pre-Call Prep** — build a focused brief before a call.
 - **Mode 2: Post-Call Coaching** — turn rubric scores into behavioral change.
 
+## When to use
+
+- When the user wants to prepare for an upcoming design review or client call (pre-call prep mode).
+- When coaching someone on behavioral improvements after a call (post-call coaching mode).
+- When building a call brief or game plan.
+- When the user has past SIGNAL scores and wants to know what to improve.
+- When asking "how do I get better at [Surface/Identify/Ground/Navigate/Align/Lock]" or wanting a practice script.
+- When looking at patterns across multiple calls to turn into focused coaching.
+
+**Don't use when** the user wants to evaluate or score a specific transcript — use `glare-review-rubric`. For in-the-moment techniques mid-review, use `glare-review-techniques` or the dimension skills.
+
 ## Mode 1: Pre-Call Prep
 
 ### Inputs
@@ -213,3 +224,13 @@ Compressed source: signal-call-coach (existing standalone skill, refreshed for G
 - Scripts should feel natural, not robotic. Adapt language to the person's style.
 - The best coaching evidence comes from the person's own calls — always use their quotes.
 - Track coaching focus across calls to measure improvement. If the same gap persists after 3 calls, the coaching approach needs to change, not just the person.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Coaching script as performance.** Treating the call brief as lines to deliver. The brief is a *plan* — a small set of moves to land — not a script to read.
+- **Prepping every dimension equally.** Pre-call prep that lists 6 things to do is unusable in the moment. Pick the 1–2 dimensions most at risk for this call and rehearse those.
+- **Post-call coaching without the rubric.** Trying to coach behavioral change without a scored transcript produces generic advice. The rubric tells you what happened; the coach uses it.
+- **Skipping pattern recognition across calls.** Coaching one call in isolation when the same Lock weakness has shown up in five reviews. Look at the trend before naming the coaching focus.
+

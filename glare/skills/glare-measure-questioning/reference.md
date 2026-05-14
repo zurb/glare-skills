@@ -55,6 +55,17 @@ The v1.34 UX Metrics framework defines a 4th type for AI-assisted experiences (r
 
 ---
 
+## When to use
+
+- When the user is drafting, critiquing, or organizing research questions.
+- When sorting questions into the four types — People (habits/behaviors), Process (steps/friction), Product (clarity/usefulness), Problem (barriers).
+- When choosing a Mode — Exploratory, Evaluative, Comparative.
+- When running the bias check — leading? loaded? jargon-heavy?
+- When promoting open questions into testable ones (e.g., "Do people like our homepage?" → "Can users find pricing within 5 seconds?").
+- When aligning questions to a UX metric family — Behavioral, Attitudinal, Performance, Perceptual.
+
+**Don't use when** anchoring intent (use `glare-measure-concepts`), forming a hunch (`glare-measure-hunches`), translating data (`glare-measure-findings`), or asking about the loop (`glare-measure`). For Need / Use / Prefer / Adopt, use `glare-signals-types`.
+
 ## Turn curiosity into clarity
 
 Every signal starts with a question. Questioning turns curiosity into measurable clarity. It transforms hunches into testable direction and helps teams prove whether their ideas truly make sense.
@@ -343,3 +354,14 @@ Good questions are the foundation of design measurement. They connect curiosity 
   <https://www.reddit.com/r/userexperience/comments/oorfjq/how_to_ask_the_right_ux_questions_and_avoid_the/>
 - *How to write effective UX research questions (with examples)* — Hotjar
   <https://www.hotjar.com/ux-research/questions/>
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Leading questions.** "How much easier was this version?" presumes the answer. The bias check catches this — neutral wording produces neutral signals.
+- **Open question that can't be measured.** "What did you think?" yields a thousand quotes but no signal. Promote open questions into testable, specific prompts tied to a UX metric.
+- **Question type doesn't match decision type.** Asking People-type questions (habits) when the decision is about Product clarity. The four question types exist so the team aims at the right kind of evidence for the moment.
+- **Mode confusion.** Mixing Exploratory and Comparative questions in one session — open enough to generate hypotheses, structured enough to mislead as comparison. Pick a Mode per study.
+- **Jargon questions.** Using product or design vocabulary participants don't share ("How discoverable is this nav?"). The user's plain-language version is the only one that produces clean signal.
+

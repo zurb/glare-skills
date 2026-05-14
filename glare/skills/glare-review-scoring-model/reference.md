@@ -11,6 +11,16 @@ Looks at each part of the conversation and measures two things:
 
 This helps teams move beyond "that felt like a good call" and see where the conversation actually gained or lost strength.
 
+## When to use
+
+- When the user wants the SIGNAL scoring rubric itself — the 1–5 scale per dimension and the score bands /30.
+- When asking "what does a 3 mean for Surface" or "what's a Leading score."
+- When applying calibration rules to a specific score (e.g., "we scored 17/30 — what does that mean?").
+- When interpreting the result and identifying which dimension to improve from a score.
+- When explaining the 1–5 scale to a team for the first time.
+
+**Don't use when** the user wants to evaluate a transcript end-to-end with observations (`glare-review-rubric`) or wants in-the-moment techniques (`glare-review-techniques` and the dimension skills).
+
 ## Inputs
 
 Start with a real design review conversation. Best inputs (in order):
@@ -196,3 +206,13 @@ Next time: State the recommended direction, explain the tradeoff, and ask for ag
 **Strengths** show what the team should keep doing. After scoring, identify parts that helped create clarity. Behaviors worth repeating.
 
 **Improvement areas** come directly from the scores and transcript evidence. Focus on moments that weakened clarity, slowed the decision, or made action less certain. Keep this section focused — pick the areas that would most improve the next review, not every weak spot.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Total /30 as the answer.** The total summarizes; the dimension shape diagnoses. Two 22s with different weak letters need different coaching. Always read the per-dimension scores together.
+- **Scoring to a target.** Trying to get every dimension to a 5 or to land the team at "Leading." The rubric measures the *call*, not the team's worth. Improvement is movement, not perfection.
+- **Mixing rubric versions.** Using one team's calibration rules in another team's reviews produces noise. Lock the calibration; if it changes, re-baseline.
+- **Ignoring outliers.** A 5 on Surface and a 1 on Lock is a real pattern worth coaching, not "an anomaly to average out." The variance is the diagnosis.
+

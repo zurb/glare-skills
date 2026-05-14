@@ -62,6 +62,16 @@ Glare was built by ZURB after 25+ years and **50,000 hours of testing** across t
 
 ---
 
+## When to use
+
+- When the user is new to Glare or asks an intro question — "what is Glare," "how do we start," "the six components."
+- When walking through the canonical onboarding (Introduction → How Glare Works → Create Your First Signal → AI Workflows → Coaching & Advising → Proving Design Impact → Glossary).
+- When the user wants the high-level map — Get Started + Decision Map + Design Review + UX Metrics + Design Signals + Design Assessment.
+- When introducing key vocabulary (signal, hunch, UX metric, Decision Map, prompt vs Skill vs agent).
+- When the user has a real decision and wants to walk through creating their first signal.
+
+**Don't use when** the user is already deep inside a specific component — invoke `glare-decision-map`, `glare-design-review`, `glare-design-signals`, `glare-design-assessment`, or `glare-ux-metrics` instead.
+
 ## 2. How Glare works — the six-component system
 
 The v3 framework organizes Glare into **six connected components**, orchestrated together by the top-level `glare-master` skill. The previous `glare-router` is gone; cross-component navigation is handled by `glare-master` and by the entry-point handoffs each component skill carries.
@@ -640,6 +650,15 @@ Glare uses a small set of terms to explain how product and design decisions move
 | Orchestration across all six components | `glare-master` |
 
 ---
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Trying to teach the whole framework at once.** Glare has six components and 60 skills. Dumping all of it on a first-time user produces overwhelm, not understanding. Anchor first-time users to one decision they care about and walk the canonical six-move signal flow with that.
+- **Vocabulary as the gating step.** Spending the intro debating "what is a signal" before the user has built one. Glossary is a *lookup*, not a prerequisite — let the vocabulary land while doing.
+- **Skipping the AI workflow framing.** Glare exists in part because AI accelerated output faster than evaluation. Skipping that context makes the framework feel like a generic process model instead of a response to a real change in how teams work.
+- **Routing too early.** New users get dispatched to a child skill before they understand which component the question even sits in. Stay in Getting Started long enough to anchor; route once the user is oriented.
 
 ## How this reference connects to the rest of Glare
 

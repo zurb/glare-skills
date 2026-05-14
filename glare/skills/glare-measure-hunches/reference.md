@@ -51,6 +51,16 @@ The v1.34 UX Metrics framework defines a 4th type for AI-assisted experiences (r
 
 ---
 
+## When to use
+
+- When the user is forming or critiquing a hunch — "we believe…" statements.
+- When using the hunch template *"We believe that [change] for [audience] will [impact] because [reason]"* or the belief primer *"We believe users need ___ so they can ___"*.
+- When checking falsifiability — could this hunch be wrong, and how would we know.
+- When strengthening weak hunches (e.g., "users like shorter forms" → "removing two steps will increase completion because users drop off at step 3").
+- When using spark techniques — Empathy Mapping, Customer Journey, Stakeholder Interviews, Competitive Analysis, Expert Audit.
+
+**Don't use when** intent isn't defined (use `glare-measure-concepts`), moving into questions (`glare-measure-questioning`), interpreting data (`glare-measure-findings`), or wanting the loop overview (`glare-measure`).
+
 ## Why hunches matter
 
 Teams get stuck when they wait for perfect data or leap straight to solutions. Both waste time. Hunches cut through by giving you a place to start — they are not answers, they are testable bets. They turn instincts, early signs, and experience into hypotheses tied to signals you can measure.
@@ -235,3 +245,13 @@ Hunches help teams stay flexible, learn faster, and design with greater impact �
   <https://helio.app/blog/decoding-the-xyz-hypothesis-from-hunch-to-market-ready-prototype/>
 - *Design research doesn't generate hypotheses; you do* — Konstantin Sokhan
   <https://uxdesign.cc/design-research-doesnt-generate-hypotheses-you-do-f6b4d89cb749>
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Hunch without falsifiability.** "Users want a better experience" can't be wrong, so it can't be tested. A strong hunch is a bet — it predicts a specific outcome that could fail.
+- **Hunch as opinion.** Stating a preference dressed as "we believe…" without a user friction underneath. Tie every hunch to an observed or suspected user problem, not a stylistic preference.
+- **Hunch without a metric.** "Removing two steps will help" — help with what? Tie the hunch to a UX metric (completion rate, time on task, comprehension) so the question phase has a clear target.
+- **Skipping spark techniques and reaching for the obvious hunch.** Empathy Mapping, Customer Journey, and Competitive Analysis surface non-obvious hunches that the team's existing assumptions block. Without them, hunches stay inside the team's current model of the user.
+

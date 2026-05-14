@@ -15,6 +15,16 @@ Most teams run design reviews, but few have a consistent way to learn from them.
 
 Running a transcript turns a conversation into something the team can review, score, and improve. The goal is to learn from the conversation, not just react to memory.
 
+## When to use
+
+- When the user wants the practical workflow for evaluating a real design review transcript end-to-end.
+- When asking "I have a transcript — what do I do with it" or "how do I run a transcript through SIGNAL."
+- When the user is choosing between the offline Skill, the AI prompt, and the Ray app.
+- When clarifying what's needed before scoring a call (transcript quality, context, participants).
+- When interpreting the output of any of the three paths.
+
+**Don't use when** the user wants the scoring rubric itself (`glare-review-rubric` or `glare-review-scoring-model`) or is prepping an upcoming call (`glare-review-coach`).
+
 ## What you need before starting
 
 One design review transcript. Best when it includes:
@@ -127,6 +137,15 @@ Look for the step that needs the most help.
 | Lock is weak | Close with clearer actions and timing |
 
 You don't need every call to be perfect. You need a clear read on where the conversation lost strength and what to improve next.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Low-quality transcript.** Running SIGNAL against a transcript with missing speakers, broken sentences, or large gaps produces unreliable scores. Clean the transcript first or note the gaps before scoring.
+- **No call context.** Scoring a transcript without knowing what the call was for ("kickoff," "decision review," "status") leads to misreads. A status call legitimately scores low on Navigate; that's not a coaching insight.
+- **Choosing the wrong path.** Using Ray when the team needs the offline Skill, or vice versa. Match the path to the situation — the three paths exist because no single workflow fits every team.
+- **Skipping the "use the results" step.** Producing a SIGNAL output and not turning it into a coaching brief or process change. The transcript run is the start of improvement, not the end.
 
 ## How this connects to the rest of Design Review
 

@@ -72,6 +72,17 @@ Most teams measure too late or measure the wrong thing. They chase analytics tha
 
 ---
 
+## When to use
+
+- When picking the numbers that will prove the design worked for a specific decision.
+- When choosing among Attitudinal / Behavioral / Performance / Intelligence metrics.
+- When sorting metrics across the four lenses — By Type, By Stage, By Time, By Engagement.
+- When using the four quality principles (Easy to Understand, Good for Comparison, Use Rates or Ratios, Focus on Behavior) to vet a metric.
+- When applying the four comparison filters: Vanity vs Actionable, Qualitative vs Quantitative, Exploratory vs Reporting, Correlated vs Causal.
+- When diagnosing mismatches like "high satisfaction + low completion."
+
+**Don't use when** naming the underlying need (use `glare-define-user-needs`) or picking the research instrument (`glare-define-collecting`). For the broader UX Metrics framework or AI/Intelligence metrics, route to `glare-ux-metrics`.
+
 ## The four metric types
 
 ### Attitudinal — how users feel
@@ -236,6 +247,16 @@ A progression, not a single number. Confirm need → confirm use → confirm ret
 ## Business impact
 
 When metrics are chosen with discipline, design earns credibility. Leaders trust the data. Teams move faster because decisions are grounded, not debated. Predictive signals show what is coming. Proxy signals validate ideas before scale. Analytics confirm impact once live. Together they create resilience.
+
+## Failure modes
+
+These are common ways this skill goes wrong in practice:
+
+- **Picking vanity metrics.** "Page views increased" or "session length doubled" without a comparison or a tie to user behavior. The four filters (Vanity vs Actionable, etc.) exist to catch this — apply them before reporting.
+- **Single-type metric stacks.** Tracking only Behavioral (clicks, completion) without Attitudinal (trust, confidence) or Performance (time, errors). The completion rate goes up while trust collapses, and the team won't see it until retention drops.
+- **Choosing the metric after the data is in.** Letting available data drive the metric choice rather than choosing metrics to answer a specific decision. The metric should be picked when you frame the decision, not when results arrive.
+- **Reporting correlation as causation.** "We launched the new flow AND retention improved" without isolating other factors. The Correlated vs Causal filter is the brake — name what would falsify the causal claim before celebrating it.
+- **Treating leading and lagging as interchangeable.** Lagging indicators (retention, revenue) confirm impact; leading indicators (trust, confidence, comprehension) predict it. Use leading indicators to *steer*, lagging to *prove*.
 
 ## Related key terms
 

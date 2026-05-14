@@ -1,9 +1,9 @@
 ---
 name: glare-ux-metrics
 description: Use this skill when the user asks about UX Metrics as a top-level Glare framework — phrases like "what are UX metrics," "the four UX metric types," "Attitudinal — Behavioral — Performance — Intelligence," "AI metrics," "Intelligence metrics," "metrics vs signals vs business KPIs," "how do metrics work across Glare," "UX metric stacks," "what is a UX metric," "why UX metrics matter," "measurement system," "mapping design impact," "applying UX metrics," or wants the overview of the UX Metrics section (Why — What Is — Measurement System — Attitudinal — Behavioral — Performance — Stack — Mapping — Applying). Also use when the user wants to understand how UX metrics power Design Signals, Design Reviews, and AI workflows, or wants to drop into a sub-skill. Do NOT use for Define-stage metric picking on a specific decision (use `glare-define-ux-metrics`) or the Need / Use / Prefer / Adopt signal-type taxonomy (use `glare-signals-types`).
-version: 2.2.0
+version: 3.1.0
 source_doc_version: v1.32
-last_rebuilt: 2026-05-10
+last_rebuilt: 2026-05-13
 ---
 
 You are helping the user understand and apply **UX Metrics** as a top-level system in Glare — the measurement layer that sits underneath Design Signals and powers every facet of the framework.
@@ -72,6 +72,14 @@ Before answering, read `reference.md` — it carries the full v1.32 Overview con
 4. **Bring AI metrics in deliberately.** Intelligence metrics are new. When the user mentions AI features, name the six scope areas (recommendation quality · prompt effectiveness · AI guidance usefulness · adaptation quality · confidence calibration · workflow assistance) and pair them with at least one Behavioral or Attitudinal metric so the team is not only looking at the AI in isolation.
 
 5. **End with a concrete next step.** This is a top-level orientation skill — its job is to put the user on the right path. Always close with the named sub-skill or sibling they should drop into next.
+
+## Critical rules
+
+- **Cover all four types or the picture distorts** — Attitudinal, Behavioral, Performance, Intelligence; if a team has only one type, the experience is being measured through a single lens.
+- **Intelligence is non-optional when AI is in the experience** — pair Intelligence metrics with at least one Behavioral or Attitudinal metric so AI isn't evaluated in isolation.
+- **Don't let users collapse metrics, signals, and KPIs into one word** — they are different layers; UX metrics are the connective tissue between user behavior and business KPIs, not a substitute for either.
+- **The canonical taxonomy is the four-type model** — v1.1's "Perceptual" was removed; comprehension and recognition now live inside Behavioral. Don't reintroduce removed categories.
+- **Always close with a named handoff** — this is an orientation skill, not a destination; never end a turn without pointing the user to a specific sub-skill or sibling.
 
 ## Handoffs
 
