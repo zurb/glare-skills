@@ -1,5 +1,72 @@
 # Glare Marketplace Changelog
 
+## 3.2.0 — 2026-05-17 (4-doc template pilot — User Needs)
+
+First skill on Bryan's new 4-doc template (Overview / Techniques / Playbook / References). This establishes the structural pattern that will scale to all 16 blocks of the framework once Bryan finishes shipping the remaining 4-doc sets.
+
+### What changed
+
+**`glare-define-user-needs` refreshed to v3.2.0**
+
+The skill's `reference.md` was restructured around the new 4-section template, sourced from Bryan's 4 new Drive docs:
+
+| Section | Source | What it covers |
+|---|---|---|
+| **Overview** | User Needs, Overview v1.3 (refreshed today) | Why this matters, 5-layer model, strong/weak needs, Decision Map fit |
+| **Techniques** | User Needs, Techniques v1.3 (NEW) | Wants vs needs, 4 evaluation questions, Observation, Interviews, Five Whys, Process Mapping |
+| **Playbook** | User Needs, Playbook v1.3 (NEW) | 11-row inputs table, pattern-to-need mapping, AI prompt structure, primary output template, multi-need format |
+| **References** | User Needs, References v1.3 (NEW) + Reference/ subfolder | Category index + 22 individual user-need definitions with behavioral cues |
+
+Plus the audit additions (When to use, Failure modes) preserved at the end.
+
+### New machinery introduced
+
+**DERIVED / ADDED region markers** — `reference.md` now uses HTML comments to delimit which sections come from Drive docs vs. which were added by the skill-builder:
+
+```markdown
+<!-- DERIVED FROM: <doc_id> -->
+[content from source doc]
+<!-- /DERIVED -->
+
+<!-- ADDED 2026-05-13 (audit pass) -->
+[content added by skill-builder]
+<!-- /ADDED -->
+```
+
+This is the contract for the future refresh script — it will replace DERIVED regions when source docs update, leave ADDED regions untouched.
+
+**Source manifest in SKILL.md frontmatter** — `glare-define-user-needs` now carries a `sources:` block listing the 4 Drive doc IDs it derives from, with per-source `last_synced` dates. This is the contract for the future staleness script:
+
+```yaml
+sources:
+  - doc_id: 1EXcLG... (Overview v1.3) — last_synced: 2026-05-17
+  - doc_id: 1WmQ_l... (Techniques v1.3) — last_synced: 2026-05-17
+  - doc_id: 1JLtOo... (Playbook v1.3) — last_synced: 2026-05-17
+  - doc_id: 1CeWhp... (References v1.3) — last_synced: 2026-05-17
+```
+
+See `SOURCE-MANIFEST-PROPOSAL.md` for the full design.
+
+### Why pilot a single skill
+
+Bryan's hypothesis: explicit inputs/outputs in the Playbook section will make the skills produce more useful outputs. We need a clean comparison — one skill on the new template alongside 59 skills on the old structure — so we can judge whether the difference is real before applying the template to all 16 blocks.
+
+The other 3 Define blocks (Audience, Collecting, Patterns) have new folders today but only their Overview docs renamed — Techniques/Playbook/References haven't been created yet. We'll batch-refresh them when Bryan ships the full 4-doc sets.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `3.2.0`
+- Skill count unchanged: 60
+- 59 skills still on the audit-driven v3.1.0 structure; 1 skill on the new v3.2.0 template
+
+### Downstream sync
+
+- `glare-skills-flat/glare-define-user-needs/` — synced
+- `glare-skills-hierarchical/decision-map/define/glare-define-user-needs/` — synced
+- `glare-prompts-flat/glare-define-user-needs.md` — regenerated portable prompt
+
+---
+
 ## 3.1.0 — 2026-05-13
 
 Audit-driven cleanup pass + uniform skill version reset. No structural changes; this is a polish release driven by the v0.2 Skill Quality Rubric audit (see `audit/RUBRIC-RESULTS.md`).

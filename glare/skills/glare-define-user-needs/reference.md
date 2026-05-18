@@ -1,4 +1,348 @@
-# User Needs — Reference (Glare Define, v1.1, 2026-05-06)
+# User Needs — Reference
+
+**Block:** Define · User Needs
+**Template:** 4-doc (Overview · Techniques · Playbook · References) — piloted 2026-05-17
+**Source last synced:** 2026-05-17
+
+This skill follows the 4-section block template Bryan established for User Needs. Sections sourced from Drive docs are marked `DERIVED`; sections added by the skill-builder (When to use, Failure modes) are marked `ADDED`.
+
+---
+
+<!-- DERIVED FROM: 1EXcLGkMVDF_LFB8gF9rn3JXo_B7SWOrSEYGaUNP17r0 — Glare | Define, User Needs, Overview v1.3 -->
+
+## Overview
+
+User Needs help product and design teams understand what users are actually trying to accomplish and where experiences begin breaking down. Rather than treating research, UX metrics, usability findings, and feedback as disconnected signals, the framework organizes recurring patterns into clearer operational understanding.
+
+User needs act as operational anchors that help teams **interpret user behavior, evaluate workflows, guide measurement, compare concepts, and connect design decisions to business outcomes.**
+
+### Why teams get stuck without it
+
+Teams have plenty of inputs — customer interviews, support tickets, usability findings, analytics, stakeholder requests, UX metrics, internal opinions. The challenge is figuring out what actually matters and connecting scattered data into a clearer understanding of:
+
+- what users are trying to accomplish
+- where friction is emerging
+- why behavior keeps repeating
+- what evidence supports the problem
+- what decisions should happen next
+
+A single usability issue rarely explains the full situation. A support request may point to a deeper trust problem. High engagement may hide confusion. Strong satisfaction scores may not mean users are succeeding.
+
+### Move beyond surface feedback
+
+User needs are rarely stated. They emerge through:
+
+- repeated behavior · hesitation · confusion · workarounds · inconsistent decisions · recurring friction
+
+The framework helps teams move from isolated observations toward structured understanding of behavior over time.
+
+### Five Layers of User Needs
+
+User needs are organized into five layers. Layers build on each other — foundational needs usually need to be supported before higher-level needs fully emerge.
+
+| Layer | Focus | User Needs |
+|---|---|---|
+| **Basics** | Foundational usability and access | Useful · Usable · Findable · Accessible |
+| **Trust** | Reliability and confidence | Credible · Secure · Reliable · Intuitive |
+| **Personal** | Relevance and contextual understanding | Inclusive · Adaptable · Connected · Insightful |
+| **Impact** | Progress and meaningful outcomes | Valuable · Sustainable · Efficient · Scalable |
+| **Feelings** | Emotion and long-term connection | Desirable · Delightful · Engaging · Empowering |
+
+The layers are not rigid stages or a checklist. Most experiences contain multiple overlapping needs at the same time. The goal is to identify where the strongest unmet needs are emerging before optimizing higher-level experiences too early.
+
+Examples of stacking:
+- Users rarely trust workflows they do not understand
+- Users struggle to feel confident in experiences that create friction
+- Users are unlikely to feel delight if foundational usability problems still exist
+
+### Characteristics of strong vs weak user needs
+
+| Strong user needs | Weak user needs |
+|---|---|
+| Specific enough to guide decisions | Describe features instead of problems |
+| Broad enough to remain useful across concepts | Assume solutions too early |
+| Grounded in observable behavior | Rely on internal language |
+| Connected to measurable signals | Lack behavioral evidence |
+| Focused on outcomes instead of interfaces | Too broad or abstract to measure |
+
+**Stronger:** "Users need clearer guidance connecting their financial score to meaningful next steps."
+**Weaker:** "Users need a better dashboard."
+
+**Stronger:** "Users need faster ways to evaluate options without manually comparing large amounts of information."
+**Weaker:** "Users want more AI features."
+
+### How user needs connect across the Decision Map
+
+| Area | How user needs help |
+|---|---|
+| **Define** | Clarify what users are trying to accomplish, where friction is emerging, what problems deserve deeper evaluation |
+| **Measure** | Guide UX metrics, concept evaluation, behavioral signals, and workflow validation |
+| **Focus** | Help teams compare priorities, evaluate tradeoffs, identify where friction matters most |
+| **Lead** | Connect user behavior, design decisions, workflows, and business outcomes over time |
+
+### Common behavioral patterns
+
+| Pattern | What teams often see |
+|---|---|
+| Comprehension Gaps | Users hesitate, reread information, ask clarification questions |
+| Trust Breakdowns | Users verify information, avoid recommendations, abandon workflows |
+| Workflow Friction | Repeated effort, navigation loops, recovery behavior |
+| Expectation Mismatches | Positive feedback alongside weak engagement or abandonment |
+| Low Confidence | Users delay decisions, revisit information repeatedly |
+| Relevance Gaps | Users disengage because experience feels generic |
+
+<!-- /DERIVED -->
+
+---
+
+<!-- DERIVED FROM: 1WmQ_lkKuLW_Ss0TWGO2vzJoaeIcgaJigKU0NvKczDeA — Glare | Define, User Needs, Techniques v1.3 -->
+
+## Techniques
+
+Needfinding helps teams move beyond surface-level feedback toward a clearer understanding of what users are actually trying to accomplish. Users describe frustrations, requests, feature ideas, preferences — but those signals rarely explain the deeper condition creating the behavior.
+
+### Wants vs needs
+
+| Wants (immediate, solution-oriented) | Needs (deeper, behavioral) |
+|---|---|
+| "Add dark mode" | confidence |
+| "Give me more filters" | clarity |
+| "Make the AI smarter" | trust |
+| "Add more notifications" | efficiency · reassurance · control · understanding · reduced effort |
+
+The Henry Ford "faster horses" pattern shows up constantly inside digital products. A request for "more dashboards" may signal a need for visibility. "Better onboarding" may reflect low confidence. Automation requests may really mean reduced cognitive load.
+
+### Four ways teams evaluate user needs
+
+| Evaluation question | Focus area | Common user needs |
+|---|---|---|
+| Can users **complete** what they need? | Functional workflows, task completion, usability | Useful · Usable · Findable · Accessible · Efficient |
+| Can users **rely on** this? | Trust, predictability, confidence | Credible · Secure · Reliable |
+| Does this **make sense**? | Understanding, relevance, clarity | Intuitive · Insightful · Adaptable · Valuable |
+| Do users **like** this? | Emotion, engagement, connection | Desirable · Delightful · Engaging · Empowering · Connected · Inclusive |
+
+Multiple evaluation areas often overlap. A usability issue may also create trust problems. A lack of clarity may weaken emotional engagement.
+
+### Observation
+
+Users rarely say "I'm losing confidence right now." But behavior reveals it: repeated clicking, long pauses, reopening screens, verification behavior, navigation loops, abandoned workflows.
+
+Specific signals:
+- Repeated scrolling → uncertainty
+- Reopening screens → low confidence
+- Long pauses → comprehension gaps
+- Skipping steps → workflow friction
+
+### Interviews
+
+Strong needfinding interviews differ from feature-request gathering. The goal is moving past "would you use this?" toward:
+
+- "What were you trying to accomplish?"
+- "What made this difficult?"
+- "What were you worried about?"
+- "What happened next?"
+- "How did you decide what to do?"
+
+Most valuable signals appear when users explain moments of uncertainty, frustration, or hesitation in their own words.
+
+### Laddering and the Five Whys
+
+Users start with surface explanations ("It's confusing," "I don't trust it," "It takes too long"). Repeated "why" follow-ups uncover emotional tension, workflow pressure, hidden fears, confidence gaps, operational constraints, decision fatigue.
+
+Example sequence:
+- Why was that frustrating?
+- Why did that matter?
+- What were you worried might happen?
+- What were you hoping to avoid?
+- What would success have looked like?
+
+### Process Mapping
+
+Some user needs only become visible when teams stop looking at isolated screens and examine the entire workflow. Process mapping reveals how people move through systems, where transitions break down, where effort increases, where confidence drops, where handoffs create friction.
+
+Particularly valuable in onboarding, enterprise systems, AI-assisted workflows, financial products, healthcare products, operational software.
+
+### Aha moments
+
+User needs often emerge when disconnected observations click into a larger pattern — a support issue connects to a usability finding, a UX metric reinforces an interview quote, a workflow breakdown explains a drop-off pattern. A single data point isn't enough; multiple signals reinforcing the same condition is when meaningful user needs begin to emerge.
+
+<!-- /DERIVED -->
+
+---
+
+<!-- DERIVED FROM: 1JLtOo2E1SaDWawK5jk6AK_FB6TbE0ACYBz8BO83MKcU — Glare | Define, User Needs, Playbook v1.3 -->
+
+## Playbook
+
+The User Needs Playbook turns scattered observations into structured outputs that can guide product and design decisions.
+
+### Inputs
+
+Strong signals usually appear when multiple inputs reinforce the same underlying condition.
+
+| Input | Artifact format | What it reveals |
+|---|---|---|
+| Customer Interviews | Transcript, notes, audio, video | Motivations, frustrations, emotional context |
+| UX Metrics | Dashboard, spreadsheet, exported report | Measurable friction and behavioral patterns |
+| Analytics | Dashboard, spreadsheet, event logs | Repeated workflow and engagement issues |
+| Support Tickets | Text threads, CRM exports | Recurring operational friction |
+| Usability Findings | Notes, recordings, reports, screenshots | Comprehension gaps and usability breakdowns |
+| Surveys | Forms, spreadsheets | Expectations, satisfaction, recurring concerns |
+| Stakeholder Assumptions | Notes, workshop docs | Organizational bias and unvalidated thinking |
+| Workflow Observations | Notes, recordings, journey maps | Environmental and operational friction |
+| Concept Testing | Screenshots, prototypes, reports | Early comprehension and trust signals |
+| Forum Discussions | Text threads, comments | Repeated language and unmet expectations |
+| Product Hunches | Notes, whiteboards, planning docs | Areas needing validation or deeper exploration |
+
+The process does not depend on perfect inputs — it depends on gathering enough observable signals to identify recurring patterns.
+
+### Identifying emerging needs
+
+| Pattern | Watch for | Emerging needs |
+|---|---|---|
+| Comprehension Gaps | Confusion, hesitation, clarification requests, repeated rereading | Usable · Findable |
+| Workflow Friction | Repeated effort, task failure, recovery behavior, slow progression | Efficient · Usable |
+| Behavioral Drop-off | Users abandoning workflows midway through completion | Useful · Efficient |
+| Workaround Behavior | Users creating alternate paths to complete tasks | Usable · Useful |
+| Trust Breakdowns | Verification behavior, abandonment, repeated checking | Reliable · Credible · Secure |
+| Low Confidence | Delayed decisions, repeated revisiting, stalled progression | Reliable · Secure |
+| Contradictory Signals | Metrics and feedback telling conflicting stories | Credible · Insightful |
+| Low Relevance | Weak engagement, low perceived usefulness | Connected · Insightful |
+| Expectation Mismatches | High satisfaction paired with low conversion | Intuitive · Desirable |
+| Repeated Friction | Similar problems appearing across workflows | Usable · Reliable |
+
+Strongest user needs usually emerge when multiple signals reinforce each other, behavior repeats across workflows, metrics conflict with stated feedback, users struggle despite high engagement.
+
+### AI prompt structure for user-needs analysis
+
+Strong prompts explain the workflow, include user behavior or evidence, reference UX metrics, provide artifacts, describe business context, and focus on understanding rather than proving assumptions.
+
+| Focus | Example prompt |
+|---|---|
+| User Behavior | "Review these onboarding interviews and identify repeated hesitation or confusion patterns." |
+| Workflow Problems | "Analyze this signup flow and identify where users may be struggling to move forward." |
+| Trust Issues | "Review these usability findings and identify possible trust or confidence gaps." |
+| User Needs | "Separate requested features from the underlying user needs in these interviews." |
+| UX Metrics | "Compare these UX metrics against possible comprehension or workflow problems." |
+| Pattern Grouping | "Cluster these support tickets into recurring workflow or usability patterns." |
+| Concept Evaluation | "Analyze these concept tests and identify where understanding or trust starts to break down." |
+| Friction Mapping | "Map the friction points across this onboarding experience and explain what users may be struggling with." |
+| Stakeholder Alignment | "Summarize the strongest user patterns from these findings that should guide stakeholder decisions." |
+| Opportunity Finding | "Identify the biggest UX opportunities based on these user behaviors and workflow signals." |
+
+### Primary user need output template
+
+When a primary user need is identified, the output should be a single structured table:
+
+| Output | Contents | Example |
+|---|---|---|
+| **Category** | Primary category where experience is breaking down | Personal |
+| **User Need** | Specific user need emerging | Insightful |
+| **Summary** | What users are trying to accomplish and what's preventing progress | "Users need to understand why their Planning score is low and what action will improve it." |
+| **Evidence** | Metrics, quotes, findings, observations supporting the need | Users repeatedly revisit the Planning score, recommendation CTR is low, support questions ask "What does Planning mean?" |
+| **User Behaviors** | Recurring behaviors caused by the unmet need | Users review their score but hesitate to choose a recommendation because they don't understand why it's being suggested |
+| **User Roadblocks** | Where confidence, understanding, or workflow progression breaks down | Recommendations appear before users understand the meaning behind the Planning score |
+| **Why It Matters** | Operational, user, or business impact | Users are less likely to engage with financial recommendations they cannot evaluate or trust |
+| **Why It Fails** | Common ways teams incorrectly respond | Teams improve delight or personalization before solving the comprehension problem |
+| **Suggestions** | Potential workflow, messaging, UX, or product directions | Explain why the Planning score is low and connect recommendations directly to specific financial behaviors |
+| **UX Metrics** | Metrics most useful for validation | Comprehension · Trust · Completion Rate · Recommendation Engagement |
+
+### Multiple user needs
+
+When several emerge at once, start with a higher-level summary table, then explore each need individually using the full output template.
+
+| User Need | Evidence | User Behaviors |
+|---|---|---|
+| Insightful | Users revisit the Planning score repeatedly and avoid recommendations | Users hesitate to act because they don't understand what the score means |
+| Reliable | Users repeatedly verify account balances before trusting recommendations | Users double-check information before committing to financial actions |
+| Efficient | Users abandon workflows midway through onboarding | Users struggle to complete tasks without repeated effort |
+
+### Next steps inside the Decision Map
+
+| Next step | Why it's useful |
+|---|---|
+| Collecting | Gather stronger evidence — validates the emerging need |
+| Hunches | Form hypotheses around what may be causing friction |
+| Signals | Turn recurring observations into measurable signals |
+| Metrics | Define how success should be measured |
+| Experiments | Test workflows, concepts, messaging, product changes |
+| Reviews | Align stakeholders around evidence and decision direction |
+| Workflows | Evaluate operational systems and handoffs affecting the experience |
+
+<!-- /DERIVED -->
+
+---
+
+<!-- DERIVED FROM: 1CeWhpzFMAQTGckLTAJdErdKPvRlqPg6aNU4tGRxhSAo — Glare | Define, User Needs, References v1.3 + Reference/ subfolder (22 individual need docs) -->
+
+## References
+
+The Reference layer is the durable lookup material for the 22 individual user needs across the 5 categories.
+
+### Category index
+
+| Category | Core focus | User needs |
+|---|---|---|
+| **Basics** — foundational usability and access | Can users use it easily? | Usable · Useful · Findable · Accessible |
+| **Trust** — reliability and confidence | Do users believe it works? | Credible · Secure · Reliable · Intuitive |
+| **Personal** — relevance and contextual understanding | Does it fit their needs? | Inclusive · Adaptable · Connected · Insightful |
+| **Impact** — progress and meaningful outcomes | Does it make a difference? | Valuable · Sustainable · Efficient · Scalable |
+| **Feelings** — emotion and long-term connection | Does it inspire them? | Desirable · Delightful · Engaging · Empowering |
+
+### The 22 individual user needs
+
+Per-need definitions and behavioral cues. Each need has a deeper page in the `Reference/` subfolder (Drive folder ID `13Uozpeed7IQc0nYo8ccVsOQ2_m_55OWJ`).
+
+#### 1. Basics
+
+- **Usable** — Can users complete intended tasks without confusion or frustration? Watch for form errors, hesitation, abandoned actions.
+- **Useful** — Does the experience serve a meaningful purpose? Watch for low repeat use, "I could do this in Excel" feedback.
+- **Findable** — Can users locate what they need without searching everywhere? Watch for navigation loops, repeated search queries.
+- **Accessible** — Can people of differing abilities, contexts, and devices use it? Watch for gaps in keyboard nav, contrast issues, mobile breakage.
+
+#### 2. Trust
+
+- **Credible** — Does the experience feel professional and believable? Watch for skepticism in support tickets, slow conversion despite engagement.
+- **Secure** — Do users feel their data and decisions are protected? Watch for hesitation at payment, verification behavior.
+- **Reliable** — Does the experience work consistently every time? Watch for workaround behavior, "it broke again" feedback.
+- **Intuitive** — Does the interaction match expected patterns? Watch for questions that should be obvious from the UI alone.
+
+#### 3. Personal
+
+- **Inclusive** — Does the experience welcome users from different backgrounds and contexts? Watch for low engagement from underrepresented segments.
+- **Adaptable** — Does it adjust to user context and preferences? Watch for high churn among power users, low customization usage.
+- **Connected** — Does the experience link relevant pieces meaningfully? Watch for users repeatedly switching between sections.
+- **Insightful** — Does the experience help users understand what's happening and why? Watch for users revisiting metrics, "I don't get what this means" feedback.
+
+#### 4. Impact
+
+- **Valuable** — Does the experience deliver something users meaningfully care about? Watch for weak retention despite strong activation.
+- **Sustainable** — Can users keep using the experience over time without burnout? Watch for drop-off after initial novelty.
+- **Efficient** — Can users accomplish goals with minimal effort? Watch for high time-on-task, repeated step failures.
+- **Scalable** — Does the experience work at the scale users actually operate? Watch for enterprise teams hitting limits, workflow breakage with more data.
+
+#### 5. Feelings
+
+- **Desirable** — Does the experience make users want to come back? Watch for low NPS despite functional success.
+- **Delightful** — Does the experience produce moments of unexpected pleasure? Watch for emotional language in feedback, viral sharing.
+- **Engaging** — Does the experience hold attention meaningfully? Watch for drop-off in extended workflows, low completion in long flows.
+- **Empowering** — Does the experience give users a sense of capability and agency? Watch for low confidence scores, "I'm not sure if I'm doing this right" feedback.
+
+### Using the reference pages
+
+Each individual need page is designed to help teams understand the user need, identify common failure patterns, recognize behavioral signals, evaluate workflows, connect UX metrics to the experience, and guide product and design decisions.
+
+Useful during: research synthesis · concept reviews · usability evaluations · stakeholder discussions · experimentation planning · AI-assisted workflows · UX metric selection.
+
+### Reference as shared language
+
+As organizations grow, teams interpret the same user behavior differently. The Reference layer creates consistent language for discussing friction, evaluating workflows, interpreting UX metrics, comparing experiences, and identifying recurring patterns.
+
+<!-- /DERIVED -->
+
+---
+
+<!-- ADDED 2026-05-13 (audit pass) -->
 
 ## When to use
 
@@ -10,253 +354,6 @@
 
 **Don't use when** the question is about who to test with (use `glare-define-audience`), how to gather evidence (`glare-define-collecting`), or which numbers to track (`glare-define-ux-metrics`).
 
-## The five-category user-need stack
-
-Glare organizes user needs into **five categories** ordered foundational → aspirational, with **22 individual need types** nested inside them. The categories are levels of confidence users build through design — function, then trust, then relevance, then results, then meaning. Each level earns the right to the next.
-
-> **Compatibility note.** Earlier compressed versions of this skill described User Needs as a 7-layer UX Honeycomb (Findable → Desirable). The current Define source-of-truth (User Needs v1.1, Define Overview v1.1) restructures this into the five categories below. The 22 individual need-type pages are still consistent with their honeycomb-style framing; what changed is the category-level grouping. Each individual need (Findable, Reliable, Desirable, etc.) is preserved and still maps to its layered metrics.
-
-| Category | User question | Design outcome | Sample metrics | Facet |
-|---|---|---|---|---|
-| **Basics** | "Can I use it easily?" | Flow, clarity, access | Task completion, error rate, time on task | Measure |
-| **Trust** | "Do I believe it works?" | Predictability, consistency | Credibility, bounce rate | Define |
-| **Personal** | "Does it fit my needs?" | Relevance, inclusion | Adaptability, comprehension | Define + Focus |
-| **Impact** | "Does it make a difference?" | Efficiency, results | Conversion, retention | Show |
-| **Feelings** | "Does it inspire me?" | Emotion, motivation | Sentiment, preference | Focus |
-
-## Needfinding (Stanford-born)
-
-Before naming a category- or need-level gap, surface it. Needfinding focuses on what drives behavior, not what people say.
-
-1. **Distinguish needs from wants.** A want is a symptom; a need is the root cause. "Faster horse" → "faster travel."
-2. **Observe before you ask.** Watch what users skip, repeat, or struggle with.
-3. **Use multiple sources.** Interviews + surveys + behavioral tests. Each exposes a different layer.
-4. **Capture contradictions.** When words and behavior diverge, an unmet need is hiding there.
-
-**Validation rule:** if users say they need it but ignore it in practice, it's a *want masquerading as a need*.
-
----
-
-## 1. Basics — "Can I use it easily?"
-
-The foundation. Before trust, before emotion, before value, a product must simply work. When Basics fail, users rarely complain — they just leave.
-
-### 1.1 Usable
-
-**Definition:** Users can act on what they found, easily and confidently. Anchored in Nielsen's 10 heuristics — visibility of status, match between system and real world, user control and freedom, consistency, error prevention, recognition over recall, flexibility and efficiency, aesthetic minimalism, recover from errors, help and documentation.
-
-**Signal types:** Behavioral (completion, errors, time, effort), Attitudinal (confidence, satisfaction).
-**Example metrics:** Completion Rate, Error Rate, Time on Task, Effort, Satisfaction, Task Duration.
-**Common failure:** Cognitive load too high — too much to remember, too many corrections, no clear status, no safe undo.
-
-### 1.2 Useful
-
-**Definition:** Solves the right problem and helps users complete meaningful tasks. A product can be polished without being useful, but it will not survive.
-
-**Key signals of weakness:** users abandon halfway because outcomes don't help; feedback like "this doesn't solve my problem"; shallow engagement; users build workarounds.
-**Example metrics:** Usefulness, Sentiment, Post-Task Satisfaction, Frequency, Helpfulness.
-**Common failure:** Polish over purpose. Roadmap full, feature usage flat.
-
-### 1.3 Findable
-
-**Definition:** Users can locate the information, feature, or next step without search effort. The hidden first test every product fails before a click happens.
-
-**Key questions:** Can users see where to go next from any screen? Is information grouped the way users think? Does search understand intent? Are labels in user vocabulary, not jargon?
-**Signal types:** Behavioral (clicks, paths, search refinement, hesitations).
-**Example metrics:** First-Click Success, Comprehension, Completion Rate, Time on Task, Search Refinement Rate, Bounce Rate.
-**Common failure:** Information is on the page but buried under jargon, inconsistent placement, or unclear hierarchy. Users hesitate, refine searches, or leave.
-
-### 1.4 Accessible
-
-**Definition:** Everyone — regardless of ability, context, or device — can perceive, operate, and understand the product. Foundation of inclusion, not a compliance checkbox.
-
-**Key questions:** Is content perceivable through more than one sense? Can every action be triggered by keyboard, mouse, touch, and assistive devices? Does layout survive 200% zoom? Does it work with NVDA, VoiceOver, JAWS?
-**Signal types:** Behavioral (completion across input methods), Performance (assistive-tool task success), Attitudinal (sentiment from diverse users).
-**Example metrics:** Completion Rate (across input methods), Comprehension, Effort, Error Rate, Error Recovery Rate, Satisfaction with assistive tech.
-**Common failure:** Designed for the median user on a fresh laptop. Breaks under zoom, keyboard nav, or screen reader.
-
----
-
-## 2. Trust — "Do I believe it works?"
-
-Once something works, users need to *believe* it works. Trust is the bridge between function and confidence — earned through consistent design that behaves exactly as people expect.
-
-### 2.1 Credible
-
-**Definition:** Users believe the product will do what it promises. Trust formed before action through clarity, honesty, transparency, polish, social proof, and reliable feedback.
-
-**Key questions:** Is purpose, benefit, and next step in plain language at first glance? Are claims backed by data, not hype? Are policies easy to find, not buried? Is social proof real (verified reviews, named brands)?
-**Signal types:** Attitudinal (trust, sentiment, brand score), Behavioral (completion, engagement with proof sections), Performance (bounce, conversion, error frequency).
-**Example metrics:** Trust, Comprehension, Sentiment, Brand Score, Bounce Rate, Conversion Rate, Load Time.
-**Common failure:** Vague claims, inconsistent tone, hidden policies, or staged-feeling testimonials.
-
-### 2.2 Secure
-
-**Definition:** Users feel safe. Data is protected, risk is limited, and safety choices are clear and easy. Security in UX is trust made visible.
-
-**Key questions:** Do users know what data is collected and why? Are defaults private and least-privilege? Is authentication strong but low-friction? Are sharing scopes and permissions predictable?
-**Signal types:** Attitudinal (trust, sentiment), Behavioral (completion, abandonment at consent steps).
-**Example metrics:** Trust, Comprehension, Completion Rate, Abandonment Rate, Error Rate, Error Recovery Rate.
-**Common failure:** Vague consent, default-public sharing, recovery flows that lock users out or expose accounts to takeover.
-
-### 2.3 Reliable
-
-**Definition:** The product behaves the same under pressure as on a quiet day. Saves state, keeps data accurate, recovers safely. Not just uptime — *predictable progress users can repeat with confidence*.
-
-**Key questions:** Do core flows work the same at peak load? Is progress autosaved? Are status messages accurate and human-readable? Are critical actions idempotent or clearly reversible?
-**Signal types:** Behavioral (completion under load, error recovery), Attitudinal (trust, satisfaction).
-**Example metrics:** Success Rate at peak, Completion Rate, Error Rate, Error Recovery Rate, Trust, Support Contact Rate.
-**Common failure:** Works in the demo, breaks under real conditions. Lost drafts, conflicting data, duplicate charges on retry.
-
-### 2.4 Intuitive
-
-**Definition:** People see what it does, know what to do next, and feel confident as they move. Intuition comes from clear signals, familiar patterns, and feedback that confirms progress.
-
-**Key questions:** Is purpose and primary action obvious? Are descriptive labels and microcopy used (not jargon)? Are familiar patterns reused? Is feedback immediate?
-**Signal types:** Behavioral (comprehension, completion, time on task), Attitudinal (satisfaction, trust).
-**Example metrics:** Comprehension, Completion Rate, Time on Task, Effort, Error Rate, Satisfaction.
-**Common failure:** Purpose is unclear at a glance; users hesitate, scan for clues, backtrack.
-
----
-
-## 3. Personal — "Does it fit my needs?"
-
-When a product feels like it understands you, design becomes personal. This is where experience shifts from "this works" to "this works for me."
-
-### 3.1 Inclusive
-
-**Definition:** Respects differences and invites everyone in. Clear language, flexible choices, fair defaults, and representation that reflects real people.
-
-**Key questions:** Is language plain and respectful? Do inputs fit real names and pronouns? Are examples and visuals diverse? Are defaults private and minimal until users opt in?
-**Signal types:** Behavioral (completion across diverse users), Attitudinal (trust, sentiment).
-**Example metrics:** Comprehension, Completion Rate, Sentiment, Abandonment Rate, Trust.
-**Common failure:** Forms that erase identity (name fields too short, no pronoun option), examples that exclude common life situations, defaults that overshare by mistake.
-
-### 3.2 Adaptable
-
-**Definition:** Adjusts to different users, devices, and situations without adding friction. Reshapes layout, choices, and workflows to match goals and constraints.
-
-**Key questions:** Does the product detect screen size and input method? Does layout reflow without overlap or truncation? Are preferences saved? Are alternative inputs supported (keyboard, paste, upload, voice)?
-**Signal types:** Behavioral (success rate, time on task across contexts), Attitudinal (satisfaction).
-**Example metrics:** Success Rate, Time on Task, Completion Rate, Effort, Satisfaction, Retention.
-**Common failure:** One fixed path forces users into rework; mobile users can't reach the primary action one-handed.
-
-### 3.3 Connected
-
-**Definition:** Journeys link up, data stays in sync, and people can move between steps, devices, and teams without losing context.
-
-**Key questions:** Does state and intent carry across screens, devices, sessions? Do deep links land at the exact place to act? Do roles hand off cleanly with full context?
-**Signal types:** Behavioral (completion, time on task across handoffs), Attitudinal (trust, satisfaction).
-**Example metrics:** Completion Rate, Time on Task, Effort, Support Contact Rate, Trust.
-**Common failure:** Notifications dump users at generic pages; cross-role work loses context; data conflicts across screens.
-
-### 3.4 Insightful
-
-**Definition:** Turns raw data into meaning, explains why it matters, and points to a clear next step. If a chart does not change a decision, it is not an insight.
-
-**Key questions:** Is the question and outcome clear? Does the recommended action come first, detail second? Are definitions and sources transparent? Are anomalies and drivers explained?
-**Signal types:** Behavioral (comprehension, success rate on follow-up tasks), Attitudinal (trust).
-**Example metrics:** Comprehension, Time on Task, Completion Rate (of follow-up action), Trust, Support Contact Rate.
-**Common failure:** Dashboards full of charts that nobody acts on; "what" without "why."
-
----
-
-## 4. Impact — "Does it make a difference?"
-
-Where outcomes meet experience. The space between intention and achievement. A product that does not create progress eventually becomes noise.
-
-### 4.1 Valuable
-
-**Definition:** The outcome makes users feel their time was well spent. Not polish, features, or copy — the *result*.
-
-**Key questions:** What problem does this solve? How does it change the user's day? Could they get the same benefit another way? Would they miss it if it disappeared?
-**Signals of value slipping:** Users complete a task but never return; "I could do this faster in Excel"; engagement spikes week one, collapses week two.
-**Signal types:** Attitudinal (feeling, sentiment, satisfaction), Behavioral (engagement, frequency, intent to continue).
-**Example metrics:** Retention before/after release, Intent-to-reuse, NPS, Feature adoption, Frequency, Post-Task Satisfaction.
-**Common failure:** Shipping activity instead of outcomes. Roadmap full, adoption flat.
-
-### 4.2 Sustainable
-
-**Definition:** Continues to create value over time. Balances efficiency, reliability, and respect for attention so trust compounds and fatigue fades.
-
-**Key questions:** Does performance stay stable across releases? Is cognitive load low? Are user time and attention respected? Does what they learned once still work?
-**Signal types:** Behavioral (success rate over time, retention), Attitudinal (satisfaction, trust).
-**Example metrics:** Success Rate, Time on Task, Retention Rate, Satisfaction, Effort.
-**Common failure:** Each release adds friction; familiar patterns get renamed without reason; notifications and confirmations multiply until users tune out.
-
-### 4.3 Efficient
-
-**Definition:** How quickly people reach value with the least effort. Fewer steps, less typing, clearer paths.
-
-**Key questions:** Is the path to outcome clear? Are inputs minimized? Are defaults smart and prefilled? Are bulk and keyboard accelerators available without blocking beginners?
-**Signal types:** Behavioral (time on task, effort, completion), Attitudinal (satisfaction).
-**Example metrics:** Time on Task, Effort, Completion Rate, Success Rate, Abandonment Rate.
-**Common failure:** Every screen asks for one more thing; users have to repeat work; no shortcuts for power users.
-
-### 4.4 Scalable
-
-**Definition:** Holds up as complexity, data, and users multiply. Performs reliably, stays clear under pressure, supports growth without adding friction.
-
-**Key questions:** Does performance stay reliable as usage increases? Are bulk operations supported? Does navigation scale as content grows? Is collaboration safe and clear at volume?
-**Signal types:** Behavioral (success rate at scale, time on task with large data), Attitudinal (satisfaction, trust).
-**Example metrics:** Success Rate, Time on Task, Completion Rate, Error Rate, Trust.
-**Common failure:** Demo data hides the bottleneck; the product feels fast at 10 items and slow at 1000; bulk work requires manual repetition.
-
----
-
-## 5. Feelings — "Does it inspire me?"
-
-The highest layer, where credibility, relevance, and value combine to create experiences that feel human. Feelings cannot be faked — they emerge naturally when every other layer is strong.
-
-### 5.1 Desirable
-
-**Definition:** The emotional pull that keeps people coming back. Clarity + craft + character producing a product that feels worth using again. Not decoration — fit and finish in service of the goal.
-
-**Key questions:** Does visual design make the task easier? Does copy sound like a helpful human? Are alignment, states, and components tight and consistent? Does motion guide attention calmly (under ~500ms)?
-**Signal types:** Attitudinal (satisfaction, desirability, sentiment, trust), Behavioral (retention, completion, time on task).
-**Example metrics:** Satisfaction, Desirability, Sentiment, Trust, Retention/Return Rate, Completion Rate.
-**Common failure:** Functional but flat. Inconsistent states, robotic copy, decorative motion, generic "Success" toasts.
-
-### 5.2 Delightful
-
-**Definition:** Care you can feel. Supports the goal, reduces effort, and adds small moments that lift the mood without getting in the way. Clarity plus craft.
-
-**Key questions:** Does delight serve the outcome (not block it)? Is pace calm and the flow smooth? Is feedback clear and positive? Is motion purposeful, not decorative?
-**Signal types:** Attitudinal (satisfaction, desirability, sentiment), Behavioral (completion, retention).
-**Example metrics:** Satisfaction, Desirability, Sentiment, Completion Rate, Time on Task, Retention.
-**Common failure:** Confetti for routine actions; motion that distracts; "fun" copy in stressful steps like payment or recovery.
-
-### 5.3 Engaging
-
-**Definition:** Steady interest with a purpose. A clear value loop, small wins that build momentum, and a comfortable rewarding pace.
-
-**Key questions:** Is the value loop clear (what users get each session and why to come back)? Are goals and progress visible? Do users reach a fast first win? Are reminders thoughtful, not spammy?
-**Signal types:** Behavioral (retention, completion, return rate), Attitudinal (satisfaction, desirability).
-**Example metrics:** Retention/Return Rate, Completion Rate, Time on Task, Satisfaction, Desirability.
-**Common failure:** Streaks for streaks' sake; "engagement" via dark patterns; reminders that ping but don't deliver value.
-
-### 5.4 Empowering
-
-**Definition:** Confidence in action. Clear control, visible consequences, easy try-learn-recover. Beginners succeed on day one; experts work at full speed.
-
-**Key questions:** Is action clear and outcome obvious? Are consequences previewed before commit? Are undo, drafts, and version history available? Does power scale with skill?
-**Signal types:** Behavioral (completion, error recovery, time on task), Attitudinal (trust, satisfaction).
-**Example metrics:** Completion Rate, Success Rate, Error Rate, Error Recovery Rate, Trust, Satisfaction.
-**Common failure:** Every change feels risky; no preview before commit; advanced users can't go faster.
-
----
-
-## Quick checklist
-
-1. List your top 3–5 user needs.
-2. Pin each need to a category and a specific need type.
-3. Match each to at least one metric.
-4. Run a test to capture signals.
-5. Share the evidence with your team.
-6. Revisit and refine as users evolve.
-
-If you can't list three concrete needs tied to a specific need type and a metric, you're not done.
-
 ## Failure modes
 
 These are common ways this skill goes wrong in practice:
@@ -266,10 +363,4 @@ These are common ways this skill goes wrong in practice:
 - **Treating every need as equally weighted.** Picking 6+ needs for one project guarantees none get served well. Pick 1–2 primary needs per initiative and let the rest serve as guardrails.
 - **Skipping the credibility category.** Trust needs (Credible, Secure, Reliable, Intuitive) often go unnamed until users churn. They don't show up in feature requests; they show up in retention and trust metrics.
 
-## Related key terms
-
-- **Five User-Need Categories** — Basics, Trust, Personal, Impact, Feelings.
-- **22 Individual User-Need Types** — Usable, Useful, Findable, Accessible · Credible, Secure, Reliable, Intuitive · Inclusive, Adaptable, Connected, Insightful · Valuable, Sustainable, Efficient, Scalable · Desirable, Delightful, Engaging, Empowering.
-- **Needfinding** — Stanford-born practice for surfacing real (not stated) needs.
-- **Signal** — a measurable, trustworthy piece of evidence. The unit of credibility in Glare.
-- **Want masquerading as a need** — stated importance with no behavioral follow-through.
+<!-- /ADDED -->
