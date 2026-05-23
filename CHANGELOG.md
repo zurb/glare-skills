@@ -1,5 +1,69 @@
 # Glare Marketplace Changelog
 
+## 3.3.0 — 2026-05-22 (6-doc template — User Needs full rebuild)
+
+User Needs becomes the first skill on the **6-doc template** — Bryan added two new sections (Decisions, Examples) and refreshed the original four (Overview, Techniques, Playbook, References) from v1.3 → v1.4. This is the second iteration of the pilot pattern established in v3.2.0.
+
+### What changed
+
+**`glare-define-user-needs` refreshed to v3.3.0**
+
+The skill's `reference.md` now has 6 DERIVED sections instead of 4, sourced from Bryan's v1.4 Drive docs:
+
+| Section | Source | What changed |
+|---|---|---|
+| **Overview** | User Needs, Overview v1.4 (refreshed) | Adds explicit 6-section structure table; tightened prose on "Turning data into user understanding"; "User Needs Across Teams" expanded |
+| **Techniques** | User Needs, Techniques v1.4 (refreshed) | New **Characteristics of Strong vs Weak User Needs** section; new **From User Needs to Measurable Signals** section; new **Connecting Techniques to the Playbook** handoff |
+| **Playbook** | User Needs, Playbook v1.4 (refreshed) | Added **Example User Need Summary** short-form output; added **three prioritization questions** for multiple-needs cases (blocking / evidence / business outcome) |
+| **References** | User Needs, References v1.4 (refreshed) | Replaced per-need bullets with **Needs at a Glance** tables — each of the 20 needs now has a core behavioral signal + primary UX metrics; added **How the Needs Work Together** explaining how Basics cascade, Trust+Personal interact, Impact+Feelings depend on lower layers |
+| **Decisions** | User Needs, Decisions v1.4 (NEW) | 8 situation-based entries with "what to do" guidance + quick reference table — designed as the **front door** for "I'm stuck, where do I start in User Needs?" |
+| **Examples** | User Needs, Examples v1.4 (NEW) | 5 worked examples (Useful · Reliable · Insightful · Efficient · Desirable), each showing Situation → Inputs → Hunch → What's not yet measured → What this orients → Decision. Plus a 5-row **Pattern Library** for AI calibration and a **Near-Miss** showing the cost of skipping Collecting/Patterns after a Hunch is formed |
+
+Preserved at the end: `ADDED` regions for **When to use** and **Failure modes** (refreshed with new Decisions + Examples guidance).
+
+### Bug fixes
+
+- **22 → 20 needs.** Earlier versions of the skill described "22 individual need types." The canonical count is **20** (Basics 4 · Trust 4 · Personal 4 · Impact 4 · Feelings 4). Fixed throughout `SKILL.md` description, body, and `reference.md`.
+
+### Skill description triggers updated
+
+The skill's description now fires on the new vocabulary: `"worked examples"`, `"pattern library"`, `"near-miss"`, `"picking which part of User Needs to apply to a situation"`. This ensures Decisions and Examples actually pull the skill into context when the user describes those situations.
+
+### Source manifest
+
+`SKILL.md` frontmatter now lists 6 source IDs (was 4):
+
+```yaml
+sources:
+  - 1YBZeC...  Overview v1.4
+  - 15P4dY...  Techniques v1.4
+  - 1VrZ9k...  Playbook v1.4
+  - 1l6QiT...  References v1.4
+  - 1SlEfU...  Decisions v1.4 (NEW)
+  - 1fZw7v...  Examples v1.4 (NEW)
+```
+
+All 6 IDs in the manifest match the 6 `DERIVED FROM` markers in `reference.md` — verified by grep diff.
+
+### Pattern this establishes
+
+The v3.2.0 pilot proved that explicit inputs/outputs in a Playbook section makes skills produce more useful output. v3.3.0 extends that with two more roles:
+
+- **Decisions** is the **router** — given a plain-language stuck situation, it points the user to the right part of the block before they read anything else
+- **Examples** is the **calibration layer** — worked examples model what good output looks like, the Pattern Library compresses that for AI use, and the Near-Miss shows what failure looks like when validation is skipped
+
+When the remaining 3 Define blocks (Audience, Collecting, Patterns) get their full 6-doc sets shipped, they'll follow the same pattern.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `3.3.0`
+- Skill count unchanged: 60
+- 59 skills still on the v3.1.0 audit-driven structure; 1 skill on the v3.3.0 six-doc template
+- `glare-marketplace-core` package also bumped 3.1.0 → 3.3.0
+- Note: `glare-packages/glare-full` (2.1.0) and `glare-packages/glare-decision-map` (2.0.0) received the file content but their package manifests were left at v2.x — those bundles are multiple majors behind and need a separate sync or retirement decision
+
+---
+
 ## 3.2.0 — 2026-05-17 (4-doc template pilot — User Needs)
 
 First skill on Bryan's new 4-doc template (Overview / Techniques / Playbook / References). This establishes the structural pattern that will scale to all 16 blocks of the framework once Bryan finishes shipping the remaining 4-doc sets.

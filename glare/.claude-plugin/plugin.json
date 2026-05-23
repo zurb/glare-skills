@@ -1,6 +1,6 @@
 {
   "name": "glare",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "ZURB / Helio's Glare framework v3 — 60 skills across 6 components (Getting Started + Decision Map + Design Review + UX Metrics + Design Signals + Design Assessment) plus a master orchestrator skill. Includes the canonical 28 UX metrics library with full per-metric pages.",
   "author": {
     "name": "ZURB"
