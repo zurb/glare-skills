@@ -1,10 +1,14 @@
 # User Needs — Reference
 
 **Block:** Define · User Needs
-**Template:** 6-doc (Overview · Techniques · Playbook · References · Decisions · Examples) — rebuilt 2026-05-22 from v1.4 source docs
+**Template:** 7-doc (Overview · Techniques · Playbook · References · Decisions · Examples · Agent Operations) — rebuilt 2026-05-22 from v1.4 source docs
 **Source last synced:** 2026-05-22
 
-This skill follows the 6-section block template Bryan established for User Needs in v1.4. The four original sections — Overview, Techniques, Playbook, References — were rev'd from v1.3 to v1.4. Two new sections — **Decisions** and **Examples** — were added. Sections sourced from Drive docs are marked `DERIVED`; sections added by the skill-builder (When to use, Failure modes) are marked `ADDED`.
+This file contains the **6 practitioner sections** of the User Needs block (Overview, Techniques, Playbook, References, Decisions, Examples). The 7th section — **Agent Operations** — is split into its own file (`agent-operations.md`) because it's a runtime contract for AI Skills, not practitioner reference content. See `SKILL.md` for the file-loading order.
+
+Sections sourced from Drive docs are marked `DERIVED`; sections added by the skill-builder (When to use, Failure modes) are marked `ADDED`.
+
+> **Note on Bryan's v1.4 Overview doc:** the section table in the source Overview lists "Agent Operations" in the slot where "Decisions" used to be, implying a 6-section structure with AO replacing Decisions. The skill keeps both because they serve different audiences (Decisions = practitioner router; Agent Operations = Skill runtime contract) and have non-overlapping content. If the canonical framework decision is to deprecate Decisions, that's a one-line edit to remove the Decisions section below.
 
 ---
 
@@ -16,16 +20,19 @@ User Needs help product and design teams understand what users are actually tryi
 
 User needs act as operational anchors that help teams **interpret user behavior, evaluate workflows, guide measurement, compare concepts, and connect design decisions to business outcomes.**
 
-### The six sections of this block
+### The seven sections of this block
 
-| Section | Purpose |
-|---|---|
-| **Overview** | Explains the core ideas, purpose, and role of User Needs inside the framework |
-| **Techniques** | Covers needfinding methods, interpretation approaches, and ways of recognizing patterns |
-| **Playbook** | Provides operational workflows, prompts, inputs, outputs, and execution guidance |
-| **References** | Contains reusable definitions, behavioral examples, and per-need lookup material |
-| **Examples** | Provides worked examples and a pattern library for practitioners and AI-assisted workflows |
-| **Decisions** | Guides which next step to take based on evidence strength, friction type, and team context |
+Six practitioner sections live in this file; **Agent Operations** is split into `agent-operations.md` because it's Skill runtime contract, not practitioner reference.
+
+| Section | File | Purpose |
+|---|---|---|
+| **Overview** | `reference.md` | Explains the core ideas, purpose, and role of User Needs inside the framework |
+| **Techniques** | `reference.md` | Covers needfinding methods, interpretation approaches, and ways of recognizing patterns |
+| **Playbook** | `reference.md` | Provides operational workflows, prompts, inputs, outputs, and execution guidance |
+| **References** | `reference.md` | Contains reusable definitions, behavioral examples, and per-need lookup material |
+| **Examples** | `reference.md` | Provides worked examples and a pattern library for practitioners and AI-assisted workflows |
+| **Decisions** | `reference.md` | Guides practitioners to the right part of the block based on the situation they're in |
+| **Agent Operations** | `agent-operations.md` | Runtime contract for AI Skills — output schema, confidence labels, input minimums, escalation triggers, guardrails |
 
 ### Why teams get stuck without it
 

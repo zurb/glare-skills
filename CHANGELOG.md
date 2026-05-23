@@ -1,5 +1,80 @@
 # Glare Marketplace Changelog
 
+## 3.4.0 — 2026-05-22 (7th doc — Agent Operations split into its own file)
+
+Bryan added a 7th source doc to the User Needs block: **Agent Operations**, a runtime contract written for AI Skills (not practitioners). Rather than fold it into `reference.md` alongside the other six sections, the skill splits it into a new file `agent-operations.md`. The highest-leverage rules are also duplicated into `SKILL.md` so they bind on every invocation, even without consulting the file.
+
+### Why split
+
+The other six sections (Overview, Techniques, Playbook, References, Decisions, Examples) are practitioner reference content — humans read them, discuss them, apply them. Agent Operations is operating instructions for the Skill itself — output schema, confidence vocabulary, input minimums, escalation triggers, guardrails. Different audience, different content type, different load discipline. Splitting it into a separate file makes the architectural distinction explicit and prevents the runtime contract from getting buried inside practitioner content.
+
+### New file layout for `glare-define-user-needs`
+
+```
+glare-define-user-needs/
+├── SKILL.md              ← always loaded; carries promoted AO rules
+├── reference.md          ← 6 practitioner sections
+└── agent-operations.md   ← NEW; AI Skill runtime contract
+```
+
+### What got promoted into SKILL.md
+
+The Operating Rules section of `SKILL.md` now carries the binding rules so they load on every invocation regardless of whether `agent-operations.md` is consulted:
+
+- **Required inputs minimums** — ≥2 input types + ≥1 behavioral signal for a Hunch; ≥3 input types + repeated behavioral evidence for an emerging need; cross-source reinforcement for a validated pattern
+- **Output Contract** — the 10-field Primary User Need Output schema, in order
+- **Confidence labels** — the 6-state vocabulary (Weak signal → Possible pattern → Hunch → Emerging need → Recurring signal → Validated pattern); the Skill must not invent alternatives or upgrade for cleaner results
+- **Prohibited output behaviors** — recommending solutions before Hunch validation, inferring intent without behavioral evidence, flattening conflicting signals, hiding ambiguity, overstating confidence, collapsing distinct needs
+- **Escalation triggers** — when to stop and surface to a human rather than auto-resolve
+
+The full prescriptive detail (Runtime Flow, Classification Constraints, Transition Logic table, Failure Modes table, Ambiguity Handling, Guardrails, Multi-Agent Workflows, Human Judgment scope) lives in `agent-operations.md`.
+
+### What this controls vs what it doesn't
+
+Mechanically enforceable (will measurably change Skill output):
+- Output schema — Skill will use the 10 fields in order
+- Confidence vocabulary — Skill will use the 6 labels rather than inventing alternatives
+- Input minimums + routing to Collecting on thin evidence
+- Escalation triggers — Skill stops and surfaces uncertainty rather than producing an output it shouldn't
+
+Aspirational (depends on Skill judgment):
+- "Preserve evidence visibility," "preserve signal separation," "do not optimize for narrative smoothness" — only land if the Skill has multiple pieces of conflicting evidence in context AND chooses to keep them visible
+
+The intended verification path: pick a real scenario (one of the 5 worked examples in Examples is a good candidate), run it through the Skill with and without AO loaded, diff the outputs. The interesting question is whether the difference is *the kind of difference Bryan wants* — more structured, more calibrated, less likely to over-confidently jump to a need without enough signals.
+
+### Overview doc inconsistency surfaced
+
+Bryan's v1.4 Overview doc shows a 6-section table with Agent Operations in the slot where Decisions used to be, implying AO replaces Decisions. The skill keeps both because they serve different audiences (Decisions = practitioner router; AO = Skill runtime contract) and have non-overlapping content. If the canonical framework decision is to deprecate Decisions, that's a one-line edit to remove the Decisions section from `reference.md`. Flagged in `reference.md` header for visibility.
+
+### Source manifest
+
+`SKILL.md` frontmatter now lists 7 source IDs (was 6):
+
+```yaml
+sources:
+  - 1YBZeC...  Overview v1.4
+  - 15P4dY...  Techniques v1.4
+  - 1VrZ9k...  Playbook v1.4
+  - 1l6QiT...  References v1.4
+  - 1SlEfU...  Decisions v1.4
+  - 1fZw7v...  Examples v1.4
+  - 1NtO0P...  Agent Operations v1.4 (NEW)
+```
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `3.4.0`
+- Skill count unchanged: 60
+- 59 skills still on the v3.1.0 audit-driven structure; 1 skill on the v3.4.0 seven-doc + split-file template
+- `glare-marketplace-core` package also bumped 3.3.0 → 3.4.0; 5 sibling skill copies also synced
+- `glare-packages/glare-full` (2.1.0) and `glare-packages/glare-decision-map` (2.0.0) still left at v2.x — multiple majors behind, sync/retire decision still pending
+
+### Description trigger update
+
+`SKILL.md` description now fires on agent-ops vocabulary: `"agent operations and AI Skill runtime contract"`, `"output schema"`, `"confidence labels"`, `"input minimums"`, `"escalation triggers"`. Length verified under the 1024-char limit.
+
+---
+
 ## 3.3.0 — 2026-05-22 (6-doc template — User Needs full rebuild)
 
 User Needs becomes the first skill on the **6-doc template** — Bryan added two new sections (Decisions, Examples) and refreshed the original four (Overview, Techniques, Playbook, References) from v1.3 → v1.4. This is the second iteration of the pilot pattern established in v3.2.0.

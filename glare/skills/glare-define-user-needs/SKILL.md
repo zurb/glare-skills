@@ -1,8 +1,8 @@
 ---
 name: glare-define-user-needs
-description: Use this skill when the user is working on the User Needs block of the Define area — naming what users actually need before any solution. Triggers — "what user need does this solve," "is this a want or a need," needfinding, the five user-need categories (Basics, Trust, Personal, Impact, Feelings) and the 20 individual need types, distinguishing wants from needs ("faster horse" vs "faster travel"), tying a need to a metric type, foundational vs aspirational needs, credibility gaps, reliability under load, value vs activity, desirability and emotional pull, picking which part of User Needs to apply to a situation, worked examples and pattern library, near-miss when teams skip validation. Do NOT use when the question is about who to test with (use `glare-define-audience`), how to gather evidence (use `glare-define-collecting`), or which numbers to track (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the full Decision Map, use `glare-decision-map`.
-version: 3.3.0
-source_doc_version: v1.4 (6-doc template — Overview + Techniques + Playbook + References + Decisions + Examples)
+description: Use this skill when the user is working on the User Needs block of the Define area — naming what users actually need before any solution. Triggers — "what user need does this solve," "is this a want or a need," needfinding, the five user-need categories (Basics, Trust, Personal, Impact, Feelings) and the 20 individual need types, distinguishing wants from needs ("faster horse" vs "faster travel"), tying a need to a metric type, credibility gaps, desirability and emotional pull, picking which part of User Needs to apply to a situation, worked examples and pattern library, near-miss when teams skip validation, agent operations runtime contract (output schema, confidence labels, escalation triggers). Do NOT use when the question is about who to test with (use `glare-define-audience`), how to gather evidence (use `glare-define-collecting`), or which numbers to track (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the full Decision Map, use `glare-decision-map`.
+version: 3.4.0
+source_doc_version: v1.4 (7-doc template — Overview + Techniques + Playbook + References + Decisions + Examples + Agent Operations)
 last_rebuilt: 2026-05-22
 
 sources:
@@ -30,6 +30,10 @@ sources:
     title: Glare | Define, User Needs, Examples v1.4
     drive_url: https://docs.google.com/document/d/1fZw7vIs2yRLVGN-7pxdr0NEZ4Jc2PIei-j3kvRqzBio/edit
     last_synced: 2026-05-22
+  - doc_id: 1NtO0POY1yBSyalJUkRbjt16ESjRbVp0t5kFcv3acdQQ
+    title: Glare | Define, User Needs, Agent Operations v1.4
+    drive_url: https://docs.google.com/document/d/1NtO0POY1yBSyalJUkRbjt16ESjRbVp0t5kFcv3acdQQ/edit
+    last_synced: 2026-05-22
 ---
 
 You are helping the user work the **User Needs** block of the Decision Map's **Define** area — anchoring design in what users are actually trying to accomplish before solutions, usability fixes, metrics, or roadmaps.
@@ -46,50 +50,109 @@ The five layers, in order:
 4. **Impact** — "Does it make a difference?" → Valuable, Sustainable, Efficient, Scalable
 5. **Feelings** — "Does it inspire me?" → Desirable, Delightful, Engaging, Empowering
 
-## Read the reference first
+## Files to read
 
-Before answering, read `reference.md`. It contains the full 6-section block template — **Overview, Techniques, Playbook, References, Decisions, Examples** — derived from Bryan's v1.4 source docs, plus the When-to-use and Failure-modes layers.
+This skill ships two files alongside `SKILL.md`. Read them in this order:
 
-The six sections do different jobs:
+1. **`agent-operations.md` first.** Runtime contract for working with User Needs — output schema, confidence labels, input minimums, transition rules, escalation triggers, guardrails. These are operating instructions, not reference content. The highest-leverage rules are duplicated into the "Operating rules" section below so they bind even without consulting the file; the full prescriptive detail lives in `agent-operations.md`.
+2. **`reference.md` second.** Six practitioner sections — Overview, Techniques, Playbook, References, Decisions, Examples — plus the When-to-use and Failure-modes layers. This is the content the practitioner is working *with*; it's what the team reads and discusses. The Skill consults it to ground classifications, find the right pattern entry, pull a worked example, or route a stuck user via Decisions.
 
-- **Overview** — what user needs are and why teams get stuck without them
-- **Techniques** — how to interpret behavior, wants-vs-needs, needfinding methods, pattern recognition, characteristics of strong vs weak need statements
-- **Playbook** — inputs, prompt structure, the primary user-need output table, prioritizing when multiple needs emerge
-- **References** — the 20 individual needs at a glance (core behavioral signal + primary UX metrics), how needs interact across layers, when to use the deeper per-need pages
-- **Decisions** — 8 situation-based entries that route the user to the right part of the block based on what they're actually stuck on
-- **Examples** — 5 worked examples (Useful · Reliable · Insightful · Efficient · Desirable), a pattern library for AI calibration, and a near-miss showing what happens when a team skips validation
+If the user has only described their situation in a sentence or two, start by routing them through the **Decisions** section of `reference.md` — match their situation to one of the 8 entries before doing anything else.
 
-If the user has only described their situation in a sentence or two, **start by routing them through Decisions** — match their situation to one of the 8 entries before doing anything else.
+## Operating rules
+
+These are the binding rules from `agent-operations.md`. They apply on every invocation regardless of whether the full file is read.
+
+### Required inputs — what's needed before classifying
+
+| To produce... | Need at minimum |
+|---|---|
+| A Hunch | ≥2 distinct input types; ≥1 behavioral signal; workflow context |
+| An emerging need | ≥3 distinct input types; repeated behavioral evidence across users/sessions; ≥1 measurable signal |
+| A validated pattern | Cross-source reinforcement (behavioral + attitudinal + performance); measurable recurrence over time; competing explanations considered |
+
+If minimums are not met, **route to Collecting** instead of classifying.
+
+### Output Contract — the Primary User Need Output schema
+
+Every user-need output uses these 10 fields, in this order:
+
+1. **Category** (one of the five layers)
+2. **User Need** (one of the 20)
+3. **Summary**
+4. **Evidence**
+5. **User Behaviors**
+6. **User Roadblocks**
+7. **Why It Matters**
+8. **Why It Fails**
+9. **Suggestions**
+10. **UX Metrics**
+
+The full content for each field, plus the short-form summary format and the Multiple User Needs summary table, are specified in the Playbook section of `reference.md`.
+
+### Confidence labels — required vocabulary
+
+Every output carries one of these six labels. Do not invent alternatives.
+
+- **Weak signal** — insufficient evidence; route to Collecting
+- **Possible pattern** — early directional signal from 1-2 inputs; flag as speculative
+- **Hunch** — repeated but incomplete evidence; name the need, state what would confirm/refute
+- **Emerging need** — consistent multi-source evidence; produce structured output, flag remaining gaps
+- **Recurring signal** — measurable recurring behavior; produce full output, route to Signals or Metrics
+- **Validated pattern** — cross-source reinforcement with measurable recurrence; produce full output, route to Experiments or Reviews
+
+Do not upgrade confidence to produce a cleaner result.
+
+### Prohibited output behaviors
+
+- Recommending solutions before the Hunch is validated
+- Inferring emotional intent without behavioral evidence
+- Flattening conflicting signals into a single clean narrative
+- Hiding ambiguity to produce a more confident-sounding output
+- Overstating confidence relative to the evidence available
+- Collapsing multiple distinct needs into one category unnecessarily
+
+### Escalation — when to stop and surface to a human
+
+Escalate (don't auto-resolve) when:
+
+- Evidence remains contradictory after Collecting
+- Confidence stays below Hunch threshold after ≥2 input types are present
+- Multiple need interpretations remain equally plausible
+- Business impact is high and evidence quality is weak
+- The only available input is a stakeholder assumption
+
+Escalation outputs must preserve uncertainty visibly, name the unresolved interpretations, identify what evidence is missing, and recommend next Collecting steps — not default to a direction.
 
 ## How to apply
 
-1. **Match the situation first.** Use the Decisions section to pick where the work actually starts. The eight situations cover the most common stuck-points: can't agree on what signals mean, can't locate the problem, reacting to feature requests, need statement feels weak, multiple needs at once, stakeholder alignment, measurement, and AI-Skill setup.
+1. **Match the situation first.** Use the Decisions section of `reference.md` to pick where the work actually starts. The eight situations cover the most common stuck-points: can't agree on what signals mean, can't locate the problem, reacting to feature requests, need statement feels weak, multiple needs at once, stakeholder alignment, measurement, and AI-Skill setup.
 
-2. **Walk the layers in order when diagnosing.** Start at Basics and stop at the first layer that's broken. Higher layers can't compensate for a lower-layer gap. Diagnose where the experience first breaks down, fix that, then move up.
+2. **Check inputs against the minimums above** before classifying. If thin, route to Collecting and say so explicitly.
 
-3. **Pin the user's situation to a specific need type.** "Make it easier to find" → Findable (Basics). "It feels generic" → Inclusive (Personal). "Users don't return" → Engaging (Feelings) — but only after Basics and Trust check out.
+3. **Walk the layers in order when diagnosing.** Start at Basics and stop at the first layer that's broken. Higher layers can't compensate for a lower-layer gap.
 
-4. **Run needfinding before naming the need.** Distinguish needs from wants ("faster horse" → "faster travel"), observe before you ask, use multiple sources (interviews, surveys, behavioral tests), and capture contradictions where words and behavior diverge.
+4. **Pin the user's situation to a specific need type.** "Make it easier to find" → Findable (Basics). "It feels generic" → Inclusive (Personal). "Users don't return" → Engaging (Feelings) — but only after Basics and Trust check out.
 
-5. **Apply the want-vs-need validation rule** — *if users say they need it but ignore it in practice, it's a want masquerading as a need.* Always check stated need against observed behavior before committing.
+5. **Run needfinding before naming the need.** Distinguish needs from wants ("faster horse" → "faster travel"), observe before you ask, use multiple sources, capture contradictions.
 
-6. **Check the need statement against the strong/weak criteria.** A strong user need is specific enough to guide decisions, broad enough to remain useful across concepts, grounded in observable behavior, connected to measurable signals, and focused on outcomes instead of interfaces. A weak one names a feature, assumes a solution, or can't be validated with evidence.
+6. **Apply the want-vs-need validation rule** — *if users say they need it but ignore it in practice, it's a want masquerading as a need.* Check stated need against observed behavior before committing.
 
-7. **When multiple needs emerge, apply the three prioritization questions.** Which need is blocking the others? Which has the strongest evidence (multiple signal types)? Which connects most directly to a measurable business outcome? Foundational needs usually need to be resolved before higher-layer needs hold.
+7. **Check the need statement against the strong/weak criteria** in the Techniques section of `reference.md`.
 
-8. **Use the worked examples to calibrate output quality.** The 5 examples in the Examples section model what a properly framed Hunch looks like *before* measurement exists — including what's not yet measured, what it orients next (Audience, Collecting, Patterns), and what would confirm or refute it. The Near-Miss shows the common failure: treating two interview quotes as confirmation and jumping to redesign.
+8. **When multiple needs emerge, apply the three prioritization questions** from the Playbook: which is blocking the others, which has the strongest evidence, which connects most directly to a measurable business outcome.
 
-9. **Map each named need to a metric type so it becomes testable.** Use the "Needs at a Glance" tables in `reference.md` — each of the 20 needs lists a core behavioral signal and primary UX metrics. Findable → first-click success and comprehension; Reliable → success rate at peak and error recovery; Valuable → retention and intent-to-reuse; Desirable → satisfaction and sentiment.
+9. **Use the worked examples in `reference.md`** to calibrate output quality. The 5 examples model what a properly framed Hunch looks like *before* measurement exists. The Near-Miss shows the common failure: treating two interview quotes as confirmation and jumping to redesign.
 
-10. **Close the loop.** List 3–5 user needs mapped to specific need types → match each to a metric → run a test → share the evidence → revisit. If the user can't list three concrete needs tied to types and metrics, they're not done.
+10. **Produce the output using the 10-field schema above**, label the confidence state, and route to the next block per the Transition Logic table in `agent-operations.md`.
 
-## What's new in v1.4
+## What's new in v3.4.0
 
-- **Decisions** is a new entry point. Treat it as the router for the whole block — if the user describes a stuck situation in plain language, match it to one of the 8 entries before pulling in Overview, Techniques, Playbook, or References.
-- **Examples** is the calibration layer. Five worked examples (one per layer) show how to form a Hunch before measurement exists; a Pattern Library compresses that into tight input-output pairs for AI use; the Near-Miss shows the cost of skipping Audience/Collecting/Patterns after the Hunch is formed.
-- **20 needs, not 22.** Earlier versions of this skill listed 22. The canonical count is 20 (Basics 4 · Trust 4 · Personal 4 · Impact 4 · Feelings 4).
-- **Prioritization rule** for multiple needs now lives in the Playbook (which is blocking, which has the strongest evidence, which connects most directly to a business outcome).
-- **Strong vs weak user needs** characteristics are now formalized in Techniques.
+- **Agent Operations** added as a 7th source doc and split out into its own file (`agent-operations.md`). The other six practitioner sections remain in `reference.md`.
+- **Operating rules section** added to this file so the binding rules (input minimums, output schema, confidence labels, prohibited behaviors, escalation triggers) bind on every invocation regardless of whether `agent-operations.md` is read.
+- **Files to read** instruction updated to load `agent-operations.md` before `reference.md`.
+
+Earlier v1.4 changes (carried over from v3.3.0): Decisions added as a router for the block; Examples added with 5 worked examples + Pattern Library + Near-Miss; canonical 20-need count locked in (was incorrectly 22 in older revisions); strong-vs-weak need-statement characteristics formalized; three-question prioritization rule added.
 
 ## Handoffs
 
