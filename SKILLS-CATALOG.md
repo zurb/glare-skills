@@ -30,7 +30,7 @@ A reverse index. If you can name your symptom, this table points to one skill. (
 | "Designs got pushed back without clear feedback" | `glare-review-ground` |
 | "Team can't agree on what we're solving" | `glare-define-user-needs` |
 | "Designers, PMs, engineers see different problems" | `glare-define-audience` |
-| "We keep seeing the same situation across projects" | `glare-define-patterns` |
+| "We keep seeing the same situation across projects" | `glare-define-situations` *(replaces deprecated `glare-define-patterns`)* |
 | "We're picking metrics and they're not landing" | `glare-define-ux-metrics` |
 | "Which UX metric should we even pick" | `glare-ux-metrics` |
 | "Our metrics don't work together" | `glare-ux-metrics-stack` |

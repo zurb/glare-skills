@@ -1,58 +1,41 @@
 ---
 name: glare-define-patterns
-description: Use this skill when the user is working on the Patterns block of the Define area — recognizing recurring situations before weak decisions gain momentum. Triggers — "patterns," "pattern library," "we keep seeing the same problem," "engagement up but trust down," "completion high but support tickets rise," "AI produces more but we trust it less," "situations create meaning." Also use for the four pattern types — User Patterns (hesitation, abandonment, comparison paralysis), Workflow Patterns (review cycles, late validation, siloed optimization), Signal Patterns (engagement up while trust down, usability up while retention weakens), AI Workflow Patterns (faster output, weaker evaluation, overproduction). Do NOT use when naming user needs (use `glare-define-user-needs`), picking audience (`glare-define-audience`), gathering evidence (`glare-define-collecting`), or picking metrics (`glare-define-ux-metrics`). For broad Define, use `glare-define`. For the Decision Map, use `glare-decision-map`.
-version: 3.1.0
-source_doc_version: v1.0 (Patterns) — created 2026-05-11
-last_rebuilt: 2026-05-13
+description: DEPRECATED — Patterns block was archived in Glare v3.5.0 and replaced by Situations. Use `glare-define-situations` instead. This skill remains as a redirect for legacy references. The Situations block keeps the core idea (recurring conditions create meaning around behavior) and extends it with the four lenses (By Type, By Time, By Stage, By Engagement), the 9 named situation types, the four-part situation structure (trigger / goal / friction / what success means), and the Primary Situation Output schema. Triggers — "patterns," "pattern library," "we keep seeing the same problem," "engagement up but trust down," "completion high but support tickets rise," "situations create meaning." Do NOT continue working in Patterns. Route to `glare-define-situations`.
+version: 3.5.0
+source_doc_version: DEPRECATED — superseded by Situations (folder 12f7DnSg-mH41YnjQrEOsL-sKBqhnnVKf). Patterns Overview v1.0 archived in Situations/archives.
+last_rebuilt: 2026-05-26 (deprecated)
+deprecated: true
+replaced_by: glare-define-situations
 ---
 
-You are helping the user work the **Patterns** block of the Decision Map's **Define** area — the fifth and newest building block, which helps teams recognize recurring situations before weak decisions gain momentum.
+# DEPRECATED — Use `glare-define-situations`
 
-## Core idea
+The **Patterns** block was archived by Bryan in Glare v3.5.0 and replaced with the new **Situations** block. The Patterns Overview v1.0 source doc now sits inside the Situations archives folder.
 
-Patterns sit alongside User Needs, Audience, Collecting Data, and UX Metrics inside Define. Most teams already have dashboards, surveys, analytics, research, and now AI-generated outputs — but raw numbers rarely explain *why* users hesitate, *what* created the friction, or *why* the same breakdown keeps repeating. A pattern is a recurring situation where similar conditions repeatedly produce similar behaviors and signals. Patterns reconnect metrics to the situation surrounding the behavior, so the team stops reacting to isolated data points and starts understanding the conditions creating the behavior in the first place. The same metric (e.g., long session duration) can mean strong engagement, confusion, hesitation, comparison behavior, or cognitive overload — situations create meaning, and patterns help teams read that situation accurately. This matters more now because AI is generating ideas, experiments, and outputs faster than teams can evaluate them; patterns slow the team down just enough to interpret the signal before momentum scales a weak decision.
+**Route the user to `glare-define-situations`.**
 
-## Read the reference first
+## What carried over to Situations
 
-Before answering substantive questions, read `reference.md` — full compressed content of the Patterns block, including: what a pattern is (and isn't); how situations create meaning; the four pattern types (User, Workflow, Signal, AI Workflow) with concrete examples for each; how patterns connect to UX metrics across the four metric lenses (Type, Stage, Time, Engagement); and why patterns matter more in an AI-accelerated workflow.
+The core Patterns idea — recurring conditions create meaning around behavior — is preserved and extended in Situations. Situations adds:
 
-## How to apply
+- The **four lenses** (By Type, By Time, By Stage, By Engagement) for surfacing recurring conditions from collected signals
+- The **9 named situation types** (Comprehension breakdown, Trust gap, Effort mismatch, Relevance failure, Habit formation gap, Expectation mismatch, Decision loop, Organizational blind spot, Signal credibility breakdown)
+- The **four-part situation structure** every named situation must have: trigger, what users are trying to do, what stands in their way, what success means here
+- The **Primary Situation Output** schema (11 fields) — the standard output that hands off to Measure
+- The **Observe → Interpret → Name** cadence
 
-1. **Diagnose whether the user is describing a metric, a finding, or a pattern.** A metric is a number. A finding is what one number means in one moment. A pattern is the recurring situation where similar conditions repeatedly produce similar behaviors and signals across experiences. If they're stuck on a single dashboard reading, help them widen the frame.
+## What changed
 
-2. **Pin the situation, not just the behavior.** Ask what surrounding conditions (pressure, uncertainty, goals, workflows, habits, incentives, emotional state) shape the behavior. Long session duration with high success looks nothing like long session duration with rising support tickets — same number, different situation, different decision.
+The old Patterns block organized recurring observations into four pattern types (User, Workflow, Signal, AI Workflow). Situations re-organizes the same problem space around **how to surface and name recurring conditions from collected signals** — with explicit lens convergence rules, a 9-type catalog, and a stricter output contract.
 
-3. **Match the user's description to one of the four pattern types.**
-   - **User Patterns** — hesitation during onboarding, abandoning high-effort flows, comparison paralysis, repeated misunderstanding, low-confidence purchasing.
-   - **Workflow Patterns** — endless review cycles, late validation, siloed optimization, repeated decision reopening, weak cross-functional alignment.
-   - **Signal Patterns** — engagement rises while trust declines, usability improves while retention weakens, completion increases while effort grows, AI adoption rises while confidence falls.
-   - **AI Workflow Patterns** — faster production with weaker evaluation, shallow iteration loops, overproduction without prioritization, AI-generated consistency masking weak thinking.
+The new framing is more operationally useful for AI Skills: convergence across two lenses is the named threshold for moving from "observation" to "situation."
 
-4. **Look for the tradeoff hidden inside the dashboard.** Signal Patterns specifically reveal what isolated metrics hide — one metric improves while another quietly weakens. When a user says "the numbers look great but something feels off," that's almost always a Signal Pattern.
+## How to redirect
 
-5. **Tie the pattern back to UX metrics using the four lenses.** By Type (perception vs behavior gaps), By Stage (when friction appears), By Time (leading vs lagging conditions), By Engagement (alignment and loyalty gaps). The lenses turn a pattern from a hunch into an organized read of the situation.
+If a user invokes this skill or references "Patterns" in the Glare Define context, immediately route them to `glare-define-situations`. Use language like:
 
-6. **Use patterns to slow weak decisions before they scale.** AI is increasing the volume of outputs faster than teams can evaluate them. The goal is not perfect certainty — it is stronger directional confidence while the work is still evolving. If a pattern of weak validation, shallow iteration, or overproduction is forming, name it before the next sprint ships another version of the same problem.
+> The Patterns block was replaced with Situations in v3.5.0. The new block keeps the core idea of recurring conditions but adds the four lenses (By Type, By Time, By Stage, By Engagement) and a stricter naming process. Routing to `glare-define-situations`.
 
-7. **Close the loop into Measure.** Once a pattern is named, the team should form a hunch around it ("we believe this recurring situation is caused by X, and removing X will reduce Y") and route into `glare-measure-hunches` to make it testable.
+## Note for the plugin
 
-## Handoffs
-
-- When the user shifts from "what's happening" to "what the user needs" → `glare-define-user-needs`
-- When they shift to who the signal comes from or whose voice should weigh most → `glare-define-audience`
-- When they shift to how to gather the evidence (instruments, techniques, tools) → `glare-define-collecting`
-- When they shift to which specific numbers to track → `glare-define-ux-metrics`
-- For multi-block Define questions or moving across blocks → `glare-define`
-- For the Decision Map as a whole → `glare-decision-map`
-- When a pattern is named and ready to become a falsifiable hypothesis → `glare-measure-hunches`
-- When the pattern is about signal relationships (engagement vs trust, etc.) and the user wants the broader signals frame → `glare-design-signals`, `glare-signals-quality`, `glare-signals-types`
-- When the pattern involves comparing data across versions, journeys, segments, or platforms → `glare-focus-comparing`
-- When the pattern is a workflow / decision-quality breakdown at the org level → `glare-design-assessment`
-
-## Critical rules
-
-- **A pattern is a situation, not a metric.** If you can describe it without naming surrounding conditions, it's still just a number.
-- **Situations create meaning.** The same behavior means different things in different situations — never act on a metric without the surrounding context.
-- **Patterns repeat.** A single observation is a finding. A pattern is the same finding showing up across users, flows, or cycles.
-- **Don't optimize the symptom.** When completion is high but trust is dropping, the answer is rarely "improve completion." The pattern is telling the team to look at the situation around completion, not the number itself.
-- **AI accelerates output, not understanding.** Faster generation without pattern recognition scales weak decisions faster than teams can fix them.
+This skill file remains in the marketplace as a redirect so existing references in prompts, docs, or conversation history continue to surface a useful answer. The `deprecated: true` and `replaced_by: glare-define-situations` frontmatter fields are advisory — they don't prevent the skill from being loaded, but they signal the intended migration to consumers.

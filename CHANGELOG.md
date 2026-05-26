@@ -1,10 +1,12 @@
 # Glare Marketplace Changelog
 
-## 3.5.0 — 2026-05-26 (Audience block migrated to 7-doc template)
+## 3.5.0 — 2026-05-26 (Define area: Audience + Collecting migrated; Patterns deprecated, Situations added)
 
-Second block on the 7-doc template after User Needs. **`glare-define-audience` rebuilt from v1.1 → v1.2 source docs**, including the new Agent Operations split-file pattern. This is the larger of two pending Define-area updates — Collecting (also at v1.2) and the new Situations block (v1.0) deferred to a fresh session loaded with `SKILL-BUILDING-CONTEXT.md`.
+Significant Define-area rev. Three Audience-block updates from Bryan, plus a brand-new block (Situations) that replaces the archived Patterns block. **Three skills rebuilt to v1.2 on the 7-doc template, one new skill added at v1.0, one skill deprecated.** Marketplace bumped 3.4.0 → 3.5.0 as a single release.
 
-### What changed in `glare-define-audience`
+### `glare-define-audience` v1.1 → v1.2
+
+Second block on the 7-doc template after User Needs.
 
 Major architectural rev in source docs. v1.1 was descriptive — the 4 audience voices (Project Team, Stakeholders, Customers, Participants). **v1.2 adds a parallel architectural split**: the 4 source types (Helio, Advertising, CRM, Internal Assumption), each with a different design credibility starting point.
 
@@ -44,19 +46,97 @@ The full per-attribute-type extraction tables (25 sub-attributes × Present/Miss
 
 `SKILL.md` description now fires on: `"Audience Definition Card"`, `"credibility rating"`, `"four source types"`, `"audience drift"`, `"label vs behavior"`, `"stakeholder anecdote vs customer evidence"`, `"agent operations runtime contract"`. Trimmed verbose category lists to fit under the 1024-char limit.
 
-### Pending — deferred to a fresh session
+### `glare-define-collecting` v1.1 → v1.2
 
-- **`glare-define-collecting`** — full 7-doc set ready at v1.2 (folder `1H5nRm_LlTVF8OefkWYAGPSUWmZ1Yce6N`) plus 11 per-technique pages in a `techniques/` subfolder (Card Sorting, Eye Tracking, A/B, Conversion Rate, Surveys, Heatmaps, Task Success, First Click, Time on Task, Clickstream, Web Analytics, Multivariate) and a `references/` subfolder (Research Stacks, Tools).
-- **NEW skill `glare-define-situations`** — full 7-doc set at v1.0 (folder `12f7DnSg-mH41YnjQrEOsL-sKBqhnnVKf`) plus 4 Techniques sub-variants in a `techiques/` [sic] subfolder (By Stage 468KB, By Time 99KB, By Type 7KB, By Engagement 162KB) and an empty Worksheet placeholder. Decision needed on whether to fold the 4 sub-variants into one Techniques section or split into separate files.
-- **`glare-define-patterns` deprecation.** Patterns block has been archived by Bryan — the Patterns Overview v1.0 now sits in the Situations archives folder, meaning Situations replaces Patterns. Existing `glare-define-patterns` skill needs decision: remove, redirect to `glare-define-situations`, or leave with deprecation notice. Defaulting toward "leave with deprecation notice" until confirmed.
-- **`glare-define` parent skill update** — needs to drop Patterns from sibling routing list and add Situations.
+Third block on the 7-doc template. Structural rev in source docs. v1.1 had 12 techniques as a flat list. **v1.2 organizes the 12 techniques into 5 groups** — Navigation (Card Sorting, Tree Testing), Task (First Click, Task Success Rate, Time on Task), Comparison (A/B, Multivariate, Conversion Rate), Behavior (Heatmaps, Clickstream, Web Analytics), Feedback (Surveys, Eye Tracking).
+
+| Section | Source | What it adds |
+|---|---|---|
+| **Overview** | Collecting Overview v1.2 | Define → Capture → Connect cadence formalized; Three Modes of Learning (Exploratory, Evaluative, Comparative); Four Feedback Types (View, See, Sense, Hear) with the pair-at-least-two rule; positioning Collecting between Audience and Situations |
+| **Techniques** | Collecting Techniques v1.2 | 12 techniques in 5 groups with UX metric mappings; Five-Step Usage Discipline (pick metric → choose technique → run lean → pair → share signals); Traps to Avoid |
+| **Playbook** | Collecting Playbook v1.2 | 6-row input → entry point table; full Five-Step Workflow with purpose / prompts / output / trap per step; **the 14-field Collection Brief**; Show Your Sources rule; Handoff Contract |
+| **References** | Collecting References v1.2 + `references/` subfolder (Research Stacks, Tools, folder ID `1MhJY427fy5k4viRJFDkITOTH_weRYq5g`) + `techniques/` subfolder (11 per-technique pages, folder ID `131iQFlfwSviNaXhgfqd-bBDzjEnLHPL9`) | Research Stacks organized by Usability/Effort/Satisfaction/Trust with 13 named instruments (SUS, SEQ, PURE, SUMI, CES, CASTLE, NASA-TLX, WAMMI, PSSUQ, QUIS, UEQ, UX-Lite, SUPR-Q, NPS, L-DERLY); Tools 4-axis framework with named platforms in Attitudinal/Behavioral/Performance/Specialized; 5 Design Stacks (Website, Mobile App, Product, E-commerce, Marketing) |
+| **Decisions** | Collecting Decisions v1.2 | Primary Routing Table (9 situations → next step); Collection Readiness Guide (9 minimum conditions); Step-Level Decision Guide (what to do when stuck at each of the 5 steps); Cross-Block Routing |
+| **Examples** | Collecting Examples v1.2 | 5 worked examples (Untestable question, Collecting before the question, Comparing too early, Analytics trap, Findings without sources) each with strong + near-miss versions. Plus a 6-row **Near-Miss Pattern Library** for AI calibration |
+| **Agent Operations** | Collecting Agent Operations v1.2 | Runtime Flow; required inputs per step; confidence model with explicit conditions; 14-field Output Contract with failure conditions per field; 9-row Routing Logic with Skill communication text; 4 forms of ambiguity handling (mode, technique, signal, hypothesis); 5 escalation triggers with what-the-Skill-says-vs-doesn't-say; Skill Boundaries |
+
+New file layout:
+
+```
+glare-define-collecting/
+├── SKILL.md              164 lines  ← always loaded; carries promoted AO rules
+├── reference.md          682 lines  ← 6 practitioner sections
+└── agent-operations.md   205 lines  ← Skill runtime contract
+```
+
+### NEW: `glare-define-situations` v1.0.0
+
+Brand-new skill — the 4th and final block of Define, replacing the archived Patterns block. Brings Glare's signal-interpretation surface up to a stricter operational standard with explicit lens convergence rules.
+
+| Section | Source | What it adds |
+|---|---|---|
+| **Overview** | Situations Overview v1.0/v1.1 | The 4-part situation structure (trigger / goal / friction / what success means); Situations vs User Needs (one level more concrete); Situations vs JTBD (inverts the priority — conditions ARE the unit of analysis); how patterns become situations |
+| **Techniques** | Situations Techniques v1.1 + `techiques/` [sic] subfolder | The 4 lenses (By Type, By Time, By Stage, By Engagement) with Core Question / Best Used When / What It Reveals columns; lens pairing table; what a strong situation read looks like; 4 deep-dive sub-pages referenced but not inlined (By Stage is 468KB — folded the summary, kept the detail in Drive) |
+| **Playbook** | Situations Playbook v1.1 | The 10-row input table; Observe → Interpret → Name cadence; AI prompt structure; **Primary Situation Output (11 fields)** including all 4 situation parts + lenses applied + UX metrics; multiple-situation comparison and three prioritization questions |
+| **References** | Situations References v1.0 | The **9 named situation types** with common triggers + primary lenses (Comprehension breakdown, Trust gap, Effort mismatch, Relevance failure, Habit formation gap, Expectation mismatch, Decision loop, Organizational blind spot, Signal credibility breakdown); signal-to-situation mapping; situations by product context (Onboarding, Adoption, Retention, Decision & Evaluation); 5-question situation strength checklist |
+| **Decisions** | Situations Decisions v1.0 | 8 situation-routing entries with What to do for each; Quick Reference table |
+| **Examples** | Situations Examples v1.0 | 4 worked situations (Onboarding Completion Trap, Satisfied Non-Returner, Testing Environment Gap, Stakeholder Override Loop) each with signals → lens application → named situation → near-miss; 6-row Common Traps table |
+| **Agent Operations** | Situations Agent Operations v1.1 | Runtime Flow with 8-step sequence; required inputs minimums for observation / named situation / validated situation; **5-state confidence model** (Weak signal → Possible condition → Emerging situation → Named situation → Validated situation); 11-field Output Contract; classification constraints; 8-row Failure Modes; Transition Logic; Escalation Logic; Multi-Agent Workflows architecture |
+
+New file layout:
+
+```
+glare-define-situations/
+├── SKILL.md              180 lines  ← always loaded; carries promoted AO rules
+├── reference.md          585 lines  ← 6 practitioner sections
+└── agent-operations.md   286 lines  ← Skill runtime contract
+```
+
+**Sub-variant decision:** Situations Techniques has 4 sub-page deep-dives in a `techiques/` [sic — Bryan's folder typo] subfolder (By Type 7KB, By Time 99KB, By Stage 468KB, By Engagement 162KB). Following the established pattern (User Needs' 20 need pages, Audience's 4 audience pages, Collecting's 11 technique pages), the summary content from the main Techniques doc is folded into `reference.md` and the 4 sub-pages are referenced by folder ID but not inlined. Inlining 700KB+ of deep-dive content would bloat the skill without adding decision-changing material.
+
+### `glare-define-patterns` DEPRECATED
+
+The Patterns block was archived by Bryan and replaced with Situations. The `glare-define-patterns` skill is now a **redirect-only file**:
+
+- Description marked DEPRECATED, points at `glare-define-situations`
+- Frontmatter adds `deprecated: true` and `replaced_by: glare-define-situations` advisory fields
+- Body contains a redirect notice explaining what carried over to Situations and what changed
+- The original Patterns content (four pattern types: User, Workflow, Signal, AI Workflow) is preserved in Drive archives but no longer surfaces in the marketplace
+
+Kept the file rather than removing it so existing references in prompts, docs, or conversation history continue to surface a useful answer (the redirect).
+
+### `glare-define` parent skill updated
+
+- Description and body refreshed to reflect the new 5-block structure (User Needs, Audience, Collecting, **Situations**, UX Metrics)
+- "20 individual need types" corrected (was previously listed as "22")
+- Source types + audience types architecture for Audience added
+- Four-lens / Observe → Interpret → Name framing for Situations added
+- Handoff to `glare-define-situations` added; `glare-define-patterns` marked as deprecated
+- Bumped from 3.1.0 → 3.5.0 to match marketplace
+
+### `SKILLS-CATALOG.md`
+
+The "We keep seeing the same situation across projects" row now points to `glare-define-situations` with a note that `glare-define-patterns` is deprecated.
+
+### Patterns block deprecated → replaced with Situations
+
+Bryan archived the Patterns block. The Patterns Overview v1.0 doc now sits inside the Situations archives folder. **`glare-define-situations` (new skill) replaces `glare-define-patterns`.** Cross-block routing in Audience and Collecting now points to Situations. References to "Patterns" in source content are preserved as DERIVED but skill-builder routing has been updated everywhere.
+
+`glare-define-patterns` skill action pending — defaulting to "leave with deprecation notice pointing to `glare-define-situations`" unless directed otherwise.
+
+### Still pending in this release
+
+- **NEW `glare-define-situations` v1.0** — 7 main docs ready at folder `12f7DnSg-mH41YnjQrEOsL-sKBqhnnVKf`. Plus 4 Techniques sub-variants in `techiques/` [sic] subfolder (By Stage 468KB, By Time 99KB, By Type 7KB, By Engagement 162KB) — fold-vs-split decision to be made after reading. Worksheet doc is an empty placeholder.
+- **`glare-define-patterns` deprecation** — leave with notice pointing to Situations (default), unless directed to remove.
+- **`glare-define` parent skill** — drop Patterns from sibling routing, add Situations.
+- **`SKILLS-CATALOG.md`** — add Situations entry, mark Patterns deprecated.
 
 ### Plugin metadata
 
 - `plugin.json` and `marketplace.json` bumped to `3.5.0`
-- Skill count unchanged at this point: 60 (Situations will be the 61st)
-- 58 skills still on the v3.1.0 audit-driven structure; 2 skills now on the v3.5.0 seven-doc + split-file template (User Needs, Audience)
-- `glare-marketplace-core` package bumped 3.4.0 → 3.5.0; 5 sibling skill copies synced
+- Skill count will reach 61 once Situations is added (60 currently active + 1 deprecated Patterns)
+- 57 skills still on the v3.1.0 audit-driven structure; **3 skills now on the v3.5.0 seven-doc + split-file template** (User Needs, Audience, Collecting)
+- `glare-marketplace-core` package bumped 3.4.0 → 3.5.0; 5 sibling skill copies synced for both Audience and Collecting
 - `glare-packages/glare-full` (2.1.0) and `glare-packages/glare-decision-map` (2.0.0) still at v2.x
 
 ---
