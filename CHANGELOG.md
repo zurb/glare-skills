@@ -1,5 +1,66 @@
 # Glare Marketplace Changelog
 
+## 3.5.0 — 2026-05-26 (Audience block migrated to 7-doc template)
+
+Second block on the 7-doc template after User Needs. **`glare-define-audience` rebuilt from v1.1 → v1.2 source docs**, including the new Agent Operations split-file pattern. This is the larger of two pending Define-area updates — Collecting (also at v1.2) and the new Situations block (v1.0) deferred to a fresh session loaded with `SKILL-BUILDING-CONTEXT.md`.
+
+### What changed in `glare-define-audience`
+
+Major architectural rev in source docs. v1.1 was descriptive — the 4 audience voices (Project Team, Stakeholders, Customers, Participants). **v1.2 adds a parallel architectural split**: the 4 source types (Helio, Advertising, CRM, Internal Assumption), each with a different design credibility starting point.
+
+| Section | Source | What it adds |
+|---|---|---|
+| **Overview** | Audience Overview v1.2 | The Source Problem framing; 4 source types with explicit credibility; positioning Audience as Research column of Building Proof; the 4 audience types with role + signal type + weight |
+| **Techniques** | Audience Techniques v1.2 | Three questions for every Helio group; attribute selection rules (3–5, start behavioral); 4 credibility questions; **Audience Drift diagnostic** with 4 early indicators; cross-source signal comparison table |
+| **Playbook** | Audience Playbook v1.2 | **Two distinct entry points** (start from question vs. start from existing data); the prompt set for each; **the Audience Definition Card** (9 fields, minimum viable card definition); multiple-group comparison step |
+| **References** | Audience References v1.2 + 4 audience type pages in `references/` subfolder | The 4 source type definitions with built-from / credibility / legitimate uses; explicit credibility rating guide; 5 attribute types with strongest metric connections; 8 customer lifecycle segments with key UX metrics each; key terms glossary |
+| **Decisions** | Audience Decisions v1.2 | Primary Routing Table (8 situations → next step → where it goes); Credibility Decision Guide; multiple-group decision matrix; Cross-Block Routing; "Audience lives in Exploratory territory" framing |
+| **Examples** | Audience Examples v1.2 | 7 worked examples each with strong version (proper card) + weak version (what breaks when source eval is skipped or groups collapsed). Covers B2B onboarding, ecommerce loyalty, fintech landing page, B2B feature design, mobile re-engagement, stakeholder anecdotes, demographic label trap |
+| **Agent Operations** | Audience Agent Operations v1.2 | Detailed source identification rules; **per-attribute-type extraction targets** with Present/Missing/Assumed signal columns for all 25 sub-attributes across the 5 types; confidence scoring model; output contract with minimum requirements per field; routing logic with cross-role-tier crossover; ambiguity handling for 3 distinct ambiguity types |
+
+### New file layout
+
+```
+glare-define-audience/
+├── SKILL.md              177 lines  ← always loaded; carries promoted AO rules
+├── reference.md          683 lines  ← 6 practitioner sections
+└── agent-operations.md   241 lines  ← Skill runtime contract
+```
+
+### Promoted into SKILL.md
+
+The Operating Rules section carries the binding rules:
+
+- **Source identification table** — 7-row source type → credibility starting point (the first move before any extraction)
+- **Audience Definition Card schema** — 9 required fields with minimum requirements
+- **Confidence/credibility model** — 3+ assumed sub-attributes drops one level; High/Medium/Low Skill behavior
+- **Routing logic** — 7-row condition → route → message
+- **Prohibited behaviors** — inferring source from content, collapsing Helio splits, designing for label over behavior, treating stakeholder anecdote as customer evidence, silent assumed attributes
+- **Escalation triggers** — source unidentifiable, confidence Low after 2+ inputs, equally plausible interpretations, Advertising/Helio divergence, accessibility-sensitive with missing accessibility attribute
+
+The full per-attribute-type extraction tables (25 sub-attributes × Present/Missing/Assumed signals), role-tier crossover logic, three forms of ambiguity handling, and full Skill Boundaries live in `agent-operations.md`.
+
+### Description trigger update
+
+`SKILL.md` description now fires on: `"Audience Definition Card"`, `"credibility rating"`, `"four source types"`, `"audience drift"`, `"label vs behavior"`, `"stakeholder anecdote vs customer evidence"`, `"agent operations runtime contract"`. Trimmed verbose category lists to fit under the 1024-char limit.
+
+### Pending — deferred to a fresh session
+
+- **`glare-define-collecting`** — full 7-doc set ready at v1.2 (folder `1H5nRm_LlTVF8OefkWYAGPSUWmZ1Yce6N`) plus 11 per-technique pages in a `techniques/` subfolder (Card Sorting, Eye Tracking, A/B, Conversion Rate, Surveys, Heatmaps, Task Success, First Click, Time on Task, Clickstream, Web Analytics, Multivariate) and a `references/` subfolder (Research Stacks, Tools).
+- **NEW skill `glare-define-situations`** — full 7-doc set at v1.0 (folder `12f7DnSg-mH41YnjQrEOsL-sKBqhnnVKf`) plus 4 Techniques sub-variants in a `techiques/` [sic] subfolder (By Stage 468KB, By Time 99KB, By Type 7KB, By Engagement 162KB) and an empty Worksheet placeholder. Decision needed on whether to fold the 4 sub-variants into one Techniques section or split into separate files.
+- **`glare-define-patterns` deprecation.** Patterns block has been archived by Bryan — the Patterns Overview v1.0 now sits in the Situations archives folder, meaning Situations replaces Patterns. Existing `glare-define-patterns` skill needs decision: remove, redirect to `glare-define-situations`, or leave with deprecation notice. Defaulting toward "leave with deprecation notice" until confirmed.
+- **`glare-define` parent skill update** — needs to drop Patterns from sibling routing list and add Situations.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `3.5.0`
+- Skill count unchanged at this point: 60 (Situations will be the 61st)
+- 58 skills still on the v3.1.0 audit-driven structure; 2 skills now on the v3.5.0 seven-doc + split-file template (User Needs, Audience)
+- `glare-marketplace-core` package bumped 3.4.0 → 3.5.0; 5 sibling skill copies synced
+- `glare-packages/glare-full` (2.1.0) and `glare-packages/glare-decision-map` (2.0.0) still at v2.x
+
+---
+
 ## 3.4.0 — 2026-05-22 (7th doc — Agent Operations split into its own file)
 
 Bryan added a 7th source doc to the User Needs block: **Agent Operations**, a runtime contract written for AI Skills (not practitioners). Rather than fold it into `reference.md` alongside the other six sections, the skill splits it into a new file `agent-operations.md`. The highest-leverage rules are also duplicated into `SKILL.md` so they bind on every invocation, even without consulting the file.

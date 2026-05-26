@@ -1,38 +1,169 @@
 ---
 name: glare-define-audience
-description: Use this skill when the user is defining WHO their signals come from in the Define area — picking and weighting audiences. Triggers — "who are we designing for," "design for everyone is design for no one," the four audiences (Project Team, Stakeholders, Customers, Participants), internal vs external voices, signal weighting, picking 3–5 attributes (Behavioral, Motivational, Contextual, Lifecycle, Demographic), customer lifecycle segments (Trial, Freemium, New Paying, Habitual, Power, Advocates, Dormant, Churned), target vs adjacent users, informed outsiders, internal proxies, or balancing participant signals against customer behavior. Do NOT use when naming the underlying need (use `glare-define-user-needs`), choosing techniques/instruments (use `glare-define-collecting`), or picking metrics (use `glare-define-ux-metrics`). For broad Define questions, use `glare-define`; for the full Decision Map, use `glare-decision-map`.
-version: 3.1.0
-source_doc_version: v1.1
-last_rebuilt: 2026-05-13
+description: Use this skill when the user is defining WHO their signals come from in the Define area — picking audiences, evaluating credibility, building Audience Definition Cards. Triggers — "who are we designing for," "where did this signal come from," "is this audience credible," the four source types (Helio, Advertising, CRM, Internal Assumption), the four audience types (Participants, Customers, Stakeholders, Project Team), Audience Definition Card, High/Medium/Low credibility rating, 3–5 attributes (Behavioral, Motivational, Contextual, Lifecycle, Demographic), customer lifecycle segments, audience drift, label vs behavior, stakeholder anecdote vs customer evidence, agent operations runtime contract. Do NOT use when naming the underlying need (use `glare-define-user-needs`), choosing techniques/instruments (use `glare-define-collecting`), or picking metrics (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the Decision Map, use `glare-decision-map`.
+version: 3.5.0
+source_doc_version: v1.2 (7-doc template — Overview + Techniques + Playbook + References + Decisions + Examples + Agent Operations)
+last_rebuilt: 2026-05-26
+
+sources:
+  - doc_id: 1aAepKOT5eyKwn-xXHByVyIycqXE3wI_qHB4klYomig8
+    title: Glare | Define, Audience, Overview v1.2
+    drive_url: https://docs.google.com/document/d/1aAepKOT5eyKwn-xXHByVyIycqXE3wI_qHB4klYomig8/edit
+    last_synced: 2026-05-26
+  - doc_id: 1Ski3LJdIeBnGA6vaHs9yrAMnsbCaueFctilvJfgL72Q
+    title: Glare | Define, Audience, Techniques v1.2
+    drive_url: https://docs.google.com/document/d/1Ski3LJdIeBnGA6vaHs9yrAMnsbCaueFctilvJfgL72Q/edit
+    last_synced: 2026-05-26
+  - doc_id: 1Qc-UrF3tcMz-nRqOHywnjK33N3S_V6SGq9DZkmFqFhg
+    title: Glare | Define, Audience, Playbook v1.2
+    drive_url: https://docs.google.com/document/d/1Qc-UrF3tcMz-nRqOHywnjK33N3S_V6SGq9DZkmFqFhg/edit
+    last_synced: 2026-05-26
+  - doc_id: 1yGaaGU21proQusWcFDt76fgId-Itc6vRvWFZ1ibwlQI
+    title: Glare | Define, Audience, References v1.2
+    drive_url: https://docs.google.com/document/d/1yGaaGU21proQusWcFDt76fgId-Itc6vRvWFZ1ibwlQI/edit
+    last_synced: 2026-05-26
+  - doc_id: 1-GljLFEIjXRieBq-PfIhO-V4N_XygP8qao3QeqKa0RY
+    title: Glare | Define, Audience, Decisions v1.2
+    drive_url: https://docs.google.com/document/d/1-GljLFEIjXRieBq-PfIhO-V4N_XygP8qao3QeqKa0RY/edit
+    last_synced: 2026-05-26
+  - doc_id: 14d22zJTUp2UbVrGCQpj5mV8Sdxckil6JUshKar-oIbs
+    title: Glare | Define, Audience, Examples v1.2
+    drive_url: https://docs.google.com/document/d/14d22zJTUp2UbVrGCQpj5mV8Sdxckil6JUshKar-oIbs/edit
+    last_synced: 2026-05-26
+  - doc_id: 1n3O9f8n7eGdF7DgOiC4WkHawPQ61w20jsEgLUWWkMKw
+    title: Glare | Define, Audience, Agent Operations v1.2
+    drive_url: https://docs.google.com/document/d/1n3O9f8n7eGdF7DgOiC4WkHawPQ61w20jsEgLUWWkMKw/edit
+    last_synced: 2026-05-26
 ---
 
-You are helping the user work the **Audience** block of the Decision Map's **Define** area — defining who the signals come from and how much weight each voice should carry.
+You are helping the user work the **Audience** block of the Decision Map's **Define** area — defining who their signals come from, where those signals came from, and how much weight each can carry in a design decision.
 
 ## Core idea
 
-Audience sits inside the Define area of the Decision Map. Without an explicit audience, customer data, stakeholder opinion, and personal preference all get weighted equally and metrics lose meaning. Audience names the four voices (Project Team, Stakeholders, Customers, Participants) and the 3–5 attributes that turn a vague group into a testable one.
+Audience sits inside the Define area of the Decision Map. Without explicit audience, customer data, stakeholder opinion, and personal preference all get weighted equally and metrics lose meaning. Audience answers two questions: **who are we learning from, and is that source credible for this decision?**
 
-## Read the reference first
+v1.2 introduces a parallel architectural split:
 
-Before answering, read `reference.md` — it contains the four-audience model, the per-audience deep dives (Project Team signal types, Stakeholder workflow mapping, the 8 Customer lifecycle segments, the Participant testing phases), the five attribute types, and the audience-build sequence.
+- **Four source types** — Helio Audience Groups (highest credibility), CRM/Lifecycle Segments (medium), Advertising Segments (low for design), Internal Assumptions (lowest)
+- **Four audience types** — Participants (early validation), Customers (proof — the ground truth), Stakeholders (alignment), Project Team (intent)
+
+The standard output of any Audience workflow is an **Audience Definition Card** with a High/Medium/Low credibility rating. That card is the brief Collecting receives.
+
+## Files to read
+
+This skill ships two files alongside `SKILL.md`. Read in this order:
+
+1. **`agent-operations.md` first.** Runtime contract for working with Audience — source identification rules, per-attribute-type extraction targets, confidence scoring model, output contract for the Audience Definition Card, routing logic, escalation triggers. Operating instructions, not reference content. The highest-leverage rules are duplicated into "Operating rules" below.
+2. **`reference.md` second.** Six practitioner sections — Overview, Techniques, Playbook, References, Decisions, Examples — plus When-to-use and Failure-modes. Read for the framework, the 4 source types, the 4 audience types, the 5 attribute types, the 8 customer lifecycle segments, and the 7 worked examples.
+
+If the user has described their situation in a sentence or two, start by routing them through the **Decisions** section of `reference.md` — match their situation to the Primary Routing Table.
+
+## Operating rules
+
+Binding rules from `agent-operations.md`. They apply on every invocation regardless of whether the full file is read.
+
+### Source identification — the first move
+
+Before classifying, extracting attributes, or rating credibility, **identify the source type**. Source type is never inferred from content alone.
+
+| Input Signal | Source Type | Credibility Starting Point |
+|---|---|---|
+| Named Helio audience groups with poll response breakdowns | Helio Audience Group | **High** |
+| Demographic targeting (Facebook, Google, programmatic) | Advertising Segment | **Low** — not qualified for design without behavioral validation |
+| CRM exports with lifecycle stage, tenure, activation, feature adoption | CRM / Lifecycle Segment | **Medium** |
+| Survey data with defined respondent criteria | Survey (Medium CRM equivalent) | **Medium** |
+| Forum posts, reviews, community threads | Qualitative | **Medium** for motivation/context, **Low** for behavioral/lifecycle |
+| Team/leadership statements without external data reference | Internal Assumption | **Low** |
+| Personas or segments without a named research source | **Unknown — escalate** | Cannot rate until source is confirmed |
+
+If the source cannot be identified, **escalate before proceeding**.
+
+### Output Contract — The Audience Definition Card schema
+
+Every card uses these 9 fields. Cards below the minimum contract are **not handed off**.
+
+| Field | Minimum requirement |
+|---|---|
+| **Audience Name** | Descriptive name built from defining attributes — NOT a demographic label or role title |
+| **Audience Type** | Participants, Customers, Stakeholders, or Project Team |
+| **Source** | Named data source with source type identified (not "various") |
+| **Defining Attributes** | ≥2 behavioral OR motivational sub-attributes confirmed by evidence (named specifically) |
+| **Design Situation** | 1–2 sentences describing conditions that make this group experience the situation differently |
+| **Connected UX Metrics** | ≥1 UX metric connected to a defining attribute |
+| **Credibility Rating** | High, Medium, or Low with a one-line rationale |
+| **Gaps** | Named missing sub-attributes, or "None identified" if coverage is complete |
+| **Lifecycle Stage** | If applicable: Trial / Freemium / New Paying / Habitual / Power / Advocate / Dormant / Churned |
+
+### Confidence and credibility
+
+Three or more assumed (vs. evidenced) attributes in a single type **lower the overall credibility rating by one level.**
+
+| Confidence Level | Skill behavior | Output |
+|---|---|---|
+| **High** | Proceeds independently. Completes the card, routes to Collecting without escalation. | Complete card, High or Medium credibility |
+| **Medium** | Completes a partial card, flags all assumed attributes by name, notes what validation Collecting needs. Does not route without flagging the gap. | Partial card with credibility note and named gaps |
+| **Low** | Stops. Does not attempt to complete the card. Escalates with specific statement of what's missing and what source type would fill it. | Escalation message with named gaps and recommended next step |
+
+### Routing logic
+
+| Condition | Route to |
+|---|---|
+| Card complete, credibility **High** | **Collecting** — state audience type, defining attributes, connected UX metrics, recommended method |
+| Card complete, credibility **Medium** | **Collecting with validation note** — name assumed sub-attributes; Collecting must include a screener or qualifying question before the main study |
+| Card partial, credibility **Low** | Back to **Audience** — Helio screener needed; name which sub-attributes are missing and which source type would fill them |
+| Design situation doesn't match stated user need | **User Needs** — return with attribute profile as new evidence |
+| Multiple groups detected in input data | Back to **Audience** — split required; name each group by distinguishing attributes |
+| Advertising and Helio data diverge | **Stakeholders** — flag as strategy question, not usability question |
+| Source cannot be identified | **Escalate to human** — ask: where did this data come from? |
+
+### Top-priority prohibited behaviors
+
+- **Inferring source type from content.** Always ask directly when source is unclear.
+- **Collapsing multiple Helio groups into one card** to produce a cleaner output. The split is information; preserve it.
+- **Designing power users for the person configuring exports** when they're actually configured for others — and other label-vs-behavior conflations. (See Example 4 in `reference.md`.)
+- **Treating a stakeholder anecdote as validated customer evidence.** A CMO saying "customers told me X" is a hypothesis worth investigating, not a design brief.
+- **Skipping the credibility rating.** Without it, Collecting doesn't know whether to proceed with confidence, add validation, or rebuild.
+- **Filling in assumed attributes silently.** Every assumed attribute must be flagged by name.
+
+### Escalation triggers (when to surface to a human, not auto-resolve)
+
+- Source cannot be identified from the input
+- Confidence stays Low even after ≥2 input types are present
+- Multiple need-interpretations or audience groups remain equally plausible
+- Advertising and Helio data diverge (strategy question, not usability)
+- Accessibility-sensitive design with accessibility needs not in the audience definition (never assumed)
+- Business impact is high and evidence quality is weak
 
 ## How to apply
 
-1. **Name the audience using the four-voice frame** — Project Team (intent, light continuous weight), Stakeholders (direction, medium-to-high weight), Customers (proof, highest weight), Participants (clarity, high during testing). Internal voices guide; external voices validate.
+1. **Identify the source type first** using the table above. If unknown, escalate.
 
-2. **Run the audience-build sequence in order** — Project Teams form intent → Stakeholders align impact → Participants validate direction → Customers prove outcomes. Don't skip ahead; missing an upstream voice surfaces as misalignment downstream.
+2. **Pick the entry point.** If the user is starting from a question, run Entry Point A (name question → identify audience type → select 3–5 attributes → identify source → map to UX metrics → draft card). If starting from existing data, run Entry Point B (identify source type → extract attributes → name groups by attributes → evaluate credibility → identify gaps → draft card).
 
-3. **For each voice, use the right method:**
-   - **Project Team** — capture three predictions before testing; compare to results. Use the 5 internal signal types (Intent Clarity, Decision Context, Design Confidence, Iteration Learning, Cross-Discipline Alignment).
-   - **Stakeholders** — speak in their workflow language (Sales: revenue/conversion; Marketing: engagement/brand trust; Product: adoption/retention/NPS; Engineering: efficiency/stability; Strategy: alignment; Finance/Legal: risk/compliance).
-   - **Customers** — locate the user inside the **eight lifecycle segments** (Trial, Freemium, New Paying, Habitual, Power, Advocates, Dormant, Churned) and use the per-segment metric guidance in the reference.
-   - **Participants** — use the **four phases of testing** (Exploration, Definition, Refinement, Launch Prep) and the **four participant types** (Target Users, Adjacent Users, Informed Outsiders, Internal Proxies). Five adjacent users + one main task within an hour gives a starting signal.
+3. **Extract attributes against specific sub-attributes**, not just types. For behavioral, look for frequency, experience level, feature adoption, interaction mode, task orientation. Flag each as **present, missing, or assumed**.
 
-4. **For external audiences, follow the 6-step define flow** — start with a question → identify customer vs participant → choose 3–5 attributes → map each to UX metrics → collect and compare → check whether participant signals predict customer behavior.
+4. **Rate credibility** using the source type starting point and the assumed-attribute count. Three or more assumed in a single type drops one level.
 
-5. **Pick 3–5 attributes from the five categories** — Behavioral, Motivational, Contextual, Lifecycle, Demographic. Attributes structure signals; they don't describe people. Fewer than 3 = noise, more than 5 = over-segmentation.
+5. **Produce the Audience Definition Card** using the 9-field schema above. Cards below the minimum contract are not handed off.
 
-6. **Flag the recurring traps** — designing for "everyone," over-segmenting, mistaking internal alignment for user understanding, talking only in design language ("delight," "beauty") to stakeholders, and the balance trap (too much participant data = confident in theory; too much customer data = solid but slow).
+6. **Route per the table above**, with a specific statement of what to do next — not a generic "more research is needed."
+
+7. **When multiple groups appear in the input, do not average.** Produce one card per group. Use the Playbook's comparison step to identify which to prioritize.
+
+8. **Watch for drift signals** — satisfaction flat but churn rising, feature requests from unexpected segments, Helio composition shifted year over year, internal assumptions more than 6 months old. Drift is both a need question and a strategy question.
+
+9. **For complete signals, run the closing checklist** — source identified and credibility rated, ≥3 behavioral or motivational attributes, design situation in 1–2 sentences, connected UX metrics, multiple groups separated, definition matches the stated user need.
+
+## What's new in v3.5.0
+
+- **Upgraded from v1.1 → v1.2 source docs.** Major rev — descriptive 4-audience frame becomes a structured architecture with 4 source types in parallel.
+- **Audience Definition Card** introduced as the standard output artifact (9 fields, minimum contract). All workflows now produce this.
+- **High/Medium/Low credibility ratings** with explicit routing implications for Collecting.
+- **Two entry points** (start from question vs. start from data) — most real Audience work follows Entry Point B and the new content covers it explicitly.
+- **Audience Drift diagnostic** — 4 early indicators, framed as a "both a need question and a strategy question" cross-block routing.
+- **Agent Operations split into its own file** (`agent-operations.md`) with per-attribute-type extraction targets — what counts as Present, Missing, or Assumed for each of the 25 sub-attributes across the 5 types.
+- **Operating rules promoted into SKILL.md** so the binding rules (source identification, output contract, credibility scoring, routing, escalation) bind on every invocation.
+- **7 worked Examples** — each with a strong version (proper card) and a weak version (what happens when source evaluation is skipped or groups are collapsed).
 
 ## Handoffs
 
@@ -43,3 +174,4 @@ Before answering, read `reference.md` — it contains the four-audience model, t
 - When the user is asking what *signals* (not just metrics) to capture from each audience, route to `glare-design-signals` and the bucket skills `glare-signals-components`, `glare-signals-types`, `glare-signals-quality`, `glare-signals-capturing`.
 - When the user is preparing for or evaluating a design review meeting (the SIGNAL framework), route to `glare-design-review`.
 - When the user wants to assess team maturity (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence), route to `glare-design-assessment`.
+- When a Helio study is the right next step, that's outside this skill — but the recommended Collecting method is in the Audience Definition Card under "what Collecting needs."
