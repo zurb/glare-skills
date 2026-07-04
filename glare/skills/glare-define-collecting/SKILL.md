@@ -1,9 +1,9 @@
 ---
 name: glare-define-collecting
-description: Use this skill when the user is in the Collecting block of the Define area — turning raw input into usable signals. Triggers — picking a research mode (Exploratory / Evaluative / Comparative), the five-step process (Intent → Stack → Approach → Techniques → Connect), the 12 techniques grouped 5 ways (Navigation, Task, Comparison, Behavior, Feedback), named instruments (SUS, NPS, SEQ, CES, NASA-TLX, PURE, SUMI, WAMMI, UEQ, SUPR-Q, L-DERLY), the four feedback types (View / See / Sense / Hear), the five Design Stacks (Website, Mobile App, Product, E-commerce, Marketing), the Define → Capture → Connect cadence, the Collection Brief, Show Your Sources, agent operations runtime contract. Do NOT use when naming the underlying need (use `glare-define-user-needs`), defining who data comes from (use `glare-define-audience`), or picking metrics (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the Decision Map, use `glare-decision-map`.
-version: 3.5.0
-source_doc_version: v1.2 (7-doc template — Overview + Techniques + Playbook + References + Decisions + Examples + Agent Operations)
-last_rebuilt: 2026-05-26
+description: Use this skill when the user is in the Collecting block — turning raw input into usable signals, OR formatting a completed Collection Brief for a specific reader. Triggers — research mode (Exploratory / Evaluative / Comparative), 5-step process (Intent → Stack → Approach → Techniques → Connect), 12 techniques in 5 groups (Navigation, Task, Comparison, Behavior, Feedback), named instruments (SUS, NPS, SEQ, CES, NASA-TLX, UEQ), 4 feedback types (View / See / Sense / Hear), 5 Design Stacks (Website, Mobile App, Product, E-commerce, Marketing), Define → Capture → Connect cadence, Collection Brief, Show Your Sources, "Glarify this study," format triggers (study proposal, deck, doc handoff, business case for Helio study), agent operations runtime contract. Do NOT use when naming the need (use `glare-define-user-needs`), defining who data comes from (use `glare-define-audience`), or picking metrics (use `glare-define-ux-metrics`).
+version: 3.6.0
+source_doc_version: "v1.2 (7-doc) + v1.4 Formats (8-doc — Overview, Techniques, Playbook, References, Decisions, Examples, Formats, Agent Operations)"
+last_rebuilt: 2026-06-23
 
 sources:
   - doc_id: 1EVxEz0UXcGnRoHvb52Lk-7JMmnCLOKlCFFL9k6t7qrk
@@ -34,6 +34,11 @@ sources:
     title: Glare | Define, Collecting, Agent Operations v1.2
     drive_url: https://docs.google.com/document/d/1l7zlfC-jU3f0vI2CXN5GrRNzU9-FtQoZitI9Sm_MtJ0/edit
     last_synced: 2026-05-26
+  - folder_id: 17IXrxO4NmYYPKeaYWfuo35jQKt6jPlTs
+    title: Glare | Define, Collecting, Formats/ subfolder — 6 of 9 per-format docs v1.4 (Messages, Decks, Boards, Scripts, Docs, Experiment; Brief, Business Case, Roadmap not yet published)
+    drive_url: https://drive.google.com/drive/folders/17IXrxO4NmYYPKeaYWfuo35jQKt6jPlTs
+    last_synced: 2026-06-23
+    note: Overview doc for Formats not yet published — formats.md adapted from User Needs Formats v1.4 pattern with Collecting's Brief Confidence model.
 ---
 
 You are helping the user work the **Collecting** block of the Decision Map's **Define** area — the discipline that turns raw input into usable signals and prevents drift back into "loudest voice wins."
@@ -46,10 +51,13 @@ The output of every Collecting workflow is a **Collection Brief** (14 fields) ha
 
 ## Files to read
 
-This skill ships two files alongside `SKILL.md`. Read in this order:
+This skill ships three files alongside `SKILL.md`. Read in this order:
 
-1. **`agent-operations.md` first.** Runtime contract for working with Collecting — required inputs per step, confidence thresholds, the 14-field Collection Brief output contract, routing logic, escalation triggers. Operating instructions, not reference content. The highest-leverage rules are duplicated into "Operating rules" below.
-2. **`reference.md` second.** Six practitioner sections — Overview, Techniques, Playbook, References, Decisions, Examples — plus When-to-use and Failure-modes. Read for the 12 techniques (grouped 5 ways), the 11+ named instruments, the 4 tool categories, the 5 Design Stacks, and the 5 worked Examples (including the Near-Miss Pattern Library).
+1. **`agent-operations.md` first.** Runtime contract for **producing** the Collection Brief — required inputs per step, confidence thresholds, 14-field output contract, routing logic, escalation triggers. Governs how the Brief is *made*.
+2. **`formats.md` — only when the user is packaging a Brief or Signal Produced for delivery.** Runtime contract for **Glarifying** — 4-step resolution sequence (Brief Confidence → Purpose → Reader → Format), 9 format types (per-format Drive pages at folder `17IXrxO4NmYYPKeaYWfuo35jQKt6jPlTs`), Show Your Sources non-negotiable, compatibility matrices. Triggered by "Glarify this study," "write a study proposal," "how do I present these findings," "make the case for a Helio study."
+3. **`reference.md` third.** Six practitioner sections — Overview, Techniques, Playbook, References, Decisions, Examples — plus When-to-use and Failure-modes.
+
+The highest-leverage rules from both AO layers are duplicated into "Operating rules" below.
 
 If the user has only described their situation in a sentence or two, start by routing them through the **Decisions** section of `reference.md` — match their situation to the Primary Routing Table.
 
@@ -122,6 +130,30 @@ Every Brief uses these 14 fields. Briefs below contract are **not handed off**.
 - **Comparative mode on unvalidated designs.** A/B testing two designs neither of which has been evaluated for usability produces a false winner.
 - **Sharing findings without sources.** Technique + audience + metrics, every time. Without them, findings are opinions.
 - **Reporting raw observations as signals.** "Users struggled with X" is not a signal. "58% task success at the payment step, measuring Completion and Comprehension" is.
+
+### Formats (Glarify) — the second runtime contract
+
+When the user has a Collection Brief (partial or complete) and asks to share it, present it, or format it, the Formats layer applies. Resolve four variables **in order**:
+
+| Step | Variable | Values |
+|---|---|---|
+| 1 | **Brief Confidence** | Assess from the Brief. High (all 14 fields, Signal Produced as metric result, sources documented) · Medium (fields uncertain, only one feedback type, metrics not fully connected) · Low (no hypothesis writable, no audience, sources missing). **Determines what the output can honestly say.** |
+| 2 | **Purpose** | Inform · Align · Decide · Prioritize · Validate · Hand Off |
+| 3 | **Reader** | Research team · Product team · Designer · Product leader · Executive · Cross-functional (Situations) |
+| 4 | **Format** | Messages · Decks · Boards · Scripts · Docs · Brief · Roadmap · Experiment · Business Case |
+
+**Every formatted output must include a visible Brief Confidence signal early.** High: "The signal shows... [technique, sample, metric]..." · Medium: "Early findings suggest, though validation on [gap] pending..." · Low: "The Brief is incomplete on [X]. We need help resolving..."
+
+**Show Your Sources is non-negotiable.** Technique + audience + metrics in every formatted output. If word count can't accommodate all three, use a shorter format that can — never drop them.
+
+**What Confidence can honestly do:**
+- **High** → ship/iterate/kill recommendation · route to Situations · any purpose
+- **Medium** → share interim findings with flagged gaps · request methodology critique · Inform/Align/Validate — do not route to Situations until gap resolved
+- **Low** → Validate purpose only. Ask for help resolving the gap.
+
+**Prohibited on Formats:** presenting Medium/Low as ship-ready · omitting sources · Direct tone on Medium/Low · retroactively citing methodology not documented · formatting Multi-Study Synthesis without per-study sources.
+
+Full compatibility matrices and per-format structural rules live in `formats.md`.
 
 ## How to apply
 

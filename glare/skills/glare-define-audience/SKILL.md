@@ -1,9 +1,9 @@
 ---
 name: glare-define-audience
-description: Use this skill when the user is defining WHO their signals come from in the Define area — picking audiences, evaluating credibility, building Audience Definition Cards. Triggers — "who are we designing for," "where did this signal come from," "is this audience credible," the four source types (Helio, Advertising, CRM, Internal Assumption), the four audience types (Participants, Customers, Stakeholders, Project Team), Audience Definition Card, High/Medium/Low credibility rating, 3–5 attributes (Behavioral, Motivational, Contextual, Lifecycle, Demographic), customer lifecycle segments, audience drift, label vs behavior, stakeholder anecdote vs customer evidence, agent operations runtime contract. Do NOT use when naming the underlying need (use `glare-define-user-needs`), choosing techniques/instruments (use `glare-define-collecting`), or picking metrics (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the Decision Map, use `glare-decision-map`.
-version: 3.5.0
-source_doc_version: v1.2 (7-doc template — Overview + Techniques + Playbook + References + Decisions + Examples + Agent Operations)
-last_rebuilt: 2026-05-26
+description: Use this skill when the user is defining WHO their signals come from in the Define area — picking audiences, evaluating credibility, building Audience Definition Cards, OR formatting a completed Card for a specific reader. Triggers — "who are we designing for," "is this audience credible," the four source types (Helio, Advertising, CRM, Internal Assumption), the four audience types (Participants, Customers, Stakeholders, Project Team), Audience Definition Card, High/Medium/Low credibility, 3–5 attributes, lifecycle segments, audience drift, label vs behavior, "Glarify this audience," format triggers (brief/deck/message/board/business case for a Helio study), agent operations runtime contract. Do NOT use when naming the need (use `glare-define-user-needs`), choosing techniques (use `glare-define-collecting`), or picking metrics (use `glare-define-ux-metrics`).
+version: 3.6.0
+source_doc_version: "v1.2 (7-doc) + v1.4 Formats (8-doc — Overview, Techniques, Playbook, References, Decisions, Examples, Formats, Agent Operations)"
+last_rebuilt: 2026-06-23
 
 sources:
   - doc_id: 1aAepKOT5eyKwn-xXHByVyIycqXE3wI_qHB4klYomig8
@@ -34,6 +34,11 @@ sources:
     title: Glare | Define, Audience, Agent Operations v1.2
     drive_url: https://docs.google.com/document/d/1n3O9f8n7eGdF7DgOiC4WkHawPQ61w20jsEgLUWWkMKw/edit
     last_synced: 2026-05-26
+  - folder_id: 1TyquhFpgtyOVlC38DNdBMLuHERoAhyXm
+    title: Glare | Define, Audiences, Formats/ subfolder — 10 per-format docs v1.4 (Brief, Business Case, Boards, Decks, Docs, Experiment, Messages, Roadmap, Scripts)
+    drive_url: https://drive.google.com/drive/folders/1TyquhFpgtyOVlC38DNdBMLuHERoAhyXm
+    last_synced: 2026-06-23
+    note: Overview doc for Formats not yet published — formats.md adapted from User Needs Formats v1.4 pattern with Audience-specific credibility model.
 ---
 
 You are helping the user work the **Audience** block of the Decision Map's **Define** area — defining who their signals come from, where those signals came from, and how much weight each can carry in a design decision.
@@ -51,10 +56,13 @@ The standard output of any Audience workflow is an **Audience Definition Card** 
 
 ## Files to read
 
-This skill ships two files alongside `SKILL.md`. Read in this order:
+This skill ships three files alongside `SKILL.md`. Read in this order:
 
-1. **`agent-operations.md` first.** Runtime contract for working with Audience — source identification rules, per-attribute-type extraction targets, confidence scoring model, output contract for the Audience Definition Card, routing logic, escalation triggers. Operating instructions, not reference content. The highest-leverage rules are duplicated into "Operating rules" below.
-2. **`reference.md` second.** Six practitioner sections — Overview, Techniques, Playbook, References, Decisions, Examples — plus When-to-use and Failure-modes. Read for the framework, the 4 source types, the 4 audience types, the 5 attribute types, the 8 customer lifecycle segments, and the 7 worked examples.
+1. **`agent-operations.md` first.** Runtime contract for **producing** the Audience Definition Card — source identification, per-attribute extraction, credibility scoring, output contract, routing, escalation. Governs how a Card is *made*.
+2. **`formats.md` — only when the user is packaging a completed Card for delivery.** Runtime contract for **Glarifying** — the 4-step resolution sequence (Credibility → Purpose → Reader → Format), the 9 format types (per-format Drive pages at folder `1TyquhFpgtyOVlC38DNdBMLuHERoAhyXm`), compatibility matrices, and a second layer of Agent Operations governing formatting. Triggered by "Glarify this audience," "write a brief for this," "how do I present this to my VP."
+3. **`reference.md` third.** Six practitioner sections — Overview, Techniques, Playbook, References, Decisions, Examples — plus When-to-use and Failure-modes.
+
+The highest-leverage rules from both AO layers are duplicated into "Operating rules" below.
 
 If the user has described their situation in a sentence or two, start by routing them through the **Decisions** section of `reference.md` — match their situation to the Primary Routing Table.
 
@@ -133,6 +141,28 @@ Three or more assumed (vs. evidenced) attributes in a single type **lower the ov
 - Advertising and Helio data diverge (strategy question, not usability)
 - Accessibility-sensitive design with accessibility needs not in the audience definition (never assumed)
 - Business impact is high and evidence quality is weak
+
+### Formats (Glarify) — the second runtime contract
+
+When the user has a completed Audience Definition Card and asks to share it, present it, or format it, the Formats layer applies. Resolve four variables **in order**:
+
+| Step | Variable | Values |
+|---|---|---|
+| 1 | **Credibility** | Read directly from the Card. High/Medium/Low. **Determines what the output can honestly ask for.** |
+| 2 | **Purpose** | Inform · Align · Decide · Prioritize · Validate · Hand Off |
+| 3 | **Reader** | Product team · Designer · Researcher · Product leader · Executive · Cross-functional |
+| 4 | **Format** | Messages · Decks · Boards · Scripts · Docs · Brief · Roadmap · Experiment · Business Case |
+
+**Every formatted output must include a visible credibility signal early.** High: "This audience is confirmed through a Helio behavioral study..." · Medium: "Behavioral attributes confirmed; motivational attributes assumed..." · Low: "The current audience definition is a starting hypothesis, not a confirmed group..."
+
+**What Credibility can honestly ask for:**
+- **High** → sprint scope alignment, prioritization, design commitment, investment
+- **Medium** → direction alignment with a validation step built in
+- **Low** → approval to run a Helio study. **Nothing else.**
+
+**Prohibited on Formats:** presenting Low as confirmed · using Brief/Business Case for Low without framing the ask as Helio study approval · applying Direct tone to Medium/Low · adding attributes not in the source Card · omitting the credibility signal.
+
+Full compatibility matrices and per-format structural rules live in `formats.md`.
 
 ## How to apply
 

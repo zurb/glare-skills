@@ -1,5 +1,81 @@
 # Glare Marketplace Changelog
 
+## 3.6.0 — 2026-06-23 (Define area: Formats section added to 3 blocks — the Glarify layer)
+
+Bryan added a **new 8th section** to Define blocks: **Formats**. This is a systemic architectural addition, not a per-block content update. All 3 skills (User Needs, Audience, Collecting) get a new `formats.md` file that carries the output-delivery layer — how to Glarify a produced artifact for a specific reader, purpose, and format.
+
+### What Formats is
+
+The block's main Agent Operations governs artifact production ("how do I make this artifact correctly"). Formats introduces a **second AO layer** governing output delivery ("how do I package this artifact for a specific reader, in a specific format, at a specific state of understanding"). The verb is **Glarify** — new Glare vocabulary as of v1.4.
+
+Every Formats section has 8 internal parts:
+
+1. **Overview** — what Glarify is and when to use it
+2. **Outputs Available** — which of the block's artifacts can be formatted
+3. **Purpose** (6 types) — Inform / Align / Decide / Prioritize / Validate / Hand Off
+4. **Understanding governor** — governs tone and what the format can honestly ask for. Different per block:
+   - User Needs: **Understanding Strength** (Emerging / Building / Stable)
+   - Audience: **Credibility** (High / Medium / Low) — the sharpest gate; Low can only ask for a Helio study
+   - Collecting: **Brief Confidence** (High / Medium / Low)
+5. **Audience/Reader** (6 types) — Product team / Designer / Researcher / Product leader / Executive / Cross-functional
+6. **Format Pages** (9 formats) — Messages / Decks / Boards / Scripts / Docs / Brief / Roadmap / Experiment / Business Case, each with a deep-dive per-format page in a Drive subfolder
+7. **Compatibility** — output type × format matrix, understanding × purpose matrix, adjustment notes
+8. **Agent Operations** — trigger conditions, 4-step resolution sequence, output contract, prohibited behaviors, routing
+
+### Split-file pattern maintained
+
+Each block skill now has 4 files instead of 3:
+
+```
+glare-define-{user-needs|audience|collecting}/
+├── SKILL.md              always loaded; carries promoted rules from both AO layers
+├── reference.md          6 practitioner sections
+├── agent-operations.md   runtime contract for producing the artifact
+└── formats.md            NEW — runtime contract for Glarifying the artifact
+```
+
+### What got promoted into each SKILL.md
+
+Each SKILL.md now has a **Formats operating rules** section that duplicates the highest-leverage Formats-layer rules so they load on every invocation:
+
+- The 4-step resolution sequence (governor → purpose → reader → format)
+- The 3-state governor vocabulary with required signal phrases
+- The 6-purpose taxonomy
+- Top-priority prohibited behaviors (specific to each block's governor)
+- Trigger phrases ("Glarify," format names)
+
+### Block-specific highlights
+
+**User Needs (v3.4.0 → v3.6.0)** — Overview doc for Formats exists in Drive; per-format pages not yet published. `formats.md` folds the User Needs Formats v1.4 doc content and cross-references the Audience per-format pages as an interim structural reference.
+
+**Audience (v3.5.0 → v3.6.0)** — Overview doc for Formats NOT yet published, but 10 per-format pages exist in the `formats/` subfolder (folder `1TyquhFpgtyOVlC38DNdBMLuHERoAhyXm`). `formats.md` adapts the User Needs pattern for the Audience credibility model — the sharpest of the three governors because Low credibility gates what the output can honestly ask for (only a Helio study approval, nothing else).
+
+**Collecting (v3.5.0 → v3.6.0)** — Overview doc for Formats NOT yet published, 6 of 9 per-format pages exist (Brief, Business Case, and Roadmap pending). `formats.md` adapts the pattern using Brief Confidence as the governor, aligned with the block's main AO confidence model. Preserves the Show Your Sources rule as non-negotiable in every formatted output.
+
+### Not yet updated
+
+- **Situations** — no Formats section published in Drive yet. Skill stays at v3.5.0 until Bryan ships. Situations updates separately.
+- **Focus, Measure, Lead** — no Formats sections yet. Same waiting pattern.
+
+### Naming inconsistency flagged
+
+All 10 per-format docs in the Audience `formats/` subfolder use "Audiences" (plural) — "Glare | Define, Audiences, Formats, [X] v1.4". The block itself is `glare-define-audience` (singular) and prior v1.2 docs used singular. The skill keeps the singular name. **Worth surfacing to Bryan** — is this a v1.4 rename to "Audiences," or a typo he propagated across all 10 docs? If it's a real rename, we'll rename the skill in a future release.
+
+### Plugin metadata
+
+- `plugin.json` and `marketplace.json` bumped to `3.6.0`
+- Skill count unchanged at 60 (nothing added or removed; 3 skills gained a 4th file)
+- 4 skills now on the v3.6.0 eight-doc + split-file template (User Needs, Audience, Collecting; Situations still on v3.5.0 seven-doc)
+- 56 skills still on the v3.1.0 audit-driven structure
+- `glare-marketplace-core` package bumped 3.5.0 → 3.6.0
+- All 5 sibling skill copies synced
+
+### Description trigger updates
+
+All 3 affected SKILL.md descriptions now fire on Glarify vocabulary: `"Glarify this"`, format names (message/deck/board/script/doc/brief/roadmap/experiment/business case), and reader-type triggers (VP, execs, PM, Head of Product, stakeholder brief). Verified under the 1024-char limit.
+
+---
+
 ## 3.5.0 — 2026-05-26 (Define area: Audience + Collecting migrated; Patterns deprecated, Situations added)
 
 Significant Define-area rev. Three Audience-block updates from Bryan, plus a brand-new block (Situations) that replaces the archived Patterns block. **Three skills rebuilt to v1.2 on the 7-doc template, one new skill added at v1.0, one skill deprecated.** Marketplace bumped 3.4.0 → 3.5.0 as a single release.

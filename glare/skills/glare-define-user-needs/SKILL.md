@@ -1,9 +1,9 @@
 ---
 name: glare-define-user-needs
-description: Use this skill when the user is working on the User Needs block of the Define area — naming what users actually need before any solution. Triggers — "what user need does this solve," "is this a want or a need," needfinding, the five user-need categories (Basics, Trust, Personal, Impact, Feelings) and the 20 individual need types, distinguishing wants from needs ("faster horse" vs "faster travel"), tying a need to a metric type, credibility gaps, desirability and emotional pull, picking which part of User Needs to apply to a situation, worked examples and pattern library, near-miss when teams skip validation, agent operations runtime contract (output schema, confidence labels, escalation triggers). Do NOT use when the question is about who to test with (use `glare-define-audience`), how to gather evidence (use `glare-define-collecting`), or which numbers to track (use `glare-define-ux-metrics`). For broad Define, use `glare-define`; for the full Decision Map, use `glare-decision-map`.
-version: 3.4.0
-source_doc_version: v1.4 (7-doc template — Overview + Techniques + Playbook + References + Decisions + Examples + Agent Operations)
-last_rebuilt: 2026-05-22
+description: Use this skill when the user is working on the User Needs block of the Define area — naming what users actually need before any solution, OR formatting a completed User Needs output for a specific audience. Triggers — "what user need does this solve," "is this a want or a need," needfinding, the 5 user-need categories (Basics, Trust, Personal, Impact, Feelings) and the 20 individual need types, wants vs needs, tying a need to a metric type, credibility gaps, "Glarify this," format triggers (message/deck/board/script/doc/brief/roadmap/experiment/business case), Understanding Strength (Emerging/Building/Stable), agent operations runtime contract. Do NOT use when the question is about who to test with (use `glare-define-audience`), how to gather evidence (use `glare-define-collecting`), or which numbers to track (use `glare-define-ux-metrics`). For broad Define, use `glare-define`.
+version: 3.6.0
+source_doc_version: v1.4 (8-doc template — Overview + Techniques + Playbook + References + Decisions + Examples + Formats + Agent Operations)
+last_rebuilt: 2026-06-23
 
 sources:
   - doc_id: 1YBZeCMDzuYygl5F6iEvA6JTkLcjBgXXS85AjwO8iIS4
@@ -34,6 +34,10 @@ sources:
     title: Glare | Define, User Needs, Agent Operations v1.4
     drive_url: https://docs.google.com/document/d/1NtO0POY1yBSyalJUkRbjt16ESjRbVp0t5kFcv3acdQQ/edit
     last_synced: 2026-05-22
+  - doc_id: 14fwcm9Qhpi64TaC3bKR4R3D7sNgmkfqa558EUpJ_a5c
+    title: Glare | Define, User Needs, Formats v1.4
+    drive_url: https://docs.google.com/document/d/14fwcm9Qhpi64TaC3bKR4R3D7sNgmkfqa558EUpJ_a5c/edit
+    last_synced: 2026-06-23
 ---
 
 You are helping the user work the **User Needs** block of the Decision Map's **Define** area — anchoring design in what users are actually trying to accomplish before solutions, usability fixes, metrics, or roadmaps.
@@ -52,10 +56,13 @@ The five layers, in order:
 
 ## Files to read
 
-This skill ships two files alongside `SKILL.md`. Read them in this order:
+This skill ships three files alongside `SKILL.md`. Read them in this order:
 
-1. **`agent-operations.md` first.** Runtime contract for working with User Needs — output schema, confidence labels, input minimums, transition rules, escalation triggers, guardrails. These are operating instructions, not reference content. The highest-leverage rules are duplicated into the "Operating rules" section below so they bind even without consulting the file; the full prescriptive detail lives in `agent-operations.md`.
-2. **`reference.md` second.** Six practitioner sections — Overview, Techniques, Playbook, References, Decisions, Examples — plus the When-to-use and Failure-modes layers. This is the content the practitioner is working *with*; it's what the team reads and discusses. The Skill consults it to ground classifications, find the right pattern entry, pull a worked example, or route a stuck user via Decisions.
+1. **`agent-operations.md` first.** Runtime contract for **producing** the artifact — output schema, confidence labels, input minimums, transition rules, escalation triggers, guardrails. Governs how a User Need output is *made*.
+2. **`formats.md` — only when the user is packaging an existing output for delivery.** Runtime contract for **Glarifying** — the 4-step resolution sequence (Understanding Strength → Purpose → Audience → Format), the 9 format types, compatibility matrices, and a second layer of Agent Operations governing formatting. Triggered by requests like "Glarify this," "format this as," "turn this into a slide," or naming any specific format.
+3. **`reference.md` third.** Six practitioner sections — Overview, Techniques, Playbook, References, Decisions, Examples — plus the When-to-use and Failure-modes layers. The content the practitioner is working *with*.
+
+The highest-leverage rules from both AO layers are duplicated into "Operating rules" below so they bind even without consulting the files.
 
 If the user has only described their situation in a sentence or two, start by routing them through the **Decisions** section of `reference.md` — match their situation to one of the 8 entries before doing anything else.
 
@@ -123,6 +130,23 @@ Escalate (don't auto-resolve) when:
 - The only available input is a stakeholder assumption
 
 Escalation outputs must preserve uncertainty visibly, name the unresolved interpretations, identify what evidence is missing, and recommend next Collecting steps — not default to a direction.
+
+### Formats (Glarify) — the second runtime contract
+
+When the user has a completed User Need output and asks to share it, present it, or format it, the Formats layer applies. Resolve four variables **in order** before producing any formatted output:
+
+| Step | Variable | Values |
+|---|---|---|
+| 1 | **Understanding Strength** | Emerging (early signals) · Building (multiple sources) · Stable (cross-source confirmed). Governs tone and which purposes the output can honestly serve. |
+| 2 | **Purpose** | Inform · Align · Decide · Prioritize · Validate · Hand Off |
+| 3 | **Audience (reader)** | Product team · Designer · Researcher · Product leader · Executive · Cross-functional |
+| 4 | **Format** | Messages · Decks · Boards · Scripts · Docs · Brief · Roadmap · Experiment · Business Case |
+
+**Every formatted output must include a visible Understanding Strength signal phrase early (first sentence or labeled field).** Emerging: "Early signals suggest..." · Building: "Evidence is building across..." · Stable: "This need is well-supported..." Never bury or omit.
+
+**Prohibited on Formats:** presenting Emerging as Stable · omitting the signal phrase · using Brief/Business Case for Emerging without framing the ask as further investigation · formatting Multiple Needs into Messages or Boards without splitting · adding evidence not in the source output.
+
+Full compatibility matrices (output type × format, understanding × purpose) and per-format structural rules live in `formats.md`.
 
 ## How to apply
 
