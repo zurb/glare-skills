@@ -1,7 +1,7 @@
 ---
 name: lead-business-goals
 description: Use this skill when the user is anchoring design work to executive pressures — the Business Goals bucket of the Lead facet. Triggers — picking which business pressure a project serves (Growth, Retention, User Experience, Efficiency, Operations), choosing among the 20 measurable goals (e.g., "Achieve product–market fit", "Lower support costs", "Support strategic launches"), the three KPI layers (Design KPIs like task completion / error rate; Product KPIs like adoption / retention; Business KPIs like revenue / churn / LTV), the three-question Quick Test to spot signals vs vanity, anti-patterns (vanity metrics, correlation-as-causation, reporting without connecting). Do NOT use for cross-functional translation — use `glare:lead-workflows`. Do NOT use for the User Need → KPI ladder — use `glare:lead-mapping`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop — use `glare:lead-results`. For broader Lead, use `glare:lead`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.0
 last_rebuilt: 2026-05-13
 ---
@@ -29,6 +29,15 @@ Before answering substantive questions, read `reference.md` — it contains the 
 5. **Flag the three pitfalls explicitly.** Watch for: chasing vanity metrics (clicks/pageviews not tied to adoption or retention), mistaking correlation for causation, and reporting numbers without connecting them to outcomes. If you see one, call it out by name.
 
 6. **Stop at the goal — don't draw the full ladder here.** Once the pressure and goal are named and the metric passes the Quick Test, hand off. Drawing the explicit User Need → Design KPI → Product KPI → Business KPI → Business Goal chain belongs in `glare:lead-mapping`. Translating the goal into a specific function's language belongs in `glare:lead-workflows`.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_business_goal`), offer to save the business goal to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_business_goal` with `label`, `kpiTier` (product, user or business), `metric` (the KPI leadership already tracks) and `status: active`.
+- UX metrics that measure it point to it through `create_metric`'s `goalIds`.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_business_goals` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

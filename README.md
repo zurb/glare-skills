@@ -61,6 +61,10 @@ Align stakeholders, operationalize workflows, connect outcomes to business goals
 
 Then run `/reload-plugins`. Skills load under the plugin's name, as `glare:measure-hunches`, `glare:define-ux-metrics` and so on, and auto-trigger when your conversation matches their domain.
 
+### Optional: Ray
+
+Ray stores the Decision Map as records: situations, user needs, audiences, concepts, hunches, questions, findings, initiatives, methods, bets, business goals, workflows, results and metrics. With the Ray MCP connected, the skills that produce one of those offer to save it to a Ray project, and `glare:decision-map` and `glare:master` read the project before advising. Each of those skills has a "Saving to Ray" section naming the tool and the links. Without Ray, the sections are skipped and the skills work the same.
+
 ### Cursor, Codex, and other coding tools
 
 ```

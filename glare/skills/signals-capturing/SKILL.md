@@ -1,7 +1,7 @@
 ---
 name: signals-capturing
 description: Use this skill when the user wants the practical, end-to-end workflow for creating Design Signals inside the work — "how do I capture a signal," "how do we run a fast signal-capture loop," "we always gather feedback too late," "how do I turn this hunch into a real signal," "how do I make signals part of the sprint." Triggers also include the four-stage flow (Frame → Ground → Measure → Use), turning a hunch into a question, grounding to user need + business goal, anchoring to a metric, putting the signal next to real options, bringing in lightweight user input, comparing and reading versions, deciding what moves forward, and keeping the signal attached to the decision over time. Do NOT use for the structural anatomy of a single signal (`glare:signals-components`), the four signal types (`glare:signals-types`), or evaluating whether a built signal is usable (`glare:signals-quality`).
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.3
 last_rebuilt: 2026-05-13
 ---
@@ -33,6 +33,15 @@ Signals are most useful when they are part of the work, not something added afte
 5. **Stay with the signal during decision-making.** Most teams "fall back into opinion" at the comparison stage. Force the conversation to stay on: where is one direction clearly stronger, where do both struggle, where do results and comments align.
 
 6. **Keep the signal attached.** Most decisions don't fail in the moment — they drift later. The final move is preserving the rationale ("we chose this because users understood it faster") so the decision survives reviews, handoffs, and future changes.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `save_finding`), offer to save each captured signal to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- A captured signal is a finding in Ray: `save_finding` with the one-sentence signal, `direction`, `confidence`, `metrics` and `evidence`, as `glare:measure-findings` describes.
+- Capture as the work moves, not at the end: a finding saved during the Measure stage is one the team can still act on.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_findings` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

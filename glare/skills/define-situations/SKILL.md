@@ -1,7 +1,7 @@
 ---
 name: define-situations
 description: Use this skill when the user is interpreting collected signals to identify recurring conditions — the new 4th block of Define that replaces the archived Patterns block. Triggers — "I have signals but can't see a pattern," "what does this drop-off mean," "are these signals telling the same story," the four lenses (By Type, By Time, By Stage, By Engagement), Observe → Interpret → Name cadence, the 9 named situation types (Comprehension breakdown, Trust gap, Effort mismatch, Habit formation gap, Decision loop, Organizational blind spot, etc.), four-part situation structure (trigger/goal/friction/success), Primary Situation Output, situation strength checklist, JTBD vs situations, agent operations runtime contract. Do NOT use when naming the underlying need (use `glare:define-user-needs`), defining who data comes from (use `glare:define-audience`), or gathering evidence (use `glare:define-collecting`). For broad Define, use `glare:define`. Replaces `glare:define-patterns`.
-version: 1.0.0
+version: 1.1.0
 source_doc_version: v1.0/v1.1 (7-doc template — Overview + Techniques + Playbook + References + Decisions + Examples + Agent Operations)
 last_rebuilt: 2026-05-26
 
@@ -163,6 +163,15 @@ Do not upgrade confidence to produce a cleaner result.
 - **Situations ≠ User Needs.** User Needs names the category (Basics, Trust, Personal, Impact, Feelings). Situations names the specific context inside that category — how the need manifests under specific conditions.
 - **Situations ≠ Jobs to Be Done.** JTBD treats the situation as background. Situations inverts that — the conditions around the need *are* the unit of analysis. JTBD helps you write the User Needs block. Situations is what comes after you collect evidence and recurring conditions emerge.
 - **Source docs reference "patterns" too.** When the source uses "pattern" as a generic noun (a recurring observation), that's not the same as the deprecated Patterns block. The Decision Map block is Situations.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_situation`), offer to save the framed situation to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_situation` with `statement` (the framed problem) and `status: active`; set `resolved` later with `update_situation`.
+- Link the user needs and audiences it involves in `links` (relation `references`). Hunches written against it link back with `addresses`.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_situations` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

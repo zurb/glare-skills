@@ -1,7 +1,7 @@
 ---
 name: define-user-needs
 description: Use this skill when the user is working on the User Needs block of the Define area — naming what users actually need before any solution, OR formatting a completed User Needs output for a specific audience. Triggers — "what user need does this solve," "is this a want or a need," needfinding, the 5 user-need categories (Basics, Trust, Personal, Impact, Feelings) and the 20 individual need types, wants vs needs, tying a need to a metric type, credibility gaps, "Glarify this," format triggers (message/deck/board/script/doc/brief/roadmap/experiment/business case), Understanding Strength (Emerging/Building/Stable), agent operations runtime contract. Do NOT use when the question is about who to test with (use `glare:define-audience`), how to gather evidence (use `glare:define-collecting`), or which numbers to track (use `glare:define-ux-metrics`). For broad Define, use `glare:define`.
-version: 3.6.0
+version: 3.7.0
 source_doc_version: v1.4 (8-doc template — Overview + Techniques + Playbook + References + Decisions + Examples + Formats + Agent Operations)
 last_rebuilt: 2026-06-23
 
@@ -177,6 +177,15 @@ Full compatibility matrices (output type × format, understanding × purpose) an
 - **Files to read** instruction updated to load `agent-operations.md` before `reference.md`.
 
 Earlier v1.4 changes (carried over from v3.3.0): Decisions added as a router for the block; Examples added with 5 worked examples + Pattern Library + Near-Miss; canonical 20-need count locked in (was incorrectly 22 in older revisions); strong-vs-weak need-statement characteristics formalized; three-question prioritization rule added.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_user_need`), offer to save each user need to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_user_need` with `statement`, plus `needType` and `category` when the reference's taxonomy gives them.
+- Link it to the situation it came from (`derived_from`) and to the audience it belongs to (`references`).
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_user_needs` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

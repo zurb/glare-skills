@@ -1,7 +1,7 @@
 ---
 name: lead-results
 description: Use this skill when the user is closing the loop between learning and leadership trust — the Results bucket of the Lead facet. Triggers — running the Project Work loop (Initiatives → Findings → Decisions → Outcomes); identifying which layer is broken; assessing maturity against the five Dimensions (Organizing Work, Managing Complexity, Building Proof, Guiding Decisions, Scaling Influence); spotting any of the 15 diagnostic symptoms ("metrics exist but no one trusts them," "loudest voice wins," "wins stay local"); the three principles (See → Tighten workflow → Measure what matters); the Results Alignment Checklist; Helio Glare Assessment; "clarity beats precision" mantra. Also the University Website case study (nav +36%, RFI +19%, homepage +57%). Do NOT use for pressures/goals — use `glare:lead-business-goals`. Do NOT use for cross-functional language — use `glare:lead-workflows`. Do NOT use for the KPI ladder — use `glare:lead-mapping`. For broader Lead, use `glare:lead`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.1
 last_rebuilt: 2026-05-13
 ---
@@ -29,6 +29,15 @@ Before answering substantive questions, read `reference.md` — it contains the 
 5. **Run the Results Alignment Checklist for a structured pass.** (1) Map one initiative through findings/decisions/outcomes. (2) Identify where alignment breaks between user needs and business goals. (3) Apply the calibration from the diagnostic. (4) Re-measure in one week. (5) Share proof and reconnect teams around evidence.
 
 6. **Use the outcomes mantra to defuse attribution debates.** "Perfect attribution is rare and that's fine. What matters is direction and progress. Clarity beats precision every time." When a stakeholder demands airtight causation, redirect to direction-of-travel evidence anchored in the loop.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_result`), offer to save the result to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_result` with `statement`, `verdict` (win, partial, miss or inconclusive) and `stalledAt` (design, product or business) when it fell short. Link the goal it reports on and the bets behind it (`derived_from`).
+- When the result closes a cycle on a tracked metric, `record_metric_result` computes the verdict from the readings instead.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_results` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

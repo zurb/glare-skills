@@ -1,7 +1,7 @@
 ---
 name: focus-decisions
 description: Use this skill when the user is making a **Decision** in the Focus facet — turning signals into action. Triggers — "make the call," "we need to decide," "should we ship this," "should we test another iteration," "should we kill this," "revisit later," "we keep circling," "findings sit in decks," "explain the tradeoff," "lock the next move," writing a decision record, distinguishing strategic decisions (investment / roadmap / product direction) from tactical. Also use when picking any of the 5 tactical decision types — **Implement, Refine Design, Test Iteration, Revisit Later, Do Not Pursue** — or the decision triangle (strategic at top, tactical at bottom). Do NOT use when the initiative isn't framed (use `glare:focus-initiatives`), the frame isn't chosen (use `glare:focus-methods`), or signals haven't been placed side by side (use `glare:focus-comparing`). For executive ROI / KPI, use `glare:lead`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.3
 last_rebuilt: 2026-05-13
 ---
@@ -41,6 +41,15 @@ Before answering substantive questions, read `reference.md` — full compressed 
 6. **The decision record should travel.** Capture: the initiative, the concept/flow/feature/message considered, the UX metric, the signal, the comparison, the tradeoff accepted, and the next step. This is what lets product prioritize, design refine, research target, marketing sharpen, and leadership back the direction.
 
 7. **Hand off to `glare:lead`** when the decision is made and the conversation turns to business goals, workflows, KPI relationships, or proving impact at the org level.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_bet`), offer to save the decision to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- A decision is a bet in Ray: `create_bet` with `statement` (what the team will do), `tradeoff` (what it gives up) and `status: proposed`; move it to `shipped` or `reverted` with `update_bet`.
+- Link the findings and comparison that justify it (`derived_from`) and the initiative it belongs to (`serves`).
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_bets` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

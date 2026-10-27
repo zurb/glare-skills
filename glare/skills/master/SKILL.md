@@ -1,7 +1,7 @@
 ---
 name: master
 description: Cross-component orchestration across the v3 Glare marketplace — use when the user can't tell which of the 6 components applies, or when their question spans more than one. Triggers — "I'm stuck and don't know where to start," "which Glare skill applies here," "where should I go next," "I lost the thread," "how does X relate to Y in Glare," "trace work end-to-end across the system," "how do the 6 components fit together," "how do Signals connect to Decision Map," "how does Review use UX Metrics," or anyone moving across Getting Started, Decision Map, Design Review, UX Metrics, Design Signals, and Design Assessment. Also when mid-flow and lost, when work scatters across two components, or when disambiguating between a parent and a child. Do NOT use when already inside one component — invoke that component's parent (`glare:getting-started`, `glare:decision-map`, `glare:design-review`, `glare:ux-metrics`, `glare:design-signals`, `glare:design-assessment`) and let it route within.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.34 (Decision Map) + v1.32 (UX Metrics) — new orchestrator skill
 last_rebuilt: 2026-05-13
 ---
@@ -52,6 +52,13 @@ Before answering substantive questions, read `reference.md`. It carries the six-
 7. **Walk the chain when asked.** "Signal → Metric → Decision → Outcome" is the canonical cross-component trace: a signal (Design Signals) carries a metric (UX Metrics), informs a decision (Decision Map Focus), produces an outcome (Decision Map Lead), and gets evaluated in a design review (Design Review). Maturity across the chain is diagnosed by Design Assessment.
 
 8. **Name the handoff that comes next.** If the user is asking about a connection because they're about to do work, name the destination skill the connection points them toward. Don't just describe the relationship in the abstract.
+
+## Reading from Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `get_project`), read the project's state in Ray before routing. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- Before routing, read the project (`get_project`, then the `list_*` tools for hunches, findings, bets, metrics) to see which blocks already exist. An empty facet, or hunches with no findings, often names the next skill better than the question does.
+- The routed skill says which record to save.
 
 ## Handoffs
 

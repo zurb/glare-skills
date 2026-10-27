@@ -1,7 +1,7 @@
 ---
 name: focus-comparing
 description: Use this skill when the user is **Comparing** in the Focus facet — placing signals side by side. (v1.3 source is "Compare"; folder keeps "comparing" for install paths.) Triggers — "compare versions," "v1 vs v2," "is this score good or bad," "compare against benchmark," "compare audiences/segments/cohorts," "competitor comparison," "side by side," "which is stronger," "what's the tradeoff," "across platforms," "before and after," "across the journey." Also when the user mentions any of the 12 comparison points (Iteration, User Goals/Tasks, Competitors, Feature Usage, Timeline, Geographies, Segments, User Lifecycle, Journeys, Behavioral Triggers, Platforms/Devices, Season) or the 5-step process (name decision → choose point → same metric → find strongest signal/tradeoff → turn into finding). Do NOT use when the initiative isn't framed (use `glare:focus-initiatives`), frame isn't chosen (use `glare:focus-methods`), or ready to commit (use `glare:focus-decisions`).
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.3
 last_rebuilt: 2026-05-13
 ---
@@ -46,6 +46,15 @@ Before answering substantive questions, read `reference.md` — full compressed 
 5. **Don't force a comparison without a metric.** If the team doesn't know what matters, everything looks comparable. Route back to `glare:focus-initiatives` or `glare:focus-methods` to clarify the metric or decision first.
 
 6. **Hand off to `glare:focus-decisions`** once the comparison has produced a finding with a tradeoff — the next move is committing to a decision type.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_comparison`), offer to save the comparison to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- When the signals come from two or more Helio tests, `create_comparison` with their test ids builds the side-by-side in Ray (it needs a connected Helio account).
+- Save what the comparison shows as a finding (`save_finding`) with the comparison in `evidence`, so the takeaway, not just the table, is on the map.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_comparisons` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 
