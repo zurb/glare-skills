@@ -7,11 +7,11 @@ ZURB / Helio's Glare framework, packaged as 65 skills across 6 sections. Install
 | Section | Skills | Parent | Contents |
 |---|---:|---|---|
 | Get Started | 7 | `glare-get-started` | Onboarding, first signal, AI workflows, glossary |
-| Design Review | 12 | `glare-design-review` | SIGNAL framework (Surface, Identify, Ground, Navigate, Align, Lock) + techniques, scoring, rubric, coach, transcript |
-| Design Signals | 5 | `glare-design-signals` | Signal anatomy, types, quality, capturing |
-| Decision Map | 21 | `glare-decision-map` | Define / Measure / Focus / Lead (parent + 4 sub-skills each) |
-| Design Assessment | 9 | `glare-design-assessment` | 5 org-maturity dimensions + scoring, reading, using results |
-| UX Metrics | 10 | `glare-ux-metrics` | Framework + foundations (what-is, why, system) + 3 metric-type libraries (28 metrics) + stacks, mapping, applying |
+| Design Review | 12 | `glare:design-review` | SIGNAL framework (Surface, Identify, Ground, Navigate, Align, Lock) + techniques, scoring, rubric, coach, transcript |
+| Design Signals | 5 | `glare:design-signals` | Signal anatomy, types, quality, capturing |
+| Decision Map | 21 | `glare:decision-map` | Define / Measure / Focus / Lead (parent + 4 sub-skills each) |
+| Design Assessment | 9 | `glare:design-assessment` | 5 org-maturity dimensions + scoring, reading, using results |
+| UX Metrics | 10 | `glare:ux-metrics` | Framework + foundations (what-is, why, system) + 3 metric-type libraries (28 metrics) + stacks, mapping, applying |
 | Navigation | 1 | `glare-router` | Cross-section meta-skill — points to ONE skill when you're stuck |
 
 Each skill has a `SKILL.md` with trigger conditions and step-by-step apply instructions, plus a `reference.md` with the compressed source material (worksheets, tables, worked examples) that the skill reads before answering.
@@ -33,13 +33,13 @@ For a graphical manager instead of typed commands, run `/plugin` or `/plugins` a
 
 Each skill's YAML description lists the triggers that make Claude load it. Examples:
 
-- Say "let's pick metrics for checkout" → `glare-define-ux-metrics`
-- Say "we need to benchmark v1 vs v2" → `glare-focus-comparing`
-- Say "how do I tell sales this is working?" → `glare-lead-workflows`
-- Say "we believe that simplifying onboarding will improve activation" → `glare-measure-hunches`
+- Say "let's pick metrics for checkout" → `glare:define-ux-metrics`
+- Say "we need to benchmark v1 vs v2" → `glare:focus-comparing`
+- Say "how do I tell sales this is working?" → `glare:lead-workflows`
+- Say "we believe that simplifying onboarding will improve activation" → `glare:measure-hunches`
 - Say "I'm stuck and don't know where to start" → `glare-router`
 
-Parent skills (`glare-decision-map`, `glare-define`, `glare-measure`, `glare-focus`, `glare-lead`) handle multi-block questions and route to the right child. When the entry point isn't obvious, `glare-router` diagnoses where you are and recommends ONE specific skill.
+Parent skills (`glare:decision-map`, `glare:define`, `glare:measure`, `glare:focus`, `glare:lead`) handle multi-block questions and route to the right child. When the entry point isn't obvious, `glare-router` diagnoses where you are and recommends ONE specific skill.
 
 ## Portable prompts
 
