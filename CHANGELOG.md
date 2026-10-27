@@ -1,5 +1,22 @@
 # Glare Marketplace Changelog
 
+## 4.1.0 — 2026-10-27 — Skills save their output to Ray, when it's connected
+
+Twenty skills that produce a Decision Map record gain a **Saving to Ray** section, placed before Handoffs. It is optional: it applies only when the Ray MCP is connected, and a skill without Ray works exactly as before.
+
+| Skill | Ray record |
+|---|---|
+| `define-situations`, `define-user-needs`, `define-audience` | situation, user need, audience |
+| `define-ux-metrics`, `ux-metrics-stack` | metric |
+| `measure-concepts`, `measure-hunches`, `measure-questioning` | concept, hunch, question |
+| `measure-findings`, `signals-capturing` | finding (Ray's home for a design signal) |
+| `focus-initiatives`, `focus-methods`, `focus-comparing`, `focus-decisions` | initiative, method, comparison, bet |
+| `lead-business-goals`, `lead-workflows`, `lead-results` | business goal, workflow, result |
+| `lead-mapping` | the Chain of Proof as links |
+| `decision-map`, `master` | read the project before advising (**Reading from Ray**) |
+
+Each section names the tool, the fields and the links, then keeps the same three rules: pick the project and never create one unasked, check the matching list first so nothing is saved twice, and save only wording the person approved. Each skill's minor version moved. README gains an "Optional: Ray" note.
+
 ## 4.0.0 — 2026-10-27 — Skills load as `glare:measure-hunches`, not `glare-measure-hunches`
 
 **Breaking.** Every skill folder and `name` dropped its `glare-` prefix (`glare-measure-hunches` → `measure-hunches`). Installed as a Claude Code plugin, they now load as `glare:measure-hunches`, the same way other plugins namespace their skills (`vercel:react-best-practices`), instead of the doubled `glare:glare-measure-hunches`.

@@ -1,7 +1,7 @@
 ---
 name: focus-initiatives
 description: Use this skill when the user is naming an **Initiative** in the Focus facet — defining the area of work before methods or comparisons run. Triggers — "what should we focus on," "frame the initiative," "scope the work," "scattered requests," "everything feels important," "connect this redesign to a goal," "find the bigger picture," "we keep getting one-off requests," picking between requests, mapping a request to a business goal, grouping concepts under one initiative. Also when the user mentions any of the 10 initiative types (Simplify Identity & Access, Accelerate Onboarding, Optimize Navigation, Streamline Checkout & Payment, Increase Engagement & Retention, Personalize Experiences, Strengthen Collaboration, Elevate Marketing & Growth Pages, Improve Content & Support, Expand Device & Context Reach). Do NOT use when already framed and choosing how to learn (use `glare:focus-methods`), comparing signals (use `glare:focus-comparing`), or committing (use `glare:focus-decisions`).
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.3
 last_rebuilt: 2026-05-13
 ---
@@ -34,6 +34,15 @@ Before answering substantive questions, read `reference.md` — full compressed 
 5. **Don't over-define.** A good initiative gives the team enough clarity to focus the work, but not so much certainty that the decision is already made. Keep scope tight enough to learn quickly.
 
 6. **Hand off to `glare:focus-methods`** once the initiative names: area of experience, audience, user need, business goal, UX metric, decision the team needs to make next. That set is the input Methods needs.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_initiative`), offer to save the initiative to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_initiative` with `name`, `description` and `status: active` (`done` or `dropped` later with `update_initiative`).
+- Link the findings that made it worth attention (`derived_from`).
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_initiatives` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

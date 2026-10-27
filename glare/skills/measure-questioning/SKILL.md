@@ -1,7 +1,7 @@
 ---
 name: measure-questioning
 description: Use this skill when the user is drafting, critiquing, or organizing research questions in the Measure area. Triggers — sorting questions into the four types — **People** (habits/behaviors), **Process** (steps/friction), **Product** (clarity/usefulness), **Problem** (barriers); choosing a Mode — **Exploratory**, **Evaluative**, **Comparative**; the bias check (leading? loaded? jargon-heavy?); promoting open questions into testable ones (e.g., "Do people like our homepage?" → "Can users find pricing within 5 seconds?"); aligning to a UX metric family — Behavioral, Attitudinal, Performance, Perceptual; the Glare Questioning Canvas; building a reusable Question Library. Do NOT use when anchoring intent (use `glare:measure-concepts`), forming a hunch (use `glare:measure-hunches`), translating data (use `glare:measure-findings`), or asking about the loop (use `glare:measure`). For the Decision Map, use `glare:decision-map`. For Need / Use / Prefer / Adopt, use `glare:signals-types`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.1 (Questioning) — refreshed 2026-05-11 + canonical-28 constraint
 last_rebuilt: 2026-05-13
 ---
@@ -56,6 +56,15 @@ Source-doc structure: **Getting Started → Begin Questioning → Make It Practi
 3. **Post-Test Reflection** — review which questions produced usable signals; refine the broad or biased ones.
 4. **Share the Questions, Not Just the Answers** — when reporting findings, include the question that led to them so others can replicate.
 5. **Build a Question Library** — collect well-framed, tested questions in a shared workspace and reuse them across projects for consistency.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_question`), offer to save the research questions to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_question` with `text`, `questionType` (open-ended or testable) and `status: open`.
+- Link each to the hunch it tests (`tests`). When a finding answers it, set `status: answered` with `update_question` and link the finding.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_questions` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

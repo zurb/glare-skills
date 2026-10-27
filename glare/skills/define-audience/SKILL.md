@@ -1,7 +1,7 @@
 ---
 name: define-audience
 description: Use this skill when the user is defining WHO their signals come from in the Define area — picking audiences, evaluating credibility, building Audience Definition Cards, OR formatting a completed Card for a specific reader. Triggers — "who are we designing for," "is this audience credible," the four source types (Helio, Advertising, CRM, Internal Assumption), the four audience types (Participants, Customers, Stakeholders, Project Team), Audience Definition Card, High/Medium/Low credibility, 3–5 attributes, lifecycle segments, audience drift, label vs behavior, "Glarify this audience," format triggers (brief/deck/message/board/business case for a Helio study), agent operations runtime contract. Do NOT use when naming the need (use `glare:define-user-needs`), choosing techniques (use `glare:define-collecting`), or picking metrics (use `glare:define-ux-metrics`).
-version: 3.6.0
+version: 3.7.0
 source_doc_version: "v1.2 (7-doc) + v1.4 Formats (8-doc — Overview, Techniques, Playbook, References, Decisions, Examples, Formats, Agent Operations)"
 last_rebuilt: 2026-06-23
 
@@ -194,6 +194,15 @@ Full compatibility matrices and per-format structural rules live in `formats.md`
 - **Agent Operations split into its own file** (`agent-operations.md`) with per-attribute-type extraction targets — what counts as Present, Missing, or Assumed for each of the 25 sub-attributes across the 5 types.
 - **Operating rules promoted into SKILL.md** so the binding rules (source identification, output contract, credibility scoring, routing, escalation) bind on every invocation.
 - **7 worked Examples** — each with a strong version (proper card) and a weak version (what happens when source evaluation is skipped or groups are collapsed).
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_audience`), offer to save the audience definition to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_audience` with `name` and `description` (who, in the team's own terms, plus the credibility read).
+- When the audience is a Helio panel, set `helioAudienceId` so tests and the record point at the same people.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_audiences` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

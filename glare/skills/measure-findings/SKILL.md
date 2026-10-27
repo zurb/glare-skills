@@ -1,7 +1,7 @@
 ---
 name: measure-findings
 description: Use this skill when the user is in the Findings move of the Measure area — turning raw data into evidence-backed signals. Triggers — translating drop-off rates, survey scores, heatmaps, or task-success numbers into a finding; tying a finding to a user need (comprehension, usefulness, satisfaction, clarity, trust); tying it to a business result (conversion, retention, efficiency, revenue); cross-checking against the concept or hunch; writing a recommendation tied to both user and business metrics; the chain *raw data → finding → user value → business results → act*. Also when "metrics don't tell us anything yet" or deciding signal vs noise. Do NOT use when anchoring intent (use `glare:measure-concepts`), forming a hunch (use `glare:measure-hunches`), drafting questions (use `glare:measure-questioning`), or asking about the loop (use `glare:measure`). For the Decision Map, use `glare:decision-map`. For signal anatomy/quality, use `glare:signals-components`, `glare:signals-quality`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.1
 last_rebuilt: 2026-05-13
 ---
@@ -29,6 +29,15 @@ Before answering substantive questions, read `reference.md` — it contains the 
 5. **Act on the signal (Step 5).** Write the recommendation tied to both a user metric and a business metric. Worked example: *Signal: Simplifying payment options will increase completion (business metric) and lower error rate (user metric).* If you cannot name both metrics in the recommendation, it isn't a signal yet — return to Step 2 or 3.
 
 6. **Share widely.** A signal sitting in one person's notebook is wasted. Findings close the loop — research → signals → action — only when they reach the people who can act on them. Pair the signal with the question that produced it (the v1.1 Questioning practice) so context travels with the answer.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `save_finding`), offer to save the finding to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `save_finding` with `statement` (the one-sentence signal), `direction`, `confidence`, `metrics` (the numbers behind it), `recommendation`, and `evidence` (the tests, comparisons or threads it comes from).
+- Then close the loop: set the hunch it tested with `update_hunch` (`confirmed`, `refuted` or `inconclusive`), and link the finding to the user need and goal it bears on with `link_resources` (`supports` or `contradicts`).
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_findings` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

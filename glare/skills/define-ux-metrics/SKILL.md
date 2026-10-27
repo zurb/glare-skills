@@ -1,7 +1,7 @@
 ---
 name: define-ux-metrics
 description: Use this skill when the user is in the UX Metrics block of the Define area — picking the numbers that prove design worked for a specific decision. Triggers — choosing Attitudinal / Behavioral / Performance / Intelligence metrics; the four lenses (By Type, By Stage, By Time, By Engagement); leading vs lagging indicators; predictive / proxy / analytics stages; the four comparison filters (Vanity vs Actionable, Qualitative vs Quantitative, Exploratory vs Reporting, Correlated vs Causal); the four quality principles (Easy to Understand, Good for Comparison, Use Rates or Ratios, Focus on Behavior); mismatches like "high satisfaction + low completion"; capturing leading indicators in Helio. Do NOT use when naming the need (use `glare:define-user-needs`) or picking instruments (use `glare:define-collecting`). For the broader UX Metrics framework, AI / Intelligence metrics, or metrics vs signals vs business KPIs — route to `glare:ux-metrics`. For the Need / Use / Prefer / Adopt signal taxonomy, `glare:signals-types`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.3 + canonical-28 constraint
 last_rebuilt: 2026-05-13
 ---
@@ -46,6 +46,16 @@ Canonical 28:
 6. **Diagnose mismatches** — high satisfaction + low completion = people like the idea but can't finish; strong performance + low engagement = system works but no one cares; high completion + low satisfaction = users grind through, churn warning; high desirability + low usage = love the idea, won't adopt; consistent activity + low value = trapped in habit.
 
 7. **End with the discipline loop** — Start small (1–2 metrics tied to a real issue) → Test and learn → Share and align → Adjust as you grow → close the loop by feeding analytics back into the next predictive test. Then run the **9-item quick checklist**, including the new ninth item: *does it build momentum instead of slowing it down?*
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_metric`), offer to save each defined metric to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_metric` with `name`, `metricType` (the canonical metric, such as Completion Rate), `category` (performance, behavioral or attitudinal), `definition` (exactly how it's calculated and where from), `unit` and `direction`. Percent values are percentage points (14 for 14%).
+- Add `baselineValue` and dates when a baseline exists, and `targetValue` when the team has agreed one. Link business goals with `goalIds` and the hunches expected to move it with `hunches`.
+- The definition and unit freeze once readings exist; a changed definition is a new metric with `supersedesId`. Readings come later, from `add_datapoints` or a Helio or GA4 read.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_metrics` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

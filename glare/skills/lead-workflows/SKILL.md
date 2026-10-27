@@ -1,7 +1,7 @@
 ---
 name: lead-workflows
 description: Use this skill when the user is translating design signals into the language of a specific business function — the Workflows bucket of the Lead facet. Ships eight cross-functional templates (Sales, Marketing, Product, Engineering, Strategy, Operations, Finance, Legal), each with top metrics, questions, measurement approach, jargon, "where design creates lift." Triggers — preparing a readout for one of those eight; the Quick Test (friction-free success → adoption/retention move → metric the function tracks); the 30-minute Quick Exercise mapping a single metric into one function; borrowing function vocabulary (pipeline, CAC, PMF, velocity, handle time, LTV) instead of design jargon. Do NOT use for the pressure or goal — use `glare:lead-business-goals`. Do NOT use for the KPI ladder — use `glare:lead-mapping`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop — use `glare:lead-results`. For broader Lead, use `glare:lead`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.0
 last_rebuilt: 2026-05-13
 ---
@@ -46,6 +46,14 @@ Before answering substantive questions, read `reference.md` — it contains the 
 | Legal | compliance, liability cost, risk exposure | preventing legal exposure by simplifying risky experiences (consent, accessibility) |
 
 See `reference.md` for the per-function questions, measurement approach, signal chain, jargon, and a worked example for each row.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_workflow`), offer to save the workflow to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_workflow` with `name` and `description`: the function, its rhythm and how design evidence enters it.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_workflows` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

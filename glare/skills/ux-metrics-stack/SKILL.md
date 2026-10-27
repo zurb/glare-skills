@@ -1,7 +1,7 @@
 ---
 name: ux-metrics-stack
 description: Use this skill when the user is combining multiple UX metrics together to evaluate a workflow or experience — phrases like "UX metric stack," "metric stack," "combine UX metrics," "stack of metrics," "Design Stack," "Research Stack," "feature findability stack," "onboarding stack," "checkout stack," "metrics that explain each other," "high completion plus low confidence," "Confusion Trap," "Friction Wall," "Trust Gap," "Commitment Check," "behavior plus attitudinal plus performance," or asks how 3-7 metrics work together. Also use when the user wants to build a reusable stack for a recurring workflow type, or compare workflows using a stack instead of single metrics. Do NOT use for single-metric definitions (use type sub-skills `glare:ux-metrics-attitudinal` / `glare:ux-metrics-behavioral` / `glare:ux-metrics-performance`), the broader framework (use `glare:ux-metrics`), or research-method picking (use `glare:define-collecting`).
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.32
 last_rebuilt: 2026-05-13
 ---
@@ -45,6 +45,15 @@ Before answering, read `reference.md` — it carries the full v1.32 UX Metric St
 5. **Build reusable stacks for recurring workflow types.** Onboarding, navigation, dashboards, feature findability, AI workflows, mobile, e-commerce, marketing — each of these can have a default stack the team adapts rather than building from scratch each sprint.
 
 6. **Hand off the stack into Design Signals.** Once the stack reveals a pattern, the next move is to wrap that pattern into a six-piece Design Signal so it carries direction (`glare:signals-components`).
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_metric`), offer to save the stack's metrics to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- Save each metric in the stack with `create_metric`, as `glare:define-ux-metrics` describes, and name the stack in each `definition` so the set reads as one.
+- Link every metric to the same business goal (`goalIds`) so the stack shows up together under it.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_metrics` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

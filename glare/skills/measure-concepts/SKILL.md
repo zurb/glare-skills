@@ -1,7 +1,7 @@
 ---
 name: measure-concepts
 description: Use this skill when the user is working on the Concepts move of the Measure area — defining a focused, testable design effort before solutioning. Triggers — framing intent for a redesign, narrowing a big initiative to one actionable bet, mapping a user need from Define against a business goal from Lead, the 5-minute test ("if you can't write user need + business goal + signal in 5 min, the concept isn't clear"), browsing the 200+ Concept catalog (Products, Websites, Mobile Apps, E-commerce, Marketing — Dashboard Engagement, Checkout Flows, Push Notifications, Shopping Cart, Campaign Microsites). Also when jumping to solutions without anchoring intent, defining what "winning" looks like, or avoiding vanity metrics. Do NOT use when forming a hypothesis (use `glare:measure-hunches`), drafting questions (use `glare:measure-questioning`), translating data (use `glare:measure-findings`), or asking about the loop (use `glare:measure`). For the Decision Map, use `glare:decision-map`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.1
 last_rebuilt: 2026-05-13
 ---
@@ -29,6 +29,15 @@ Before answering substantive questions, read `reference.md` — it contains the 
 5. **Use the example pattern as a model.** *User Need (Define) = Clarity in checkout (comprehension + error rate); Business Goal (Lead) = Reduce payment drop-offs (conversion rate); Concept (Measure) = Redesign payment step to reduce abandonment.* Force the user's concept into this shape.
 
 6. **Locate the concept in the catalog when relevant.** Over 200 Concept pages exist across Products (Dashboard Engagement, Onboarding Walkthroughs, Account Management), Websites (Landing Page for Ads, Checkout Flows, Product Detail Pages), Mobile Apps (Login Flows, Push Notifications, AR Features), E-commerce (Shopping Cart, Wishlist, Order Tracking), and Marketing (Campaign Microsites, Case Studies, Social Media Creatives). Anchor to a category to get a comparable lens across projects.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_concept`), offer to save the concept to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_concept` with `statement`: the anchoring thesis, once it passes the 5-minute test.
+- Hunches written from it link back to it (`derived_from`), so the concept shows which bets rest on it.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_concepts` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

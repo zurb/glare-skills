@@ -1,7 +1,7 @@
 ---
 name: measure-hunches
 description: Use this skill when the user is forming a Hunch in the Measure area — turning instinct into a falsifiable, testable hypothesis. Triggers — writing or critiquing a "we believe..." statement, the hunch template *"We believe that [change] for [audience] will [impact] because [reason]"*, the belief primer *"We believe users need ___ so they can ___"*, checking falsifiability, strengthening weak hunches (e.g., "users like shorter forms" → "removing two steps will increase completion because users drop off at step 3"), spark techniques (Empathy Mapping, Customer Journey, Stakeholder Interviews, Competitive Analysis, Expert Audit). Also when tying an instinct to a UX metric (completion rate, task time, drop-off). Do NOT use when intent isn't defined (use `glare:measure-concepts`), moving into questions (use `glare:measure-questioning`), interpreting data (use `glare:measure-findings`), or wanting the loop overview (use `glare:measure`). For the Decision Map, use `glare:decision-map`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.0 (Hunches) — refreshed 2026-05-11 + canonical-28 constraint
 last_rebuilt: 2026-05-13
 ---
@@ -61,6 +61,16 @@ Translate shorthand from the source doc into canonical names — "completion rat
 - **Less documentation** — shared understanding replaces long docs
 - **Builds better features** — grounded in real user signs
 - **Keeps you learning** — drives iteration after launch, not guessing
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_hunch`), offer to save the hunch to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_hunch` with `statement` (the full "We believe [change] for [audience] will [impact] because [reason]" sentence), the four parts in `change`, `audience`, `impact` and `reason`, `confidence`, and `status: untested`.
+- Link the situation or user need it addresses (`addresses`) and the concept beneath it (`derived_from`). If the metric it predicts exists, add the hunch to that metric's `hunches` with the expected direction.
+- Move `status` with `update_hunch` as it's tested: `testing`, then `confirmed`, `refuted` or `inconclusive`.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_hunches` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

@@ -1,7 +1,7 @@
 ---
 name: focus-methods
 description: Use this skill when the user is choosing a **Method** in the Focus facet — picking the frame to bring data into an initiative. Triggers — "what method should we use," "how should we test this," "how do we frame the data," "we have data but don't know what it means," choosing between competitor analysis vs journey mapping vs segment comparison vs A/B testing vs benchmarking, or asking about any of the 13 method frames (Competitors, Iterations, Timeline, Journeys, Platforms/Devices, User Goals/Tasks, Geographies, User Lifecycle, Behavioral Triggers, Segments, Feature Usage, Risk and Proof, Frameworks). Also when the user lists named methods (Journey mapping, JTBD, A/B, Kano, RICE, ICE, HEART, MoSCoW, Eisenhower, Service blueprint, Empathy mapping) and needs to know which frame they belong to. Do NOT use when the initiative isn't framed (use `glare:focus-initiatives`), data is ready to compare (use `glare:focus-comparing`), or team is ready to commit (use `glare:focus-decisions`).
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.3 + canonical-28 constraint
 last_rebuilt: 2026-05-13
 ---
@@ -58,6 +58,15 @@ Method names (Kano, RICE, HEART, SUS, etc.) are not UX metrics — they are scor
    - **Frameworks** — 5Ds, 5W1H, HEART Framework, ICE Scoring, KPI Trees, RICE, SUS Testing, Spotlight Framework, Value vs. Complexity Quadrant, XYZ Hypothesis.
 
 5. **Hand off to `glare:focus-comparing`** once the method has produced data — the next move is placing signals side by side using a shared metric.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `create_method`), offer to save the chosen method to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- `create_method` with `name`, `category` and `description` (why this frame fits the initiative).
+- Link it to the initiative it serves (`serves`).
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `list_methods` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 

@@ -1,7 +1,7 @@
 ---
 name: lead-mapping
 description: Use this skill when the user is drawing the ladder from user need to business goal — the Mapping bucket of the Lead facet. Triggers — building or auditing a Chain of Proof (User Need → Design KPI → Product KPI → Business KPI → Goal); naming UX metrics as "connective tissue" between product and business metrics; working upward from a Design KPI or downward from a goal; the Five Steps to Map (Align on Goals → Understand Workflows → Map the Chain → Share → Keep Visible) or the Make-It-Practical routine (Define Goal → Connect Workflow → Build Chain → Share Story → Refresh Data); the Quick Checklist; the onboarding-to-revenue example (55%→85% completion → trial-to-paid doubled → pipeline +25%). Do NOT use for picking the pressure/goal — use `glare:lead-business-goals`. Do NOT use for cross-functional language — use `glare:lead-workflows`. Do NOT use for the Initiatives → Findings → Decisions → Outcomes loop — use `glare:lead-results`. For broader Lead, use `glare:lead`.
-version: 3.1.0
+version: 3.2.0
 source_doc_version: v1.1
 last_rebuilt: 2026-05-13
 ---
@@ -29,6 +29,15 @@ Before answering substantive questions, read `reference.md` — it contains the 
 5. **Use the Make-It-Practical routine for an in-flight project.** Define the Goal → Connect the Workflow → Build the Chain → Share the Story → Refresh the Data (quarterly or after each launch). Pair with the Quick Checklist (defined business goal? UX metrics connected to product/business KPIs? chain visible to every function? story refreshed?).
 
 6. **Check alignment before you ship the map.** If you can't connect the Design KPI to a business outcome, the signal won't resonate — go back and find the missing rung instead of defending the chain in front of leadership. Use the canonical onboarding-to-revenue example as a template for what a complete chain looks like.
+
+## Saving to Ray
+
+Optional. If the Ray MCP is connected (its tools include `list_projects` and `link_resources`), offer to save the Chain of Proof as links to the project's Decision Map in Ray. If it isn't, skip this section: nothing else in the skill depends on it.
+
+- The chain is links between records that already exist: user need to metric (`measures`), metric to business goal (`serves`), finding to need or goal (`supports`). Add missing rungs with `link_resources`.
+- `get_related` from the goal, depth 3 or 4, shows the chain as it stands; a rung with no records is the gap to name.
+
+Pick the project with `list_projects` and ask when more than one could fit; don't create a project unasked. Call `get_related` first so nothing is saved twice, and save only wording the person has approved.
 
 ## Handoffs
 
