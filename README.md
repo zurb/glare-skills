@@ -52,26 +52,26 @@ Align stakeholders, operationalize workflows, connect outcomes to business goals
 
 ## Install
 
-### Claude Code, Cursor, Codex, and 50+ coding tools
+### Claude Code (recommended)
 
-Install once with the skills package:
+```
+/plugin marketplace add zurb/glare-skills
+/plugin install glare@glare-marketplace
+```
+
+Then run `/reload-plugins`. Skills load under the plugin's name, as `glare:measure-hunches`, `glare:define-ux-metrics` and so on, and auto-trigger when your conversation matches their domain.
+
+### Cursor, Codex, and other coding tools
 
 ```
 npx skills add zurb/glare-skills
 ```
 
+Since 4.0.0 the skill folders no longer carry a `glare-` prefix, so a flat install names them `measure-hunches` rather than `glare-measure-hunches`, and they can collide with other skills of the same name. Prefer the plugin install where your tool supports it.
+
 ### General LLMs (ChatGPT, Claude, Gemini)
 
 Download a skill file and drop it into your LLM chat. The portable prompt versions live in [`glare-prompts-flat/`](../glare-prompts-flat/) -- one `.md` file per skill, plus a master prompt covering the entire framework.
-
-### Claude Code plugin install
-
-```
-/plugin marketplace add ~/Desktop/zurb.nosync/skills/glare-marketplace
-/plugin install glare@glare-marketplace
-```
-
-Then run `/reload-plugins` to activate. All 56 skills auto-trigger when your conversation matches their domain.
 
 ## How AI Skills Work
 
@@ -84,10 +84,10 @@ You don't invoke skills by name. Claude reads each skill's description and loads
 
 | Say this | Loads this |
 |---|---|
-| "let's pick metrics for checkout" | `glare-define-ux-metrics` |
-| "we need to benchmark v1 vs v2" | `glare-focus-comparing` |
-| "how do I tell sales this is working?" | `glare-lead-workflows` |
-| "we believe simplifying onboarding will improve activation" | `glare-measure-hunches` |
+| "let's pick metrics for checkout" | `glare:define-ux-metrics` |
+| "we need to benchmark v1 vs v2" | `glare:focus-comparing` |
+| "how do I tell sales this is working?" | `glare:lead-workflows` |
+| "we believe simplifying onboarding will improve activation" | `glare:measure-hunches` |
 | "I'm stuck and don't know where to start" | `glare-router` |
 
 A typical workflow might frame a user problem, generate multiple concepts, structure testing criteria, compare directions, analyze UX metrics, identify stronger signals, guide a recommendation, and prepare a decision review. Each skill focuses on a specific part. Together, they create systems for evaluation, comparison, interpretation, prioritization, alignment, and decision-making.

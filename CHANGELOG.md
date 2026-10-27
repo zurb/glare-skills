@@ -1,5 +1,14 @@
 # Glare Marketplace Changelog
 
+## 4.0.0 — 2026-10-27 — Skills load as `glare:measure-hunches`, not `glare-measure-hunches`
+
+**Breaking.** Every skill folder and `name` dropped its `glare-` prefix (`glare-measure-hunches` → `measure-hunches`). Installed as a Claude Code plugin, they now load as `glare:measure-hunches`, the same way other plugins namespace their skills (`vercel:react-best-practices`), instead of the doubled `glare:glare-measure-hunches`.
+
+- Cross-references inside the skills now use the plugin form (`glare:define-ux-metrics`); relative links and paths use the bare folder name.
+- Helio skills referenced here move the same way (`helio:cli`); see helio-skills 1.0.0.
+- Flat installs (`npx skills add`) get the bare names (`measure-hunches`), which can collide with other skills. The plugin install is the recommended path; the README says how.
+- Historical entries below keep the old names.
+
 ## 3.6.0 — 2026-06-23 (Define area: Formats section added to 3 blocks — the Glarify layer)
 
 Bryan added a **new 8th section** to Define blocks: **Formats**. This is a systemic architectural addition, not a per-block content update. All 3 skills (User Needs, Audience, Collecting) get a new `formats.md` file that carries the output-delivery layer — how to Glarify a produced artifact for a specific reader, purpose, and format.

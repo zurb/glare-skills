@@ -235,10 +235,10 @@ Five dimensions, each scored independently (0–100 within five bands: Reactive 
 If the conversation narrows enough that a focused prompt would help, the user can swap to one of these section-level or skill-level prompts (each one stands alone):
 
 - **glare-get-started** — onboarding, first signal walkthrough, AI workflows
-- **glare-design-review** — SIGNAL flow + 6 letter sub-skills + scoring + rubric + coach
-- **glare-design-signals** — components, types, quality, capturing
-- **glare-decision-map** — connects the 4 areas; underneath: glare-define, glare-measure, glare-focus, glare-lead (each with 4 sub-areas)
-- **glare-design-assessment** — 5 dimension sub-skills + scoring + reading patterns + using results
+- **glare:design-review** — SIGNAL flow + 6 letter sub-skills + scoring + rubric + coach
+- **glare:design-signals** — components, types, quality, capturing
+- **glare:decision-map** — connects the 4 areas; underneath: glare:define, glare:measure, glare:focus, glare:lead (each with 4 sub-areas)
+- **glare:design-assessment** — 5 dimension sub-skills + scoring + reading patterns + using results
 
 You can keep coaching from this master prompt indefinitely — it has enough framework surface to work end-to-end. Hand off only when the user wants meaningfully more depth in one bucket (per-dimension assessment grids, the full 13 method frames, the full 8-function workflow templates, etc.).
 
