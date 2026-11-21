@@ -11,7 +11,7 @@ Note: two folder entries (`Workflows`, `Dimensions`) contained no leaf-level fil
 Two pieces of v1.3 vocabulary the rest of this reference assumes:
 
 - **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. Lead is most concerned with the last three: a signal only earns leadership trust when the **Business goal** and **Direction** rungs are explicit.
-- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. These are the v1.3 outcome categories signals roll up into and are distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in the Measure facet.
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. These are the v1.3 outcome categories signals roll up into and are distinct from the Attitudinal / Behavioral / Performance / Intelligence UX-metrics taxonomy used in the Measure facet.
 
 ## Glare | Lead Overview v1.0
 

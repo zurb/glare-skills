@@ -1,6 +1,6 @@
 ---
 name: measure
-description: Use this skill when the user is producing evidence within the Decision Map's Measure area — turning intuition into testable signals. Triggers include forming hypotheses or hunches ("we believe that [change] for [audience] will [impact] because [reason]"), writing research questions, running tests, interpreting findings, or building a Question Library. Also use when the user mentions Concepts (anchoring intent), Hunches (falsifiable bets), Questioning (People / Process / Product / Problem question types), or Findings (translating data into signals tied to user value + business results). Use when they reference UX metric families like Behavioral, Attitudinal, Performance, or Perceptual. Do NOT use when the user is still defining who/what to study (use `glare:define`) or when they have results and now want to compare versions/competitors (use `glare:focus`). For the broader Decision Map (Define / Measure / Focus / Lead) use `glare:decision-map`.
+description: Use this skill when the user is producing evidence within the Decision Map's Measure area — turning intuition into testable signals. Triggers include forming hypotheses or hunches ("we believe that [change] for [audience] will [impact] because [reason]"), writing research questions, running tests, interpreting findings, or building a Question Library. Also use when the user mentions Concepts (anchoring intent), Hunches (falsifiable bets), Questioning (People / Process / Product / Problem question types), or Findings (translating data into signals tied to user value + business results). Use when they reference UX metric families like Behavioral, Attitudinal, Performance, or Intelligence. Do NOT use when the user is still defining who/what to study (use `glare:define`) or when they have results and now want to compare versions/competitors (use `glare:focus`). For the broader Decision Map (Define / Measure / Focus / Lead) use `glare:decision-map`.
 version: 3.1.0
 source_doc_version: v1.1
 last_rebuilt: 2026-05-13
@@ -16,7 +16,7 @@ Measure is the second area of the Decision Map (Define → Measure → Focus →
 
 Before answering substantive questions, read:
 
-- `reference.md` — full compressed content of the Measure block, including the four-move loop, hunch templates, question-type taxonomy (People / Process / Product / Problem), UX metric families (Behavioral / Attitudinal / Performance / Perceptual), the Findings → Signals translation steps, and the v1.1 Exploratory / Evaluative / Comparative question modes.
+- `reference.md` — full compressed content of the Measure block, including the four-move loop, hunch templates, question-type taxonomy (People / Process / Product / Problem), UX metric families (Behavioral / Attitudinal / Performance / Intelligence), the Findings → Signals translation steps, and the v1.1 Exploratory / Evaluative / Comparative question modes.
 
 ## How to apply
 
@@ -30,7 +30,7 @@ Before answering substantive questions, read:
 
 5. **For Findings:** Run the translation chain — *raw data → finding → tie to user value → tie to business results → connect back to original intent → act → share widely.* A signal forms only when a metric ties to a design choice, a user need, AND a business goal. If any of those three is missing, it's not a signal yet.
 
-6. **Tie every output to a UX metric type** (Behavioral, Attitudinal, Performance, Perceptual) so the result is comparable in the next facet. Hand off to `glare:focus` once findings exist and need benchmarking.
+6. **Tie every output to a UX metric type** (Behavioral, Attitudinal, Performance, Intelligence; comprehension sits in Behavioral) so the result is comparable in the next facet. Hand off to `glare:focus` once findings exist and need benchmarking.
 
 ## Critical rules
 

@@ -3,7 +3,7 @@
 ## v1.3 vocabulary
 
 - **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. Findings in the Project Work loop should themselves carry all six pieces; an Outcome that can't be traced back to those pieces is the gap.
-- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. These are the v1.3 categories Outcomes roll up into (distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure).
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. These are the v1.3 categories Outcomes roll up into (distinct from the Attitudinal / Behavioral / Performance / Intelligence UX-metrics taxonomy used in Measure).
 
 ## When to use
 

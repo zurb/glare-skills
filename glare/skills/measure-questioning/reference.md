@@ -62,7 +62,7 @@ The v1.34 UX Metrics framework defines a 4th type for AI-assisted experiences (r
 - When choosing a Mode — Exploratory, Evaluative, Comparative.
 - When running the bias check — leading? loaded? jargon-heavy?
 - When promoting open questions into testable ones (e.g., "Do people like our homepage?" → "Can users find pricing within 5 seconds?").
-- When aligning questions to a UX metric family — Behavioral, Attitudinal, Performance, Perceptual.
+- When aligning questions to a UX metric family — Behavioral, Attitudinal, Performance, Intelligence (the v1.1 table below still shows Perceptual as written; comprehension now sits in Behavioral).
 
 **Don't use when** anchoring intent (use `glare:measure-concepts`), forming a hunch (`glare:measure-hunches`), translating data (`glare:measure-findings`), or asking about the loop (`glare:measure`). For Need / Use / Prefer / Adopt, use `glare:signals-types`.
 
@@ -205,7 +205,7 @@ Testable questions point directly to data — not opinions.
 | Behavioral     | What users do.                   | Where do users click first?                               | First Click Success             |
 | Attitudinal    | What users think or feel.        | How satisfied are users after completing the task?        | Satisfaction or Sentiment Score |
 | Performance    | How efficiently users succeed.   | How long does it take to complete checkout?               | Time on Task                    |
-| Perceptual     | What users understand or interpret. | Do users understand the purpose of this page?          | Comprehension                   |
+| Perceptual (v1.1, now Behavioral) | What users understand or interpret. | Do users understand the purpose of this page?          | Comprehension                   |
 
 > **Source-doc note:** v1.1 still lists Perceptual as the 4th family. The marketplace v1.32 UX Metrics framework now uses **Intelligence** in that slot, and comprehension/recognition have moved into Behavioral. If you route to a UX-metric skill, expect the v1.32 mapping there.
 

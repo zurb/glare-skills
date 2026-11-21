@@ -1,5 +1,17 @@
 # Glare Marketplace Changelog
 
+## 4.1.1 — 2026-11-21 — The fourth UX metric family is Intelligence
+
+The UX metric families are Attitudinal, Behavioral, Performance and **Intelligence**. A few skills still taught **Perceptual** as the fourth family, left over from Questioning v1.1. Perceptual was removed after v1.1, and comprehension and recognition moved into Behavioral.
+
+| Skill | What changed |
+|---|---|
+| `measure`, `measure-questioning` | The families they teach, their descriptions and their examples now say Intelligence. Comprehension examples point to Behavioral. |
+| `measure-findings` | The UX metric types list now says Intelligence, with a note that Perceptual was retired. |
+| `lead`, `lead-business-goals`, `lead-mapping`, `lead-results`, `lead-workflows` | The note that contrasts signal types with UX metric families now names Intelligence. |
+
+Notes that explain Perceptual's history stay. The v1.1 table in `measure-questioning/reference.md` keeps its row, now labeled "(v1.1, now Behavioral)".
+
 ## 4.1.0 — 2026-10-27 — Skills save their output to Ray, when it's connected
 
 Twenty skills that produce a Decision Map record gain a **Saving to Ray** section, placed before Handoffs. It is optional: it applies only when the Ray MCP is connected, and a skill without Ray works exactly as before.

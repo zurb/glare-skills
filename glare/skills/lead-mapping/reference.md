@@ -3,7 +3,7 @@
 ## v1.3 vocabulary
 
 - **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. The Mapping ladder is the working space where the User need rung at the bottom and the Business goal + Direction rungs at the top come together; the UX metric is what the v1.0 doc calls the "connective tissue" between them.
-- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. Distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure.
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. Distinct from the Attitudinal / Behavioral / Performance / Intelligence UX-metrics taxonomy used in Measure.
 
 ## When to use
 
