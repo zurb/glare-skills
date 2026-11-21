@@ -11,7 +11,7 @@ Measure is the second facet of the Glare framework (a Helio methodology for cutt
 - When the user is producing evidence within the Decision Map's Measure area.
 - When forming hypotheses or hunches, writing research questions, running tests, or interpreting findings.
 - When working the four-move loop — Concepts → Hunches → Questioning → Findings.
-- When using UX metric families (Behavioral / Attitudinal / Performance / Perceptual).
+- When using UX metric families (Behavioral / Attitudinal / Performance / Intelligence).
 - When the team has hunches but no falsifiable bets, or data but no signals.
 
 **Don't use when** still defining who/what to study (use `glare:define`) or when there are results and the team needs to compare versions (`glare:focus`). For depth in one move, use `glare:measure-concepts`, `glare:measure-hunches`, `glare:measure-questioning`, or `glare:measure-findings`.
@@ -116,7 +116,7 @@ Evolved version of Questioning. Adds a **Mode of Questioning** layer (Explorator
   3. **Define learning goals** — pick mode (Exploratory/Evaluative/Comparative) and frame the goal.
   4. **Write open-ended research questions** — explore perception/experience without assumption; bias check.
   5. **Translate into testable questions** — observable behavior/perception, point directly to data.
-  6. **Align with UX metrics** — Behavioral (First Click Success), Attitudinal (Satisfaction/Sentiment), Performance (Time on Task), Perceptual (Comprehension).
+  6. **Align with UX metrics** — Behavioral (First Click Success), Attitudinal (Satisfaction/Sentiment), Performance (Time on Task), Behavioral (Comprehension), Intelligence (AI Guidance Usefulness) for AI-assisted experiences.
   7. **Prioritize and refine** — filters: Gap Size, Impact, Feasibility, Confidence; questions at intersection of large-gap + high-impact + feasible rise to top.
   8. **Match questions to techniques** — Behavioral (first-click, task success), Attitudinal (surveys, desirability, satisfaction scoring), Performance (usability tests, time tracking, error rate).
 - **Make It Practical — Worksheet** mirrors the 8 steps with action + output for each, becoming a roadmap for a questioning cycle. Pre-cycle checklist confirms one concept, identified gaps, clear learning mode, metric per question, prioritization, ready techniques, and connection to findings.

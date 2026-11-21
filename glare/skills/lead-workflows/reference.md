@@ -5,7 +5,7 @@ Every company runs on workflows already in motion whether design is in the room 
 ## v1.3 vocabulary
 
 - **6-piece signal anatomy** — Design intuition + UX metric + User need + Context + Business goal + Direction. When translating a signal into a function's language, all six pieces should be present; the function's vocabulary primarily reframes the Business goal and Direction rungs.
-- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. Distinct from the Attitudinal / Behavioral / Performance / Perceptual UX-metrics taxonomy used in Measure. Each function tends to gravitate toward one or two of these (e.g., Sales reads Adopt and Use; Marketing reads Need and Prefer).
+- **Outcome-oriented signal types** — Need / Use / Prefer / Adopt. Distinct from the Attitudinal / Behavioral / Performance / Intelligence UX-metrics taxonomy used in Measure. Each function tends to gravitate toward one or two of these (e.g., Sales reads Adopt and Use; Marketing reads Need and Prefer).
 
 ---
 

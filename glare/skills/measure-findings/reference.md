@@ -63,7 +63,7 @@ Findings are the final move of Measure: they turn raw data into design signals t
 - **Finding** — An observation translated into direction, linked to a user need, business goal, and design decision.
 - **Signal** — Evidence-backed recommendation that tells the team what to do next; the output of the Measure loop. Replaces opinion-based debate.
 - **Vanity metrics** — Metrics disconnected from intent; what concepts/signals are designed to avoid.
-- **UX Metric Types** — Behavioral (what users do), Attitudinal (what they think/feel), Performance (how efficiently they succeed), Perceptual (what they understand).
+- **UX Metric Types** — Behavioral (what users do), Attitudinal (what they think/feel), Performance (how efficiently they succeed), Intelligence (how well AI assistance works). v1.1 briefly had Perceptual (what they understand); it was removed, and comprehension now sits in Behavioral.
 
 ## Failure modes
 
